@@ -14,15 +14,6 @@ output:
          - {icon: "fa-arrow-alt-circle-left", href: "https://ercbk.github.io/Indiana-COVID-19-Website/static.html", align: right, title: "Back to Tracker"}
 ---
 
-<!-- padding: top left bottom right -->
-<style>
-body {
-   padding: 50px 25px 0px 25px;
-   font-family: 'Roboto', sans-serif;
-   font-size: 19px;
-}
-</style>
-
 
 
 ```{r setup}
@@ -174,6 +165,7 @@ ci_shared_yday <- SharedData$new(ci_clean_yday,
 About {data-icon="fa-question-circle"}
 =====================================
 
+
 <H2>Description</H2>
 
 Carnegie Mellon University's Delphi Research Group derives it's "Combined" indicator from multiple data sources that include:<br>
@@ -188,13 +180,14 @@ Carnegie Mellon University's Delphi Research Group derives it's "Combined" indic
 </UL>
 <P>
 
-The higher the combined indicator value, the greater the signaling of higher COVID-19 prevalence in that [metropolitan area (MSA)](https://www.census.gov/programs-surveys/metro-micro/about.html). The value has no upper bound, but for reference, here are some of the combined indicator values from some of the hotspots around the country as of July 4th, 2020.<br>
+The higher the combined indicator value, the greater the signaling of higher COVID-19 prevalence in that [metropolitan area (MSA)](https://www.census.gov/programs-surveys/metro-micro/about.html). The value has no upper bound, but for reference, here are some of the combined indicator values from some of the hotspots around the country as of July 3rd, 2020.<br>
 <UL>
 <LI>San Antonio, Texas: 2.69<br>
 <LI>Phoenix, Arizona: 1.92<br>
 <LI>Naples, Florida: 2.76<br>
 </UL>
-<P>
+
+
 Only metropolitan areas in Indiana with sufficient data have combined indicator values calculated, so not all areas are shown in the map. More details about the methodology behind this project can be found on their [website](https://covidcast.cmu.edu/index.html?sensor=doctor-visits-smoothed_adj_cli&level=county&region=42003&date=20200701&signalType=value).
 
 
@@ -210,8 +203,9 @@ The grouped line chart shows historic combined indicator values for each MSA.<br
 <LI>Drawing a window around a section of the chart zooms into that time window  
 <LI>Pan or Zoom-out (toolbar) can be useful for looking at edge values  
 <LI>Home button (toolbar) or double-clicking in the plot area resets the chart  
+<LI>Compare-data-on-hover button (toolbar) shows every label for each MSA as you move your cursor across the days.
 </UL>
-<P>
+
 
 <H4> Dumbbell </H4>
 
@@ -219,9 +213,9 @@ The dumbbell chart shows the combined indicator value (gray) and the 95% confide
 
 <UL>
 <LI> Clicking on a point, highlights that MSA's value and deemphisizes the others. It also has the same effect for the MSA's values in the line chart. Multiple MSA values may be selected.<br>
-<LI> Double-clicking in the plot area resets the chart.  
+<LI> Double-clicking in the plot area resets the chart. 
 </UL>
-<P>
+
 
 <H4> Map </H4>
 
@@ -240,7 +234,7 @@ Dashboard {data-icon="glyphicon-stats"}
 =====================================
 
 
-Row {data-height=330}
+Row {data-height=360}
 -------------------------------------
 
 
@@ -301,7 +295,9 @@ ci_shared_line %>%
           yaxis = y_style_line,
           showlegend = FALSE,
           # sets global value for font family
-          font = list(family = "Roboto")
+          font = list(family = "Roboto"),
+          # x-axis tick labels get cut off with default margin
+          margin = list(b = 90)
    ) %>% 
    highlight(dynamic = TRUE, persistent = TRUE)
 
