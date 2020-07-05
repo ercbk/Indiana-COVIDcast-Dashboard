@@ -10,7 +10,20 @@ output:
       css: covidcast-style.css
       favicon: images/ind-state-fav.png
       logo: images/rsz_ind-state-logo.png
+      navbar:
+         - {icon: "fa-arrow-alt-circle-left", href: "https://ercbk.github.io/Indiana-COVID-19-Website/static.html", align: right, title: "Back to Tracker"}
 ---
+
+<!-- padding: top left bottom right -->
+<style>
+body {
+   padding: 50px 25px 0px 25px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 19px;
+}
+</style>
+
+
 
 ```{r setup}
 pacman::p_load(covidcastR, extrafont, dplyr, glue, leaflet, leaflet.extras, plotly, crosstalk)
@@ -158,10 +171,69 @@ ci_shared_yday <- SharedData$new(ci_clean_yday,
 
 
 
-About {data-icon="fa-question"}
+About {data-icon="fa-question-circle"}
 =====================================
 
-Stuff about cmu indicator 
+<H2>Description</H2>
+
+Carnegie Mellon University's Delphi Research Group derives it's "Combined" indicator from multiple data sources that include:<br>
+
+<UL>
+<LI><U>Doctor Visits</U> - Percentage of doctor's visits that are due to COVID-like symptoms<br> 
+<LI><U>Hospital Admissions</U> - Daily hospital admissions with COVID diagnostic codes.<br>
+<LI><U>Symptoms</U> (Facebook) - Random Facebook users are directed to a survey that asks for the number of household members with COVID-like symptoms.<br>
+<LI><U>Symptoms in Community</U> (Facebook) - Same as for "Symptoms" but asks about people they know outside of their household.<br>
+<LI><U>Hours Away from Home</U> (SafeGraph) - Uses mobile phone location data to estimate the proportion of people outside their homes during daytime hours.<br>
+<LI><U>Search Trends</U> (Google) - Google searchs for COVID-related topics relative to an area's population<br>
+</UL>
+<P>
+
+The higher the combined indicator value, the greater the signaling of higher COVID-19 prevalence in that [metropolitan area (MSA)](https://www.census.gov/programs-surveys/metro-micro/about.html). The value has no upper bound, but for reference, here are some of the combined indicator values from some of the hotspots around the country as of July 4th, 2020.<br>
+<UL>
+<LI>San Antonio, Texas: 2.69<br>
+<LI>Phoenix, Arizona: 1.92<br>
+<LI>Naples, Florida: 2.76<br>
+</UL>
+<P>
+Only metropolitan areas in Indiana with sufficient data have combined indicator values calculated, so not all areas are shown in the map. More details about the methodology behind this project can be found on their [website](https://covidcast.cmu.edu/index.html?sensor=doctor-visits-smoothed_adj_cli&level=county&region=42003&date=20200701&signalType=value).
+
+
+<H2> Charts </H2>
+
+<H4> Line </H4>
+
+The grouped line chart shows historic combined indicator values for each MSA.<br>
+
+<UL>
+<LI>Clicking a line highlights the line and deemphasizes the others. Multiple lines can be highlighted. Highlighting a line also has the same effect on that MSA's error bar in the dumbbell chart.<br>
+<LI>Clicking on the brush color in the top-left allows you to change the default color (red) to either blue, green, or purple.<br>
+<LI>Drawing a window around a section of the chart zooms into that time window  
+<LI>Pan or Zoom-out (toolbar) can be useful for looking at edge values  
+<LI>Home button (toolbar) or double-clicking in the plot area resets the chart  
+</UL>
+<P>
+
+<H4> Dumbbell </H4>
+
+The dumbbell chart shows the combined indicator value (gray) and the 95% confidence interval.  
+
+<UL>
+<LI> Clicking on a point, highlights that MSA's value and deemphisizes the others. It also has the same effect for the MSA's values in the line chart. Multiple MSA values may be selected.<br>
+<LI> Double-clicking in the plot area resets the chart.  
+</UL>
+<P>
+
+<H4> Map </H4>
+
+The map shows the metropolitan statistical areas that have calculated combined indicator values.  
+
+<UL>
+<LI> Hovering over an area highlights the borders of that area.  
+<LI> Clicking on an area shows its estimated combined indicator value.  
+<LI> Reset button (upper-left) resets the map view. It's a bit buggy, so you might need to refresh the webpage instead.
+</UL>
+
+
 
 
 Dashboard {data-icon="glyphicon-stats"}
