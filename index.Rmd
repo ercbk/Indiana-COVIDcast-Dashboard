@@ -21,8 +21,9 @@ pal <- colorNumeric("YlOrRd",
                     domain = seq(0.00, 3.00, by = 0.10))
 # needed because leaflet legend default direction of values is backwards
 pal_rev <- colorNumeric("YlOrRd",
-                        domain = seq(3.00, 0.00, by = -0.10),
+                        domain = seq(2.50, 0.00, by = -0.10),
                         reverse = TRUE)
+   
 # latest combined indicator values are for previous day
 date <- stringr::str_remove_all(lubridate::today()-1, "-")
 
@@ -96,7 +97,7 @@ ci_clean1 <- combined_index_all %>%
 
 
 
-```{r clean-leaflet, cache=TRUE}
+```{r clean-leaflet}
 # leaflet map: add popup text, styling
 ci_clean2 <- ci_clean1 %>%
    # create popup text
@@ -115,7 +116,7 @@ ci_clean2 <- ci_clean1 %>%
 
 
 
-```{r clean-plotly-db, cache=TRUE}
+```{r clean-plotly-db}
 # dumbbell: add 95% CI, styling
 ci_clean3 <- ci_clean2 %>% 
    mutate(upper = round(value + (1.96 * stderr), 2),
@@ -132,7 +133,7 @@ ci_clean3 <- ci_clean2 %>%
 
 
 
-```{r shared, cache=TRUE}
+```{r shared}
 
 ci_clean4 <- ci_clean3 %>% 
    # add the polygon geometries for each msa
@@ -272,7 +273,7 @@ leaflet(data = ci_shared_yday,
                highlightOptions = highlightOptions(color = "black", weight = 2,
                                                    bringToFront = TRUE)) %>% 
    addLegend("bottomleft", pal = pal_rev,
-             opacity = 1, values = c(3, 0.5),
+             opacity = 1, values = c(2.5, 0.5),
              # reverses direction of values in legend
              labFormat = labelFormat(transform = function(x) sort(x, decreasing = TRUE))
    ) %>% 
