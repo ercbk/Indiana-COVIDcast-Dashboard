@@ -43,7 +43,7 @@ jobs:
         shell: Rscript {0}
         run: |
           cran_repo <- c("CRAN" = Sys.getenv("CRAN_REPO"))
-          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = cran_repo)
           renv::restore(repos = cran_repo)
       
       - name: rebuild website
