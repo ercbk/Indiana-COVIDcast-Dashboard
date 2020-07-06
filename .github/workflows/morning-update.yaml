@@ -2,7 +2,7 @@ name: morning-update
 
 on:
   schedule:
-    - cron: '4 14 * * *'
+    - cron: '26 14 * * *'
 
 jobs:
   update-dashboard:
@@ -29,6 +29,10 @@ jobs:
       # need these for rgdal package
       - name: Install gdal, proj, and geos
         run: sudo apt-get install libgdal-dev gdal-bin libproj-dev proj-data proj-bin libgeos-dev
+      
+      # needed for units package
+      - name: Install udunits2
+        run: sudo apt-get install libudunits2-dev
       
       # cache dev environment, restore environment from cache
       - name: Cache packages
