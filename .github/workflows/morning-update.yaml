@@ -1,0 +1,65 @@
+name: morning-update
+
+on:
+  schedule:
+    - cron: '4 14 * * *'
+
+jobs:
+  update-dashboard:
+    name: covidcast-update
+    runs-on: ubuntu-18.04
+    
+    env:
+      CRAN_REPO: https://packagemanager.rstudio.com/all/__linux__/bionic/latest
+      RENV_PATHS_ROOT: ~/.local/share/renv
+      
+      
+    steps:
+      # copy repo  
+      - uses: actions/checkout@v2
+      
+      # installs r
+      - uses: r-lib/actions/setup-r@v1
+        with:
+          r-version: '3.6.2'
+          
+      # installs pandoc for rmarkdown
+      - uses: r-lib/actions/setup-pandoc@v1
+      
+      # need these for rgdal package
+      - name: Install gdal, proj, and geos
+        run: sudo apt-get install libgdal-dev gdal-bin libproj-dev proj-data proj-bin libgeos-dev
+      
+      # cache dev environment, restore environment from cache
+      - name: Cache packages
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.RENV_PATHS_ROOT }}
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+      
+      - name: Restore packages
+        shell: Rscript {0}
+        run: |
+          cran_repo <- c("CRAN" = Sys.getenv("CRAN_REPO"))
+          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          renv::restore(repos = cran_repo)
+      
+      - name: rebuild website
+        run: Rscript -e "rmarkdown::render_site()"
+      
+      ## Commit, Push, Trigger other repo workflow
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "morning dashboard update" || echo "No changes to commit"
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        # GITHUB_TOKEN automatically created
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      
