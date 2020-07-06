@@ -1,8 +1,9 @@
-name: morning-update
+name: covidcast-update
 
 on:
   schedule:
-    - cron: '26 14 * * *'
+    - cron: '15 15 * * *'
+    - cron: '15 22 * * *'
 
 jobs:
   update-dashboard:
