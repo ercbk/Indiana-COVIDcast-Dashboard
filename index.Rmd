@@ -238,7 +238,7 @@ Row {data-height=360}
 -------------------------------------
 
 
-### Historic Values
+### Historic Values {.no-mobiie}
 
 
 ```{r}
