@@ -36,6 +36,7 @@ date <- stringr::str_remove_all(lubridate::today()-1, "-")
 
 
 ```{r data}
+
 # census bureau's tiger-line msa shapefiles
 us_msa_tiles <- sf::read_sf(glue("{rprojroot::find_rstudio_root_file()}/data/shapefiles/msa-2019/tl_2019_us_cbsa.shp"))
 
@@ -48,38 +49,59 @@ ind_msa_tiles <- msa_tiles %>%
       name = stringr::str_remove_all(name, "([A-Z][A-Z]-)*"),
       name = stringr::str_remove_all(name, ", [A-Z]*"))
 
-combined_index_yday <- ind_msa_tiles %>% 
-   # cbsafp is the msa id
-   select(name, cbsafp) %>% 
-   group_by(name) %>% 
-   tidyr::nest() %>% 
-   # get the combined indicator value for each msa if one is available
-   mutate(data = purrr::map(data, ~suppressMessages(
-      covidcast_signal(
-         data_source = "indicator-combination",
-         signal = "nmf_day_doc_fbc_fbs_ght",
-         start_day = date,
-         end_day = date,
-         geo_type = "msa",
-         geo_values = .x$cbsafp)
-   ))) %>% 
-   tidyr::unnest(cols = "data") %>% 
-   ungroup() %>% 
-   select(-geo_value, -direction, -sample_size)
-
+# get historic values I have saved
 combined_index_complete <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/covidcast-msa-complete.csv"))
 
-ci_yday <- combined_index_yday %>% 
-   filter(time_value == max(time_value)) %>% 
-   slice(1) %>% 
-   pull(time_value)
+# date of data I have
 ci_comp <- combined_index_complete %>% 
    filter(time_value == max(time_value)) %>%
    slice(1) %>% 
    pull(time_value)
 
+# get data update
+c <- 0
+while (TRUE) {
+   combined_index_yday <- try({
+      # try dates from today until ci_comp date reached
+      try_date <- lubridate::today() - c
+      
+      ind_msa_tiles %>% 
+         # cbsafp is the msa id
+         select(name, cbsafp) %>% 
+         group_by(name) %>% 
+         tidyr::nest() %>% 
+         # get the combined indicator value for each msa if one is available
+         mutate(data = purrr::map(data, ~suppressMessages(
+            covidcast_signal(
+               data_source = "indicator-combination",
+               signal = "nmf_day_doc_fbc_fbs_ght",
+               start_day = try_date,
+               end_day = try_date,
+               geo_type = "msa",
+               geo_values = .x$cbsafp)
+         ))) %>% 
+         tidyr::unnest(cols = "data") %>% 
+         ungroup() %>% 
+         select(-geo_value, -direction, -sample_size)
+      
+   }, silent = TRUE)
+      # stay in loop until I get some new data or ci_comp date reached
+      if (class(combined_index_yday) != "try-error"){
+            break
+      } else if (try_date <= ci_comp) {
+            break
+      } else {
+            c <- c + 1
+      }
+}
 
-# # compare dates first before adding new data
+
+ci_yday <- combined_index_yday %>% 
+   filter(time_value == max(time_value)) %>% 
+   slice(1) %>% 
+   pull(time_value)
+
+# compare dates first before adding new data
 if (ci_yday != ci_comp) {
    combined_index_all <- combined_index_complete %>%
       bind_rows(combined_index_yday)
@@ -96,9 +118,7 @@ ci_clean1 <- combined_index_all %>%
       name = stringr::str_remove_all(name, ", [A-Z]*")
    )
 
-
 ```
-
 
 
 ```{r clean-leaflet}
@@ -149,6 +169,7 @@ ci_clean_yday <- ci_clean4 %>%
    # converts tibble to a sf object for leaflet
    sf::st_as_sf()
 
+# crosstalk function: charts connected covidcast group
 ci_shared_line <- SharedData$new(ci_clean4,
                                  ~name,
                                  group = "covidcast")
@@ -266,9 +287,11 @@ y_style_line <- list(
 )
 
 
-
+# tried to get hoverlabel to have background color conditional on value (bgcolor) but failed. Text color would depend on darkness of bgcolor.
+# group_by was screwing up something, but I forget (maybe crosstalk). Split does same/similar thing
 ci_shared_line %>%
    # group_by(name) %>% 
+   # "~" are for variables in df
    plot_ly(x = ~time_value, y = ~value,
            color = I("black"), split = ~name,
            text = ~name,
