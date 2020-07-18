@@ -359,7 +359,7 @@ leaflet(data = ci_shared_yday,
                weight = 2, smoothFactor = 0.5,
                opacity = 1.0, fillOpacity = 0.5,
                color = ~color, popup = ~popup,
-               popupOptions = ,
+               # popupOptions = ,
                # bringtofront makes highlight stroke standout more
                highlightOptions = highlightOptions(color = "black", weight = 2,
                                                    bringToFront = TRUE)) %>% 
