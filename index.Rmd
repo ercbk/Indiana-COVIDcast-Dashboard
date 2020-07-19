@@ -128,8 +128,8 @@ ci_clean2 <- ci_clean1 %>%
    mutate(value = round(value, 2),
           color = pal(value),
           # white map background so darkening the palette some
-          color = prismatic::clr_darken(color,
-                                        shift = 0.20),
+          color = unclass(prismatic::clr_darken(color,
+                                        shift = 0.20)),
           # dark-red background for high values needs white text
           value_text = ifelse(value >= 2,
                               glue("<b style='background-color:{color}; font-family:Roboto; font-size:15px; color:white'>{value}</b>"),
@@ -146,10 +146,10 @@ ci_clean3 <- ci_clean2 %>%
    mutate(upper = round(value + (1.96 * stderr), 2),
           lower = round(value - (1.96 * stderr), 2),
           value = round(value, 2),
-          upper_col = prismatic::clr_darken(pal(upper),
-                                            shift = 0.20),
-          lower_col = prismatic::clr_darken(pal(lower),
-                                            shift = 0.20),
+          upper_col = unclass(prismatic::clr_darken(pal(upper),
+                                            shift = 0.20)),
+          lower_col = unclass(prismatic::clr_darken(pal(lower),
+                                            shift = 0.20)),
           # contrast text against label color
           text_col = ifelse(value > 2, 'white', 'black'))
 

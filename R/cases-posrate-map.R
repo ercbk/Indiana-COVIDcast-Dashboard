@@ -58,46 +58,50 @@ spark_dat <- tibble(
                           values_to = "value")
 
 rt1 <- reactable(
-      spark_dat,
-      columns = list(
-            value = colDef(
-                  # use reactable very convenient conversion of htmlwidgets
-                  #  we will focus on this in another article
-                  #  more details on custom rendering
-                  #  https://glin.github.io/reactable/articles/custom-rendering.html
-                  cell = function(value, index) {
-                        dui_sparkline(
-                              data = value, # because we gave it a list use [[1]]
-                              height = 80, # we will want to be specific here
-                              components = list(
-                                    dui_sparklineseries(
-                                          showLine = FALSE,
-                                          showArea = TRUE,
-                                          fill = spark_cols[index]
-                                    ),
-                                    # interactivity
-                                    dui_tooltip(components = list(
-                                          dui_sparkverticalrefline(
-                                                strokeDasharray = "4,4",
-                                                stroke = gray.colors(10)[3]
-                                          ),
-                                          dui_sparkpointseries(
-                                                stroke = spark_cols[index],
-                                                fill = "#fff",
-                                                renderLabel = htmlwidgets::JS("(d) => d.toFixed(2)")
-                                          )
-                                    ))
-                              )
-                              # end of interactivity
-                        )
-                        
-                  }
-            )
+   spark_dat,
+   columns = list(
+      signal = colDef(
+         maxWidth = 100
       ),
-      theme = reactableTheme(
-            color = "white",
-            backgroundColor = "#252429"
+      value = colDef(
+         # use reactable very convenient conversion of htmlwidgets
+         #  we will focus on this in another article
+         #  more details on custom rendering
+         #  https://glin.github.io/reactable/articles/custom-rendering.html
+         cell = function(value, index) {
+            dui_sparkline(
+               data = value, # because we gave it a list use [[1]]
+               height = 80, # we will want to be specific here
+               components = list(
+                  dui_sparklineseries(
+                     showLine = FALSE,
+                     showArea = TRUE,
+                     fill = spark_cols[index]
+                  ),
+                  # interactivity
+                  dui_tooltip(components = list(
+                     dui_sparkverticalrefline(
+                        strokeDasharray = "4,4",
+                        stroke = gray.colors(10)[3]
+                     ),
+                     dui_sparkpointseries(
+                        stroke = spark_cols[index],
+                        fill = "#fff",
+                        renderLabel = htmlwidgets::JS("(d) => d.toFixed(2)")
+                     )
+                  ))
+               )
+               # end of interactivity
+            )
+            
+         }
       )
+   ),
+   theme = reactableTheme(
+      color = "white",
+      backgroundColor = "#252429"
+   )#,
+   #fullWidth = TRUE
 )
 rt1
 
@@ -138,7 +142,7 @@ map2 <- leaflet(options = leafletOptions(minZoom = 6.5,
       # {leaflet.esri}
       addEsriBasemapLayer(esriBasemapLayers$DarkGray, autoLabels = TRUE) %>%
       # sets starting point; coords for center of Indiana
-      setView(lat = 40.2672, lng = 86.1349,
+      setView(lat = 40.2672, lng = -86.1349,
               zoom = 7) %>%
       # set panning range; if user tries to go beyond, it springs back
       setMaxBounds(lat1 = 37.62598, lng1 = -89.53418,
@@ -147,7 +151,7 @@ map2 <- leaflet(options = leafletOptions(minZoom = 6.5,
                   # weight is thickness of stroke
                   weight = 2, smoothFactor = 0.5,
                   opacity = 1.0, fillOpacity = 0.5,
-                  color = ~color, popup = popupGraph(rt1, type = "html"),
+                  color = ~color, popup = popupGraph(rt1, type = "html", width = 500),
                   label = purrr::map(map2_dat$label_list, htmltools::HTML),
                   highlightOptions = highlightOptions(color = "white", weight = 2,
                                                       bringToFront = TRUE))
