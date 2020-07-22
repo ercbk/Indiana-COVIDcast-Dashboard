@@ -16,19 +16,14 @@ posrate_col_df <- map2_current %>%
       select(msa, pos_rate) %>% 
       filter(!is.na(pos_rate)) %>% 
       # slice(n()) %>% 
-      mutate(pos_color = pal(pos_rate)#,
-             #color = prismatic::clr_lighten(color, shift = .20)
-      )
+      mutate(pos_color = pal(pos_rate))
+
 posrate_col <- map2_current %>% 
       select(msa, cases_100k) %>% 
       left_join(posrate_col_df, by = "msa") %>% 
-      mutate(cases_100k = round(cases_100k, 2)#,
-             # pos_color = tidyr::replace_na(pos_color, "#6a0dad")
-             # color = tidyr::replace_na(color, "")
-      ) %>%
+      mutate(cases_100k = round(cases_100k, 2)) %>%
       arrange(desc(cases_100k)) %>% 
-      # select(msa, pos_color) #%>% 
-      filter(!is.na(pos_color)) %>%
+      # filter(!is.na(pos_color)) %>%
       pull(pos_color)
 
 cases_col <- map2_current %>% 
