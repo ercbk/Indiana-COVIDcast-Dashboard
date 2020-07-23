@@ -1,0 +1,496 @@
+---
+title: "Carnegie Mellon's Combined Indicator for Indiana"
+output:
+   flexdashboard::flex_dashboard:
+      orientation: rows
+      vertical_layout: scroll
+      social: menu
+      source_code: embed
+      theme: yeti
+      # css: covidcast-style.css
+      # favicon: images/ind-state-fav.png
+      # logo: images/rsz_ind-state-logo.png
+      navbar:
+         - {icon: "fa-arrow-alt-circle-left", href: "https://ercbk.github.io/Indiana-COVID-19-Website/static.html", align: right, title: "Back to Tracker"}
+---
+
+
+
+```{r setup-data}
+pacman::p_load(extrafont, dplyr, glue, leaflet, leaflet.extras, plotly, crosstalk, htmltools, reactable, dataui)
+
+# clean combined indicator datasets for line, leaflet, and dumbbell charts
+ci_clean_line <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-ci-line.rds"))
+ci_clean_leaf <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-ci-leaf.rds"))
+ci_clean_db <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-ci-db.rds"))
+
+# reactable/sparkline data
+react_dat <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-case-pos.rds"))
+# positive rate sparkline palette vector
+posrate_col <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-posrate_pal.rds"))
+
+
+```
+
+
+
+
+```{r shared}
+
+# {crosstalk} functions so charts can react to selections
+ci_shared_line <- SharedData$new(ci_clean_line,
+                                 ~name,
+                                 group = "covidcast")
+ci_shared_leaf <- SharedData$new(ci_clean_leaf,
+                                 ~name,
+                                 group = "covidcast")
+ci_shared_db <- SharedData$new(ci_clean_db,
+                                 ~name,
+                                 group = "covidcast")
+
+```
+
+
+
+
+About {data-icon="fa-question-circle"}
+=====================================
+
+
+<H2>Description</H2>
+
+Carnegie Mellon University's Delphi Research Group derives it's "Combined" indicator from multiple data sources that include:<br>
+
+<UL>
+<LI><U>Doctor Visits</U> - Percentage of doctor's visits that are due to COVID-like symptoms<br> 
+<LI><U>Hospital Admissions</U> - Daily hospital admissions with COVID diagnostic codes.<br>
+<LI><U>Symptoms</U> (Facebook) - Random Facebook users are directed to a survey that asks for the number of household members with COVID-like symptoms.<br>
+<LI><U>Symptoms in Community</U> (Facebook) - Same as for "Symptoms" but asks about people they know outside of their household.<br>
+<LI><U>Hours Away from Home</U> (SafeGraph) - Uses mobile phone location data to estimate the proportion of people outside their homes during daytime hours.<br>
+<LI><U>Search Trends</U> (Google) - Google searchs for COVID-related topics relative to an area's population<br>
+</UL>
+<P>
+
+The higher the combined indicator value, the greater the signaling of higher COVID-19 prevalence in that [metropolitan area (MSA)](https://www.census.gov/programs-surveys/metro-micro/about.html). The value has no upper bound, but for reference, here are some of the combined indicator values from some of the hotspots around the country as of July 3rd, 2020.<br>
+<UL>
+<LI>San Antonio, Texas: 2.69<br>
+<LI>Phoenix, Arizona: 1.92<br>
+<LI>Naples, Florida: 2.76<br>
+</UL>
+
+
+Only metropolitan areas in Indiana with sufficient data have combined indicator values calculated, so not all areas are shown in the map. More details about the methodology behind this project can be found on their [website](https://covidcast.cmu.edu/index.html?sensor=doctor-visits-smoothed_adj_cli&level=county&region=42003&date=20200701&signalType=value).
+
+
+<H2> Charts </H2>
+
+<H4> Line </H4>
+
+The grouped line chart shows historic combined indicator values for each MSA.<br>
+
+<UL>
+<LI>Clicking a line highlights the line and deemphasizes the others. Multiple lines can be highlighted. Highlighting a line also has the same effect on that MSA's error bar in the dumbbell chart.<br>
+<LI>Clicking on the brush color in the top-left allows you to change the default color (red) to either blue, green, or purple.<br>
+<LI>Drawing a window around a section of the chart zooms into that time window  
+<LI>Pan or Zoom-out (toolbar) can be useful for looking at edge values  
+<LI>Home button (toolbar) or double-clicking in the plot area resets the chart  
+<LI>Compare-data-on-hover button (toolbar) shows every label for each MSA as you move your cursor across the days.
+</UL>
+
+
+<H4> Dumbbell </H4>
+
+The dumbbell chart shows the combined indicator value (gray) and the 95% confidence interval.  
+
+<UL>
+<LI> Clicking on a point, highlights that MSA's value and deemphisizes the others. It also has the same effect for the MSA's values in the line chart. Multiple MSA values may be selected.<br>
+<LI> Double-clicking in the plot area resets the chart. 
+</UL>
+
+
+<H4> Map </H4>
+
+The map shows the metropolitan statistical areas that have calculated combined indicator values.  
+
+<UL>
+<LI> Hovering over an area highlights the borders of that area.  
+<LI> Clicking on an area shows its estimated combined indicator value.  
+<LI> Reset button (upper-left) resets the map view. It's a bit buggy, so you might need to refresh the webpage instead.
+</UL>
+
+
+
+
+Dashboard {data-icon="glyphicon-stats"}
+=====================================
+
+
+Row {data-height=360}
+-------------------------------------
+
+
+### Historic Values 
+
+
+```{r}
+# styling for axes labels and ticks
+x_style_line <- list(
+   title = "Combined indicator over time",
+   titlefont = list(
+      color = "black",
+      face = "bold",
+      size = 18
+   ),
+   tickfont = list(
+      face = "bold",
+      size = 14
+   )
+)
+
+y_style_line <- list(
+   title = "",
+   tickfont = list(
+      color = "black",
+      face = "bold",
+      size = 16
+   )
+)
+
+
+# tried to get hoverlabel to have background color conditional on value (bgcolor) but failed. Text color would depend on darkness of bgcolor.
+# group_by was screwing up something, but I forget (maybe crosstalk). Split does same/similar thing
+ci_shared_line %>%
+   # group_by(name) %>% 
+   # "~" are for variables in df
+   plot_ly(x = ~time_value, y = ~value,
+           color = I("black"), split = ~name,
+           text = ~name,
+           # <extra> part removes "trace" from text
+           hovertemplate = paste(
+              "%{x}<br>",
+              "<b>%{text}</b><br>",
+              "Combined: %{y}",
+              "<extra></extra>"
+           ),
+           hoverlabel = list(
+              #bgcolor = ~color,
+              align = 'left',
+              bordercolor = 'transparent',
+              font = list(
+                 # need b/c of bug with setting border to 'transparent'
+                 #color = ~text_col
+                 color = 'white'
+              )
+           )
+   ) %>%
+   add_lines(showlegend = FALSE) %>% 
+   layout(xaxis = x_style_line,
+          yaxis = y_style_line,
+          showlegend = FALSE,
+          # sets global value for font family
+          font = list(family = "Roboto"),
+          # x-axis tick labels get cut off with default margin
+          margin = list(b = 90)
+   ) %>% 
+   highlight(dynamic = TRUE, persistent = TRUE)
+
+
+
+```
+
+
+
+
+Row {data-height=625}
+-------------------------------------
+
+
+
+### Metropolitan Statistical Areas 
+
+
+```{r}
+
+# needed because leaflet legend default direction of values is backwards
+pal_rev <- leaflet::colorNumeric("YlOrRd",
+                                 domain = seq(2.50, 0.00, by = -0.10),
+                                 reverse = TRUE)
+
+# minzoom is the maximum you can zoomout; viceversa for maxzoom; 0 would be for zooming all the out
+leaflet(data = ci_shared_leaf,
+        options = leafletOptions(minZoom = 6.5,
+                                 maxZoom = 18,
+                                 # remove caption
+                                 attributionControl = FALSE)) %>% 
+   # black and white basemap
+   addProviderTiles("Stamen.Toner") %>% 
+   # sets starting point; coords for center of Indiana
+   setView(lat = 40.2672, lng = 86.1349,
+           zoom = 7) %>% 
+   # set panning range; if user tries to go beyond, it springs back
+   setMaxBounds(lat1 = 37.62598, lng1 = -89.53418,
+                lat2 = 42.64689, lng2 = -83.05625) %>% 
+   # add msa shapes
+   addPolygons(# weight is thickness of stroke
+               weight = 2, smoothFactor = 0.5,
+               opacity = 1.0, fillOpacity = 0.5,
+               color = ~color, popup = ~popup,
+               # popupOptions = ,
+               # bringtofront makes highlight stroke standout more
+               highlightOptions = highlightOptions(color = "black", weight = 2,
+                                                   bringToFront = TRUE)) %>% 
+   addLegend("bottomleft", pal = pal_rev,
+             opacity = 1, values = c(2.5, 0.5),
+             # reverses direction of values in legend
+             labFormat = labelFormat(transform = function(x) sort(x, decreasing = TRUE))
+   ) %>% 
+   # {leaflet.extras}
+   addResetMapButton()
+
+
+```
+
+
+
+### Uncertainty
+
+
+```{r}
+
+# styling for axes labels and ticks
+x_style_db <- list(
+   title = "Combined indicator with uncertainty range",
+   titlefont = list(
+      color = "black",
+      face = "bold",
+      size = 18
+   ),
+   tickfont = list(
+      face = "bold",
+      size = 14
+   )
+)
+
+y_style_db <- list(
+   title = "",
+   tickfont = list(
+      color = "black",
+      face = "bold",
+      size = 16
+   )
+)
+
+
+ci_shared_db %>% 
+   plot_ly(y = ~name,
+           text = ~name,
+           # <extra> part removes "trace" from text
+           hovertemplate = paste(
+              "<b>%{text}</b><br>",
+              "Combined: %{x}",
+              "<extra></extra>"
+           ),
+           hoverlabel = list(
+              bordercolor = 'transparent',
+              font = list(
+                 # need b/c of bug with setting border to 'transparent'
+                 color = ~text_col
+              )
+           )) %>%
+   # removes toolbar
+   config(displayModeBar = F) %>% 
+   add_segments(
+      # "~" are for variables in df
+      x = ~lower,
+      xend = ~upper, yend = ~name, 
+      # "I" means asis
+      color = I("gray")
+   ) %>%
+   add_markers(
+      x = ~lower, 
+      color = ~I(lower_col), size = I(65)
+   ) %>%
+   add_markers(
+      x = ~upper, 
+      color = ~I(upper_col), size = I(65)
+   ) %>%
+   add_markers(
+      x = ~value,
+      color = I("gray"), size = I(40)
+   ) %>% 
+   layout(xaxis = x_style_db,
+          yaxis = y_style_db,
+          showlegend = FALSE,
+          # sets global value for font family
+          font = list(family = "Roboto")
+   ) %>% 
+   highlight(persistent = TRUE)
+
+
+
+```   
+
+
+Row 
+-------------------------------------
+
+### Cases per 100K population and Positivity Rates
+
+```{r reactable}
+
+# sparkline column for cases per 100k trend
+cases_spark <- function(class = NULL, ...) {
+      colDef(
+            name = "Cases per 100K Trend",
+            cell = dui_for_reactable(
+                  dui_sparkline(
+                        data = htmlwidgets::JS("cellInfo.value.cases_list"),
+                        valueAccessor = htmlwidgets::JS("(d) => d.cases[0]"),
+                        renderTooltip = htmlwidgets::JS(
+                              htmltools::HTML(
+                                    "function (_ref) {
+                   var datum = _ref.datum;
+                   return React.createElement(
+                       'div',
+                       {style: {margin: 0, padding: 0}},
+                       datum.date && React.createElement(
+                         'div',
+                         {style: {
+                           backgroundColor: 'black', color: 'white',
+                           padding: '4px 0px', margin: 0, textAlign: 'center'
+                         }},
+                         // good reference https://observablehq.com/@mbostock/date-formatting
+                         //   for built-in JavaScript formatting
+                         //   but need to convert string to Date with new Date()
+                         new Date(datum.date).toLocaleString(undefined, {
+                          'month': 'numeric',
+                          'day': '2-digit'
+                        })
+                       ),
+                       React.createElement(
+                         'div',
+                         {style: {fontWeight: 'bold', fontSize: '1.2em', padding: '6px 0'}},
+                         datum.y ? datum.y.toLocaleString(undefined, {maximumFractionDigits: 0}) : '--'
+                       )
+                   );
+                  }"
+                              )),
+                        components = list(
+                              dui_sparklineseries(
+                                    showLine = FALSE,
+                                    showArea = TRUE,
+                                    fill = htmlwidgets::JS("cellInfo.original.cases_color"),
+                                    fillOpacity = 0.6                              ),
+                              dui_sparkpointseries(
+                                    points = list("max"),
+                                    fill = htmlwidgets::JS("cellInfo.original.cases_color"),
+                                    stroke = htmlwidgets::JS("cellInfo.original.cases_color"),
+                                    renderLabel = htmlwidgets::JS("(d) => d.toFixed(0)"),
+                                    labelPosition = "left",
+                                    size = 3
+                              )
+                        )
+                  )
+            )
+      )
+}
+
+
+posrate_spark <- function(class = NULL, ...){
+      colDef(
+            name = "Positive Test Rate Trend",
+            cell = function(value, index) {
+                  if(is.null(value)) return(dui_sparkline())
+                  dui_sparkline(
+                        data = value[[1]],
+                        valueAccessor = htmlwidgets::JS("(d) => d.posRate"),
+                        renderTooltip = htmlwidgets::JS(
+                           htmltools::HTML(
+                              "function (_ref) {
+                                 var datum = _ref.datum;
+                                 return React.createElement(
+                                     'div',
+                                     {style: {margin: 0, padding: 0}},
+                                    datum.endDate && React.createElement(
+                                       'div',
+                                       {style: {
+                                         backgroundColor: 'black', color: 'white',
+                                         padding: '4px 0px', margin: 0, textAlign: 'center'
+                                       }},
+                                       new Date(datum.endDate).toLocaleString(undefined, {
+                                         'month': 'numeric',
+                                         'day': '2-digit'
+                                       })
+                                    ),
+                                    React.createElement(
+                                       'div',
+                                       {style: {fontWeight: 'bold', fontSize: '1.2em', padding: '6px 0'}},
+                                       datum.y ? datum.y.toLocaleString(undefined, {maximumFractionDigits: 0, style: 'percent'}) : '--'
+                                    )
+                                 );
+                              }"
+                           )
+                        ),
+                        components = list(
+                              # dui_sparkpatternlines(
+                              #    id = "band_pattern_misc",
+                              #    height = 4,
+                              #    width = 4,
+                              #    stroke = posrate_col[index],
+                              #    strokeWidth = 1,
+                              #    orientation = list('diagonal')
+                              # ),
+                              # dui_sparkbandline(
+                              #    band = list( from = list( y = 0 ), to = list( y = 0.05 ) ),
+                              #    fill = "url(#band_pattern_misc)"
+                              # ),
+                              dui_sparklineseries(
+                                    stroke = posrate_col[index]
+                              )
+                        )
+                  )
+            }
+      )
+}
+
+reactable(
+      data = react_dat,
+      borderless = TRUE,
+      style = list(fontSize = "18px"),
+      defaultPageSize = 5,
+      defaultSortOrder = "desc",
+      defaultSorted = "cases_100k",
+      defaultColDef = colDef(
+            align = "center",
+            headerStyle = "align-self: flex-end; font-weight:normal;"
+      ),
+      rowStyle = list(
+            alignItems = "center",
+            # add back border here
+            borderBottom = "1px solid lightgray"
+      ),
+      highlight = TRUE,
+      columns = list(
+            cases_color = colDef(show = FALSE),
+            # pos_color = colDef(show = FALSE),
+            msa = colDef(
+                  name = "Metropolitan Statistical Area"
+            ),
+            cases_100k = colDef(
+                  name = "Cases per 100K",
+            ),
+            pos_rate = colDef(
+                  name = "Positive Test Rate",
+                  na = "–",
+                  format = colFormat(percent = TRUE, digits = 1)
+            ),
+            # casesList = cases_spark(),
+            # posList = posrate_spark(),
+            casesList = colDef(show = FALSE),
+            posList = colDef(show = FALSE)
+      )
+) #%>% 
+      #dui_add_reactable_dep()
+
+```
+
