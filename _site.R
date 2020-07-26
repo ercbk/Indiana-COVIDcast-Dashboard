@@ -5,3 +5,5 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 # renv uninstalled it when I did a snapshot I think because it's only called from inside glue braces. So, maybe it doesn't recognize it.
 library(rprojroot)
+# renv::snapshot not recognizing my install for some reason
+library(totalcensus)

@@ -877,6 +877,13 @@
       "Repository": "CRAN",
       "Hash": "d2cef450cbbf081b4a2ef1067fae9f32"
     },
+    "totalcensus": {
+      "Package": "totalcensus",
+      "Version": "0.6.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "b750d4670a4c0ddb26be8f4c8a65758f"
+    },
     "tsibble": {
       "Package": "tsibble",
       "Version": "0.9.1",
