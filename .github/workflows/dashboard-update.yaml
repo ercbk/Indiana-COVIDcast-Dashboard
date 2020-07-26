@@ -51,6 +51,12 @@ jobs:
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = cran_repo)
           renv::restore(repos = cran_repo)
       
+      - name: Process regional test data
+        run: Rscript "R/process-regional-dat.R"
+      
+      - name: Build dashboard data
+        run: Rscript "R/build-dashboard-data.R"
+      
       - name: rebuild website
         run: Rscript -e "rmarkdown::render_site()"
       

@@ -12,30 +12,27 @@ pal <- leaflet::colorNumeric("YlOrRd",
 
 
 # color palettes
-posrate_col_df <- map2_current %>% 
-      select(msa, pos_rate) %>% 
-      filter(!is.na(pos_rate)) %>% 
-      # slice(n()) %>% 
-      mutate(pos_color = pal(pos_rate))
-
 posrate_col <- map2_current %>% 
-      select(msa, cases_100k) %>% 
-      left_join(posrate_col_df, by = "msa") %>% 
-      mutate(cases_100k = round(cases_100k, 2)) %>%
-      arrange(desc(cases_100k)) %>% 
-      # filter(!is.na(pos_color)) %>%
-      pull(pos_color)
+   select(msa, pos_rate) %>% 
+   filter(!is.na(pos_rate)) %>%
+   mutate(pos_color = pal(pos_rate),
+          pos_color_light = unclass(prismatic::clr_lighten(pos_color, shift = .40))) %>% 
+   select(-pos_rate)
+
 
 cases_col <- map2_current %>% 
       select(msa, cases_100k) %>% 
-      # slice(n()) %>% 
       mutate(cases_100k = round(cases_100k, 2),
              cases_color = case_when(cases_100k < 1 ~ moody[[1]],
                                      between(cases_100k, 1, 9.99) ~ moody[[2]],
                                      between(cases_100k, 10, 24.99) ~ moody[[3]],
-                                     cases_100k >= 25 ~ moody[[4]])) %>% 
+                                     cases_100k >= 25 ~ moody[[4]]),
+             cases_color = unclass(prismatic::clr_darken(cases_color, shift = .50)),
+             cases_color_light = unclass(prismatic::clr_lighten(cases_color, shift = .60))) %>% 
       arrange(desc(cases_100k)) %>% 
-      select(msa, cases_color)
+      select(msa, cases_color, cases_color_light)
+
+
 
 
 
@@ -72,126 +69,190 @@ current_dat <- map2_current %>%
 
 
 # combine everything into a single tbl
-react_dat <- purrr::reduce(list(current_dat, cases_hist, pos_hist, cases_col), left_join, by = "msa") %>% 
-      # mutate(posList = tidyr::replace_na(posList, NA)) %>% 
+react_dat <- purrr::reduce(list(current_dat, cases_hist, pos_hist,
+                                cases_col, posrate_col),
+                           left_join, by = "msa") %>% 
       arrange(desc(cases_100k))
 
-# sparkline column for cases per 100k trend
-cases_spark <- function(class = NULL, ...) {
-      colDef(
-            name = "Cases per 100K Trend",
-            cell = dui_for_reactable(
-                  dui_sparkline(
-                        data = htmlwidgets::JS("cellInfo.value.cases_list"),
-                        valueAccessor = htmlwidgets::JS("(d) => d.cases[0]"),
-                        renderTooltip = htmlwidgets::JS(
-                              htmltools::HTML(
-                                    "function (_ref) {
+
+
+
+
+# sparkline column specifications
+cases_spark <- function(...) {
+   colDef(
+      name = "Cases per 100K Trend",
+      cell = dui_for_reactable(
+         dui_sparkline(
+            data = htmlwidgets::JS("cellInfo.value.cases_list"),
+            valueAccessor = htmlwidgets::JS("(d) => d.cases[0]"),
+            renderTooltip = htmlwidgets::JS(
+               htmltools::HTML(
+                  "function (_ref) {
                    var datum = _ref.datum;
                    return React.createElement(
-                       'div',
-                       {style: {margin: 0, padding: 0}},
-                       datum.date && React.createElement(
-                         'div',
-                         {style: {
-                           backgroundColor: 'black', color: 'white',
-                           padding: '4px 0px', margin: 0, textAlign: 'center'
-                         }},
-                         // good reference https://observablehq.com/@mbostock/date-formatting
-                         //   for built-in JavaScript formatting
-                         //   but need to convert string to Date with new Date()
-                         new Date(datum.date).toLocaleString(undefined, {
-                          'month': 'numeric',
-                          'day': '2-digit'
-                        })
-                       ),
-                       React.createElement(
-                         'div',
-                         {style: {fontWeight: 'bold', fontSize: '1.2em', padding: '6px 0'}},
-                         datum.y ? datum.y.toLocaleString(undefined, {maximumFractionDigits: 0}) : '--'
-                       )
+                     'div',
+                     null,
+                     datum.date && React.createElement(
+                        'span',
+                        {style: {
+                             backgroundColor: 'black', color: 'white',
+                             padding: '3px', margin: '0px 4px 0px 0px', textAlign: 'center'
+                           }},
+                        datum.date[0].split('-').slice(1).join('/')
+                     ),
+                     React.createElement(
+                        'span',
+                        {style: {
+                        fontWeight: 'bold', fontSize: '1.1em',
+                        padding: '2px'
+                        }},
+                        datum.y ? datum.y.toLocaleString(undefined, {maximumFractionDigits: 0}) : '--'
+                     )
                    );
                   }"
-                              )),
-                        components = list(
-                              dui_sparklineseries(
-                                    showLine = FALSE,
-                                    showArea = TRUE,
-                                    fill = htmlwidgets::JS("cellInfo.original.cases_color"),
-                                    fillOpacity = 0.6                              ),
-                              dui_sparkpointseries(
-                                    points = list("max"),
-                                    fill = htmlwidgets::JS("cellInfo.original.cases_color"),
-                                    stroke = htmlwidgets::JS("cellInfo.original.cases_color"),
-                                    renderLabel = htmlwidgets::JS("(d) => d.toFixed(0)"),
-                                    labelPosition = "left",
-                                    size = 3
-                              )
-                        )
-                  )
+               )
+            ),
+            components = list(
+               dui_sparklineargradient(
+                  id = htmlwidgets::JS("'cases' + cellInfo.original.msa.split(' ').join('-')"),
+                  from = htmlwidgets::JS("cellInfo.original.cases_color"),
+                  to = htmlwidgets::JS("cellInfo.original.cases_color_light"),
+                  fromOffset = "40%"
+               ),
+               dui_sparklineseries(
+                  showLine = FALSE,
+                  showArea = TRUE,
+                  fill = htmlwidgets::JS("'url(#cases' + cellInfo.original.msa.split(' ').join('-') + ')'"),
+                  # stroke = htmlwidgets::JS("cellInfo.original.cases_color"),
+                  fillOpacity = htmlwidgets::JS("(d, i) => (i === 24 ? 1 : 0.5)")
+               ),
+               dui_sparkpointseries(
+                  points = list("max"),
+                  fill = htmlwidgets::JS("cellInfo.original.cases_color"),
+                  stroke = htmlwidgets::JS("cellInfo.original.cases_color_light"),
+                  renderLabel = htmlwidgets::JS("(d) => React.createElement('tspan',{fontWeight: 'bold'},d.toFixed(0))"),
+                  labelPosition = "left",
+                  size = 3
+               )
             )
+         )
       )
+   )
 }
 
 
-posrate_spark <- function(class = NULL, ...){
-      colDef(
-            name = "Positive Test Rate Trend",
-            cell = function(value, index) {
-                  if(is.null(value)) return(dui_sparkline())
-                  dui_sparkline(
-                        data = value[[1]],
-                        valueAccessor = htmlwidgets::JS("(d) => d.posRate"),
-                        renderTooltip = htmlwidgets::JS(
-                           htmltools::HTML(
-                              "function (_ref) {
-                                 var datum = _ref.datum;
-                                 return React.createElement(
-                                     'div',
-                                     {style: {margin: 0, padding: 0}},
-                                    datum.endDate && React.createElement(
-                                       'div',
-                                       {style: {
-                                         backgroundColor: 'black', color: 'white',
-                                         padding: '4px 0px', margin: 0, textAlign: 'center'
-                                       }},
-                                       new Date(datum.endDate).toLocaleString(undefined, {
-                                         'month': 'numeric',
-                                         'day': '2-digit'
-                                       })
-                                    ),
-                                    React.createElement(
-                                       'div',
-                                       {style: {fontWeight: 'bold', fontSize: '1.2em', padding: '6px 0'}},
-                                       datum.y ? datum.y.toLocaleString(undefined, {maximumFractionDigits: 0, style: 'percent'}) : '--'
-                                    )
-                                 );
-                              }"
-                           )
-                        ),
-                        components = list(
-                              # dui_sparkpatternlines(
-                              #    id = "band_pattern_misc",
-                              #    height = 4,
-                              #    width = 4,
-                              #    stroke = posrate_col[index],
-                              #    strokeWidth = 1,
-                              #    orientation = list('diagonal')
-                              # ),
-                              # dui_sparkbandline(
-                              #    band = list( from = list( y = 0 ), to = list( y = 0.05 ) ),
-                              #    fill = "url(#band_pattern_misc)"
-                              # ),
-                              dui_sparklineseries(
-                                    stroke = posrate_col[index]
-                              )
-                        )
-                  )
-            }
+
+posrate_spark <- function(...){
+   colDef(
+      name = "Positive Test Rate Trend",
+      cell = dui_for_reactable(
+         dui_sparkline(
+            data = htmlwidgets::JS("cellInfo.value.pos_list"),
+            valueAccessor = htmlwidgets::JS("(d) => d.posRate[0]"),
+            renderTooltip = htmlwidgets::JS(
+               htmltools::HTML(
+                  "function (_ref) {
+                   var datum = _ref.datum;
+                   return React.createElement(
+                     'div',
+                     null,
+                     datum.endDate && React.createElement(
+                        'span',
+                        {style: {
+                             backgroundColor: 'black', color: 'white',
+                             padding: '3px', margin: '0px 4px 0px 0px', textAlign: 'center'
+                           }},
+                        datum.endDate[0].split('-').slice(1).join('/')
+                     ),
+                     React.createElement(
+                        'span',
+                        {style: {
+                        fontWeight: 'bold', fontSize: '1.1em',
+                        padding: '2px'
+                        }},
+                        datum.y ? datum.y.toLocaleString(undefined, {maximumFractionDigits: 1, style: 'percent'}) : '--'
+                     )
+                   );
+                  }"
+               )
+            ),
+            components = list(
+               # dui_sparkpatternlines(
+               #    id = htmlwidgets::JS("'pos' + cellInfo.original.msa.split(' ').join('-')"),
+               #    height = 4,
+               #    width = 4,
+               #    stroke = htmlwidgets::JS("cellInfo.original.pos_color_light"),
+               #    strokeWidth = 1,
+               #    orientation = list('diagonal')
+               # ),
+               # dui_sparkbandline(
+               #    band = list( from = list( y = 0 ), to = list( y = 0.05 ) ),
+               #    fill = htmlwidgets::JS("'pos' + cellInfo.original.msa.split(' ').join('-')")
+               # ),
+               dui_sparkpatternlines(
+                  id = "band_pattern_misc",
+                  height = 4,
+                  width = 4,
+                  stroke = "#aaa",
+                  strokeWidth = 1,
+                  orientation = list('diagonal')
+               ),
+               dui_sparkbandline(
+                  band = list( from = list( y = 0 ), to = list( y = 0.05 ) ),
+                  fill = "url(#band_pattern_misc)"
+               ),
+               dui_sparklineseries(
+                  stroke = htmlwidgets::JS("cellInfo.original.pos_color")
+               ),
+               dui_sparkpointseries(
+                  points = list("max"),
+                  fill = htmlwidgets::JS("cellInfo.original.pos_color"),
+                  stroke = htmlwidgets::JS("cellInfo.original.pos_color_light"),
+                  renderLabel = htmlwidgets::JS("d => React.createElement('tspan',{fontWeight: 'bold'},d.toLocaleString(undefined, {maximumFractionDigits: 1, style: 'percent'}))"),
+                  labelPosition = htmlwidgets::JS("(d, i) => (i === 0 ? 'right' : 'left')"),
+                  size = 3
+               )
+            )
+         )
       )
+   )
 }
 
-react_tbl <- reactable(
+# cases_color_spec <- function(show = FALSE, ...){
+#    colDef(
+#       show = show,
+#       cell = htmlwidgets::JS(
+#          "function(cellInfo) {
+#               return React.createElement(
+#                 'svg',
+#                 null,
+#                 React.createElement(
+#                   'rect',
+#                  {style: {fill: cellInfo.value},height:100,width:100}
+#                 )
+#               )
+#             }")
+#    )
+# }
+# posrate_color_spec <- function(show = FALSE, ...){
+#    colDef(
+#       show = show,
+#       cell = htmlwidgets::JS(
+#          "function(cellInfo) {
+#               return React.createElement(
+#                 'svg',
+#                 null,
+#                 React.createElement(
+#                   'rect',
+#                  {style: {fill: cellInfo.value || '#ccc'},height:100,width:100}
+#                 )
+#               )
+#             }")
+#    )
+# }
+
+reactable(
       data = react_dat,
       borderless = TRUE,
       style = list(fontSize = "18px"),
@@ -210,23 +271,27 @@ react_tbl <- reactable(
       ),
       highlight = TRUE,
       columns = list(
-            cases_color = colDef(show = FALSE),
-            pos_color = colDef(show = FALSE),
-            msa = colDef(
-                  name = "Metropolitan Statistical Area"
-            ),
-            cases_100k = colDef(
-                  name = "Cases per 100K",
-            ),
-            pos_rate = colDef(
-                  name = "Positive Test Rate",
-                  na = "–",
-                  format = colFormat(percent = TRUE, digits = 1)
-            ),
-            casesList = cases_spark(),
-            posList = posrate_spark()
-            # posList = colDef(show = FALSE)
+         # cases_color = cases_color_spec(),
+         # pos_color = posrate_color_spec(),
+         cases_color = colDef(show = FALSE),
+         pos_color = colDef(show = FALSE),
+         cases_color_light = colDef(show = FALSE),
+         pos_color_light = colDef(show = FALSE),
+         msa = colDef(
+            name = "Metropolitan Statistical Area"
+         ),
+         cases_100k = colDef(
+            name = "Cases per 100K",
+         ),
+         pos_rate = colDef(
+            name = "Positive Test Rate",
+            na = "–",
+            format = colFormat(percent = TRUE, digits = 1)
+         ),
+         casesList = cases_spark(),
+         posList = posrate_spark()
       )
 ) %>% 
       dui_add_reactable_dep()
-react_tbl
+
+

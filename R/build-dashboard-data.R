@@ -140,7 +140,9 @@ ci_db <- ci_clean %>%
              text_col = ifelse(value > 2, 'white', 'black'))
 
 ci_clean_line <- ci_clean %>% 
-      select(name, time_value, value)
+   select(name, time_value, value) %>% 
+   mutate(value = round(value, 2))
+
 ci_clean_db <- ci_db %>% 
       select(name, time_value, value, text_col, lower, upper, lower_col, upper_col) %>% 
       filter(time_value == max(time_value)) %>%
@@ -174,29 +176,24 @@ pos_pal <- leaflet::colorNumeric("YlOrRd",
                                  domain = seq(0.00, 0.20, by = 0.05),
                                  na.color = "#800026")
 
-# positive test rate palette
-posrate_col_df <- case_pos_current %>% 
-      select(msa, pos_rate) %>% 
-      filter(!is.na(pos_rate)) %>% 
-      mutate(pos_color = pos_pal(pos_rate))
-
+# color palettes
 posrate_col <- case_pos_current %>% 
-      select(msa, cases_100k) %>% 
-      left_join(posrate_col_df, by = "msa") %>% 
-      mutate(cases_100k = round(cases_100k, 2)) %>%
-      arrange(desc(cases_100k)) %>%
-      pull(pos_color)
+   select(msa, pos_rate) %>% 
+   filter(!is.na(pos_rate)) %>%
+   mutate(pos_color = pos_pal(pos_rate),
+          pos_color_light = unclass(prismatic::clr_lighten(pos_color, shift = .40))) %>% 
+   select(-pos_rate)
 
-# cases per 100k palette
 cases_col <- case_pos_current %>% 
-      select(msa, cases_100k) %>% 
-      mutate(cases_100k = round(cases_100k, 2),
-             cases_color = case_when(cases_100k < 1 ~ moody[[1]],
-                                     between(cases_100k, 1, 9.99) ~ moody[[2]],
-                                     between(cases_100k, 10, 24.99) ~ moody[[3]],
-                                     cases_100k >= 25 ~ moody[[4]])) %>% 
-      arrange(desc(cases_100k)) %>% 
-      select(msa, cases_color)
+   select(msa, cases_100k) %>% 
+   mutate(cases_100k = round(cases_100k, 0),
+          cases_color = case_when(cases_100k < 1 ~ moody[[1]],
+                                  between(cases_100k, 1, 9) ~ moody[[2]],
+                                  between(cases_100k, 10, 24) ~ moody[[3]],
+                                  cases_100k >= 25 ~ moody[[4]]),
+          cases_color = unclass(prismatic::clr_darken(cases_color, shift = .50)),
+          cases_color_light = unclass(prismatic::clr_lighten(cases_color, shift = .60))) %>%  
+   select(msa, cases_color, cases_color_light)
 
 
 # cases per 100k and positivity rate trend data
@@ -231,10 +228,22 @@ current_dat <- case_pos_current %>%
 
 
 # combine everything into a single tbl
-react_dat <- purrr::reduce(list(current_dat, cases_hist, pos_hist, cases_col), left_join, by = "msa") %>% 
-      # mutate(posList = tidyr::replace_na(posList, NA)) %>% 
-      arrange(desc(cases_100k))
+react_dat <- purrr::reduce(list(current_dat, cases_hist, pos_hist,
+                                cases_col, posrate_col),
+                           left_join, by = "msa") %>% 
+   arrange(desc(cases_100k))
 
 readr::write_rds(react_dat, glue("{rprojroot::find_rstudio_root_file()}/data/dash-case-pos.rds"))
-readr::write_rds(posrate_col, glue("{rprojroot::find_rstudio_root_file()}/data/dash-posrate_pal.rds"))
 
+
+# # Get the data dates
+# cases_current_date <- case_pos_current %>% 
+#    slice(n()) %>% 
+#    select(cases_date = date)
+# indmich_pos_current_date <- case_pos_current %>% 
+#    filter(!stringr::str_detect(msa, "Chicago")) %>% 
+#    slice(n()) %>% 
+#    pull(date)
+# chi_pos_current_date <- case_pos_current %>% 
+#    filter(stringr::str_detect(msa, "Chicago")) %>% 
+#    pull(date)

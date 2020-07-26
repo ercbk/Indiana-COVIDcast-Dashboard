@@ -9,11 +9,11 @@ us_msa_tiles <- sf::read_sf(glue("{rprojroot::find_rstudio_root_file()}/data/sha
 # leaflet requires EPSG:4326
 msa_tiles <- sf::st_transform(us_msa_tiles, 4326)
 ind_msa_tiles <- msa_tiles %>% 
-      filter(stringr::str_detect(NAME, "IN")) %>% 
-      janitor::clean_names() %>% 
-      mutate(# remove state abbrev from msa names
-            name = stringr::str_remove_all(name, "([A-Z][A-Z]-)*"),
-            name = stringr::str_remove_all(name, ", [A-Z]*"))
+   filter(stringr::str_detect(NAME, "IN")) %>% 
+   janitor::clean_names() %>% 
+   mutate(# remove state abbrev from msa names
+      name = stringr::str_remove_all(name, "([A-Z][A-Z]-)*"),
+      name = stringr::str_remove_all(name, ", [A-Z]*"))
 
 map2_current <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/msa-cases100-posrate-current.csv"))
 map2_hist <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/msa-cases100-posrate-historic.csv"))
@@ -24,46 +24,53 @@ pal <- colorNumeric("YlOrRd",
                     na.color = "#800026")
 
 posrate_col <- map2_hist %>% 
-      select(pos_rate) %>% 
-      filter(!is.na(pos_rate)) %>% 
-      slice(n()) %>% 
-      mutate(color = pal(pos_rate)#,
-             #color = prismatic::clr_lighten(color, shift = .20)
-             ) %>% 
-      pull(color)
+   select(pos_rate) %>% 
+   filter(!is.na(pos_rate)) %>% 
+   slice(n()) %>% 
+   mutate(color = pal(pos_rate)#,
+          #color = prismatic::clr_lighten(color, shift = .20)
+   ) %>% 
+   pull(color)
 cases_col <- map2_hist %>% 
-      select(cases_100k) %>% 
-      slice(n()) %>% 
-      mutate(cases_100k = round(cases_100k, 2),
-             color = case_when(cases_100k < 1 ~ moody[[1]],
-                               between(cases_100k, 1, 9.99) ~ moody[[2]],
-                               between(cases_100k, 10, 24.99) ~ moody[[3]],
-                               cases_100k >= 25 ~ moody[[4]])) %>% 
-      pull(color)
+   select(cases_100k) %>% 
+   slice(n()) %>% 
+   mutate(cases_100k = round(cases_100k, 2),
+          color = case_when(cases_100k < 1 ~ moody[[1]],
+                            between(cases_100k, 1, 9.99) ~ moody[[2]],
+                            between(cases_100k, 10, 24.99) ~ moody[[3]],
+                            cases_100k >= 25 ~ moody[[4]])) %>% 
+   pull(color)
 spark_cols <- c(cases_col, posrate_col)
 
 
 posrate_list <- map2_hist %>% 
-      select(pos_rate) %>% 
-      filter(!is.na(pos_rate)) %>% 
-      pull(pos_rate) %>% 
-      list()
+   select(pos_rate) %>% 
+   filter(!is.na(pos_rate)) %>% 
+   pull(pos_rate) %>% 
+   list()
 
 spark_dat <- tibble(
-      cases_100k = list(map2_hist$cases_100k),
-      pos_rate = posrate_list
+   cases_100k = list(map2_hist$cases_100k),
+   pos_rate = posrate_list
 ) %>% 
-      tidyr::pivot_longer(cols = everything(),
-                          names_to = "signal",
-                          values_to = "value")
+   tidyr::pivot_longer(cols = everything(),
+                       names_to = "Signal",
+                       values_to = "Value")
 
 rt1 <- reactable(
    spark_dat,
+   compact = TRUE,
+   fullWidth = FALSE,
+   width = 500,
+   theme = reactableTheme(
+      color = "orange",
+      backgroundColor = "gray"
+   ),
    columns = list(
-      signal = colDef(
-         maxWidth = 100
+      Signal = colDef(
+         maxWidth = 150
       ),
-      value = colDef(
+      Value = colDef(
          # use reactable very convenient conversion of htmlwidgets
          #  we will focus on this in another article
          #  more details on custom rendering
@@ -71,19 +78,29 @@ rt1 <- reactable(
          cell = function(value, index) {
             dui_sparkline(
                data = value, # because we gave it a list use [[1]]
-               height = 80, # we will want to be specific here
+               height = 90, # we will want to be specific here
+               margin = list( top= 10, bottom= 5),
                components = list(
+                  # static elements
                   dui_sparklineseries(
                      showLine = FALSE,
                      showArea = TRUE,
                      fill = spark_cols[index]
                   ),
+                  dui_sparkpointseries(
+                     points = list("max"),
+                     fill = "#fcc419",
+                     stroke = "#fff",
+                     renderLabel = htmlwidgets::JS("(d) => d.toLocaleString(undefined, {maximumFractionDigits: 0})"),
+                     labelPosition = "right",
+                     size = 5
+                  ),
                   # interactivity
                   dui_tooltip(components = list(
-                     dui_sparkverticalrefline(
-                        strokeDasharray = "4,4",
-                        stroke = gray.colors(10)[3]
-                     ),
+                     # dui_sparkverticalrefline(
+                     #    strokeDasharray = "4,4",
+                     #    stroke = gray.colors(10)[3]
+                     # ),
                      dui_sparkpointseries(
                         stroke = spark_cols[index],
                         fill = "#fff",
@@ -91,17 +108,11 @@ rt1 <- reactable(
                      )
                   ))
                )
-               # end of interactivity
             )
             
          }
       )
-   ),
-   theme = reactableTheme(
-      color = "white",
-      backgroundColor = "#252429"
-   )#,
-   #fullWidth = TRUE
+   )
 )
 rt1
 
@@ -111,50 +122,63 @@ rt1
 
 # leaflet map: add popup text, styling
 map2_dat <- map2_current %>%
-      rename(name = msa) %>%
-      # create popup text
-      mutate(cases_100k = round(cases_100k, 2),
-             color = case_when(cases_100k < 1 ~ moody[[1]],
-                               between(cases_100k, 1, 9.99) ~ moody[[2]],
-                               between(cases_100k, 10, 24.99) ~ moody[[3]],
-                               cases_100k >= 25 ~ moody[[4]]),
-             # # dark map background so lighten the palette some
-             # color = prismatic::clr_lighten(color,
-             #                               shift = 0.20),
-             # dark-red background for high values needs white text
-             value_text = ifelse(cases_100k >= 25,
-                                 glue("<b style='background-color:{color}; font-family:Roboto; font-size:15px; color:white'>{cases_100k}</b>"),
-                                 glue("<b style='background-color:{color}; font-family:Roboto; font-size:15px'>{cases_100k}</b>")),
-             label_html = glue("<b style= 'font-family:Roboto; font-size:15px'>{name}</br>Cases per 100,000 people</b>: {value_text}"),
-             label_list = as.list(label_html)) %>% 
-      left_join(ind_msa_tiles, by = "name") %>% 
-      # converts tibble to a sf object for leaflet
-      sf::st_as_sf()
+   rename(name = msa) %>%
+   # create popup text
+   mutate(cases_100k = round(cases_100k, 2),
+          color = case_when(cases_100k < 1 ~ moody[[1]],
+                            between(cases_100k, 1, 9.99) ~ moody[[2]],
+                            between(cases_100k, 10, 24.99) ~ moody[[3]],
+                            cases_100k >= 25 ~ moody[[4]]),
+          # # dark map background so lighten the palette some
+          # color = prismatic::clr_lighten(color,
+          #                               shift = 0.20),
+          # dark-red background for high values needs white text
+          value_text = ifelse(cases_100k >= 25,
+                              glue("<b style='background-color:{color}; font-family:Roboto; font-size:15px; color:white'>{cases_100k}</b>"),
+                              glue("<b style='background-color:{color}; font-family:Roboto; font-size:15px'>{cases_100k}</b>")),
+          label_html = glue("<b style= 'font-family:Roboto; font-size:15px'>{name}</br>Cases per 100,000 people</b>: {value_text}"),
+          label_list = as.list(label_html)) %>% 
+   left_join(ind_msa_tiles, by = "name") %>% 
+   # converts tibble to a sf object for leaflet
+   sf::st_as_sf()
 
 
 
-
+library(htmlwidgets); library(htmltools)
+add_deps <- function(dtbl, name, pkg = name) {
+   tagList(
+      dtbl,
+      htmlwidgets::getDependency(name, pkg)
+   )
+}
 # minzoom is the maximum you can zoomout; viceversa for maxzoom; 0 would be for zooming all the out
 map2 <- leaflet(options = leafletOptions(minZoom = 6.5,
-                                 maxZoom = 18,
-                                 # remove caption
-                                 attributionControl = FALSE)) %>%
-      # {leaflet.esri}
-      addEsriBasemapLayer(esriBasemapLayers$DarkGray, autoLabels = TRUE) %>%
-      # sets starting point; coords for center of Indiana
-      setView(lat = 40.2672, lng = -86.1349,
-              zoom = 7) %>%
-      # set panning range; if user tries to go beyond, it springs back
-      setMaxBounds(lat1 = 37.62598, lng1 = -89.53418,
-                   lat2 = 42.64689, lng2 = -83.05625) %>%
-      addPolygons(data = map2_dat,
-                  # weight is thickness of stroke
-                  weight = 2, smoothFactor = 0.5,
-                  opacity = 1.0, fillOpacity = 0.5,
-                  color = ~color, popup = popupGraph(rt1, type = "html", width = 500),
-                  label = purrr::map(map2_dat$label_list, htmltools::HTML),
-                  highlightOptions = highlightOptions(color = "white", weight = 2,
-                                                      bringToFront = TRUE))
+                                         maxZoom = 18,
+                                         # remove caption
+                                         attributionControl = FALSE)) %>%
+   # {leaflet.esri}
+   addEsriBasemapLayer(esriBasemapLayers$DarkGray, autoLabels = TRUE) %>%
+   # sets starting point; coords for center of Indiana
+   setView(lat = 40.2672, lng = -86.1349,
+           zoom = 7) %>%
+   # set panning range; if user tries to go beyond, it springs back
+   setMaxBounds(lat1 = 37.62598, lng1 = -89.53418,
+                lat2 = 42.64689, lng2 = -83.05625) %>%
+   addPolygons(data = map2_dat,
+               # weight is thickness of stroke
+               weight = 2, smoothFactor = 0.5,
+               opacity = 1.0, fillOpacity = 0.5,
+               color = ~color, popup = popupGraph(one_moose, 'html', width = 500),
+               label = purrr::map(map2_dat$label_list, htmltools::HTML),
+               highlightOptions = highlightOptions(color = "white", weight = 2,
+                                                   bringToFront = TRUE)) #%>% 
+   onRender(
+      "function(el,x) {
+      this.on('popupopen', function() {HTMLWidgets.staticRender();})
+      }"
+   ) %>% 
+   add_deps('dataui') %>% 
+   htmltools::browsable()
 
 map2
 

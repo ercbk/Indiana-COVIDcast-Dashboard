@@ -1,5 +1,5 @@
 ---
-title: "Carnegie Mellon's Combined Indicator for Indiana"
+title: "Carnegie Mellon's COVIDcast for Indiana"
 output:
    flexdashboard::flex_dashboard:
       orientation: rows
@@ -16,167 +16,42 @@ output:
 
 
 
-```{r setup}
-pacman::p_load(covidcastR, extrafont, dplyr, glue, leaflet, leaflet.extras, plotly, crosstalk)
+```{r setup-data}
+pacman::p_load(extrafont, dplyr, glue, leaflet, leaflet.extras, plotly, crosstalk, htmltools, reactable, dataui)
 
-# creates a color function where input is a vector with values in the domain and outputs hex colors. 30 hex values.
-# combined indicator values don't get much higher than 3.00. Anything higher will have the darkest value.
-pal <- colorNumeric("YlOrRd",
-                    domain = seq(0.00, 3.00, by = 0.10))
-# needed because leaflet legend default direction of values is backwards
-pal_rev <- colorNumeric("YlOrRd",
-                        domain = seq(2.50, 0.00, by = -0.10),
-                        reverse = TRUE)
-   
-# latest combined indicator values are for previous day
-date <- stringr::str_remove_all(lubridate::today()-1, "-")
+# clean combined indicator datasets for line, leaflet, and dumbbell charts
+ci_clean_line <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-ci-line.rds"))
+ci_clean_leaf <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-ci-leaf.rds"))
+ci_clean_db <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-ci-db.rds"))
 
+# reactable/sparkline data
+react_dat <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-case-pos.rds"))
+
+# react_data_dates <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-case-pos-dates.rds"))
+# 
+# lld_data_date <- ci_clean_db %>% 
+#    slice(n()) %>% 
+#    pull(time_value)
 ```
 
-
-
-```{r data}
-
-# census bureau's tiger-line msa shapefiles
-us_msa_tiles <- sf::read_sf(glue("{rprojroot::find_rstudio_root_file()}/data/shapefiles/msa-2019/tl_2019_us_cbsa.shp"))
-
-# leaflet requires EPSG:4326
-msa_tiles <- sf::st_transform(us_msa_tiles, 4326)
-ind_msa_tiles <- msa_tiles %>% 
-   filter(stringr::str_detect(NAME, "IN")) %>% 
-   janitor::clean_names() %>% 
-   mutate(# remove state abbrev from msa names
-      name = stringr::str_remove_all(name, "([A-Z][A-Z]-)*"),
-      name = stringr::str_remove_all(name, ", [A-Z]*"))
-
-# get historic values I have saved
-combined_index_complete <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/covidcast-msa-complete.csv"))
-
-# date of data I have
-ci_comp <- combined_index_complete %>% 
-   filter(time_value == max(time_value)) %>%
-   slice(1) %>% 
-   pull(time_value)
-
-# get data update
-c <- 0
-while (TRUE) {
-   combined_index_yday <- try({
-      # try dates from today until ci_comp date reached
-      try_date <- lubridate::today() - c
-      
-      ind_msa_tiles %>% 
-         # cbsafp is the msa id
-         select(name, cbsafp) %>% 
-         group_by(name) %>% 
-         tidyr::nest() %>% 
-         # get the combined indicator value for each msa if one is available
-         mutate(data = purrr::map(data, ~suppressMessages(
-            covidcast_signal(
-               data_source = "indicator-combination",
-               signal = "nmf_day_doc_fbc_fbs_ght",
-               start_day = try_date,
-               end_day = try_date,
-               geo_type = "msa",
-               geo_values = .x$cbsafp)
-         ))) %>% 
-         tidyr::unnest(cols = "data") %>% 
-         ungroup() %>% 
-         select(-geo_value, -direction, -sample_size)
-      
-   }, silent = TRUE)
-      # stay in loop until I get some new data or ci_comp date reached
-      if (class(combined_index_yday) != "try-error"){
-            break
-      } else if (try_date <= ci_comp) {
-            break
-      } else {
-            c <- c + 1
-      }
-}
-
-
-ci_yday <- combined_index_yday %>% 
-   filter(time_value == max(time_value)) %>% 
-   slice(1) %>% 
-   pull(time_value)
-
-# compare dates first before adding new data
-if (ci_yday != ci_comp) {
-   combined_index_all <- combined_index_complete %>%
-      bind_rows(combined_index_yday)
-   
-   readr::write_csv(combined_index_all, glue("{rprojroot::find_rstudio_root_file()}/data/covidcast-msa-complete.csv"))
-} else {
-   combined_index_all <- combined_index_complete
-}
-
-# Clean names
-ci_clean1 <- combined_index_all %>% 
-   mutate(# remove state abbrev from msa names
-      name = stringr::str_remove_all(name, "([A-Z][A-Z]-)*"),
-      name = stringr::str_remove_all(name, ", [A-Z]*")
-   )
-
-```
-
-
-```{r clean-leaflet}
-# leaflet map: add popup text, styling
-ci_clean2 <- ci_clean1 %>%
-   # create popup text
-   mutate(value = round(value, 2),
-          color = pal(value),
-          # white map background so darkening the palette some
-          color = unclass(prismatic::clr_darken(color,
-                                        shift = 0.20)),
-          # dark-red background for high values needs white text
-          value_text = ifelse(value >= 2,
-                              glue("<b style='background-color:{color}; font-family:Roboto; font-size:15px; color:white'>{value}</b>"),
-                              glue("<b style='background-color:{color}; font-family:Roboto; font-size:15px'>{value}</b>")),
-          popup = glue("<b style= 'font-family:Roboto; font-size:15px'>{name}</br>Combined Indicator</b>: {value_text}")) 
-
-```
-
-
-
-```{r clean-plotly-db}
-# dumbbell: add 95% CI, styling
-ci_clean3 <- ci_clean2 %>% 
-   mutate(upper = round(value + (1.96 * stderr), 2),
-          lower = round(value - (1.96 * stderr), 2),
-          value = round(value, 2),
-          upper_col = unclass(prismatic::clr_darken(pal(upper),
-                                            shift = 0.20)),
-          lower_col = unclass(prismatic::clr_darken(pal(lower),
-                                            shift = 0.20)),
-          # contrast text against label color
-          text_col = ifelse(value > 2, 'white', 'black'))
-
-```
 
 
 
 ```{r shared}
 
-ci_clean4 <- ci_clean3 %>% 
-   # add the polygon geometries for each msa
-   left_join(ind_msa_tiles, by = "name")
-ci_clean_yday <- ci_clean4 %>% 
-   filter(time_value == max(time_value)) %>%
-   mutate(name = forcats::as_factor(name) %>%
-             forcats::fct_reorder(value)) %>% 
-   # converts tibble to a sf object for leaflet
-   sf::st_as_sf()
-
-# crosstalk function: charts connected covidcast group
-ci_shared_line <- SharedData$new(ci_clean4,
+# {crosstalk} functions so charts can react to selections
+ci_shared_line <- SharedData$new(ci_clean_line,
                                  ~name,
                                  group = "covidcast")
-ci_shared_yday <- SharedData$new(ci_clean_yday,
+ci_shared_leaf <- SharedData$new(ci_clean_leaf,
                                  ~name,
                                  group = "covidcast")
-
+ci_shared_db <- SharedData$new(ci_clean_db,
+                                 ~name,
+                                 group = "covidcast")
+react_shared <- SharedData$new(react_dat,
+                                 ~msa,
+                                 group = "covidcast")
 
 ```
 
@@ -233,7 +108,7 @@ The grouped line chart shows historic combined indicator values for each MSA.<br
 The dumbbell chart shows the combined indicator value (gray) and the 95% confidence interval.  
 
 <UL>
-<LI> Clicking on a point, highlights that MSA's value and deemphisizes the others. It also has the same effect for the MSA's values in the line chart. Multiple MSA values may be selected.<br>
+<LI> Clicking on a point, highlights that MSA's value and deemphasizes the others. It also has the same effect for the MSA's values in the line chart. Multiple MSA values may be selected.<br>
 <LI> Double-clicking in the plot area resets the chart. 
 </UL>
 
@@ -263,6 +138,7 @@ Row {data-height=360}
 
 
 ```{r}
+
 # styling for axes labels and ticks
 x_style_line <- list(
    title = "Combined indicator over time",
@@ -340,8 +216,14 @@ Row {data-height=625}
 
 
 ```{r}
+
+# needed because leaflet legend default direction of values is backwards
+pal_rev <- leaflet::colorNumeric("YlOrRd",
+                                 domain = seq(2.50, 0.00, by = -0.10),
+                                 reverse = TRUE)
+
 # minzoom is the maximum you can zoomout; viceversa for maxzoom; 0 would be for zooming all the out
-leaflet(data = ci_shared_yday,
+leaflet(data = ci_shared_leaf,
         options = leafletOptions(minZoom = 6.5,
                                  maxZoom = 18,
                                  # remove caption
@@ -376,14 +258,16 @@ leaflet(data = ci_shared_yday,
 
 
 
-### Uncertainty
+### Combined Indicator with Uncertainty Range
 
 
 ```{r}
 
+ci_data_date <- glue("Data Date: {ci_clean_db$time_value[[1]]}")
+
 # styling for axes labels and ticks
 x_style_db <- list(
-   title = "Combined indicator with uncertainty range",
+   title = "Combined indicator",
    titlefont = list(
       color = "black",
       face = "bold",
@@ -405,7 +289,7 @@ y_style_db <- list(
 )
 
 
-ci_shared_yday %>% 
+ci_shared_db %>% 
    plot_ly(y = ~name,
            text = ~name,
            # <extra> part removes "trace" from text
@@ -442,7 +326,9 @@ ci_shared_yday %>%
       x = ~value,
       color = I("gray"), size = I(40)
    ) %>% 
-   layout(xaxis = x_style_db,
+   layout(title = list(text = ci_data_date, x = 0.99,
+                       font = list(size = 14, color = "gray")),
+          xaxis = x_style_db,
           yaxis = y_style_db,
           showlegend = FALSE,
           # sets global value for font family
@@ -455,5 +341,188 @@ ci_shared_yday %>%
 ```   
 
 
+Row {data-height=800}
+-------------------------------------
 
+### COVID-19 Cases per 100,000 population and Positivity Rates
+
+```{r reactable}
+
+# sparkline column specifications
+cases_spark <- function(...) {
+   colDef(
+      name = "Cases per 100K Trend",
+      cell = dui_for_reactable(
+         dui_sparkline(
+            data = htmlwidgets::JS("cellInfo.value.cases_list"),
+            # y axis value
+            valueAccessor = htmlwidgets::JS("(d) => d.cases[0]"),
+            renderTooltip = htmlwidgets::JS(
+               htmltools::HTML(
+                  "function (_ref) {
+                   var datum = _ref.datum;
+                   return React.createElement(
+                     'div',
+                     null,
+                     datum.date && React.createElement(
+                        'span',
+                        {style: {
+                             backgroundColor: 'black', color: 'white',
+                             padding: '3px', margin: '0px 4px 0px 0px', textAlign: 'center'
+                           }},
+                        datum.date[0].split('-').slice(1).join('/')
+                     ),
+                     React.createElement(
+                        'span',
+                        {style: {
+                        fontWeight: 'bold', fontSize: '1.1em',
+                        padding: '2px'
+                        }},
+                        datum.y ? datum.y.toLocaleString(undefined, {maximumFractionDigits: 0}) : '--'
+                     )
+                   );
+                  }"
+               )
+            ),
+            components = list(
+               dui_sparklineargradient(
+                  id = htmlwidgets::JS("'cases' + cellInfo.original.msa.split(' ').join('-')"),
+                  from = htmlwidgets::JS("cellInfo.original.cases_color"),
+                  to = htmlwidgets::JS("cellInfo.original.cases_color_light"),
+                  fromOffset = "40%"
+               ),
+               dui_sparklineseries(
+                  showLine = FALSE,
+                  showArea = TRUE,
+                  fill = htmlwidgets::JS("'url(#cases' + cellInfo.original.msa.split(' ').join('-') + ')'"),
+                  # stroke = htmlwidgets::JS("cellInfo.original.cases_color"),
+                  fillOpacity = htmlwidgets::JS("(d, i) => (i === 17 ? 1 : 0.5)")
+               ),
+               dui_sparkpointseries(
+                  points = list("max"),
+                  fill = htmlwidgets::JS("cellInfo.original.cases_color"),
+                  stroke = htmlwidgets::JS("cellInfo.original.cases_color_light"),
+                  renderLabel = htmlwidgets::JS("(d) => React.createElement('tspan',{fontWeight: 'bold'},d.toFixed(0))"),
+                  labelPosition = "left",
+                  size = 3
+               )
+            )
+         )
+      )
+   )
+}
+
+
+posrate_spark <- function(...){
+   colDef(
+      name = "Positive Test Rate Trend",
+      cell = dui_for_reactable(
+         dui_sparkline(
+            data = htmlwidgets::JS("cellInfo.value.pos_list"),
+            valueAccessor = htmlwidgets::JS("(d) => d.posRate[0]"),
+            renderTooltip = htmlwidgets::JS(
+               htmltools::HTML(
+                  "function (_ref) {
+                   var datum = _ref.datum;
+                   return React.createElement(
+                     'div',
+                     null,
+                     datum.endDate && React.createElement(
+                        'span',
+                        {style: {
+                             backgroundColor: 'black', color: 'white',
+                             padding: '3px', margin: '0px 4px 0px 0px', textAlign: 'center'
+                           }},
+                        datum.endDate[0].split('-').slice(1).join('/')
+                     ),
+                     React.createElement(
+                        'span',
+                        {style: {
+                        fontWeight: 'bold', fontSize: '1.1em',
+                        padding: '2px'
+                        }},
+                        datum.y ? datum.y.toLocaleString(undefined, {maximumFractionDigits: 1, style: 'percent'}) : '--'
+                     )
+                   );
+                  }"
+               )
+            ),
+            components = list(
+               dui_sparkpatternlines(
+                  id = "band_pattern_misc",
+                  height = 4,
+                  width = 4,
+                  stroke = "#aaa",
+                  strokeWidth = 1,
+                  orientation = list('diagonal')
+               ),
+               dui_sparkbandline(
+                  band = list( from = list( y = 0 ), to = list( y = 0.05 ) ),
+                  fill = "url(#band_pattern_misc)"
+               ),
+               dui_sparklineseries(
+                  stroke = htmlwidgets::JS("cellInfo.original.pos_color")
+               ),
+               dui_sparkpointseries(
+                  points = list("max"),
+                  fill = htmlwidgets::JS("cellInfo.original.pos_color"),
+                  stroke = htmlwidgets::JS("cellInfo.original.pos_color_light"),
+                  renderLabel = htmlwidgets::JS("d => React.createElement('tspan',{fontWeight: 'bold'},d.toLocaleString(undefined, {maximumFractionDigits: 1, style: 'percent'}))"),
+                  labelPosition = htmlwidgets::JS("(d, i) => (i === 0 || i === 1 ? 'right' : 'left')"),
+                  size = 3
+               )
+            )
+         )
+      )
+   )
+}
+
+
+reactable(
+      data = react_shared,
+      borderless = TRUE,
+      style = list(fontSize = "18px"),
+      # compact = TRUE,
+      onClick = "select",
+      defaultPageSize = 5,
+      defaultSortOrder = "desc",
+      defaultSorted = "cases_100k",
+      defaultColDef = colDef(
+            align = "center",
+            headerStyle = "align-self: flex-end; font-weight:normal;"
+      ),
+      rowStyle = list(
+            alignItems = "center",
+            # add back border here
+            borderBottom = "1px solid lightgray"
+      ),
+      highlight = TRUE,
+      columns = list(
+         cases_color = colDef(show = FALSE),
+         pos_color = colDef(show = FALSE),
+         cases_color_light = colDef(show = FALSE),
+         pos_color_light = colDef(show = FALSE),
+         msa = colDef(
+            name = "Metropolitan Statistical Area",
+            maxWidth = 300
+         ),
+         cases_100k = colDef(
+            name = "Cases per 100K",
+            maxWidth = 200
+         ),
+         pos_rate = colDef(
+            name = "Positive Test Rate",
+            maxWidth = 200,
+            na = "–",
+            format = colFormat(percent = TRUE, digits = 1)
+         ),
+         casesList = cases_spark(),
+         posList = posrate_spark()
+      )
+) %>% 
+      dui_add_reactable_dep()
+
+
+
+```
 
