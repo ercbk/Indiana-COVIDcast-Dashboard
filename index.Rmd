@@ -27,11 +27,6 @@ ci_clean_db <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/
 # reactable/sparkline data
 react_dat <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-case-pos.rds"))
 
-# react_data_dates <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-case-pos-dates.rds"))
-# 
-# lld_data_date <- ci_clean_db %>% 
-#    slice(n()) %>% 
-#    pull(time_value)
 ```
 
 
@@ -55,6 +50,10 @@ react_shared <- SharedData$new(react_dat,
 
 ```
 
+
+<script>
+  $(document).on('shown.bs.tab',function() { HTMLWidgets. staticRender() })
+</script>
 
 
 
