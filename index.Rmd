@@ -396,7 +396,7 @@ cases_spark <- function(...) {
                   showArea = TRUE,
                   fill = htmlwidgets::JS("'url(#cases' + cellInfo.original.msa.split(' ').join('-') + ')'"),
                   # stroke = htmlwidgets::JS("cellInfo.original.cases_color"),
-                  fillOpacity = htmlwidgets::JS("(d, i) => (i === 17 ? 1 : 0.5)")
+                  fillOpacity = htmlwidgets::JS("(d, i) => (i > 40 && i < 90 ? 0.5 : 1)")
                ),
                dui_sparkpointseries(
                   points = list("max"),
