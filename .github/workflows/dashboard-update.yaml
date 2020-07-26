@@ -2,7 +2,8 @@ name: covidcast-update
 
 on:
   schedule:
-    - cron: '15 15 * * *'
+    #- cron: '15 15 * * *'
+    - cron: '40 15 * * *'
     - cron: '15 22 * * *'
 
 jobs:
