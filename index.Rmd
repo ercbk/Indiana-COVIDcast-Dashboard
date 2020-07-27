@@ -89,7 +89,7 @@ The table shows the current **COVID-19 cases per 100,000 population** (Cases per
 
 The Cases per 100K value is the current, scaled weekly average of COVID-19 cases. By scaling (per 100K population) this value, we can make valid comparisons between MSAs. The trend column for this value is color coded based on the value of Cases per 100K column. Taken from the [Harvard Global Health Institute](https://globalepidemics.org/key-metrics-for-covid-suppression/), there are four possible colors to which are assigned four statuses: "Tipping Point", "Accelerated Spread", "Community Spread", or "On Track for Containment".  
 
-Positivity rates are the number of positive test results divided by the total number of tests administered for that week. While Cases per 100K is a *rolling average*, each Positive Test Rate value is calculated in weekly steps. For example, the week 28 value is calculated from 7/05/2020 to 7/11/2020 , and the week 29 value is calculated from 7/12/2020 to 7/18/2020. The band shown in the line chart shows a 0% to 5% target range.
+Positivity rates are the number of positive test results divided by the total number of tests administered for that week. While Cases per 100K is a *rolling average*, each Positive Test Rate value is calculated in weekly steps. For example, the week 28 value is calculated from 7/05/2020 to 7/11/2020 , and the week 29 value is calculated from 7/12/2020 to 7/18/2020. The diagonal lined band in the line chart shows a 0% to 5% target range.
 
 
 
@@ -131,6 +131,7 @@ The map shows the metropolitan statistical areas that have calculated combined i
 
 <H4> Table </H4>
 
+<section>
 
 <div class='cases-legend'>
 <div class='legend-title'>Cases per 100K</div>
@@ -157,6 +158,8 @@ The map shows the metropolitan statistical areas that have calculated combined i
 </ul>
 </div>
 </div>
+
+</section>
 
 
 
