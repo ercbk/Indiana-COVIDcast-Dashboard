@@ -394,6 +394,19 @@ Row {data-height=800}
 
 ```{r reactable}
 
+react_dates <- react_dates %>% 
+   mutate_all(~format(., "%B %d"))
+
+cases_100k_tooltip <- as.character(react_dates$cases_date[[1]])
+posrate_tooltip <- glue("
+MSAs except Chicago: {react_dates$other_pos_date[[1]]}
+Chicago: {react_dates$chi_pos_date[[1]]}
+")
+
+with_tooltip <- function(value, tooltip) {
+      span(title = tooltip, value)
+}
+
 # sparkline column specifications
 cases_spark <- function(...) {
    colDef(
@@ -553,11 +566,11 @@ reactable(
          maxWidth = 300
       ),
       cases_100k = colDef(
-         name = "Cases per 100K",
+         header = with_tooltip("Cases per 100K", cases_100k_tooltip),
          maxWidth = 200
       ),
       pos_rate = colDef(
-         name = "Positive Test Rate",
+         header = with_tooltip("Positive Test Rate", posrate_tooltip),
          maxWidth = 200,
          na = "–",
          format = colFormat(percent = TRUE, digits = 1)
