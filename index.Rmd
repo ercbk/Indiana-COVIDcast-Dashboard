@@ -42,17 +42,17 @@ ci_shared_leaf <- SharedData$new(ci_clean_leaf,
                                  ~name,
                                  group = "covidcast")
 ci_shared_db <- SharedData$new(ci_clean_db,
-                                 ~name,
-                                 group = "covidcast")
+                               ~name,
+                               group = "covidcast")
 react_shared <- SharedData$new(react_dat,
-                                 ~msa,
-                                 group = "covidcast")
+                               ~msa,
+                               group = "covidcast")
 
 ```
 
-
+<!-- js code fixes flexdashboard issue with reactable not loading/resizing when starting on About tab and going to Dashboard tab -->
 <script>
-  $(document).on('shown.bs.tab',function() { HTMLWidgets. staticRender() })
+$(document).on('shown.bs.tab',function() { HTMLWidgets. staticRender() })
 </script>
 
 
@@ -63,7 +63,7 @@ About {data-icon="fa-question-circle"}
 
 <H2>Description</H2>
 
-Carnegie Mellon University's Delphi Research Group derives it's "Combined" indicator from multiple data sources that include:<br>
+Carnegie Mellon University's Delphi Research Group derives it's **"Combined" indicator** from multiple data sources that include:<br>
 
 <UL>
 <LI><U>Doctor Visits</U> - Percentage of doctor's visits that are due to COVID-like symptoms<br> 
@@ -84,6 +84,13 @@ The higher the combined indicator value, the greater the signaling of higher COV
 
 
 Only metropolitan areas in Indiana with sufficient data have combined indicator values calculated, so not all areas are shown in the map. More details about the methodology behind this project can be found on their [website](https://covidcast.cmu.edu/index.html?sensor=doctor-visits-smoothed_adj_cli&level=county&region=42003&date=20200701&signalType=value).
+
+The table shows the current **COVID-19 cases per 100,000 population** (Cases per 100K) and **positivity rates** (Positive Test Rate) for each MSA. The trend columns show historic values of each metric with the maximum value labelled.  
+
+The Cases per 100K value is the current, scaled weekly average of COVID-19 cases. By scaling (per 100K population) this value, we can make valid comparisons between MSAs. The trend column for this value is color coded based on the value of Cases per 100K column. Taken from the [Harvard Global Health Institute](https://globalepidemics.org/key-metrics-for-covid-suppression/), there are four possible colors to which are assigned four statuses: "Tipping Point", "Accelerated Spread", "Community Spread", or "On Track for Containment".  
+
+Positivity rates are the number of positive test results divided by the total number of tests administered for that week. While Cases per 100K is a *rolling average*, each Positive Test Rate value is calculated in weekly steps. For example, the week 28 value is calculated from 7/05/2020 to 7/11/2020 , and the week 29 value is calculated from 7/12/2020 to 7/18/2020. The band shown in the line chart shows a 0% to 5% target range.
+
 
 
 <H2> Charts </H2>
@@ -121,6 +128,37 @@ The map shows the metropolitan statistical areas that have calculated combined i
 <LI> Clicking on an area shows its estimated combined indicator value.  
 <LI> Reset button (upper-left) resets the map view. It's a bit buggy, so you might need to refresh the webpage instead.
 </UL>
+
+<H4> Table </H4>
+
+
+<div class='cases-legend'>
+<div class='legend-title'>Cases per 100K</div>
+<div class='legend-scale'>
+<ul class='legend-labels'>
+      <li><span style='background:#941020FF;'></span>Tipping Point (25+ cases)</li>
+      <li><span style='background:#D23E0AFF;'></span>Accelerated Spread (10 - 24 cases)</li>
+      <li><span style='background:#B19210FF;'></span>Community Spread (1 - 9 cases)</li>
+      <li><span style='background:#6D8D3CFF;'></span>On Track for Containment (less than 1)</li>
+</ul>
+</div>
+</div>
+
+
+<div class='pos-legend'>
+<div class='legend-title'>Positive Test Rate</div>
+<div class='legend-scale'>
+<ul class='legend-labels'>
+      <li><span style='background:#800026;'></span>20%</li>
+      <li><span style='background:#E31A1C;'></span>15%</li>
+      <li><span style='background:#FD8D3C;'></span>10%</li>
+      <li><span style='background:#FED976;'></span>5%</li>
+      <li><span style='background:#FFF8BA;'></span>1%</li>
+</ul>
+</div>
+</div>
+
+
 
 
 
@@ -237,13 +275,13 @@ leaflet(data = ci_shared_leaf,
                 lat2 = 42.64689, lng2 = -83.05625) %>% 
    # add msa shapes
    addPolygons(# weight is thickness of stroke
-               weight = 2, smoothFactor = 0.5,
-               opacity = 1.0, fillOpacity = 0.5,
-               color = ~color, popup = ~popup,
-               # popupOptions = ,
-               # bringtofront makes highlight stroke standout more
-               highlightOptions = highlightOptions(color = "black", weight = 2,
-                                                   bringToFront = TRUE)) %>% 
+      weight = 2, smoothFactor = 0.5,
+      opacity = 1.0, fillOpacity = 0.5,
+      color = ~color, popup = ~popup,
+      # popupOptions = ,
+      # bringtofront makes highlight stroke standout more
+      highlightOptions = highlightOptions(color = "black", weight = 2,
+                                          bringToFront = TRUE)) %>% 
    addLegend("bottomleft", pal = pal_rev,
              opacity = 1, values = c(2.5, 0.5),
              # reverses direction of values in legend
@@ -478,48 +516,48 @@ posrate_spark <- function(...){
 
 
 reactable(
-      data = react_shared,
-      borderless = TRUE,
-      style = list(fontSize = "18px"),
-      # compact = TRUE,
-      onClick = "select",
-      defaultPageSize = 5,
-      defaultSortOrder = "desc",
-      defaultSorted = "cases_100k",
-      defaultColDef = colDef(
-            align = "center",
-            headerStyle = "align-self: flex-end; font-weight:normal;"
+   data = react_shared,
+   borderless = TRUE,
+   style = list(fontSize = "18px"),
+   # compact = TRUE,
+   onClick = "select",
+   defaultPageSize = 5,
+   defaultSortOrder = "desc",
+   defaultSorted = "cases_100k",
+   defaultColDef = colDef(
+      align = "center",
+      headerStyle = "align-self: flex-end; font-weight:normal;"
+   ),
+   rowStyle = list(
+      alignItems = "center",
+      # add back border here
+      borderBottom = "1px solid lightgray"
+   ),
+   highlight = TRUE,
+   columns = list(
+      cases_color = colDef(show = FALSE),
+      pos_color = colDef(show = FALSE),
+      cases_color_light = colDef(show = FALSE),
+      pos_color_light = colDef(show = FALSE),
+      msa = colDef(
+         name = "Metropolitan Statistical Area",
+         maxWidth = 300
       ),
-      rowStyle = list(
-            alignItems = "center",
-            # add back border here
-            borderBottom = "1px solid lightgray"
+      cases_100k = colDef(
+         name = "Cases per 100K",
+         maxWidth = 200
       ),
-      highlight = TRUE,
-      columns = list(
-         cases_color = colDef(show = FALSE),
-         pos_color = colDef(show = FALSE),
-         cases_color_light = colDef(show = FALSE),
-         pos_color_light = colDef(show = FALSE),
-         msa = colDef(
-            name = "Metropolitan Statistical Area",
-            maxWidth = 300
-         ),
-         cases_100k = colDef(
-            name = "Cases per 100K",
-            maxWidth = 200
-         ),
-         pos_rate = colDef(
-            name = "Positive Test Rate",
-            maxWidth = 200,
-            na = "–",
-            format = colFormat(percent = TRUE, digits = 1)
-         ),
-         casesList = cases_spark(),
-         posList = posrate_spark()
-      )
+      pos_rate = colDef(
+         name = "Positive Test Rate",
+         maxWidth = 200,
+         na = "–",
+         format = colFormat(percent = TRUE, digits = 1)
+      ),
+      casesList = cases_spark(),
+      posList = posrate_spark()
+   )
 ) %>% 
-      dui_add_reactable_dep()
+   dui_add_reactable_dep()
 
 
 

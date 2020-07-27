@@ -15,3 +15,95 @@ body {
    font-family: 'Roboto', sans-serif;
    font-size: 19px;
 }
+
+
+
+#main { 
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* specs for reactable legends */
+.cases-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+.cases-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+/* line-height affects separation between squares and size of text */
+.cases-legend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 36px;
+    margin-bottom: 2px;
+}
+/* height, width = size of the color squares */
+.cases-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 32px;
+    width: 60px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+}
+.cases-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+}
+.cases-legend a {
+    color: #777;
+}
+
+
+/* specs for reactable legends */
+.pos-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+.pos-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+/* line-height affects separation between squares and size of text */
+.pos-legend .legend-scale ul li {
+    font-size: 90%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 36px;
+    margin-bottom: 2px;
+}
+/* height, width = size of the color squares */
+/* think span makes squares and text side-by-side */
+.pos-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 32px;
+    width: 60px;
+    margin-right: 5px;
+    margin-left: 0;
+}
+.pos-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+}
+.pos-legend a {
+    color: #777;
+}
+
