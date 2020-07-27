@@ -2,9 +2,9 @@ name: covidcast-update
 
 on:
   schedule:
-    - cron: '15 15 * * *'
+    - cron: '10 15 * * *'
     #- cron: '40 15 * * *'
-    - cron: '15 22 * * *'
+    - cron: '10 22 * * *'
 
 jobs:
   update-dashboard:
@@ -52,7 +52,10 @@ jobs:
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv", repos = cran_repo)
           renv::restore(repos = cran_repo)
       
-      - name: Process regional test data
+      - name: Process historic regional test data
+        run: Rscript "R/process-hist-regional-dat.R"
+      
+      - name: Process current regional test data
         run: Rscript "R/process-regional-dat.R"
       
       - name: Build dashboard data

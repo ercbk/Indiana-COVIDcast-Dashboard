@@ -236,14 +236,24 @@ react_dat <- purrr::reduce(list(current_dat, cases_hist, pos_hist,
 readr::write_rds(react_dat, glue("{rprojroot::find_rstudio_root_file()}/data/dash-case-pos.rds"))
 
 
-# # Get the data dates
-# cases_current_date <- case_pos_current %>% 
-#    slice(n()) %>% 
-#    select(cases_date = date)
-# indmich_pos_current_date <- case_pos_current %>% 
-#    filter(!stringr::str_detect(msa, "Chicago")) %>% 
-#    slice(n()) %>% 
-#    pull(date)
-# chi_pos_current_date <- case_pos_current %>% 
-#    filter(stringr::str_detect(msa, "Chicago")) %>% 
-#    pull(date)
+# Get the data dates Cases per 100K, Positive Test Rate (chicago, everybody else)
+cases_current_date <- case_pos_current %>%
+   slice(n()) %>%
+   select(cases_date = date)
+
+indmich_pos_current_date <- case_pos_current %>%
+   filter(!stringr::str_detect(msa, "Chicago"),
+          !is.na(end_date)) %>%
+   slice(n()) %>%
+   select(other_pos_date = end_date)
+
+chi_pos_current_date <- case_pos_current %>%
+   filter(stringr::str_detect(msa, "Chicago"),
+          !is.na(end_date)) %>%
+   select(chi_pos_date = end_date)
+
+cases_pos_data_dates <- purrr::reduce(list(cases_current_date, indmich_pos_current_date, chi_pos_current_date),
+                                      bind_cols)
+
+readr::write_rds(cases_pos_data_dates, glue("{rprojroot::find_rstudio_root_file()}/data/dash-case-pos-dates.rds"))
+

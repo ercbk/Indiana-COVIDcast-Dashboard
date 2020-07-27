@@ -26,6 +26,8 @@ ci_clean_db <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/
 
 # reactable/sparkline data
 react_dat <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-case-pos.rds"))
+react_dates <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/dash-case-pos-dates.rds"))
+
 
 ```
 
