@@ -137,7 +137,7 @@ The table shows a scaled, weekly average of COVID-19 cases and a weekly positivi
 
 Both values can be used to gain a better understanding of the current situation in each MSA. For example, a moderate Cases per 100K value and a relatively higher Positive Test Rate could be interpreted as an area with substantial viral transmission but not enough testing.  
 
-Data date for Cases per 100K and Positive Test Rate displays by hovering over column names.
+Data date for Cases per 100K and Positive Test Rate displays by hovering over column names.  
 
 <section>
 
