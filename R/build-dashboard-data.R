@@ -192,7 +192,7 @@ cases_col <- case_pos_current %>%
                                   between(cases_100k, 10, 24) ~ moody[[3]],
                                   cases_100k >= 25 ~ moody[[4]]),
           cases_color = unclass(prismatic::clr_darken(cases_color, shift = .50)),
-          cases_color_light = unclass(prismatic::clr_lighten(cases_color, shift = .60))) %>%  
+          cases_color_light = unclass(prismatic::clr_lighten(cases_color, shift = .50))) %>%  
    select(msa, cases_color, cases_color_light)
 
 
