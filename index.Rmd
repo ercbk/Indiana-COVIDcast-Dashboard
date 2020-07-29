@@ -450,14 +450,14 @@ cases_spark <- function(...) {
                   id = htmlwidgets::JS("'cases' + cellInfo.original.msa.split(' ').join('-')"),
                   from = htmlwidgets::JS("cellInfo.original.cases_color"),
                   to = htmlwidgets::JS("cellInfo.original.cases_color_light"),
-                  fromOffset = "40%"
+                  fromOffset = "10%"
                ),
                dui_sparklineseries(
                   showLine = FALSE,
                   showArea = TRUE,
                   fill = htmlwidgets::JS("'url(#cases' + cellInfo.original.msa.split(' ').join('-') + ')'"),
                   # stroke = htmlwidgets::JS("cellInfo.original.cases_color"),
-                  fillOpacity = htmlwidgets::JS("(d, i) => (i > 40 && i < 90 ? 0.5 : 1)")
+                  fillOpacity = htmlwidgets::JS("(d, i) => (i > 30 && i < 90 ? 0.5 : 1)")
                ),
                dui_sparkpointseries(
                   points = list("max"),
