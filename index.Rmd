@@ -422,6 +422,8 @@ cases_spark <- function(...) {
                htmltools::HTML(
                   "function (_ref) {
                    var datum = _ref.datum;
+                   // div around two spans makes horiz. date-value tooltip
+                   // react element format (type, style, function)
                    return React.createElement(
                      'div',
                      null,
@@ -431,6 +433,7 @@ cases_spark <- function(...) {
                              backgroundColor: 'black', color: 'white',
                              padding: '3px', margin: '0px 4px 0px 0px', textAlign: 'center'
                            }},
+                        // treats as string, splits date at '-', removes first elt, pastes remainder elts with '/'   
                         datum.date[0].split('-').slice(1).join('/')
                      ),
                      React.createElement(
@@ -439,6 +442,7 @@ cases_spark <- function(...) {
                         fontWeight: 'bold', fontSize: '1.1em',
                         padding: '2px'
                         }},
+                        // undefined is the region (ie locale), {options}, maximumFractionDigits rounds up
                         datum.y ? datum.y.toLocaleString(undefined, {maximumFractionDigits: 0}) : '--'
                      )
                    );
@@ -485,6 +489,8 @@ posrate_spark <- function(...){
                htmltools::HTML(
                   "function (_ref) {
                    var datum = _ref.datum;
+                   // div around two spans makes horiz. date-value tooltip
+                   // react element format (type, style, function)
                    return React.createElement(
                      'div',
                      null,
@@ -494,6 +500,7 @@ posrate_spark <- function(...){
                              backgroundColor: 'black', color: 'white',
                              padding: '3px', margin: '0px 4px 0px 0px', textAlign: 'center'
                            }},
+                        // splits date at '-', removes first elt, pastes remainder elts with '/'
                         datum.endDate[0].split('-').slice(1).join('/')
                      ),
                      React.createElement(
@@ -502,6 +509,7 @@ posrate_spark <- function(...){
                         fontWeight: 'bold', fontSize: '1.1em',
                         padding: '2px'
                         }},
+                        // undefined is the region (ie locale), {options}, maximumFractionDigits rounds up
                         datum.y ? datum.y.toLocaleString(undefined, {maximumFractionDigits: 1, style: 'percent'}) : '--'
                      )
                    );
@@ -528,7 +536,9 @@ posrate_spark <- function(...){
                   points = list("max"),
                   fill = htmlwidgets::JS("cellInfo.original.pos_color"),
                   stroke = htmlwidgets::JS("cellInfo.original.pos_color_light"),
+                  # see tooltip comments for react element format
                   renderLabel = htmlwidgets::JS("d => React.createElement('tspan',{fontWeight: 'bold'},d.toLocaleString(undefined, {maximumFractionDigits: 1, style: 'percent'}))"),
+                  # says if row index = 0 or 1 then 'right' else 'left', === means type (numeric) much also match
                   labelPosition = htmlwidgets::JS("(d, i) => (i === 0 || i === 1 ? 'right' : 'left')"),
                   size = 3
                )
