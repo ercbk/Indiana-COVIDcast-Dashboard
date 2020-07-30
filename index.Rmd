@@ -399,12 +399,13 @@ Row {data-height=800}
 react_dates <- react_dates %>% 
    mutate_all(~format(., "%B %d"))
 
+# data dates
 cases_100k_tooltip <- as.character(react_dates$cases_date[[1]])
 posrate_tooltip <- glue("
 MSAs except Chicago: {react_dates$other_pos_date[[1]]}
 Chicago: {react_dates$chi_pos_date[[1]]}
 ")
-
+# header function to create tooltip
 with_tooltip <- function(value, tooltip) {
       span(title = tooltip, value)
 }
