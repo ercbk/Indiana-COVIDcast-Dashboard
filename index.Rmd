@@ -452,6 +452,8 @@ cases_spark <- function(...) {
             ),
             components = list(
                dui_sparklineargradient(
+                  # I think this creates an unique id with cases value and msa, so it know what color to assign
+                  # Think cellInfo.original refers to the overall dataset the reactable is using
                   id = htmlwidgets::JS("'cases' + cellInfo.original.msa.split(' ').join('-')"),
                   from = htmlwidgets::JS("cellInfo.original.cases_color"),
                   to = htmlwidgets::JS("cellInfo.original.cases_color_light"),
