@@ -63,6 +63,8 @@ About {data-icon="fa-question-circle"}
 =====================================
 
 
+![](https://github.com/ercbk/Indiana-COVIDcast-Dashboard/workflows/covidcast-update/badge.svg)  
+
 <H2>Description</H2>
 
 Carnegie Mellon University's Delphi Research Group derives it's **"Combined" indicator** from multiple data sources that include:<br>
