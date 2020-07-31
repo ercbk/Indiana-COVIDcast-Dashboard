@@ -107,13 +107,6 @@
       "Repository": "CRAN",
       "Hash": "543776ae6848fde2f48ff3816d0628bc"
     },
-    "brew": {
-      "Package": "brew",
-      "Version": "1.0-6",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "92a5f887f9ae3035ac7afde22ba73ee9"
-    },
     "callr": {
       "Package": "callr",
       "Version": "3.4.3",
@@ -300,13 +293,6 @@
       "Repository": "CRAN",
       "Hash": "1cb4279e697650f0bd78cd3601ee7576"
     },
-    "gdtools": {
-      "Package": "gdtools",
-      "Version": "0.2.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "38f4026c0d09edb3a4474685cef68342"
-    },
     "generics": {
       "Package": "generics",
       "Version": "0.0.2",
@@ -466,13 +452,6 @@
       "Repository": "CRAN",
       "Hash": "3f3f5e5603fc791dfb77279ad84cc711"
     },
-    "leaflet.esri": {
-      "Package": "leaflet.esri",
-      "Version": "1.0.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "5a9bc11444d70a8cf26802b15a71db15"
-    },
     "leaflet.extras": {
       "Package": "leaflet.extras",
       "Version": "1.0.0",
@@ -480,26 +459,12 @@
       "Repository": "CRAN",
       "Hash": "8dbfc2c4d7ca2660971caf1153ca95c2"
     },
-    "leaflet.extras2": {
-      "Package": "leaflet.extras2",
-      "Version": "1.0.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "9202db6e28b1a027d07d1a907ce58ce8"
-    },
     "leaflet.providers": {
       "Package": "leaflet.providers",
       "Version": "1.9.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "d3082a7beac4a1aeb96100ff06265d7e"
-    },
-    "leafpop": {
-      "Package": "leafpop",
-      "Version": "0.0.5",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "8e8a7d148fbe3dbb0a0395e135e8d6f7"
     },
     "lifecycle": {
       "Package": "lifecycle",
@@ -814,13 +779,6 @@
       "Repository": "CRAN",
       "Hash": "0759e6b6c0957edb1311028a49a35e76"
     },
-    "svglite": {
-      "Package": "svglite",
-      "Version": "1.2.3.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "5d82ff095302092753fd50acdd1e1a0c"
-    },
     "swatches": {
       "Package": "swatches",
       "Version": "0.5.0",
@@ -834,13 +792,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "507f3116a38d37ad330a038b3be07b66"
-    },
-    "systemfonts": {
-      "Package": "systemfonts",
-      "Version": "0.2.3",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "86e3c704ca4e498330d0d8730b437a4d"
     },
     "testthat": {
       "Package": "testthat",
@@ -904,13 +855,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "4a5081acfb7b81a572e4384a7aaf2af1"
-    },
-    "uuid": {
-      "Package": "uuid",
-      "Version": "0.1-4",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "e4169eb989a5d03ccb6b628cad1b1b50"
     },
     "vctrs": {
       "Package": "vctrs",

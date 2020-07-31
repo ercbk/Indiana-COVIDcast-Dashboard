@@ -100,6 +100,26 @@ mich_tests_new <- readxl::read_xlsx(mich_tests_dest) %>%
 readr::write_csv(mich_tests_new, glue("{rprojroot::find_rstudio_root_file()}/data/states/mich-tests-complete.csv"))
 
 
+mich_dat_files <- tibble::tibble(paths = fs::dir_ls(glue::glue("{rprojroot::find_rstudio_root_file()}/data/states"))) %>% 
+   filter(stringr::str_detect(paths, "mich"),
+          !stringr::str_detect(paths, "complete")) %>% 
+   mutate(
+      chart = stringr::str_extract(paths,
+                                   pattern = "[a-z]*-[a-z]*-[a-z]*"),
+      date = stringr::str_extract(paths,
+                                  pattern = "[0-9]{4}-[0-9]{2}-[0-9]{2}") %>%
+         as.Date())
+
+# clean-up data files older than a week
+mich_dat_files %>% 
+   add_count() %>% 
+   filter(n > 7) %>%
+   filter(date == min(date)) %>% 
+   pull(paths) %>% 
+   fs::file_delete(.)
+
+
+
 ######################
 # Wisconsin
 ######################
