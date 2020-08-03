@@ -169,6 +169,11 @@ readr::write_rds(ci_clean_db, glue("{rprojroot::find_rstudio_root_file()}/data/d
 case_pos_current <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/msa-cases100-posrate-current.csv"))
 case_pos_hist <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/msa-cases100-posrate-historic.csv"))
 
+# USAFacts has a bad value for its Aug1 laporte cases value. Might impute this later, but for now just moving decimal point so value is reasonable.
+case_pos_hist <- case_pos_hist %>% 
+   mutate(cases_100k = ifelse(geo_value == 33140 & date == as.Date("2020-08-01"),
+                              8.123855, cases_100k))
+
 # cases per 100k palette
 moody <- swatches::read_palette(glue("{rprojroot::find_rstudio_root_file()}/palettes/Moody Blooms.ase"))[c(1,4,5,8)]
 # positive test rate palette function
