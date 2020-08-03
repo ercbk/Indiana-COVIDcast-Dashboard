@@ -173,6 +173,9 @@ case_pos_hist <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/dat
 case_pos_hist <- case_pos_hist %>% 
    mutate(cases_100k = ifelse(geo_value == 33140 & date == as.Date("2020-08-01"),
                               8.123855, cases_100k))
+case_pos_current <- case_pos_current %>% 
+   mutate(cases_100k = ifelse(geo_value == 33140 & date == as.Date("2020-08-01"),
+                              8.123855, cases_100k))
 
 # cases per 100k palette
 moody <- swatches::read_palette(glue("{rprojroot::find_rstudio_root_file()}/palettes/Moody Blooms.ase"))[c(1,4,5,8)]
