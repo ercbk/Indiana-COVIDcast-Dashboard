@@ -52,7 +52,8 @@ ill_test <- ill_table %>%
       select(week, start_date, end_date, everything())
 
 
-ill_test_comp <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-complete.csv"))
+ill_test_comp <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-complete.csv"),
+                                 col_types = "nDDcccccic")
 
 ill_test_wk <- ill_test %>% 
       slice(n()) %>% 
@@ -81,6 +82,7 @@ mich_url <- "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00
 
 # extract the link for the data off the webpage
 chrome$navigate(url = mich_url)
+Sys.sleep(5)
 mich_tests_elt <- chrome$findElement(using = "css selector", "#comp_115341 > ul > li > span > span > span.shortdesc > p:nth-child(7) > a")
 mich_tests_link <- mich_tests_elt$getElementAttribute(attrName = "href")[[1]]
 
