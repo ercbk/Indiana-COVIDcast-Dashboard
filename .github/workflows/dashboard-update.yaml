@@ -4,8 +4,8 @@ on:
   schedule:
     - cron: '10 15 * * *'
     #- cron: '40 15 * * *'
-    - cron: '10 22 * * *'
-    #- cron: '55 22 * * *'
+    #- cron: '10 22 * * *'
+    - cron: '48 22 * * *'
 
 jobs:
   update-dashboard:
