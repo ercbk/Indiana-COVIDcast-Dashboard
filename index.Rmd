@@ -71,10 +71,8 @@ Carnegie Mellon University's Delphi Research Group derives it's **"Combined" ind
 
 <UL>
 <LI><U>Doctor Visits</U> - Percentage of doctor's visits that are due to COVID-like symptoms<br> 
-<LI><U>Hospital Admissions</U> - Daily hospital admissions with COVID diagnostic codes.<br>
 <LI><U>Symptoms</U> (Facebook) - Random Facebook users are directed to a survey that asks for the number of household members with COVID-like symptoms.<br>
 <LI><U>Symptoms in Community</U> (Facebook) - Same as for "Symptoms" but asks about people they know outside of their household.<br>
-<LI><U>Hours Away from Home</U> (SafeGraph) - Uses mobile phone location data to estimate the proportion of people outside their homes during daytime hours.<br>
 <LI><U>Search Trends</U> (Google) - Google searchs for COVID-related topics relative to an area's population<br>
 </UL>
 <P>
