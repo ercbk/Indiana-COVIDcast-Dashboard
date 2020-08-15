@@ -48,7 +48,9 @@ end_date <- lubridate::mdy(endelt$getElementText()[[1]])
 ill_test <- ill_table %>% 
       mutate(week = week_number,
              start_date = start_date,
-             end_date = end_date) %>% 
+             end_date = end_date,
+             `Number of Deaths` = stringr::str_extract(`Number of Deaths`, "^[0-9]*"),
+             `Number of Deaths` = as.integer(`Number of Deaths`)) %>% 
       select(week, start_date, end_date, everything())
 
 
