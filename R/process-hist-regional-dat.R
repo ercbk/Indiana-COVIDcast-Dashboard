@@ -146,6 +146,7 @@ ill_tests_clean <- ill_tests %>%
    filter(county %in% ill_msa_counties$county) %>% 
    mutate(cases_100k = stringr::str_extract(new_cases_per_100_000,
                                             pattern = "^[0-9]*") %>% as.numeric(),
+          test_positivity_percent = stringr::str_remove_all(test_positivity_percent, "warning"),
           weekly_tests = stringr::str_extract(test_positivity_percent,
                                               pattern = "([0-9]*,[0-9]*$)|([0-9][0-9][0-9]$)"),
           weekly_tests = stringr::str_remove_all(weekly_tests, ",") %>% 
@@ -178,6 +179,7 @@ wisc_msa_counties <- covidcast_msa_counties %>%
 # wisc data is cumulative, so need to calc daily
 wisc_county_tests <- wisc_tests %>% 
    filter(county %in% wisc_msa_counties$county) %>% 
+   arrange(date) %>% 
    mutate(daily_positives = tsibble::difference(positive),
           daily_negatives = tsibble::difference(negative),
           daily_tests = daily_positives + daily_negatives)

@@ -24,72 +24,72 @@ us_msa_tiles <- sf::read_sf(glue("{rprojroot::find_rstudio_root_file()}/data/sha
 # leaflet requires EPSG:4326
 msa_tiles <- sf::st_transform(us_msa_tiles, 4326)
 ind_msa_tiles <- msa_tiles %>% 
-      filter(stringr::str_detect(NAME, "IN")) %>% 
-      janitor::clean_names() %>% 
-      mutate(# remove state abbrev from msa names
-            name = stringr::str_remove_all(name, "([A-Z][A-Z]-)*"),
-            name = stringr::str_remove_all(name, ", [A-Z]*"))
+   filter(stringr::str_detect(NAME, "IN")) %>% 
+   janitor::clean_names() %>% 
+   mutate(# remove state abbrev from msa names
+      name = stringr::str_remove_all(name, "([A-Z][A-Z]-)*"),
+      name = stringr::str_remove_all(name, ", [A-Z]*"))
 
 # get historic combined indicator values I have saved
 combined_index_complete <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/covidcast-msa-complete.csv"))
 
 # date of data I have
 ci_comp <- combined_index_complete %>% 
-      filter(time_value == max(time_value)) %>%
-      slice(1) %>% 
-      pull(time_value)
+   slice_max(time_value) %>%
+   slice_tail() %>% 
+   pull(time_value)
 
 # get data update
 c <- 0
 while (TRUE) {
-      combined_index_yday <- try({
-            # try dates from today until ci_comp date reached
-            try_date <- lubridate::today() - c
-            
-            ind_msa_tiles %>% 
-                  # cbsafp is the msa id
-                  select(name, cbsafp) %>% 
-                  group_by(name) %>% 
-                  tidyr::nest() %>% 
-                  # get the combined indicator value for each msa if one is available
-                  mutate(data = purrr::map(data, ~suppressMessages(
-                        covidcast_signal(
-                              data_source = "indicator-combination",
-                              signal = "nmf_day_doc_fbc_fbs_ght",
-                              start_day = try_date,
-                              end_day = try_date,
-                              geo_type = "msa",
-                              geo_values = .x$cbsafp)
-                  ))) %>% 
-                  tidyr::unnest(cols = "data") %>% 
-                  ungroup() %>% 
-                  select(-geo_value, -direction, -sample_size)
-            
-      }, silent = TRUE)
-      # stay in loop until I get some new data or ci_comp date reached
-      if (class(combined_index_yday) != "try-error"){
-            break
-      } else if (try_date <= ci_comp) {
-            break
-      } else {
-            c <- c + 1
-      }
+   combined_index_yday <- try({
+      # try dates from today until ci_comp date reached
+      try_date <- lubridate::today() - c
+      
+      ind_msa_tiles %>% 
+         # cbsafp is the msa id
+         select(name, cbsafp) %>% 
+         group_by(name) %>% 
+         tidyr::nest() %>% 
+         # get the combined indicator value for each msa if one is available
+         mutate(data = purrr::map(data, ~suppressMessages(
+            covidcast_signal(
+               data_source = "indicator-combination",
+               signal = "nmf_day_doc_fbc_fbs_ght",
+               start_day = try_date,
+               end_day = try_date,
+               geo_type = "msa",
+               geo_values = .x$cbsafp)
+         ))) %>% 
+         tidyr::unnest(cols = "data") %>% 
+         ungroup() %>%
+         select(-geo_value, -direction, -sample_size)
+      
+   }, silent = TRUE)
+   # stay in loop until I get some new data or ci_comp date reached
+   if (class(combined_index_yday) != "try-error"){
+      break
+   } else if (try_date <= ci_comp) {
+      break
+   } else {
+      c <- c + 1
+   }
 }
 
 
 ci_yday <- combined_index_yday %>% 
-      filter(time_value == max(time_value)) %>% 
-      slice(1) %>% 
-      pull(time_value)
+   filter(time_value == max(time_value)) %>% 
+   slice(1) %>% 
+   pull(time_value)
 
 # compare dates first before adding new data
 if (ci_yday != ci_comp) {
-      combined_index_all <- combined_index_complete %>%
-            bind_rows(combined_index_yday)
-      
-      readr::write_csv(combined_index_all, glue("{rprojroot::find_rstudio_root_file()}/data/covidcast-msa-complete.csv"))
+   combined_index_all <- combined_index_complete %>%
+      bind_rows(combined_index_yday)
+   
+   readr::write_csv(combined_index_all, glue("{rprojroot::find_rstudio_root_file()}/data/covidcast-msa-complete.csv"))
 } else {
-      combined_index_all <- combined_index_complete
+   combined_index_all <- combined_index_complete
 }
 
 
@@ -107,52 +107,62 @@ pal <- leaflet::colorNumeric("YlOrRd",
 
 # Clean names
 ci_clean <- combined_index_all %>% 
-      mutate(# remove state abbrev from msa names
-            name = stringr::str_remove_all(name, "([A-Z][A-Z]-)*"),
-            name = stringr::str_remove_all(name, ", [A-Z]*")
-      ) %>% 
-      select(-issue, -lag)
+   mutate(# remove state abbrev from msa names
+      name = stringr::str_remove_all(name, "([A-Z][A-Z]-)*"),
+      name = stringr::str_remove_all(name, ", [A-Z]*")
+   ) %>% 
+   select(-issue, -lag)
 
 # leaflet map: add popup text, styling
 ci_leaf <- ci_clean %>%
-      # create popup text
-      mutate(value = round(value, 2),
-             color = pal(value),
-             # white map background so darkening the palette some
-             color = unclass(prismatic::clr_darken(color,
-                                                   shift = 0.20)),
-             # dark-red background for high values needs white text
-             value_text = ifelse(value >= 2,
-                                 glue("<b style='background-color:{color}; font-family:Roboto; font-size:15px; color:white'>{value}</b>"),
-                                 glue("<b style='background-color:{color}; font-family:Roboto; font-size:15px'>{value}</b>")),
-             popup = glue("<b style= 'font-family:Roboto; font-size:15px'>{name}</br>Combined Indicator</b>: {value_text}")) 
+   # create popup text
+   mutate(value = round(value, 2),
+          color = pal(value),
+          # white map background so darkening the palette some
+          color = unclass(prismatic::clr_darken(color,
+                                                shift = 0.20)),
+          # dark-red background for high values needs white text
+          value_text = ifelse(value >= 2,
+                              glue("<b style='background-color:{color}; font-family:Roboto; font-size:15px; color:white'>{value}</b>"),
+                              glue("<b style='background-color:{color}; font-family:Roboto; font-size:15px'>{value}</b>")),
+          popup = glue("<b style= 'font-family:Roboto; font-size:15px'>{name}</br>Combined Indicator</b>: {value_text}")) 
 
 # dumbbell: add 95% CI, styling
 ci_db <- ci_clean %>% 
-      mutate(upper = round(value + (1.96 * stderr), 2),
-             lower = round(value - (1.96 * stderr), 2),
-             value = round(value, 2),
-             upper_col = unclass(prismatic::clr_darken(pal(upper),
-                                                       shift = 0.20)),
-             lower_col = unclass(prismatic::clr_darken(pal(lower),
-                                                       shift = 0.20)),
-             # contrast text against label color
-             text_col = ifelse(value > 2, 'white', 'black'))
+   mutate(upper = round(value + (1.96 * stderr), 2),
+          lower = round(value - (1.96 * stderr), 2),
+          value = round(value, 2),
+          upper_col = unclass(prismatic::clr_darken(pal(upper),
+                                                    shift = 0.20)),
+          lower_col = unclass(prismatic::clr_darken(pal(lower),
+                                                    shift = 0.20)),
+          # contrast text against label color
+          text_col = ifelse(value > 2, 'white', 'black'))
 
 ci_clean_line <- ci_clean %>% 
    select(name, time_value, value) %>% 
    mutate(value = round(value, 2))
 
+# ci_clean_db <- ci_db %>% 
+#    select(name, time_value, value, text_col, lower, upper, lower_col, upper_col) %>% 
+#    filter(time_value == max(time_value)) %>%
+#    mutate(name = forcats::as_factor(name) %>%
+#              forcats::fct_reorder(value))
 ci_clean_db <- ci_db %>% 
-      select(name, time_value, value, text_col, lower, upper, lower_col, upper_col) %>% 
-      filter(time_value == max(time_value)) %>%
-      mutate(name = forcats::as_factor(name) %>%
-                   forcats::fct_reorder(value))
+   select(name, time_value, value, text_col, lower, upper, lower_col, upper_col) %>% 
+   slice_max(time_value) %>%
+   mutate(name = forcats::as_factor(name) %>%
+             forcats::fct_reorder(value))
 ci_clean_leaf <- ci_leaf %>% 
-      select(name, time_value, color, popup) %>% 
-      filter(time_value == max(time_value)) %>%
-      left_join(ind_msa_tiles, by = "name") %>% 
-      sf::st_as_sf()
+   select(name, time_value, color, popup) %>% 
+   slice_max(time_value) %>%
+   left_join(ind_msa_tiles, by = "name") %>% 
+   sf::st_as_sf()
+# ci_clean_leaf <- ci_leaf %>% 
+#    select(name, time_value, color, popup) %>% 
+#    filter(time_value == max(time_value)) %>%
+#    left_join(ind_msa_tiles, by = "name") %>% 
+#    sf::st_as_sf()
 
 readr::write_rds(ci_clean_line, glue("{rprojroot::find_rstudio_root_file()}/data/dash-ci-line.rds"))
 readr::write_rds(ci_clean_leaf, glue("{rprojroot::find_rstudio_root_file()}/data/dash-ci-leaf.rds"))
@@ -200,33 +210,33 @@ cases_col <- case_pos_current %>%
 # pos_list is a list column of pos_list = list(list(endDate=dateval1, posRate = posval1), list(endDate=dateval2, posRate=posval2), ...) for each MSA
 # It's nuts, but required format for sparkline tooltip.
 pos_hist <- case_pos_hist %>%
-      filter(!is.na(pos_rate)) %>%
-      select(end_date = date, msa, pos_rate) %>%
-      group_by(msa) %>%
-      summarize(pos_list = mapply(function (end_date, pos_rate)
-      {list(endDate = end_date, posRate = pos_rate)},
-      end_date, pos_rate,
-      SIMPLIFY = FALSE)) %>% 
-      tidyr::nest() %>%
-      mutate(data = purrr::map(data, ~as.list(.x))) %>%
-      rename(posList = data)
+   filter(!is.na(pos_rate)) %>%
+   select(end_date = date, msa, pos_rate) %>%
+   group_by(msa) %>%
+   summarize(pos_list = mapply(function (end_date, pos_rate)
+   {list(endDate = end_date, posRate = pos_rate)},
+   end_date, pos_rate,
+   SIMPLIFY = FALSE)) %>% 
+   tidyr::nest() %>%
+   mutate(data = purrr::map(data, ~as.list(.x))) %>%
+   rename(posList = data)
 
 cases_hist <- case_pos_hist %>%  
-      select(date, msa, cases_100k) %>%
-      mutate(cases_100k = round(cases_100k, 2)) %>% 
-      group_by(msa) %>% 
-      summarize(cases_list = mapply(function (date, cases)
-      {list(date = date, cases = cases)},
-      date, cases_100k,
-      SIMPLIFY = FALSE)) %>% 
-      tidyr::nest() %>%
-      mutate(data = purrr::map(data, ~as.list(.x))) %>%
-      rename(casesList = data)
+   select(date, msa, cases_100k) %>%
+   mutate(cases_100k = round(cases_100k, 2)) %>% 
+   group_by(msa) %>% 
+   summarize(cases_list = mapply(function (date, cases)
+   {list(date = date, cases = cases)},
+   date, cases_100k,
+   SIMPLIFY = FALSE)) %>% 
+   tidyr::nest() %>%
+   mutate(data = purrr::map(data, ~as.list(.x))) %>%
+   rename(casesList = data)
 
 # current cases per 100K and positivity rates
 current_dat <- case_pos_current %>%
-      select(msa, cases_100k, pos_rate) %>% 
-      mutate(cases_100k = round(cases_100k, 0))
+   select(msa, cases_100k, pos_rate) %>% 
+   mutate(cases_100k = round(cases_100k, 0))
 
 
 # combine everything into a single tbl
