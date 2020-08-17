@@ -24,7 +24,7 @@ jobs:
       # installs r
       - uses: r-lib/actions/setup-r@v1
         with:
-          r-version: '3.6.2'
+          r-version: '3.6.3'
           
       # installs pandoc for rmarkdown
       - uses: r-lib/actions/setup-pandoc@v1
