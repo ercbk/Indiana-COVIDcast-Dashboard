@@ -265,10 +265,18 @@ Row {data-height=625}
 
 ```{r}
 
+yelorared <- RColorBrewer::brewer.pal(n = 30, name = "YlOrRd")
+yor_darker <- unclass(prismatic::clr_darken(yelorared,
+                                       shift = 0.20))
+
+
 # needed because leaflet legend default direction of values is backwards
-pal_rev <- leaflet::colorNumeric("YlOrRd",
-                                 domain = seq(2.50, 0.00, by = -0.10),
-                                 reverse = TRUE)
+# pal_rev <- leaflet::colorNumeric("YlOrRd",
+#                                  domain = seq(2.50, 0.00, by = -0.10),
+#                                  reverse = TRUE)
+pal_rev <- leaflet::colorNumeric(yor_darker,
+                                 domain = seq(3.00, 0.00, by = -0.10),
+                                 na.color = "#66001EFF", reverse = TRUE)
 
 # minzoom is the maximum you can zoomout; viceversa for maxzoom; 0 would be for zooming all the out
 leaflet(data = ci_shared_leaf,
@@ -294,7 +302,7 @@ leaflet(data = ci_shared_leaf,
       highlightOptions = highlightOptions(color = "black", weight = 2,
                                           bringToFront = TRUE)) %>% 
    addLegend("bottomleft", pal = pal_rev,
-             opacity = 1, values = c(2.5, 0.5),
+             opacity = 1, values = c(3, 0.75),
              # reverses direction of values in legend
              labFormat = labelFormat(transform = function(x) sort(x, decreasing = TRUE))
    ) %>% 

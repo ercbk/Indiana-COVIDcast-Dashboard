@@ -100,10 +100,10 @@ if (ci_yday != ci_comp) {
 
 
 # colorNumeric creates a color function where input is a vector with values in the domain and outputs hex colors. 30 hex values.
-
 # combined indicator values don't get much higher than 3.00. Anything higher will have the darkest value.
 pal <- leaflet::colorNumeric("YlOrRd",
-                             domain = seq(0.00, 3.00, by = 0.10))
+                             domain = seq(0.00, 3.00, by = 0.10),
+                             na.color = "#800026")
 
 # Clean names
 ci_clean <- combined_index_all %>% 
