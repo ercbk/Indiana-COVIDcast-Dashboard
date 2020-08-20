@@ -137,7 +137,7 @@ The table shows a scaled, weekly average of COVID-19 cases and a weekly positivi
 
 Both values can be used to gain a better understanding of the current situation in each MSA. For example, a moderate Cases per 100K value and a relatively higher Positive Test Rate could be interpreted as an area with substantial viral transmission but not enough testing.  
 
-Data date for Cases per 100K and Positive Test Rate displays by hovering over column names.  
+The data date for Cases per 100K and Positive Test Rate displays by hovering over column names or over last value of trend column.  
 
 <section>
 
@@ -279,7 +279,7 @@ pal_rev <- leaflet::colorNumeric(yor_darker,
                                  na.color = "#66001EFF", reverse = TRUE)
 
 # minzoom is the maximum you can zoomout; viceversa for maxzoom; 0 would be for zooming all the out
-leaflet(data = ci_shared_leaf,
+leaflet(
         options = leafletOptions(minZoom = 6.5,
                                  maxZoom = 18,
                                  # remove caption
@@ -293,16 +293,18 @@ leaflet(data = ci_shared_leaf,
    setMaxBounds(lat1 = 37.62598, lng1 = -89.53418,
                 lat2 = 42.64689, lng2 = -83.05625) %>% 
    # add msa shapes
-   addPolygons(# weight is thickness of stroke
-      weight = 2, smoothFactor = 0.5,
-      opacity = 1.0, fillOpacity = 0.5,
-      color = ~color, popup = ~popup,
-      # popupOptions = ,
-      # bringtofront makes highlight stroke standout more
-      highlightOptions = highlightOptions(color = "black", weight = 2,
-                                          bringToFront = TRUE)) %>% 
+   addPolygons(data = ci_shared_leaf,
+               # weight is thickness of stroke
+               weight = 2, smoothFactor = 0.5,
+               opacity = 1.0, fillOpacity = 0.5,
+               color = ~color, popup = ~popup,
+               # popupOptions = ,
+               # bringtofront makes highlight stroke standout more
+               highlightOptions = highlightOptions(color = "black", weight = 2,
+                                                   bringToFront = TRUE)) %>% 
    addLegend("bottomleft", pal = pal_rev,
-             opacity = 1, values = c(3, 0.75),
+             # values - I think in this format, 3 is upper limit and 0.10 is the lower value and step size
+             opacity = 1, values = c(3, 0.1),
              # reverses direction of values in legend
              labFormat = labelFormat(transform = function(x) sort(x, decreasing = TRUE))
    ) %>% 
