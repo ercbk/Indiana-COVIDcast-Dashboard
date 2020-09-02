@@ -7,6 +7,13 @@
 
 setwd("~/R/Projects/Indiana-COVIDcast-Dashboard")
 
+# text me if there's an error
+options(error = function() { 
+      library(RPushbullet)
+      pbPost("note", "Error", geterrmessage())
+      if(!interactive()) stop(geterrmessage())
+})
+
 pacman::p_load(RSelenium, glue, dplyr, rvest)
 
 
@@ -22,6 +29,7 @@ chrome <- driver$client
 ill_url <- "http://www.dph.illinois.gov/countymetrics"
 # go to illinois county website
 chrome$navigate(url = ill_url)
+Sys.sleep(5)
 
 # element with table data
 tbl_elt <- chrome$findElement(using = "id", "detailedData")
@@ -151,7 +159,7 @@ ind_test_dat <- readr::read_csv("https://hub.mph.in.gov/datastore/dump/afaa225d-
 ind_test_clean <- ind_test_dat %>% 
       janitor::clean_names() %>% 
       select(date, county = county_name, 
-             positives = covid_count, num_tests = covid_test) %>% 
+             positives = covid_count, num_tests = covid_tests) %>% 
       mutate(date = lubridate::as_date(date))
 
 readr::write_csv(ind_test_clean, glue("{rprojroot::find_rstudio_root_file()}/data/states/ind-tests-complete.csv"))
