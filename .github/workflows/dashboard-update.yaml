@@ -62,8 +62,11 @@ jobs:
       - name: Build dashboard data
         run: Rscript "R/build-dashboard-data.R"
       
-      - name: rebuild website
+      - name: Rebuild website
         run: Rscript -e "rmarkdown::render_site()"
+      
+      - name: Create pngs of dumbbell and reactable
+        run: Rscript "R/dashboard-screenshots.R"
       
       ## Commit, Push, Trigger other repo workflow
       - name: Commit files
