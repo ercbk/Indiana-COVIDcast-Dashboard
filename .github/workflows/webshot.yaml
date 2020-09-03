@@ -2,11 +2,11 @@ name: covidcast-update
 
 on:
   schedule:
-    - cron: '13 13 * * *'
+    - cron: '33 13 * * *'
     
 
 jobs:
-  take screenshots:
+  take-screenshots:
     name: webshot experiment
     runs-on: ubuntu-18.04
     
