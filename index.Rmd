@@ -271,9 +271,6 @@ yor_darker <- unclass(prismatic::clr_darken(yelorared,
 
 
 # needed because leaflet legend default direction of values is backwards
-# pal_rev <- leaflet::colorNumeric("YlOrRd",
-#                                  domain = seq(2.50, 0.00, by = -0.10),
-#                                  reverse = TRUE)
 pal_rev <- leaflet::colorNumeric(yor_darker,
                                  domain = seq(3.00, 0.00, by = -0.10),
                                  na.color = "#66001EFF", reverse = TRUE)
@@ -347,7 +344,7 @@ y_style_db <- list(
 )
 
 
-ci_shared_db %>% 
+dumbell_plotly <- ci_shared_db %>% 
    plot_ly(y = ~name,
            text = ~name,
            # <extra> part removes "trace" from text
@@ -394,6 +391,9 @@ ci_shared_db %>%
    ) %>% 
    highlight(persistent = TRUE)
 
+htmlwidgets::saveWidget(dumbell_plotly, file = glue("{rprojroot::find_rstudio_root_file()}/images/dashboard/covidcast-msa-dumbbell-{ci_clean_db$time_value[[1]]}.html"))
+
+dumbell_plotly
 
 
 ```   
@@ -406,14 +406,14 @@ Row {data-height=800}
 
 ```{r reactable}
 
-react_dates <- react_dates %>% 
+react_dates_pretty <- react_dates %>% 
    mutate_all(~format(., "%B %d"))
 
 # data dates
-cases_100k_tooltip <- as.character(react_dates$cases_date[[1]])
+cases_100k_tooltip <- as.character(react_dates_pretty$cases_date[[1]])
 posrate_tooltip <- glue("
-MSAs except Chicago: {react_dates$other_pos_date[[1]]}
-Chicago: {react_dates$chi_pos_date[[1]]}
+MSAs except Chicago: {react_dates_pretty$other_pos_date[[1]]}
+Chicago: {react_dates_pretty$chi_pos_date[[1]]}
 ")
 # header function to create tooltip
 with_tooltip <- function(value, tooltip) {
@@ -551,7 +551,7 @@ posrate_spark <- function(...){
                   stroke = htmlwidgets::JS("cellInfo.original.pos_color_light"),
                   # see tooltip comments for react element format
                   renderLabel = htmlwidgets::JS("d => React.createElement('tspan',{fontWeight: 'bold'},d.toLocaleString(undefined, {maximumFractionDigits: 1, style: 'percent'}))"),
-                  # says if row index = 0 or 1 then 'right' else 'left', === means type (numeric) much also match
+                  # says if row index = 0 or 1 then 'right' else 'left', === means type (numeric) must also match
                   labelPosition = htmlwidgets::JS("(d, i) => (i === 0 || i === 1 ? 'right' : 'left')"),
                   size = 3
                )
@@ -562,7 +562,7 @@ posrate_spark <- function(...){
 }
 
 
-reactable(
+react_tab <- reactable(
    data = react_shared,
    borderless = TRUE,
    style = list(fontSize = "18px"),
@@ -606,7 +606,9 @@ reactable(
 ) %>% 
    dui_add_reactable_dep()
 
+htmlwidgets::saveWidget(react_tab, file = glue("{rprojroot::find_rstudio_root_file()}/images/dashboard/covidcast-msa-reacttab-{react_dates$cases_date[[1]]}.html"))
 
 
+react_tab
 ```
 
