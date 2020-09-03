@@ -1,4 +1,4 @@
-name: covidcast-update
+name: webshot experiment
 
 on:
   schedule:
