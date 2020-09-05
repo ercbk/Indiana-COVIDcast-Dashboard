@@ -1,11 +1,11 @@
-name: covidcast-update
+name: Upgrade Dryrun
 
 on:
   schedule:
     - cron: '32 18 * * *'
 
 jobs:
-  update-dashboard:
+  upgrade:
     name: covidcast-update
     runs-on: ubuntu-18.04
     
