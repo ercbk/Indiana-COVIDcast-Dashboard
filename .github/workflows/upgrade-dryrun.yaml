@@ -2,7 +2,7 @@ name: Upgrade Dryrun
 
 on:
   schedule:
-    - cron: '28 19 * * *'
+    - cron: '33 21 * * *'
 
 jobs:
   upgrade:
