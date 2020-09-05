@@ -10,7 +10,7 @@
 
 
 
-pacman::p_load(swatches, covidcastR, extrafont, dplyr, glue)
+pacman::p_load(swatches, covidcast, extrafont, dplyr, glue)
 
 
 ###############################

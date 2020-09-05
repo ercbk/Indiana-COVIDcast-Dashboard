@@ -82,7 +82,7 @@ while (TRUE) {
          tidyr::nest() %>% 
          # get the cases per 100K value for each msa if one is available
          mutate(data = purrr::map(data, ~suppressMessages(
-            covidcastR::covidcast_signal(
+            covidcast::covidcast_signal(
                data_source = "indicator-combination",
                signal = "confirmed_7dav_incidence_prop",
                start_day = try_date,
