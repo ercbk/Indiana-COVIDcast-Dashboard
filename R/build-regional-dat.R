@@ -22,7 +22,7 @@ pacman::p_load(RSelenium, glue, dplyr, rvest)
 ##########################
 
 
-driver <- rsDriver(browser = c("chrome"), chromever = "83.0.4103.39")
+driver <- rsDriver(browser = c("chrome"), chromever = "85.0.4183.83")
 
 # chrome browser
 chrome <- driver$client
@@ -169,7 +169,7 @@ readr::write_csv(ind_test_clean, glue("{rprojroot::find_rstudio_root_file()}/dat
 # close browser
 chrome$close()
 
-# currently this doesn't shutdown the server
+# think this may be for another method of using RSelenium
 driver$server$stop()
 
 # kill the server manually
