@@ -2,7 +2,7 @@ name: Upgrade Dryrun
 
 on:
   schedule:
-    - cron: '9 14 * * *'
+    - cron: '39 14 * * *'
 
 jobs:
   upgrade:
@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-18.04
     
     env:
-      #CRAN_REPO: https://packagemanager.rstudio.com/all/__linux__/bionic/latest
-      CRAN_REPO: https://cloud.r-project.org
+      CRAN_REPO: https://packagemanager.rstudio.com/all/__linux__/bionic/latest
+      #CRAN_REPO: https://cloud.r-project.org
       RENV_PATHS_ROOT: ~/.local/share/renv
       
       
