@@ -328,10 +328,10 @@
     },
     "foreign": {
       "Package": "foreign",
-      "Version": "0.8-76",
+      "Version": "0.8-80",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "649b9c7a979d50d869578c73fed072cd"
+      "Hash": "ae1b1e15cc6ccb2bc61c0ac33e86d35f"
     },
     "fs": {
       "Package": "fs",
