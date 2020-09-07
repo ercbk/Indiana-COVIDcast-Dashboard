@@ -24,7 +24,7 @@ jobs:
       # installs r
       - uses: r-lib/actions/setup-r@v1
         with:
-          r-version: '3.6.3'
+          r-version: '4.0.2'
           
       # installs pandoc for rmarkdown
       - uses: r-lib/actions/setup-pandoc@v1
@@ -36,15 +36,6 @@ jobs:
       # needed for units package
       - name: Install udunits2
         run: sudo apt-get install libudunits2-dev
-      
-      # cache dev environment, restore environment from cache
-      - name: Cache packages
-        uses: actions/cache@v2
-        with:
-          path: ${{ env.RENV_PATHS_ROOT }}
-          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-renv-
       
       - name: Restore packages
         shell: Rscript {0}
