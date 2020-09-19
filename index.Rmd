@@ -64,6 +64,7 @@ About {data-icon="fa-question-circle"}
 
 
 ![](https://github.com/ercbk/Indiana-COVIDcast-Dashboard/workflows/covidcast-update/badge.svg)  
+Changelog located in [NEWS.md](https://github.com/ercbk/Indiana-COVID-19-Tracker/blob/master/NEWS.md)
 
 <H2>Description</H2>
 
