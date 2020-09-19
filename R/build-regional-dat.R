@@ -159,7 +159,7 @@ ind_test_dat <- readr::read_csv("https://hub.mph.in.gov/datastore/dump/afaa225d-
 ind_test_clean <- ind_test_dat %>% 
       janitor::clean_names() %>% 
       select(date, county = county_name, 
-             positives = covid_count, num_tests = covid_tests) %>% 
+             positives = covid_count, num_tests = covid_tests_administrated) %>% 
       mutate(date = lubridate::as_date(date))
 
 readr::write_csv(ind_test_clean, glue("{rprojroot::find_rstudio_root_file()}/data/states/ind-tests-complete.csv"))
