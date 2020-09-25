@@ -2265,3 +2265,209 @@ week,start_date,end_date,County,"New Cases per 100,000",Test Positivity %,"(%) C
  New Tests: 4,174",1.2%,12,1,48.0%
 37,2020-09-06,2020-09-12,Woodford,62 per 100kwarning,"3.5%
  New Tests: 956",*,<5,1,45.2%
+38,2020-09-13,2020-09-19,Adams,160 per 100kwarning,"4.1%
+ New Tests: 1,497",1.4%,<5,0,44.7%
+38,2020-09-13,2020-09-19,Alexander,182 per 100kwarning,"5.1%
+ New Tests: 198",*,0,0,61.6%
+38,2020-09-13,2020-09-19,Bond,343 per 100kwarning,"9.9%
+ New Tests: 534warning",*,0,0,42.8%
+38,2020-09-13,2020-09-19,Boone,133 per 100kwarning,"9.0%
+ New Tests: 885warning",1.8%,<5,0,45.7%
+38,2020-09-13,2020-09-19,Brown,168 per 100kwarning,"6.8%
+ New Tests: 118",0.0%,0,0,44.7%
+38,2020-09-13,2020-09-19,Bureau,255 per 100kwarning,"6.5%
+ New Tests: 1,029",4.2%,<5,2,40.8%
+38,2020-09-13,2020-09-19,Calhoun,3 Cases,"10.0%
+ New Tests: 40warning",*,0,0,44.7%
+38,2020-09-13,2020-09-19,Carroll,314 per 100kwarning,"2.3%
+ New Tests: 351",*,0,0,45.7%
+38,2020-09-13,2020-09-19,Cass,269 per 100kwarning,"14.1%
+ New Tests: 256warning",*,0,0,44.7%
+38,2020-09-13,2020-09-19,Champaign,140 per 100kwarning,"1.8%
+ New Tests: 61,147",1.1%,7,0,41.0%
+38,2020-09-13,2020-09-19,Chicago,77 per 100kwarning,"4.6%
+ New Tests: 60,734",2.0%,122,16,32.4%
+38,2020-09-13,2020-09-19,Christian,374 per 100kwarning,"15.9%
+ New Tests: 772warning",4.5%,7,1,44.7%
+38,2020-09-13,2020-09-19,Clark,64 per 100kwarning,"5.3%
+ New Tests: 263",*,<5,0,41.0%
+38,2020-09-13,2020-09-19,Clay,9 Cases,"7.0%
+ New Tests: 172",*,<5,0,41.0%
+38,2020-09-13,2020-09-19,Clinton,303 per 100kwarning,"13.8%
+ New Tests: 1,000warning",6.0%,9,1,42.8%
+38,2020-09-13,2020-09-19,Coles,220 per 100kwarning,"7.3%
+ New Tests: 1,212",3.6%,13,2,41.0%
+38,2020-09-13,2020-09-19,Cook,89 per 100kwarning,"4.6%
+ New Tests: 62,121",2.3%,149,13,36.9%
+38,2020-09-13,2020-09-19,Crawford,516 per 100kwarning,"19.1%
+ New Tests: 570warning",*,<5,0,41.0%
+38,2020-09-13,2020-09-19,Cumberland,130 per 100kwarning,"6.8%
+ New Tests: 237",6.4%,<5,0,41.0%
+38,2020-09-13,2020-09-19,De Witt,159 per 100kwarning,"8.1%
+ New Tests: 322warning",*,<5,0,41.0%
+38,2020-09-13,2020-09-19,DeKalb,118 per 100kwarning,"6.6%
+ New Tests: 2,743",3.4%,6,2,45.7%
+38,2020-09-13,2020-09-19,Douglas,77 per 100kwarning,"3.5%
+ New Tests: 479",*,<5,1,41.0%
+38,2020-09-13,2020-09-19,DuPage,72 per 100kwarning,"4.7%
+ New Tests: 18,830",3.2%,64,5,41.5%
+38,2020-09-13,2020-09-19,Edgar,5 Cases,"1.5%
+ New Tests: 261",0.0%,0,4,41.0%
+38,2020-09-13,2020-09-19,Edwards,5 Cases,"3.8%
+ New Tests: 78",*,0,0,61.6%
+38,2020-09-13,2020-09-19,Effingham,222 per 100kwarning,"6.9%
+ New Tests: 835",*,<5,0,41.0%
+38,2020-09-13,2020-09-19,Fayette,392 per 100kwarning,"8.6%
+ New Tests: 698warning",*,<5,0,41.0%
+38,2020-09-13,2020-09-19,Ford,90 per 100kwarning,"3.0%
+ New Tests: 333",0.0%,0,0,41.0%
+38,2020-09-13,2020-09-19,Franklin,160 per 100kwarning,"7.6%
+ New Tests: 765",2.3%,<5,1,61.6%
+38,2020-09-13,2020-09-19,Fulton,72 per 100kwarning,"3.5%
+ New Tests: 956",0.0%,0,0,40.8%
+38,2020-09-13,2020-09-19,Gallatin,0 Cases,"2.3%
+ New Tests: 43",0.0%,0,0,61.6%
+38,2020-09-13,2020-09-19,Greene,192 per 100kwarning,"5.8%
+ New Tests: 396",0.0%,0,4,44.7%
+38,2020-09-13,2020-09-19,Grundy,94 per 100kwarning,"8.3%
+ New Tests: 640warning",2.8%,<5,0,40.8%
+38,2020-09-13,2020-09-19,Hamilton,184 per 100kwarning,"10.9%
+ New Tests: 128warning",*,<5,0,61.6%
+38,2020-09-13,2020-09-19,Hancock,123 per 100kwarning,"7.7%
+ New Tests: 285",*,<5,1,44.7%
+38,2020-09-13,2020-09-19,Hardin,8 Cases,"5.4%
+ New Tests: 130",*,0,0,61.6%
+38,2020-09-13,2020-09-19,Henderson,2 Cases,"4.2%
+ New Tests: 120",0.0%,0,0,40.8%
+38,2020-09-13,2020-09-19,Henry,81 per 100kwarning,"5.6%
+ New Tests: 911",*,<5,1,40.8%
+38,2020-09-13,2020-09-19,Iroquois,62 per 100kwarning,"1.9%
+ New Tests: 744",*,<5,0,41.0%
+38,2020-09-13,2020-09-19,Jackson,160 per 100kwarning,"7.2%
+ New Tests: 925",1.1%,<5,0,61.6%
+38,2020-09-13,2020-09-19,Jasper,166 per 100kwarning,"5.8%
+ New Tests: 172",*,0,2,41.0%
+38,2020-09-13,2020-09-19,Jefferson,116 per 100kwarning,"3.2%
+ New Tests: 986",1.8%,<5,0,61.6%
+38,2020-09-13,2020-09-19,Jersey,110 per 100kwarning,"4.9%
+ New Tests: 451",*,<5,1,44.7%
+38,2020-09-13,2020-09-19,Jo Daviess,112 per 100kwarning,"7.5%
+ New Tests: 335",0.0%,0,0,45.7%
+38,2020-09-13,2020-09-19,Johnson,112 per 100kwarning,"6.4%
+ New Tests: 156",0.0%,0,0,61.6%
+38,2020-09-13,2020-09-19,Kane,100 per 100kwarning,"7.1%
+ New Tests: 9,745",2.4%,24,2,41.5%
+38,2020-09-13,2020-09-19,Kankakee,104 per 100kwarning,"5.6%
+ New Tests: 3,161",2.0%,12,4,32.8%
+38,2020-09-13,2020-09-19,Kendall,76 per 100kwarning,"5.6%
+ New Tests: 1,992",2.1%,6,0,40.8%
+38,2020-09-13,2020-09-19,Knox,146 per 100kwarning,"4.5%
+ New Tests: 1,769",2.0%,<5,0,40.8%
+38,2020-09-13,2020-09-19,Lake,75 per 100kwarning,"4.8%
+ New Tests: 14,806",2.0%,22,4,57.2%
+38,2020-09-13,2020-09-19,LaSalle,102 per 100kwarning,"5.9%
+ New Tests: 1,635",1.2%,<5,1,40.8%
+38,2020-09-13,2020-09-19,Lawrence,76 per 100kwarning,"4.5%
+ New Tests: 426",*,<5,2,41.0%
+38,2020-09-13,2020-09-19,Lee,79 per 100kwarning,"6.9%
+ New Tests: 422",2.1%,<5,0,45.7%
+38,2020-09-13,2020-09-19,Livingston,131 per 100kwarning,"5.3%
+ New Tests: 1,068",2.5%,<5,1,40.8%
+38,2020-09-13,2020-09-19,Logan,152 per 100kwarning,"5.7%
+ New Tests: 1,022",*,0,0,44.7%
+38,2020-09-13,2020-09-19,Macon,143 per 100kwarning,"5.6%
+ New Tests: 2,931",2.1%,11,7,41.0%
+38,2020-09-13,2020-09-19,Macoupin,139 per 100kwarning,"5.4%
+ New Tests: 1,308",*,<5,1,44.7%
+38,2020-09-13,2020-09-19,Madison,164 per 100kwarning,"7.3%
+ New Tests: 4,934",2.1%,18,11,42.8%
+38,2020-09-13,2020-09-19,Marion,181 per 100kwarning,"6.4%
+ New Tests: 1,444",1.3%,<5,0,61.6%
+38,2020-09-13,2020-09-19,Marshall,199 per 100kwarning,"6.2%
+ New Tests: 373",*,<5,0,40.8%
+38,2020-09-13,2020-09-19,Mason,133 per 100kwarning,"7.3%
+ New Tests: 329",0.0%,0,0,44.7%
+38,2020-09-13,2020-09-19,Massac,78 per 100kwarning,"3.6%
+ New Tests: 224",*,0,1,61.6%
+38,2020-09-13,2020-09-19,McDonough,137 per 100kwarning,"5.5%
+ New Tests: 706",5.5%,5,0,40.8%
+38,2020-09-13,2020-09-19,McHenry,48 per 100k,"6.2%
+ New Tests: 4,491",2.3%,13,1,57.2%
+38,2020-09-13,2020-09-19,McLean,138 per 100kwarning,"4.7%
+ New Tests: 5,657",3.1%,7,1,40.8%
+38,2020-09-13,2020-09-19,Menard,163 per 100kwarning,"12.3%
+ New Tests: 325warning",0.0%,0,0,44.7%
+38,2020-09-13,2020-09-19,Mercer,8 Cases,"3.2%
+ New Tests: 348",*,<5,0,40.8%
+38,2020-09-13,2020-09-19,Monroe,134 per 100kwarning,"5.6%
+ New Tests: 638",*,0,0,42.8%
+38,2020-09-13,2020-09-19,Montgomery,122 per 100kwarning,"3.3%
+ New Tests: 1,130",*,0,1,44.7%
+38,2020-09-13,2020-09-19,Morgan,71 per 100kwarning,"5.5%
+ New Tests: 615",0.0%,0,0,44.7%
+38,2020-09-13,2020-09-19,Moultrie,75 per 100kwarning,"4.8%
+ New Tests: 372",*,<5,0,41.0%
+38,2020-09-13,2020-09-19,Ogle,120 per 100kwarning,"7.8%
+ New Tests: 949",*,0,1,45.7%
+38,2020-09-13,2020-09-19,Peoria,172 per 100kwarning,"5.8%
+ New Tests: 5,896",2.5%,13,4,40.8%
+38,2020-09-13,2020-09-19,Perry,80 per 100kwarning,"5.0%
+ New Tests: 397",*,<5,2,61.6%
+38,2020-09-13,2020-09-19,Piatt,61 per 100kwarning,"3.0%
+ New Tests: 535",*,<5,0,41.0%
+38,2020-09-13,2020-09-19,Pike,9 Cases,"3.0%
+ New Tests: 337",*,0,0,44.7%
+38,2020-09-13,2020-09-19,Pope,3 Cases,"3.0%
+ New Tests: 33",0.0%,0,0,61.6%
+38,2020-09-13,2020-09-19,Pulaski,8 Cases,"7.0%
+ New Tests: 114",0.0%,0,0,61.6%
+38,2020-09-13,2020-09-19,Putnam,209 per 100kwarning,"12.1%
+ New Tests: 116warning",*,<5,0,40.8%
+38,2020-09-13,2020-09-19,Randolph,190 per 100kwarning,"4.7%
+ New Tests: 998",4.0%,<5,3,42.8%
+38,2020-09-13,2020-09-19,Richland,178 per 100kwarning,"4.1%
+ New Tests: 882",*,<5,0,41.0%
+38,2020-09-13,2020-09-19,Rock Island,125 per 100kwarning,"7.0%
+ New Tests: 3,682",3.5%,17,4,40.8%
+38,2020-09-13,2020-09-19,Saline,188 per 100kwarning,"7.5%
+ New Tests: 413",*,<5,0,61.6%
+38,2020-09-13,2020-09-19,Sangamon,61 per 100kwarning,"3.2%
+ New Tests: 6,286",2.0%,12,2,44.7%
+38,2020-09-13,2020-09-19,Schuyler,145 per 100kwarning,"5.4%
+ New Tests: 185",*,0,0,44.7%
+38,2020-09-13,2020-09-19,Scott,7 Cases,"5.7%
+ New Tests: 122",0.0%,0,0,44.7%
+38,2020-09-13,2020-09-19,Shelby,193 per 100kwarning,"7.4%
+ New Tests: 458",3.4%,0,1,41.0%
+38,2020-09-13,2020-09-19,St. Clair,113 per 100kwarning,"6.2%
+ New Tests: 4,704",1.4%,5,5,42.8%
+38,2020-09-13,2020-09-19,Stark,5 Cases,"2.6%
+ New Tests: 272",*,<5,1,40.8%
+38,2020-09-13,2020-09-19,Stephenson,87 per 100kwarning,"5.6%
+ New Tests: 700",*,0,0,45.7%
+38,2020-09-13,2020-09-19,Tazewell,132 per 100kwarning,"5.2%
+ New Tests: 3,776",2.9%,10,6,40.8%
+38,2020-09-13,2020-09-19,Union,148 per 100kwarning,"6.0%
+ New Tests: 496",*,<5,0,61.6%
+38,2020-09-13,2020-09-19,Vermilion,154 per 100kwarning,"6.8%
+ New Tests: 2,012",1.0%,<5,0,41.0%
+38,2020-09-13,2020-09-19,Wabash,6 Cases,"4.1%
+ New Tests: 73",0.0%,0,0,61.6%
+38,2020-09-13,2020-09-19,Warren,129 per 100kwarning,"5.2%
+ New Tests: 249",*,0,1,40.8%
+38,2020-09-13,2020-09-19,Washington,250 per 100kwarning,"11.3%
+ New Tests: 309warning",*,<5,0,42.8%
+38,2020-09-13,2020-09-19,Wayne,135 per 100kwarning,"8.1%
+ New Tests: 395warning",*,0,1,61.6%
+38,2020-09-13,2020-09-19,White,7 Cases,"1.2%
+ New Tests: 570",0.0%,0,0,61.6%
+38,2020-09-13,2020-09-19,Whiteside,79 per 100kwarning,"4.1%
+ New Tests: 824",*,<5,1,45.7%
+38,2020-09-13,2020-09-19,Will,86 per 100kwarning,"5.7%
+ New Tests: 12,262",3.6%,53,5,32.8%
+38,2020-09-13,2020-09-19,Williamson,231 per 100kwarning,"7.1%
+ New Tests: 1,783",3.8%,<5,7,61.6%
+38,2020-09-13,2020-09-19,Winnebago,170 per 100kwarning,"8.1%
+ New Tests: 6,685warning",1.3%,12,1,45.7%
+38,2020-09-13,2020-09-19,Woodford,99 per 100kwarning,"4.6%
+ New Tests: 966",3.6%,<5,2,40.8%
