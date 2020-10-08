@@ -169,7 +169,7 @@ date,county,positives,num_tests
 2020-08-12,Adams,4,79
 2020-08-13,Adams,5,366
 2020-08-14,Adams,8,128
-2020-08-15,Adams,3,15
+2020-08-15,Adams,3,16
 2020-08-16,Adams,4,25
 2020-08-17,Adams,2,71
 2020-08-18,Adams,1,79
@@ -196,7 +196,7 @@ date,county,positives,num_tests
 2020-09-08,Adams,10,305
 2020-09-09,Adams,1,104
 2020-09-10,Adams,1,384
-2020-09-11,Adams,3,222
+2020-09-11,Adams,3,223
 2020-09-12,Adams,1,26
 2020-09-13,Adams,2,20
 2020-09-14,Adams,4,47
@@ -215,13 +215,14 @@ date,county,positives,num_tests
 2020-09-27,Adams,2,104
 2020-09-28,Adams,1,93
 2020-09-29,Adams,5,197
-2020-09-30,Adams,4,291
+2020-09-30,Adams,4,292
 2020-10-01,Adams,6,251
-2020-10-02,Adams,4,231
-2020-10-03,Adams,1,25
-2020-10-04,Adams,9,29
-2020-10-05,Adams,12,26
-2020-10-06,Adams,2,5
+2020-10-02,Adams,4,235
+2020-10-03,Adams,1,26
+2020-10-04,Adams,9,37
+2020-10-05,Adams,12,60
+2020-10-06,Adams,2,81
+2020-10-07,Adams,14,4
 2020-02-26,Allen,0,0
 2020-02-27,Allen,0,0
 2020-02-28,Allen,0,0
@@ -393,15 +394,15 @@ date,county,positives,num_tests
 2020-08-13,Allen,57,1016
 2020-08-14,Allen,78,956
 2020-08-15,Allen,52,266
-2020-08-16,Allen,36,255
+2020-08-16,Allen,36,256
 2020-08-17,Allen,35,1012
 2020-08-18,Allen,28,1200
 2020-08-19,Allen,54,1164
 2020-08-20,Allen,48,1044
-2020-08-21,Allen,68,849
+2020-08-21,Allen,68,850
 2020-08-22,Allen,29,259
 2020-08-23,Allen,27,232
-2020-08-24,Allen,64,897
+2020-08-24,Allen,65,897
 2020-08-25,Allen,43,937
 2020-08-26,Allen,66,906
 2020-08-27,Allen,24,879
@@ -415,36 +416,37 @@ date,county,positives,num_tests
 2020-09-04,Allen,68,1169
 2020-09-05,Allen,44,254
 2020-09-06,Allen,40,432
-2020-09-07,Allen,40,197
-2020-09-08,Allen,35,1493
+2020-09-07,Allen,40,198
+2020-09-08,Allen,35,1562
 2020-09-09,Allen,47,1692
 2020-09-10,Allen,57,1380
-2020-09-11,Allen,64,1050
-2020-09-12,Allen,32,258
+2020-09-11,Allen,64,1057
+2020-09-12,Allen,32,259
 2020-09-13,Allen,24,172
-2020-09-14,Allen,57,1077
+2020-09-14,Allen,57,1080
 2020-09-15,Allen,37,1587
-2020-09-16,Allen,39,1370
-2020-09-17,Allen,65,1223
-2020-09-18,Allen,74,1107
-2020-09-19,Allen,46,296
+2020-09-16,Allen,39,1372
+2020-09-17,Allen,65,1228
+2020-09-18,Allen,74,1110
+2020-09-19,Allen,46,297
 2020-09-20,Allen,33,200
-2020-09-21,Allen,30,1373
-2020-09-22,Allen,34,1550
-2020-09-23,Allen,60,1415
-2020-09-24,Allen,77,1179
-2020-09-25,Allen,62,1137
+2020-09-21,Allen,30,1383
+2020-09-22,Allen,34,1604
+2020-09-23,Allen,60,1421
+2020-09-24,Allen,77,1184
+2020-09-25,Allen,62,1148
 2020-09-26,Allen,48,393
 2020-09-27,Allen,32,256
-2020-09-28,Allen,37,1279
-2020-09-29,Allen,49,1842
-2020-09-30,Allen,44,1234
-2020-10-01,Allen,61,1412
-2020-10-02,Allen,54,915
-2020-10-03,Allen,52,386
-2020-10-04,Allen,39,268
-2020-10-05,Allen,47,710
-2020-10-06,Allen,71,48
+2020-09-28,Allen,37,1286
+2020-09-29,Allen,49,1943
+2020-09-30,Allen,44,1279
+2020-10-01,Allen,60,1443
+2020-10-02,Allen,54,1012
+2020-10-03,Allen,52,390
+2020-10-04,Allen,39,284
+2020-10-05,Allen,47,997
+2020-10-06,Allen,71,730
+2020-10-07,Allen,74,19
 2020-02-26,Bartholomew,0,1
 2020-02-27,Bartholomew,0,0
 2020-02-28,Bartholomew,0,0
@@ -640,7 +642,7 @@ date,county,positives,num_tests
 2020-09-06,Bartholomew,6,28
 2020-09-07,Bartholomew,0,68
 2020-09-08,Bartholomew,3,339
-2020-09-09,Bartholomew,1,281
+2020-09-09,Bartholomew,1,282
 2020-09-10,Bartholomew,9,283
 2020-09-11,Bartholomew,8,185
 2020-09-12,Bartholomew,6,94
@@ -648,26 +650,27 @@ date,county,positives,num_tests
 2020-09-14,Bartholomew,1,274
 2020-09-15,Bartholomew,1,304
 2020-09-16,Bartholomew,5,278
-2020-09-17,Bartholomew,10,239
+2020-09-17,Bartholomew,10,252
 2020-09-18,Bartholomew,4,181
 2020-09-19,Bartholomew,4,70
 2020-09-20,Bartholomew,2,29
 2020-09-21,Bartholomew,1,258
 2020-09-22,Bartholomew,0,275
 2020-09-23,Bartholomew,2,241
-2020-09-24,Bartholomew,11,214
+2020-09-24,Bartholomew,11,223
 2020-09-25,Bartholomew,5,209
 2020-09-26,Bartholomew,9,99
 2020-09-27,Bartholomew,5,37
 2020-09-28,Bartholomew,8,257
 2020-09-29,Bartholomew,10,314
 2020-09-30,Bartholomew,6,185
-2020-10-01,Bartholomew,11,234
-2020-10-02,Bartholomew,1,141
-2020-10-03,Bartholomew,4,60
-2020-10-04,Bartholomew,3,31
-2020-10-05,Bartholomew,4,16
-2020-10-06,Bartholomew,1,1
+2020-10-01,Bartholomew,11,238
+2020-10-02,Bartholomew,1,179
+2020-10-03,Bartholomew,4,93
+2020-10-04,Bartholomew,3,47
+2020-10-05,Bartholomew,4,53
+2020-10-06,Bartholomew,1,16
+2020-10-07,Bartholomew,14,0
 2020-02-26,Benton,0,0
 2020-02-27,Benton,0,0
 2020-02-28,Benton,0,0
@@ -871,7 +874,7 @@ date,county,positives,num_tests
 2020-09-14,Benton,0,42
 2020-09-15,Benton,0,33
 2020-09-16,Benton,1,34
-2020-09-17,Benton,0,28
+2020-09-17,Benton,0,32
 2020-09-18,Benton,0,37
 2020-09-19,Benton,0,9
 2020-09-20,Benton,0,1
@@ -886,11 +889,12 @@ date,county,positives,num_tests
 2020-09-29,Benton,1,25
 2020-09-30,Benton,0,32
 2020-10-01,Benton,0,49
-2020-10-02,Benton,3,16
+2020-10-02,Benton,3,17
 2020-10-03,Benton,0,11
 2020-10-04,Benton,0,8
-2020-10-05,Benton,0,4
-2020-10-06,Benton,0,0
+2020-10-05,Benton,0,29
+2020-10-06,Benton,0,1
+2020-10-07,Benton,0,0
 2020-02-26,Blackford,0,0
 2020-02-27,Blackford,0,0
 2020-02-28,Blackford,0,0
@@ -1078,7 +1082,7 @@ date,county,positives,num_tests
 2020-08-29,Blackford,2,10
 2020-08-30,Blackford,1,5
 2020-08-31,Blackford,0,30
-2020-09-01,Blackford,0,25
+2020-09-01,Blackford,0,26
 2020-09-02,Blackford,2,60
 2020-09-03,Blackford,2,34
 2020-09-04,Blackford,4,41
@@ -1106,14 +1110,15 @@ date,county,positives,num_tests
 2020-09-26,Blackford,1,10
 2020-09-27,Blackford,1,5
 2020-09-28,Blackford,1,88
-2020-09-29,Blackford,2,133
+2020-09-29,Blackford,2,135
 2020-09-30,Blackford,2,79
 2020-10-01,Blackford,5,26
-2020-10-02,Blackford,5,38
+2020-10-02,Blackford,5,45
 2020-10-03,Blackford,0,16
-2020-10-04,Blackford,5,6
-2020-10-05,Blackford,6,54
-2020-10-06,Blackford,2,0
+2020-10-04,Blackford,5,7
+2020-10-05,Blackford,6,69
+2020-10-06,Blackford,2,35
+2020-10-07,Blackford,5,1
 2020-02-26,Boone,0,0
 2020-02-27,Boone,0,0
 2020-02-28,Boone,0,0
@@ -1163,8 +1168,8 @@ date,county,positives,num_tests
 2020-04-13,Boone,21,28
 2020-04-14,Boone,6,33
 2020-04-15,Boone,6,33
-2020-04-16,Boone,10,132
-2020-04-17,Boone,4,183
+2020-04-16,Boone,10,124
+2020-04-17,Boone,4,180
 2020-04-18,Boone,1,24
 2020-04-19,Boone,2,14
 2020-04-20,Boone,3,34
@@ -1223,7 +1228,7 @@ date,county,positives,num_tests
 2020-06-12,Boone,1,131
 2020-06-13,Boone,3,41
 2020-06-14,Boone,6,18
-2020-06-15,Boone,4,141
+2020-06-15,Boone,4,142
 2020-06-16,Boone,2,223
 2020-06-17,Boone,5,103
 2020-06-18,Boone,1,102
@@ -1325,18 +1330,19 @@ date,county,positives,num_tests
 2020-09-22,Boone,5,328
 2020-09-23,Boone,4,285
 2020-09-24,Boone,10,183
-2020-09-25,Boone,8,198
+2020-09-25,Boone,8,199
 2020-09-26,Boone,5,102
 2020-09-27,Boone,4,15
-2020-09-28,Boone,7,237
+2020-09-28,Boone,7,238
 2020-09-29,Boone,9,209
-2020-09-30,Boone,8,245
-2020-10-01,Boone,13,210
-2020-10-02,Boone,11,177
-2020-10-03,Boone,6,122
-2020-10-04,Boone,3,51
-2020-10-05,Boone,3,83
-2020-10-06,Boone,21,2
+2020-09-30,Boone,8,247
+2020-10-01,Boone,13,215
+2020-10-02,Boone,11,208
+2020-10-03,Boone,6,129
+2020-10-04,Boone,3,63
+2020-10-05,Boone,3,165
+2020-10-06,Boone,21,56
+2020-10-07,Boone,9,3
 2020-02-26,Brown,0,0
 2020-02-27,Brown,0,0
 2020-02-28,Brown,0,0
@@ -1556,10 +1562,11 @@ date,county,positives,num_tests
 2020-09-30,Brown,1,16
 2020-10-01,Brown,2,25
 2020-10-02,Brown,0,10
-2020-10-03,Brown,1,7
-2020-10-04,Brown,0,1
-2020-10-05,Brown,3,5
-2020-10-06,Brown,0,0
+2020-10-03,Brown,1,8
+2020-10-04,Brown,0,3
+2020-10-05,Brown,3,12
+2020-10-06,Brown,2,14
+2020-10-07,Brown,1,0
 2020-02-26,Carroll,0,0
 2020-02-27,Carroll,0,0
 2020-02-28,Carroll,0,0
@@ -1775,14 +1782,15 @@ date,county,positives,num_tests
 2020-09-26,Carroll,2,16
 2020-09-27,Carroll,1,9
 2020-09-28,Carroll,2,107
-2020-09-29,Carroll,3,38
+2020-09-29,Carroll,3,39
 2020-09-30,Carroll,2,94
 2020-10-01,Carroll,1,34
-2020-10-02,Carroll,1,48
+2020-10-02,Carroll,1,54
 2020-10-03,Carroll,1,16
 2020-10-04,Carroll,1,16
-2020-10-05,Carroll,0,8
-2020-10-06,Carroll,3,0
+2020-10-05,Carroll,0,38
+2020-10-06,Carroll,3,3
+2020-10-07,Carroll,0,0
 2020-02-26,Cass,0,0
 2020-02-27,Cass,0,0
 2020-02-28,Cass,0,0
@@ -1948,7 +1956,7 @@ date,county,positives,num_tests
 2020-08-07,Cass,8,90
 2020-08-08,Cass,9,28
 2020-08-09,Cass,1,14
-2020-08-10,Cass,6,109
+2020-08-10,Cass,6,108
 2020-08-11,Cass,4,68
 2020-08-12,Cass,3,79
 2020-08-13,Cass,4,101
@@ -1979,7 +1987,7 @@ date,county,positives,num_tests
 2020-09-07,Cass,1,13
 2020-09-08,Cass,0,271
 2020-09-09,Cass,1,134
-2020-09-10,Cass,2,228
+2020-09-10,Cass,2,229
 2020-09-11,Cass,8,118
 2020-09-12,Cass,1,22
 2020-09-13,Cass,0,9
@@ -1997,15 +2005,16 @@ date,county,positives,num_tests
 2020-09-25,Cass,8,114
 2020-09-26,Cass,4,20
 2020-09-27,Cass,1,7
-2020-09-28,Cass,3,299
-2020-09-29,Cass,3,200
-2020-09-30,Cass,23,136
-2020-10-01,Cass,15,89
-2020-10-02,Cass,18,82
-2020-10-03,Cass,3,21
-2020-10-04,Cass,0,12
-2020-10-05,Cass,8,32
-2020-10-06,Cass,8,11
+2020-09-28,Cass,3,300
+2020-09-29,Cass,3,203
+2020-09-30,Cass,23,137
+2020-10-01,Cass,15,91
+2020-10-02,Cass,18,90
+2020-10-03,Cass,3,27
+2020-10-04,Cass,0,23
+2020-10-05,Cass,8,171
+2020-10-06,Cass,8,47
+2020-10-07,Cass,42,2
 2020-02-26,Clark,0,0
 2020-02-27,Clark,0,0
 2020-02-28,Clark,0,0
@@ -2153,7 +2162,7 @@ date,county,positives,num_tests
 2020-07-20,Clark,24,331
 2020-07-21,Clark,15,327
 2020-07-22,Clark,18,254
-2020-07-23,Clark,31,367
+2020-07-23,Clark,31,366
 2020-07-24,Clark,27,363
 2020-07-25,Clark,15,92
 2020-07-26,Clark,12,34
@@ -2203,32 +2212,33 @@ date,county,positives,num_tests
 2020-09-08,Clark,18,664
 2020-09-09,Clark,12,359
 2020-09-10,Clark,24,397
-2020-09-11,Clark,25,411
+2020-09-11,Clark,25,412
 2020-09-12,Clark,4,107
 2020-09-13,Clark,25,53
 2020-09-14,Clark,16,424
 2020-09-15,Clark,12,522
 2020-09-16,Clark,22,273
-2020-09-17,Clark,32,475
+2020-09-17,Clark,32,476
 2020-09-18,Clark,20,292
 2020-09-19,Clark,15,88
 2020-09-20,Clark,18,50
-2020-09-21,Clark,14,570
+2020-09-21,Clark,14,571
 2020-09-22,Clark,8,464
 2020-09-23,Clark,29,312
 2020-09-24,Clark,27,377
-2020-09-25,Clark,13,307
+2020-09-25,Clark,13,308
 2020-09-26,Clark,9,99
 2020-09-27,Clark,23,64
-2020-09-28,Clark,8,450
-2020-09-29,Clark,24,354
-2020-09-30,Clark,22,362
-2020-10-01,Clark,34,415
-2020-10-02,Clark,16,277
-2020-10-03,Clark,19,128
-2020-10-04,Clark,18,57
-2020-10-05,Clark,24,66
-2020-10-06,Clark,16,2
+2020-09-28,Clark,8,456
+2020-09-29,Clark,24,361
+2020-09-30,Clark,22,370
+2020-10-01,Clark,34,446
+2020-10-02,Clark,16,379
+2020-10-03,Clark,19,145
+2020-10-04,Clark,18,79
+2020-10-05,Clark,24,418
+2020-10-06,Clark,16,40
+2020-10-07,Clark,31,1
 2020-02-26,Clay,0,0
 2020-02-27,Clay,0,0
 2020-02-28,Clay,0,0
@@ -2424,9 +2434,9 @@ date,county,positives,num_tests
 2020-09-06,Clay,1,8
 2020-09-07,Clay,2,7
 2020-09-08,Clay,6,85
-2020-09-09,Clay,9,80
+2020-09-09,Clay,9,81
 2020-09-10,Clay,3,140
-2020-09-11,Clay,1,58
+2020-09-11,Clay,1,66
 2020-09-12,Clay,0,18
 2020-09-13,Clay,4,10
 2020-09-14,Clay,4,77
@@ -2436,22 +2446,23 @@ date,county,positives,num_tests
 2020-09-18,Clay,4,44
 2020-09-19,Clay,1,11
 2020-09-20,Clay,1,5
-2020-09-21,Clay,0,74
+2020-09-21,Clay,0,77
 2020-09-22,Clay,4,110
 2020-09-23,Clay,1,62
-2020-09-24,Clay,1,60
-2020-09-25,Clay,1,49
+2020-09-24,Clay,1,61
+2020-09-25,Clay,1,51
 2020-09-26,Clay,2,11
 2020-09-27,Clay,6,9
-2020-09-28,Clay,2,74
+2020-09-28,Clay,2,78
 2020-09-29,Clay,6,98
 2020-09-30,Clay,2,42
-2020-10-01,Clay,4,59
-2020-10-02,Clay,6,26
+2020-10-01,Clay,4,61
+2020-10-02,Clay,6,32
 2020-10-03,Clay,4,18
-2020-10-04,Clay,2,12
-2020-10-05,Clay,3,20
-2020-10-06,Clay,4,4
+2020-10-04,Clay,2,15
+2020-10-05,Clay,3,52
+2020-10-06,Clay,4,19
+2020-10-07,Clay,6,1
 2020-02-26,Clinton,0,0
 2020-02-27,Clinton,0,0
 2020-02-28,Clinton,0,0
@@ -2655,7 +2666,7 @@ date,county,positives,num_tests
 2020-09-14,Clinton,4,199
 2020-09-15,Clinton,0,180
 2020-09-16,Clinton,2,163
-2020-09-17,Clinton,0,161
+2020-09-17,Clinton,0,162
 2020-09-18,Clinton,1,104
 2020-09-19,Clinton,0,12
 2020-09-20,Clinton,0,8
@@ -2670,11 +2681,12 @@ date,county,positives,num_tests
 2020-09-29,Clinton,10,167
 2020-09-30,Clinton,6,178
 2020-10-01,Clinton,26,204
-2020-10-02,Clinton,5,154
-2020-10-03,Clinton,3,30
-2020-10-04,Clinton,8,13
-2020-10-05,Clinton,3,14
-2020-10-06,Clinton,5,0
+2020-10-02,Clinton,5,165
+2020-10-03,Clinton,3,31
+2020-10-04,Clinton,8,15
+2020-10-05,Clinton,3,119
+2020-10-06,Clinton,5,58
+2020-10-07,Clinton,9,2
 2020-02-26,Crawford,0,0
 2020-02-27,Crawford,0,0
 2020-02-28,Crawford,0,0
@@ -2893,11 +2905,12 @@ date,county,positives,num_tests
 2020-09-29,Crawford,1,47
 2020-09-30,Crawford,3,40
 2020-10-01,Crawford,2,26
-2020-10-02,Crawford,3,23
-2020-10-03,Crawford,3,10
-2020-10-04,Crawford,0,4
-2020-10-05,Crawford,0,4
-2020-10-06,Crawford,0,0
+2020-10-02,Crawford,3,32
+2020-10-03,Crawford,3,16
+2020-10-04,Crawford,0,5
+2020-10-05,Crawford,0,19
+2020-10-06,Crawford,0,7
+2020-10-07,Crawford,1,0
 2020-02-26,Daviess,0,0
 2020-02-27,Daviess,0,0
 2020-02-28,Daviess,0,0
@@ -3098,7 +3111,7 @@ date,county,positives,num_tests
 2020-09-11,Daviess,6,177
 2020-09-12,Daviess,11,20
 2020-09-13,Daviess,6,66
-2020-09-14,Daviess,8,187
+2020-09-14,Daviess,8,188
 2020-09-15,Daviess,11,82
 2020-09-16,Daviess,5,169
 2020-09-17,Daviess,12,170
@@ -3115,12 +3128,13 @@ date,county,positives,num_tests
 2020-09-28,Daviess,2,122
 2020-09-29,Daviess,3,154
 2020-09-30,Daviess,5,161
-2020-10-01,Daviess,7,87
-2020-10-02,Daviess,6,57
-2020-10-03,Daviess,12,17
-2020-10-04,Daviess,3,8
-2020-10-05,Daviess,1,14
-2020-10-06,Daviess,6,1
+2020-10-01,Daviess,7,91
+2020-10-02,Daviess,6,84
+2020-10-03,Daviess,12,21
+2020-10-04,Daviess,3,13
+2020-10-05,Daviess,1,94
+2020-10-06,Daviess,6,22
+2020-10-07,Daviess,6,0
 2020-02-26,Dearborn,0,0
 2020-02-27,Dearborn,0,0
 2020-02-28,Dearborn,0,0
@@ -3296,7 +3310,7 @@ date,county,positives,num_tests
 2020-08-17,Dearborn,3,184
 2020-08-18,Dearborn,2,103
 2020-08-19,Dearborn,3,90
-2020-08-20,Dearborn,5,134
+2020-08-20,Dearborn,5,135
 2020-08-21,Dearborn,4,115
 2020-08-22,Dearborn,1,15
 2020-08-23,Dearborn,3,20
@@ -3332,18 +3346,19 @@ date,county,positives,num_tests
 2020-09-22,Dearborn,8,216
 2020-09-23,Dearborn,8,93
 2020-09-24,Dearborn,15,98
-2020-09-25,Dearborn,4,119
+2020-09-25,Dearborn,4,120
 2020-09-26,Dearborn,1,18
 2020-09-27,Dearborn,10,13
-2020-09-28,Dearborn,2,165
+2020-09-28,Dearborn,2,170
 2020-09-29,Dearborn,0,204
-2020-09-30,Dearborn,9,84
-2020-10-01,Dearborn,12,129
-2020-10-02,Dearborn,4,123
-2020-10-03,Dearborn,4,12
-2020-10-04,Dearborn,8,7
-2020-10-05,Dearborn,1,7
-2020-10-06,Dearborn,12,1
+2020-09-30,Dearborn,9,88
+2020-10-01,Dearborn,12,134
+2020-10-02,Dearborn,4,129
+2020-10-03,Dearborn,4,16
+2020-10-04,Dearborn,8,12
+2020-10-05,Dearborn,1,50
+2020-10-06,Dearborn,12,34
+2020-10-07,Dearborn,4,0
 2020-02-26,Decatur,0,0
 2020-02-27,Decatur,0,0
 2020-02-28,Decatur,0,0
@@ -3555,18 +3570,19 @@ date,county,positives,num_tests
 2020-09-22,Decatur,2,159
 2020-09-23,Decatur,1,43
 2020-09-24,Decatur,0,44
-2020-09-25,Decatur,0,30
+2020-09-25,Decatur,0,31
 2020-09-26,Decatur,0,13
 2020-09-27,Decatur,1,9
 2020-09-28,Decatur,2,63
 2020-09-29,Decatur,2,166
-2020-09-30,Decatur,1,37
+2020-09-30,Decatur,1,38
 2020-10-01,Decatur,0,43
-2020-10-02,Decatur,1,18
-2020-10-03,Decatur,2,13
+2020-10-02,Decatur,1,32
+2020-10-03,Decatur,2,15
 2020-10-04,Decatur,0,6
-2020-10-05,Decatur,2,32
-2020-10-06,Decatur,1,0
+2020-10-05,Decatur,2,43
+2020-10-06,Decatur,1,4
+2020-10-07,Decatur,1,0
 2020-02-26,De Kalb,0,0
 2020-02-27,De Kalb,0,0
 2020-02-28,De Kalb,0,0
@@ -3737,7 +3753,7 @@ date,county,positives,num_tests
 2020-08-12,De Kalb,4,77
 2020-08-13,De Kalb,2,69
 2020-08-14,De Kalb,5,116
-2020-08-15,De Kalb,2,22
+2020-08-15,De Kalb,2,23
 2020-08-16,De Kalb,2,29
 2020-08-17,De Kalb,2,107
 2020-08-18,De Kalb,4,76
@@ -3761,10 +3777,10 @@ date,county,positives,num_tests
 2020-09-05,De Kalb,4,29
 2020-09-06,De Kalb,4,25
 2020-09-07,De Kalb,0,27
-2020-09-08,De Kalb,3,93
+2020-09-08,De Kalb,3,94
 2020-09-09,De Kalb,3,169
 2020-09-10,De Kalb,10,153
-2020-09-11,De Kalb,7,87
+2020-09-11,De Kalb,7,88
 2020-09-12,De Kalb,4,28
 2020-09-13,De Kalb,7,28
 2020-09-14,De Kalb,7,134
@@ -3782,14 +3798,15 @@ date,county,positives,num_tests
 2020-09-26,De Kalb,2,18
 2020-09-27,De Kalb,1,19
 2020-09-28,De Kalb,4,116
-2020-09-29,De Kalb,10,113
-2020-09-30,De Kalb,3,72
-2020-10-01,De Kalb,10,99
-2020-10-02,De Kalb,8,67
-2020-10-03,De Kalb,9,24
+2020-09-29,De Kalb,10,166
+2020-09-30,De Kalb,3,73
+2020-10-01,De Kalb,10,100
+2020-10-02,De Kalb,8,72
+2020-10-03,De Kalb,9,25
 2020-10-04,De Kalb,3,30
-2020-10-05,De Kalb,3,62
-2020-10-06,De Kalb,10,1
+2020-10-05,De Kalb,3,107
+2020-10-06,De Kalb,10,65
+2020-10-07,De Kalb,12,1
 2020-02-26,Delaware,0,0
 2020-02-27,Delaware,0,0
 2020-02-28,Delaware,0,0
@@ -3977,7 +3994,7 @@ date,county,positives,num_tests
 2020-08-29,Delaware,66,244
 2020-08-30,Delaware,35,145
 2020-08-31,Delaware,52,499
-2020-09-01,Delaware,37,715
+2020-09-01,Delaware,37,717
 2020-09-02,Delaware,75,748
 2020-09-03,Delaware,105,490
 2020-09-04,Delaware,61,469
@@ -3987,12 +4004,12 @@ date,county,positives,num_tests
 2020-09-08,Delaware,18,443
 2020-09-09,Delaware,28,455
 2020-09-10,Delaware,36,424
-2020-09-11,Delaware,21,472
+2020-09-11,Delaware,21,473
 2020-09-12,Delaware,18,133
-2020-09-13,Delaware,30,69
-2020-09-14,Delaware,7,456
+2020-09-13,Delaware,30,74
+2020-09-14,Delaware,7,463
 2020-09-15,Delaware,20,443
-2020-09-16,Delaware,27,510
+2020-09-16,Delaware,27,511
 2020-09-17,Delaware,22,521
 2020-09-18,Delaware,19,375
 2020-09-19,Delaware,27,92
@@ -4004,15 +4021,16 @@ date,county,positives,num_tests
 2020-09-25,Delaware,17,305
 2020-09-26,Delaware,27,122
 2020-09-27,Delaware,16,73
-2020-09-28,Delaware,8,709
-2020-09-29,Delaware,31,406
-2020-09-30,Delaware,23,625
-2020-10-01,Delaware,35,417
-2020-10-02,Delaware,27,298
-2020-10-03,Delaware,26,123
-2020-10-04,Delaware,23,57
-2020-10-05,Delaware,47,105
-2020-10-06,Delaware,33,5
+2020-09-28,Delaware,8,726
+2020-09-29,Delaware,31,408
+2020-09-30,Delaware,23,628
+2020-10-01,Delaware,35,428
+2020-10-02,Delaware,27,352
+2020-10-03,Delaware,26,125
+2020-10-04,Delaware,23,65
+2020-10-05,Delaware,47,319
+2020-10-06,Delaware,33,113
+2020-10-07,Delaware,36,2
 2020-02-26,Dubois,0,0
 2020-02-27,Dubois,0,0
 2020-02-28,Dubois,0,0
@@ -4156,7 +4174,7 @@ date,county,positives,num_tests
 2020-07-16,Dubois,19,177
 2020-07-17,Dubois,14,144
 2020-07-18,Dubois,20,99
-2020-07-19,Dubois,12,32
+2020-07-19,Dubois,12,31
 2020-07-20,Dubois,16,84
 2020-07-21,Dubois,19,175
 2020-07-22,Dubois,16,229
@@ -4229,13 +4247,14 @@ date,county,positives,num_tests
 2020-09-27,Dubois,8,20
 2020-09-28,Dubois,11,139
 2020-09-29,Dubois,14,394
-2020-09-30,Dubois,19,124
-2020-10-01,Dubois,5,153
-2020-10-02,Dubois,16,176
-2020-10-03,Dubois,15,45
-2020-10-04,Dubois,4,9
-2020-10-05,Dubois,14,20
-2020-10-06,Dubois,17,0
+2020-09-30,Dubois,19,125
+2020-10-01,Dubois,5,154
+2020-10-02,Dubois,16,186
+2020-10-03,Dubois,15,62
+2020-10-04,Dubois,4,24
+2020-10-05,Dubois,14,103
+2020-10-06,Dubois,17,66
+2020-10-07,Dubois,3,0
 2020-02-26,Elkhart,0,0
 2020-02-27,Elkhart,0,0
 2020-02-28,Elkhart,0,0
@@ -4406,8 +4425,8 @@ date,county,positives,num_tests
 2020-08-12,Elkhart,37,849
 2020-08-13,Elkhart,57,537
 2020-08-14,Elkhart,58,789
-2020-08-15,Elkhart,16,202
-2020-08-16,Elkhart,34,133
+2020-08-15,Elkhart,16,204
+2020-08-16,Elkhart,34,136
 2020-08-17,Elkhart,41,460
 2020-08-18,Elkhart,20,566
 2020-08-19,Elkhart,30,805
@@ -4430,9 +4449,9 @@ date,county,positives,num_tests
 2020-09-05,Elkhart,24,143
 2020-09-06,Elkhart,10,101
 2020-09-07,Elkhart,12,157
-2020-09-08,Elkhart,41,927
+2020-09-08,Elkhart,41,928
 2020-09-09,Elkhart,22,738
-2020-09-10,Elkhart,38,613
+2020-09-10,Elkhart,38,614
 2020-09-11,Elkhart,57,780
 2020-09-12,Elkhart,36,135
 2020-09-13,Elkhart,22,125
@@ -4440,25 +4459,26 @@ date,county,positives,num_tests
 2020-09-15,Elkhart,23,678
 2020-09-16,Elkhart,56,1066
 2020-09-17,Elkhart,67,832
-2020-09-18,Elkhart,50,576
+2020-09-18,Elkhart,50,577
 2020-09-19,Elkhart,44,108
 2020-09-20,Elkhart,22,92
-2020-09-21,Elkhart,38,949
+2020-09-21,Elkhart,38,950
 2020-09-22,Elkhart,24,814
 2020-09-23,Elkhart,40,760
 2020-09-24,Elkhart,51,744
-2020-09-25,Elkhart,90,594
-2020-09-26,Elkhart,45,136
+2020-09-25,Elkhart,90,595
+2020-09-26,Elkhart,45,135
 2020-09-27,Elkhart,39,80
-2020-09-28,Elkhart,27,1128
-2020-09-29,Elkhart,25,818
-2020-09-30,Elkhart,44,824
-2020-10-01,Elkhart,77,796
-2020-10-02,Elkhart,83,630
-2020-10-03,Elkhart,54,151
-2020-10-04,Elkhart,25,80
-2020-10-05,Elkhart,53,307
-2020-10-06,Elkhart,87,23
+2020-09-28,Elkhart,27,1130
+2020-09-29,Elkhart,25,843
+2020-09-30,Elkhart,44,831
+2020-10-01,Elkhart,77,802
+2020-10-02,Elkhart,82,702
+2020-10-03,Elkhart,54,189
+2020-10-04,Elkhart,25,104
+2020-10-05,Elkhart,53,593
+2020-10-06,Elkhart,86,256
+2020-10-07,Elkhart,131,21
 2020-02-26,Fayette,0,0
 2020-02-27,Fayette,0,0
 2020-02-28,Fayette,0,0
@@ -4659,7 +4679,7 @@ date,county,positives,num_tests
 2020-09-11,Fayette,0,84
 2020-09-12,Fayette,0,27
 2020-09-13,Fayette,3,10
-2020-09-14,Fayette,2,99
+2020-09-14,Fayette,2,100
 2020-09-15,Fayette,1,66
 2020-09-16,Fayette,3,67
 2020-09-17,Fayette,8,145
@@ -4674,14 +4694,15 @@ date,county,positives,num_tests
 2020-09-26,Fayette,1,25
 2020-09-27,Fayette,0,7
 2020-09-28,Fayette,0,69
-2020-09-29,Fayette,0,59
+2020-09-29,Fayette,0,60
 2020-09-30,Fayette,2,44
-2020-10-01,Fayette,3,56
-2020-10-02,Fayette,1,37
-2020-10-03,Fayette,1,24
-2020-10-04,Fayette,0,3
-2020-10-05,Fayette,2,46
-2020-10-06,Fayette,36,0
+2020-10-01,Fayette,3,108
+2020-10-02,Fayette,1,63
+2020-10-03,Fayette,1,37
+2020-10-04,Fayette,0,9
+2020-10-05,Fayette,2,57
+2020-10-06,Fayette,36,11
+2020-10-07,Fayette,10,0
 2020-02-26,Floyd,0,0
 2020-02-27,Floyd,0,0
 2020-02-28,Floyd,0,0
@@ -4893,18 +4914,19 @@ date,county,positives,num_tests
 2020-09-22,Floyd,7,364
 2020-09-23,Floyd,29,304
 2020-09-24,Floyd,7,292
-2020-09-25,Floyd,11,216
-2020-09-26,Floyd,21,77
+2020-09-25,Floyd,11,223
+2020-09-26,Floyd,21,78
 2020-09-27,Floyd,7,69
-2020-09-28,Floyd,8,417
-2020-09-29,Floyd,17,333
-2020-09-30,Floyd,15,379
-2020-10-01,Floyd,16,277
-2020-10-02,Floyd,19,221
-2020-10-03,Floyd,13,81
-2020-10-04,Floyd,5,35
-2020-10-05,Floyd,7,34
-2020-10-06,Floyd,13,0
+2020-09-28,Floyd,8,429
+2020-09-29,Floyd,17,345
+2020-09-30,Floyd,15,382
+2020-10-01,Floyd,16,288
+2020-10-02,Floyd,18,263
+2020-10-03,Floyd,13,106
+2020-10-04,Floyd,5,45
+2020-10-05,Floyd,7,422
+2020-10-06,Floyd,12,33
+2020-10-07,Floyd,22,1
 2020-02-26,Fountain,0,0
 2020-02-27,Fountain,0,0
 2020-02-28,Fountain,0,0
@@ -5108,7 +5130,7 @@ date,county,positives,num_tests
 2020-09-14,Fountain,1,53
 2020-09-15,Fountain,0,43
 2020-09-16,Fountain,2,39
-2020-09-17,Fountain,0,17
+2020-09-17,Fountain,0,47
 2020-09-18,Fountain,0,49
 2020-09-19,Fountain,0,7
 2020-09-20,Fountain,1,7
@@ -5122,12 +5144,13 @@ date,county,positives,num_tests
 2020-09-28,Fountain,1,49
 2020-09-29,Fountain,1,29
 2020-09-30,Fountain,2,41
-2020-10-01,Fountain,2,31
-2020-10-02,Fountain,3,28
+2020-10-01,Fountain,2,32
+2020-10-02,Fountain,3,33
 2020-10-03,Fountain,0,13
 2020-10-04,Fountain,3,8
-2020-10-05,Fountain,12,30
-2020-10-06,Fountain,17,0
+2020-10-05,Fountain,12,56
+2020-10-06,Fountain,17,33
+2020-10-07,Fountain,18,0
 2020-02-26,Franklin,0,0
 2020-02-27,Franklin,0,0
 2020-02-28,Franklin,0,0
@@ -5321,8 +5344,8 @@ date,county,positives,num_tests
 2020-09-04,Franklin,0,27
 2020-09-05,Franklin,2,7
 2020-09-06,Franklin,0,4
-2020-09-07,Franklin,1,5
-2020-09-08,Franklin,1,60
+2020-09-07,Franklin,1,6
+2020-09-08,Franklin,2,60
 2020-09-09,Franklin,0,59
 2020-09-10,Franklin,3,32
 2020-09-11,Franklin,2,48
@@ -5342,15 +5365,16 @@ date,county,positives,num_tests
 2020-09-25,Franklin,2,32
 2020-09-26,Franklin,2,11
 2020-09-27,Franklin,2,6
-2020-09-28,Franklin,2,40
+2020-09-28,Franklin,2,42
 2020-09-29,Franklin,0,51
-2020-09-30,Franklin,1,25
-2020-10-01,Franklin,1,31
-2020-10-02,Franklin,0,46
-2020-10-03,Franklin,2,14
-2020-10-04,Franklin,0,4
-2020-10-05,Franklin,0,9
-2020-10-06,Franklin,1,3
+2020-09-30,Franklin,1,26
+2020-10-01,Franklin,1,36
+2020-10-02,Franklin,0,53
+2020-10-03,Franklin,2,20
+2020-10-04,Franklin,0,5
+2020-10-05,Franklin,1,20
+2020-10-06,Franklin,1,12
+2020-10-07,Franklin,2,0
 2020-02-26,Fulton,0,0
 2020-02-27,Fulton,0,0
 2020-02-28,Fulton,0,0
@@ -5516,13 +5540,13 @@ date,county,positives,num_tests
 2020-08-07,Fulton,6,70
 2020-08-08,Fulton,6,13
 2020-08-09,Fulton,1,18
-2020-08-10,Fulton,3,76
+2020-08-10,Fulton,3,75
 2020-08-11,Fulton,1,38
 2020-08-12,Fulton,1,39
 2020-08-13,Fulton,1,48
-2020-08-14,Fulton,3,53
-2020-08-15,Fulton,2,11
-2020-08-16,Fulton,1,15
+2020-08-14,Fulton,3,54
+2020-08-15,Fulton,2,12
+2020-08-16,Fulton,1,16
 2020-08-17,Fulton,0,53
 2020-08-18,Fulton,0,39
 2020-08-19,Fulton,2,46
@@ -5545,7 +5569,7 @@ date,county,positives,num_tests
 2020-09-05,Fulton,1,17
 2020-09-06,Fulton,1,21
 2020-09-07,Fulton,0,7
-2020-09-08,Fulton,5,166
+2020-09-08,Fulton,5,167
 2020-09-09,Fulton,1,58
 2020-09-10,Fulton,1,93
 2020-09-11,Fulton,2,47
@@ -5566,14 +5590,15 @@ date,county,positives,num_tests
 2020-09-26,Fulton,1,9
 2020-09-27,Fulton,3,69
 2020-09-28,Fulton,1,129
-2020-09-29,Fulton,1,123
+2020-09-29,Fulton,1,124
 2020-09-30,Fulton,1,46
 2020-10-01,Fulton,10,41
 2020-10-02,Fulton,3,55
 2020-10-03,Fulton,2,13
 2020-10-04,Fulton,0,2
-2020-10-05,Fulton,1,17
-2020-10-06,Fulton,3,1
+2020-10-05,Fulton,1,48
+2020-10-06,Fulton,3,7
+2020-10-07,Fulton,3,2
 2020-02-26,Gibson,0,0
 2020-02-27,Gibson,0,0
 2020-02-28,Gibson,0,0
@@ -5789,14 +5814,15 @@ date,county,positives,num_tests
 2020-09-26,Gibson,8,31
 2020-09-27,Gibson,5,37
 2020-09-28,Gibson,10,89
-2020-09-29,Gibson,15,134
+2020-09-29,Gibson,15,135
 2020-09-30,Gibson,13,164
-2020-10-01,Gibson,11,84
-2020-10-02,Gibson,14,53
+2020-10-01,Gibson,11,85
+2020-10-02,Gibson,14,126
 2020-10-03,Gibson,16,50
-2020-10-04,Gibson,11,45
-2020-10-05,Gibson,5,51
-2020-10-06,Gibson,26,4
+2020-10-04,Gibson,11,46
+2020-10-05,Gibson,5,90
+2020-10-06,Gibson,25,57
+2020-10-07,Gibson,17,1
 2020-02-26,Grant,0,0
 2020-02-27,Grant,0,0
 2020-02-28,Grant,0,0
@@ -5991,35 +6017,36 @@ date,county,positives,num_tests
 2020-09-05,Grant,6,39
 2020-09-06,Grant,9,29
 2020-09-07,Grant,12,47
-2020-09-08,Grant,15,405
+2020-09-08,Grant,15,406
 2020-09-09,Grant,7,355
-2020-09-10,Grant,12,260
+2020-09-10,Grant,12,261
 2020-09-11,Grant,13,204
 2020-09-12,Grant,11,70
 2020-09-13,Grant,11,23
 2020-09-14,Grant,4,215
-2020-09-15,Grant,5,442
+2020-09-15,Grant,5,443
 2020-09-16,Grant,14,313
 2020-09-17,Grant,7,184
 2020-09-18,Grant,9,170
 2020-09-19,Grant,13,39
 2020-09-20,Grant,6,29
 2020-09-21,Grant,4,203
-2020-09-22,Grant,6,654
+2020-09-22,Grant,6,656
 2020-09-23,Grant,6,246
 2020-09-24,Grant,16,145
 2020-09-25,Grant,6,113
 2020-09-26,Grant,8,29
 2020-09-27,Grant,18,26
-2020-09-28,Grant,15,309
-2020-09-29,Grant,6,277
+2020-09-28,Grant,15,310
+2020-09-29,Grant,6,413
 2020-09-30,Grant,9,235
-2020-10-01,Grant,13,116
-2020-10-02,Grant,11,128
-2020-10-03,Grant,2,27
-2020-10-04,Grant,9,14
-2020-10-05,Grant,15,90
-2020-10-06,Grant,10,10
+2020-10-01,Grant,13,117
+2020-10-02,Grant,11,145
+2020-10-03,Grant,2,29
+2020-10-04,Grant,9,16
+2020-10-05,Grant,15,145
+2020-10-06,Grant,10,167
+2020-10-07,Grant,9,18
 2020-02-26,Greene,0,0
 2020-02-27,Greene,0,0
 2020-02-28,Greene,0,0
@@ -6236,13 +6263,14 @@ date,county,positives,num_tests
 2020-09-27,Greene,0,8
 2020-09-28,Greene,2,173
 2020-09-29,Greene,2,86
-2020-09-30,Greene,3,59
+2020-09-30,Greene,2,59
 2020-10-01,Greene,1,92
-2020-10-02,Greene,3,65
-2020-10-03,Greene,3,19
-2020-10-04,Greene,1,8
-2020-10-05,Greene,3,34
-2020-10-06,Greene,0,2
+2020-10-02,Greene,3,82
+2020-10-03,Greene,3,23
+2020-10-04,Greene,1,9
+2020-10-05,Greene,3,58
+2020-10-06,Greene,0,24
+2020-10-07,Greene,7,1
 2020-02-26,Hamilton,0,0
 2020-02-27,Hamilton,0,0
 2020-02-28,Hamilton,0,0
@@ -6320,28 +6348,28 @@ date,county,positives,num_tests
 2020-05-11,Hamilton,21,478
 2020-05-12,Hamilton,7,424
 2020-05-13,Hamilton,10,487
-2020-05-14,Hamilton,10,742
+2020-05-14,Hamilton,10,724
 2020-05-15,Hamilton,23,609
-2020-05-16,Hamilton,18,142
+2020-05-16,Hamilton,18,141
 2020-05-17,Hamilton,15,62
 2020-05-18,Hamilton,9,694
-2020-05-19,Hamilton,13,634
+2020-05-19,Hamilton,13,632
 2020-05-20,Hamilton,13,451
-2020-05-21,Hamilton,12,493
+2020-05-21,Hamilton,12,476
 2020-05-22,Hamilton,10,533
 2020-05-23,Hamilton,5,134
 2020-05-24,Hamilton,2,68
 2020-05-25,Hamilton,13,112
-2020-05-26,Hamilton,6,594
+2020-05-26,Hamilton,6,593
 2020-05-27,Hamilton,9,483
-2020-05-28,Hamilton,17,476
+2020-05-28,Hamilton,17,457
 2020-05-29,Hamilton,6,413
 2020-05-30,Hamilton,7,113
 2020-05-31,Hamilton,3,42
 2020-06-01,Hamilton,11,531
-2020-06-02,Hamilton,6,394
+2020-06-02,Hamilton,6,393
 2020-06-03,Hamilton,3,426
-2020-06-04,Hamilton,9,502
+2020-06-04,Hamilton,9,483
 2020-06-05,Hamilton,12,393
 2020-06-06,Hamilton,3,199
 2020-06-07,Hamilton,4,86
@@ -6419,10 +6447,10 @@ date,county,positives,num_tests
 2020-08-18,Hamilton,40,1708
 2020-08-19,Hamilton,51,1437
 2020-08-20,Hamilton,39,1503
-2020-08-21,Hamilton,59,1435
+2020-08-21,Hamilton,59,1434
 2020-08-22,Hamilton,26,567
 2020-08-23,Hamilton,36,329
-2020-08-24,Hamilton,53,1302
+2020-08-24,Hamilton,52,1302
 2020-08-25,Hamilton,48,1173
 2020-08-26,Hamilton,52,1177
 2020-08-27,Hamilton,47,1150
@@ -6450,22 +6478,23 @@ date,county,positives,num_tests
 2020-09-18,Hamilton,50,1080
 2020-09-19,Hamilton,30,422
 2020-09-20,Hamilton,20,155
-2020-09-21,Hamilton,31,1288
+2020-09-21,Hamilton,31,1287
 2020-09-22,Hamilton,38,1131
 2020-09-23,Hamilton,43,1221
 2020-09-24,Hamilton,45,1235
-2020-09-25,Hamilton,44,1176
-2020-09-26,Hamilton,17,460
-2020-09-27,Hamilton,30,171
-2020-09-28,Hamilton,24,1327
-2020-09-29,Hamilton,34,1375
-2020-09-30,Hamilton,32,1182
-2020-10-01,Hamilton,81,1265
-2020-10-02,Hamilton,38,850
-2020-10-03,Hamilton,48,478
-2020-10-04,Hamilton,26,312
-2020-10-05,Hamilton,24,299
-2020-10-06,Hamilton,42,5
+2020-09-25,Hamilton,44,1185
+2020-09-26,Hamilton,17,464
+2020-09-27,Hamilton,30,172
+2020-09-28,Hamilton,24,1329
+2020-09-29,Hamilton,34,1384
+2020-09-30,Hamilton,32,1195
+2020-10-01,Hamilton,81,1302
+2020-10-02,Hamilton,38,973
+2020-10-03,Hamilton,48,498
+2020-10-04,Hamilton,26,376
+2020-10-05,Hamilton,24,853
+2020-10-06,Hamilton,40,311
+2020-10-07,Hamilton,43,7
 2020-02-26,Hancock,0,0
 2020-02-27,Hancock,0,0
 2020-02-28,Hancock,0,0
@@ -6653,21 +6682,21 @@ date,county,positives,num_tests
 2020-08-29,Hancock,3,59
 2020-08-30,Hancock,3,36
 2020-08-31,Hancock,8,220
-2020-09-01,Hancock,5,192
-2020-09-02,Hancock,4,238
-2020-09-03,Hancock,4,217
+2020-09-01,Hancock,5,226
+2020-09-02,Hancock,4,240
+2020-09-03,Hancock,4,218
 2020-09-04,Hancock,6,174
 2020-09-05,Hancock,5,51
 2020-09-06,Hancock,0,35
 2020-09-07,Hancock,1,55
-2020-09-08,Hancock,3,241
-2020-09-09,Hancock,2,250
+2020-09-08,Hancock,3,329
+2020-09-09,Hancock,2,253
 2020-09-10,Hancock,8,230
-2020-09-11,Hancock,6,182
+2020-09-11,Hancock,6,183
 2020-09-12,Hancock,3,70
 2020-09-13,Hancock,4,23
 2020-09-14,Hancock,4,231
-2020-09-15,Hancock,5,391
+2020-09-15,Hancock,5,399
 2020-09-16,Hancock,4,168
 2020-09-17,Hancock,13,243
 2020-09-18,Hancock,8,190
@@ -6682,13 +6711,14 @@ date,county,positives,num_tests
 2020-09-27,Hancock,12,29
 2020-09-28,Hancock,4,205
 2020-09-29,Hancock,2,266
-2020-09-30,Hancock,5,219
-2020-10-01,Hancock,5,184
-2020-10-02,Hancock,6,185
-2020-10-03,Hancock,5,65
-2020-10-04,Hancock,5,33
-2020-10-05,Hancock,4,64
-2020-10-06,Hancock,10,2
+2020-09-30,Hancock,5,221
+2020-10-01,Hancock,5,189
+2020-10-02,Hancock,6,210
+2020-10-03,Hancock,5,75
+2020-10-04,Hancock,5,38
+2020-10-05,Hancock,4,158
+2020-10-06,Hancock,10,76
+2020-10-07,Hancock,17,2
 2020-02-26,Harrison,0,0
 2020-02-27,Harrison,0,0
 2020-02-28,Harrison,0,0
@@ -6898,20 +6928,21 @@ date,county,positives,num_tests
 2020-09-20,Harrison,1,16
 2020-09-21,Harrison,0,174
 2020-09-22,Harrison,4,119
-2020-09-23,Harrison,2,142
+2020-09-23,Harrison,2,143
 2020-09-24,Harrison,10,105
 2020-09-25,Harrison,6,86
 2020-09-26,Harrison,5,52
 2020-09-27,Harrison,5,24
-2020-09-28,Harrison,6,112
-2020-09-29,Harrison,3,154
-2020-09-30,Harrison,4,128
-2020-10-01,Harrison,9,114
-2020-10-02,Harrison,12,116
-2020-10-03,Harrison,6,48
-2020-10-04,Harrison,3,11
-2020-10-05,Harrison,3,20
-2020-10-06,Harrison,5,0
+2020-09-28,Harrison,6,113
+2020-09-29,Harrison,3,160
+2020-09-30,Harrison,4,129
+2020-10-01,Harrison,9,116
+2020-10-02,Harrison,12,133
+2020-10-03,Harrison,6,70
+2020-10-04,Harrison,3,16
+2020-10-05,Harrison,3,112
+2020-10-06,Harrison,5,15
+2020-10-07,Harrison,6,0
 2020-02-26,Hendricks,0,0
 2020-02-27,Hendricks,0,0
 2020-02-28,Hendricks,0,0
@@ -7004,7 +7035,7 @@ date,county,positives,num_tests
 2020-05-26,Hendricks,5,263
 2020-05-27,Hendricks,15,148
 2020-05-28,Hendricks,17,175
-2020-05-29,Hendricks,7,227
+2020-05-29,Hendricks,7,226
 2020-05-30,Hendricks,2,92
 2020-05-31,Hendricks,5,28
 2020-06-01,Hendricks,4,235
@@ -7083,7 +7114,7 @@ date,county,positives,num_tests
 2020-08-13,Hendricks,7,457
 2020-08-14,Hendricks,18,507
 2020-08-15,Hendricks,19,204
-2020-08-16,Hendricks,5,154
+2020-08-16,Hendricks,6,154
 2020-08-17,Hendricks,23,521
 2020-08-18,Hendricks,7,502
 2020-08-19,Hendricks,27,616
@@ -7106,7 +7137,7 @@ date,county,positives,num_tests
 2020-09-05,Hendricks,13,140
 2020-09-06,Hendricks,11,61
 2020-09-07,Hendricks,7,82
-2020-09-08,Hendricks,12,593
+2020-09-08,Hendricks,12,594
 2020-09-09,Hendricks,5,661
 2020-09-10,Hendricks,29,619
 2020-09-11,Hendricks,16,489
@@ -7126,15 +7157,16 @@ date,county,positives,num_tests
 2020-09-25,Hendricks,22,395
 2020-09-26,Hendricks,8,142
 2020-09-27,Hendricks,18,70
-2020-09-28,Hendricks,10,486
+2020-09-28,Hendricks,10,487
 2020-09-29,Hendricks,14,435
-2020-09-30,Hendricks,15,432
-2020-10-01,Hendricks,13,431
-2020-10-02,Hendricks,12,329
-2020-10-03,Hendricks,14,234
-2020-10-04,Hendricks,4,68
-2020-10-05,Hendricks,16,162
-2020-10-06,Hendricks,22,3
+2020-09-30,Hendricks,15,434
+2020-10-01,Hendricks,13,494
+2020-10-02,Hendricks,12,383
+2020-10-03,Hendricks,14,279
+2020-10-04,Hendricks,4,80
+2020-10-05,Hendricks,16,378
+2020-10-06,Hendricks,20,88
+2020-10-07,Hendricks,10,4
 2020-02-26,Henry,0,0
 2020-02-27,Henry,0,0
 2020-02-28,Henry,0,0
@@ -7322,14 +7354,14 @@ date,county,positives,num_tests
 2020-08-29,Henry,9,32
 2020-08-30,Henry,6,27
 2020-08-31,Henry,13,159
-2020-09-01,Henry,4,143
+2020-09-01,Henry,4,144
 2020-09-02,Henry,8,188
 2020-09-03,Henry,6,146
 2020-09-04,Henry,14,117
 2020-09-05,Henry,6,37
 2020-09-06,Henry,1,27
 2020-09-07,Henry,2,23
-2020-09-08,Henry,8,169
+2020-09-08,Henry,8,174
 2020-09-09,Henry,6,169
 2020-09-10,Henry,11,216
 2020-09-11,Henry,4,157
@@ -7350,14 +7382,15 @@ date,county,positives,num_tests
 2020-09-26,Henry,6,56
 2020-09-27,Henry,3,28
 2020-09-28,Henry,10,222
-2020-09-29,Henry,8,293
+2020-09-29,Henry,8,295
 2020-09-30,Henry,14,128
-2020-10-01,Henry,14,255
-2020-10-02,Henry,40,131
-2020-10-03,Henry,19,56
-2020-10-04,Henry,14,23
-2020-10-05,Henry,13,48
-2020-10-06,Henry,16,14
+2020-10-01,Henry,14,256
+2020-10-02,Henry,40,140
+2020-10-03,Henry,19,58
+2020-10-04,Henry,14,26
+2020-10-05,Henry,13,92
+2020-10-06,Henry,16,93
+2020-10-07,Henry,16,14
 2020-02-26,Howard,0,0
 2020-02-27,Howard,0,0
 2020-02-28,Howard,0,0
@@ -7428,11 +7461,11 @@ date,county,positives,num_tests
 2020-05-04,Howard,8,51
 2020-05-05,Howard,9,49
 2020-05-06,Howard,4,78
-2020-05-07,Howard,5,65
+2020-05-07,Howard,5,64
 2020-05-08,Howard,8,59
 2020-05-09,Howard,3,65
 2020-05-10,Howard,8,12
-2020-05-11,Howard,3,74
+2020-05-11,Howard,3,73
 2020-05-12,Howard,3,84
 2020-05-13,Howard,1,200
 2020-05-14,Howard,6,164
@@ -7552,9 +7585,9 @@ date,county,positives,num_tests
 2020-09-05,Howard,10,49
 2020-09-06,Howard,9,28
 2020-09-07,Howard,4,34
-2020-09-08,Howard,8,523
+2020-09-08,Howard,8,524
 2020-09-09,Howard,8,415
-2020-09-10,Howard,14,435
+2020-09-10,Howard,14,448
 2020-09-11,Howard,27,340
 2020-09-12,Howard,3,104
 2020-09-13,Howard,12,30
@@ -7568,19 +7601,20 @@ date,county,positives,num_tests
 2020-09-21,Howard,9,319
 2020-09-22,Howard,5,543
 2020-09-23,Howard,2,262
-2020-09-24,Howard,13,273
+2020-09-24,Howard,13,274
 2020-09-25,Howard,8,218
 2020-09-26,Howard,5,58
 2020-09-27,Howard,8,28
 2020-09-28,Howard,13,470
-2020-09-29,Howard,2,420
-2020-09-30,Howard,22,262
+2020-09-29,Howard,2,445
+2020-09-30,Howard,22,263
 2020-10-01,Howard,23,188
-2020-10-02,Howard,7,118
-2020-10-03,Howard,14,33
-2020-10-04,Howard,11,44
-2020-10-05,Howard,9,151
-2020-10-06,Howard,5,1
+2020-10-02,Howard,7,168
+2020-10-03,Howard,14,46
+2020-10-04,Howard,11,57
+2020-10-05,Howard,9,344
+2020-10-06,Howard,6,27
+2020-10-07,Howard,14,3
 2020-02-26,Huntington,0,0
 2020-02-27,Huntington,0,0
 2020-02-28,Huntington,0,0
@@ -7768,14 +7802,14 @@ date,county,positives,num_tests
 2020-08-29,Huntington,2,23
 2020-08-30,Huntington,7,50
 2020-08-31,Huntington,0,111
-2020-09-01,Huntington,1,179
+2020-09-01,Huntington,1,178
 2020-09-02,Huntington,3,216
 2020-09-03,Huntington,3,86
 2020-09-04,Huntington,5,85
 2020-09-05,Huntington,0,17
 2020-09-06,Huntington,2,143
 2020-09-07,Huntington,1,19
-2020-09-08,Huntington,1,138
+2020-09-08,Huntington,1,139
 2020-09-09,Huntington,3,157
 2020-09-10,Huntington,2,166
 2020-09-11,Huntington,5,138
@@ -7788,22 +7822,23 @@ date,county,positives,num_tests
 2020-09-18,Huntington,4,141
 2020-09-19,Huntington,3,90
 2020-09-20,Huntington,2,16
-2020-09-21,Huntington,0,122
-2020-09-22,Huntington,1,341
-2020-09-23,Huntington,3,246
+2020-09-21,Huntington,0,123
+2020-09-22,Huntington,1,343
+2020-09-23,Huntington,3,247
 2020-09-24,Huntington,6,118
 2020-09-25,Huntington,5,97
 2020-09-26,Huntington,5,27
 2020-09-27,Huntington,3,21
 2020-09-28,Huntington,3,149
-2020-09-29,Huntington,4,446
-2020-09-30,Huntington,7,130
-2020-10-01,Huntington,12,228
-2020-10-02,Huntington,1,195
+2020-09-29,Huntington,4,452
+2020-09-30,Huntington,7,131
+2020-10-01,Huntington,12,229
+2020-10-02,Huntington,1,206
 2020-10-03,Huntington,8,41
 2020-10-04,Huntington,6,24
-2020-10-05,Huntington,6,58
-2020-10-06,Huntington,10,3
+2020-10-05,Huntington,6,87
+2020-10-06,Huntington,10,174
+2020-10-07,Huntington,7,3
 2020-02-26,Jackson,0,0
 2020-02-27,Jackson,0,0
 2020-02-28,Jackson,0,0
@@ -7999,7 +8034,7 @@ date,county,positives,num_tests
 2020-09-06,Jackson,1,11
 2020-09-07,Jackson,0,77
 2020-09-08,Jackson,1,109
-2020-09-09,Jackson,4,102
+2020-09-09,Jackson,4,103
 2020-09-10,Jackson,1,198
 2020-09-11,Jackson,1,95
 2020-09-12,Jackson,0,24
@@ -8014,7 +8049,7 @@ date,county,positives,num_tests
 2020-09-21,Jackson,0,145
 2020-09-22,Jackson,2,250
 2020-09-23,Jackson,4,83
-2020-09-24,Jackson,3,124
+2020-09-24,Jackson,3,126
 2020-09-25,Jackson,9,68
 2020-09-26,Jackson,10,24
 2020-09-27,Jackson,5,10
@@ -8022,11 +8057,12 @@ date,county,positives,num_tests
 2020-09-29,Jackson,3,107
 2020-09-30,Jackson,6,87
 2020-10-01,Jackson,13,227
-2020-10-02,Jackson,15,99
-2020-10-03,Jackson,7,32
-2020-10-04,Jackson,11,14
-2020-10-05,Jackson,30,29
-2020-10-06,Jackson,3,0
+2020-10-02,Jackson,15,113
+2020-10-03,Jackson,7,40
+2020-10-04,Jackson,11,19
+2020-10-05,Jackson,30,54
+2020-10-06,Jackson,2,7
+2020-10-07,Jackson,6,1
 2020-02-26,Jasper,0,0
 2020-02-27,Jasper,0,0
 2020-02-28,Jasper,0,0
@@ -8242,14 +8278,15 @@ date,county,positives,num_tests
 2020-09-26,Jasper,3,38
 2020-09-27,Jasper,1,8
 2020-09-28,Jasper,3,97
-2020-09-29,Jasper,0,77
-2020-09-30,Jasper,3,62
+2020-09-29,Jasper,0,84
+2020-09-30,Jasper,3,61
 2020-10-01,Jasper,1,74
-2020-10-02,Jasper,5,73
-2020-10-03,Jasper,2,38
-2020-10-04,Jasper,4,19
-2020-10-05,Jasper,6,5
-2020-10-06,Jasper,3,0
+2020-10-02,Jasper,4,82
+2020-10-03,Jasper,2,41
+2020-10-04,Jasper,4,22
+2020-10-05,Jasper,6,48
+2020-10-06,Jasper,3,9
+2020-10-07,Jasper,3,0
 2020-02-26,Jay,0,0
 2020-02-27,Jay,0,0
 2020-02-28,Jay,0,0
@@ -8450,7 +8487,7 @@ date,county,positives,num_tests
 2020-09-11,Jay,2,57
 2020-09-12,Jay,2,18
 2020-09-13,Jay,1,4
-2020-09-14,Jay,2,39
+2020-09-14,Jay,2,40
 2020-09-15,Jay,1,29
 2020-09-16,Jay,7,93
 2020-09-17,Jay,2,79
@@ -8464,15 +8501,16 @@ date,county,positives,num_tests
 2020-09-25,Jay,5,92
 2020-09-26,Jay,3,7
 2020-09-27,Jay,4,5
-2020-09-28,Jay,0,54
+2020-09-28,Jay,0,56
 2020-09-29,Jay,3,147
 2020-09-30,Jay,6,147
 2020-10-01,Jay,6,52
-2020-10-02,Jay,2,72
-2020-10-03,Jay,12,14
-2020-10-04,Jay,2,4
-2020-10-05,Jay,3,10
-2020-10-06,Jay,0,0
+2020-10-02,Jay,2,79
+2020-10-03,Jay,12,16
+2020-10-04,Jay,2,5
+2020-10-05,Jay,3,41
+2020-10-06,Jay,0,71
+2020-10-07,Jay,4,0
 2020-02-26,Jefferson,0,0
 2020-02-27,Jefferson,0,0
 2020-02-28,Jefferson,0,0
@@ -8629,7 +8667,7 @@ date,county,positives,num_tests
 2020-07-29,Jefferson,0,75
 2020-07-30,Jefferson,0,86
 2020-07-31,Jefferson,3,50
-2020-08-01,Jefferson,1,13
+2020-08-01,Jefferson,1,12
 2020-08-02,Jefferson,0,14
 2020-08-03,Jefferson,3,122
 2020-08-04,Jefferson,2,75
@@ -8690,12 +8728,13 @@ date,county,positives,num_tests
 2020-09-28,Jefferson,2,124
 2020-09-29,Jefferson,1,141
 2020-09-30,Jefferson,1,67
-2020-10-01,Jefferson,4,70
-2020-10-02,Jefferson,1,64
+2020-10-01,Jefferson,4,74
+2020-10-02,Jefferson,1,67
 2020-10-03,Jefferson,2,15
-2020-10-04,Jefferson,1,11
-2020-10-05,Jefferson,10,17
-2020-10-06,Jefferson,1,0
+2020-10-04,Jefferson,1,14
+2020-10-05,Jefferson,10,65
+2020-10-06,Jefferson,1,2
+2020-10-07,Jefferson,2,0
 2020-02-26,Jennings,0,0
 2020-02-27,Jennings,0,0
 2020-02-28,Jennings,0,0
@@ -8891,7 +8930,7 @@ date,county,positives,num_tests
 2020-09-06,Jennings,0,16
 2020-09-07,Jennings,1,17
 2020-09-08,Jennings,7,82
-2020-09-09,Jennings,3,66
+2020-09-09,Jennings,3,141
 2020-09-10,Jennings,4,170
 2020-09-11,Jennings,4,68
 2020-09-12,Jennings,2,22
@@ -8906,19 +8945,20 @@ date,county,positives,num_tests
 2020-09-21,Jennings,2,39
 2020-09-22,Jennings,0,74
 2020-09-23,Jennings,0,46
-2020-09-24,Jennings,1,40
+2020-09-24,Jennings,1,120
 2020-09-25,Jennings,1,130
 2020-09-26,Jennings,2,17
 2020-09-27,Jennings,0,8
-2020-09-28,Jennings,1,54
+2020-09-28,Jennings,1,55
 2020-09-29,Jennings,1,56
-2020-09-30,Jennings,1,35
+2020-09-30,Jennings,1,36
 2020-10-01,Jennings,1,133
-2020-10-02,Jennings,5,119
-2020-10-03,Jennings,1,6
-2020-10-04,Jennings,1,7
-2020-10-05,Jennings,3,11
-2020-10-06,Jennings,2,1
+2020-10-02,Jennings,5,122
+2020-10-03,Jennings,1,11
+2020-10-04,Jennings,1,10
+2020-10-05,Jennings,3,29
+2020-10-06,Jennings,2,4
+2020-10-07,Jennings,2,0
 2020-02-26,Johnson,0,0
 2020-02-27,Johnson,0,0
 2020-02-28,Johnson,0,0
@@ -9116,7 +9156,7 @@ date,county,positives,num_tests
 2020-09-08,Johnson,10,448
 2020-09-09,Johnson,10,453
 2020-09-10,Johnson,17,461
-2020-09-11,Johnson,9,744
+2020-09-11,Johnson,9,745
 2020-09-12,Johnson,9,184
 2020-09-13,Johnson,18,94
 2020-09-14,Johnson,11,525
@@ -9135,13 +9175,14 @@ date,county,positives,num_tests
 2020-09-27,Johnson,14,82
 2020-09-28,Johnson,10,476
 2020-09-29,Johnson,20,436
-2020-09-30,Johnson,25,464
-2020-10-01,Johnson,29,517
-2020-10-02,Johnson,11,435
-2020-10-03,Johnson,21,172
-2020-10-04,Johnson,16,102
-2020-10-05,Johnson,31,176
-2020-10-06,Johnson,16,8
+2020-09-30,Johnson,25,466
+2020-10-01,Johnson,29,521
+2020-10-02,Johnson,11,512
+2020-10-03,Johnson,21,198
+2020-10-04,Johnson,16,138
+2020-10-05,Johnson,31,479
+2020-10-06,Johnson,15,101
+2020-10-07,Johnson,41,7
 2020-02-26,Knox,0,0
 2020-02-27,Knox,0,0
 2020-02-28,Knox,0,0
@@ -9359,12 +9400,13 @@ date,county,positives,num_tests
 2020-09-28,Knox,10,123
 2020-09-29,Knox,7,206
 2020-09-30,Knox,8,107
-2020-10-01,Knox,11,97
-2020-10-02,Knox,6,61
+2020-10-01,Knox,11,100
+2020-10-02,Knox,6,71
 2020-10-03,Knox,5,9
 2020-10-04,Knox,5,6
-2020-10-05,Knox,0,13
-2020-10-06,Knox,5,0
+2020-10-05,Knox,0,33
+2020-10-06,Knox,5,19
+2020-10-07,Knox,3,0
 2020-02-26,Kosciusko,0,0
 2020-02-27,Kosciusko,0,0
 2020-02-28,Kosciusko,0,0
@@ -9534,10 +9576,10 @@ date,county,positives,num_tests
 2020-08-11,Kosciusko,4,187
 2020-08-12,Kosciusko,8,159
 2020-08-13,Kosciusko,15,135
-2020-08-14,Kosciusko,10,179
-2020-08-15,Kosciusko,5,48
-2020-08-16,Kosciusko,5,51
-2020-08-17,Kosciusko,11,181
+2020-08-14,Kosciusko,10,184
+2020-08-15,Kosciusko,5,59
+2020-08-16,Kosciusko,5,67
+2020-08-17,Kosciusko,11,182
 2020-08-18,Kosciusko,2,124
 2020-08-19,Kosciusko,9,187
 2020-08-20,Kosciusko,19,113
@@ -9563,7 +9605,7 @@ date,county,positives,num_tests
 2020-09-09,Kosciusko,13,380
 2020-09-10,Kosciusko,7,247
 2020-09-11,Kosciusko,8,234
-2020-09-12,Kosciusko,4,76
+2020-09-12,Kosciusko,4,77
 2020-09-13,Kosciusko,7,27
 2020-09-14,Kosciusko,3,128
 2020-09-15,Kosciusko,6,456
@@ -9582,12 +9624,13 @@ date,county,positives,num_tests
 2020-09-28,Kosciusko,11,189
 2020-09-29,Kosciusko,28,232
 2020-09-30,Kosciusko,8,205
-2020-10-01,Kosciusko,27,169
-2020-10-02,Kosciusko,20,143
-2020-10-03,Kosciusko,8,36
-2020-10-04,Kosciusko,3,30
-2020-10-05,Kosciusko,11,189
-2020-10-06,Kosciusko,37,1
+2020-10-01,Kosciusko,27,172
+2020-10-02,Kosciusko,19,148
+2020-10-03,Kosciusko,7,40
+2020-10-04,Kosciusko,3,31
+2020-10-05,Kosciusko,11,210
+2020-10-06,Kosciusko,36,96
+2020-10-07,Kosciusko,28,6
 2020-02-26,Lagrange,0,0
 2020-02-27,Lagrange,0,0
 2020-02-28,Lagrange,0,0
@@ -9735,19 +9778,19 @@ date,county,positives,num_tests
 2020-07-20,Lagrange,0,21
 2020-07-21,Lagrange,4,33
 2020-07-22,Lagrange,2,39
-2020-07-23,Lagrange,4,21
+2020-07-23,Lagrange,4,22
 2020-07-24,Lagrange,11,21
-2020-07-25,Lagrange,2,3
+2020-07-25,Lagrange,3,4
 2020-07-26,Lagrange,0,6
 2020-07-27,Lagrange,5,29
-2020-07-28,Lagrange,3,27
-2020-07-29,Lagrange,4,22
+2020-07-28,Lagrange,3,28
+2020-07-29,Lagrange,5,22
 2020-07-30,Lagrange,1,20
 2020-07-31,Lagrange,5,24
 2020-08-01,Lagrange,5,5
 2020-08-02,Lagrange,0,4
 2020-08-03,Lagrange,1,28
-2020-08-04,Lagrange,3,35
+2020-08-04,Lagrange,4,35
 2020-08-05,Lagrange,5,41
 2020-08-06,Lagrange,3,38
 2020-08-07,Lagrange,0,38
@@ -9804,13 +9847,14 @@ date,county,positives,num_tests
 2020-09-27,Lagrange,3,63
 2020-09-28,Lagrange,3,55
 2020-09-29,Lagrange,7,36
-2020-09-30,Lagrange,4,32
-2020-10-01,Lagrange,3,29
+2020-09-30,Lagrange,4,33
+2020-10-01,Lagrange,3,30
 2020-10-02,Lagrange,5,17
 2020-10-03,Lagrange,1,10
 2020-10-04,Lagrange,1,4
-2020-10-05,Lagrange,2,21
-2020-10-06,Lagrange,7,1
+2020-10-05,Lagrange,2,30
+2020-10-06,Lagrange,8,17
+2020-10-07,Lagrange,6,0
 2020-02-26,Lake,0,0
 2020-02-27,Lake,0,0
 2020-02-28,Lake,0,0
@@ -10021,19 +10065,20 @@ date,county,positives,num_tests
 2020-09-21,Lake,31,1679
 2020-09-22,Lake,41,1727
 2020-09-23,Lake,66,1126
-2020-09-24,Lake,95,1579
+2020-09-24,Lake,95,1578
 2020-09-25,Lake,73,1329
 2020-09-26,Lake,53,525
 2020-09-27,Lake,67,448
-2020-09-28,Lake,57,1725
-2020-09-29,Lake,31,1657
-2020-09-30,Lake,96,1429
-2020-10-01,Lake,115,1441
-2020-10-02,Lake,103,1367
-2020-10-03,Lake,74,486
-2020-10-04,Lake,71,349
-2020-10-05,Lake,52,222
-2020-10-06,Lake,62,2
+2020-09-28,Lake,57,1726
+2020-09-29,Lake,31,1687
+2020-09-30,Lake,96,1485
+2020-10-01,Lake,115,1494
+2020-10-02,Lake,103,1543
+2020-10-03,Lake,74,567
+2020-10-04,Lake,71,423
+2020-10-05,Lake,52,984
+2020-10-06,Lake,61,190
+2020-10-07,Lake,76,8
 2020-02-26,La Porte,0,0
 2020-02-27,La Porte,0,0
 2020-02-28,La Porte,0,0
@@ -10223,20 +10268,20 @@ date,county,positives,num_tests
 2020-08-31,La Porte,5,275
 2020-09-01,La Porte,6,295
 2020-09-02,La Porte,9,230
-2020-09-03,La Porte,9,363
+2020-09-03,La Porte,9,364
 2020-09-04,La Porte,10,230
 2020-09-05,La Porte,7,122
 2020-09-06,La Porte,14,64
 2020-09-07,La Porte,5,88
-2020-09-08,La Porte,4,383
+2020-09-08,La Porte,4,388
 2020-09-09,La Porte,17,286
-2020-09-10,La Porte,23,313
-2020-09-11,La Porte,8,311
+2020-09-10,La Porte,23,320
+2020-09-11,La Porte,8,312
 2020-09-12,La Porte,14,104
 2020-09-13,La Porte,7,75
 2020-09-14,La Porte,8,330
-2020-09-15,La Porte,9,371
-2020-09-16,La Porte,11,368
+2020-09-15,La Porte,9,373
+2020-09-16,La Porte,11,369
 2020-09-17,La Porte,2,251
 2020-09-18,La Porte,6,297
 2020-09-19,La Porte,11,91
@@ -10248,15 +10293,16 @@ date,county,positives,num_tests
 2020-09-25,La Porte,20,312
 2020-09-26,La Porte,27,107
 2020-09-27,La Porte,19,100
-2020-09-28,La Porte,28,471
+2020-09-28,La Porte,28,472
 2020-09-29,La Porte,13,618
-2020-09-30,La Porte,26,327
+2020-09-30,La Porte,26,328
 2020-10-01,La Porte,38,369
-2020-10-02,La Porte,37,332
-2020-10-03,La Porte,19,108
-2020-10-04,La Porte,31,100
-2020-10-05,La Porte,12,142
-2020-10-06,La Porte,10,0
+2020-10-02,La Porte,37,419
+2020-10-03,La Porte,19,110
+2020-10-04,La Porte,31,101
+2020-10-05,La Porte,12,405
+2020-10-06,La Porte,10,68
+2020-10-07,La Porte,29,19
 2020-02-26,Lawrence,0,0
 2020-02-27,Lawrence,0,0
 2020-02-28,Lawrence,0,0
@@ -10457,7 +10503,7 @@ date,county,positives,num_tests
 2020-09-11,Lawrence,4,253
 2020-09-12,Lawrence,2,76
 2020-09-13,Lawrence,1,16
-2020-09-14,Lawrence,2,148
+2020-09-14,Lawrence,2,149
 2020-09-15,Lawrence,4,146
 2020-09-16,Lawrence,1,96
 2020-09-17,Lawrence,1,160
@@ -10474,12 +10520,13 @@ date,county,positives,num_tests
 2020-09-28,Lawrence,2,101
 2020-09-29,Lawrence,12,132
 2020-09-30,Lawrence,5,98
-2020-10-01,Lawrence,4,94
-2020-10-02,Lawrence,11,289
-2020-10-03,Lawrence,5,42
-2020-10-04,Lawrence,13,17
-2020-10-05,Lawrence,5,19
-2020-10-06,Lawrence,4,4
+2020-10-01,Lawrence,4,95
+2020-10-02,Lawrence,11,380
+2020-10-03,Lawrence,5,43
+2020-10-04,Lawrence,13,18
+2020-10-05,Lawrence,5,108
+2020-10-06,Lawrence,4,58
+2020-10-07,Lawrence,21,1
 2020-02-26,Madison,0,0
 2020-02-27,Madison,0,0
 2020-02-28,Madison,0,0
@@ -10649,7 +10696,7 @@ date,county,positives,num_tests
 2020-08-11,Madison,25,283
 2020-08-12,Madison,18,304
 2020-08-13,Madison,14,363
-2020-08-14,Madison,16,430
+2020-08-14,Madison,16,432
 2020-08-15,Madison,23,156
 2020-08-16,Madison,7,75
 2020-08-17,Madison,20,299
@@ -10693,16 +10740,17 @@ date,county,positives,num_tests
 2020-09-24,Madison,24,627
 2020-09-25,Madison,28,382
 2020-09-26,Madison,18,147
-2020-09-27,Madison,14,54
-2020-09-28,Madison,12,449
-2020-09-29,Madison,20,597
-2020-09-30,Madison,35,396
-2020-10-01,Madison,23,322
-2020-10-02,Madison,32,313
-2020-10-03,Madison,17,138
-2020-10-04,Madison,18,108
-2020-10-05,Madison,19,75
-2020-10-06,Madison,24,28
+2020-09-27,Madison,14,58
+2020-09-28,Madison,12,453
+2020-09-29,Madison,20,610
+2020-09-30,Madison,35,399
+2020-10-01,Madison,23,330
+2020-10-02,Madison,32,351
+2020-10-03,Madison,17,143
+2020-10-04,Madison,18,109
+2020-10-05,Madison,19,229
+2020-10-06,Madison,24,156
+2020-10-07,Madison,22,24
 2020-02-26,Marion,0,0
 2020-02-27,Marion,0,1
 2020-02-28,Marion,0,0
@@ -10766,7 +10814,7 @@ date,county,positives,num_tests
 2020-04-27,Marion,148,1157
 2020-04-28,Marion,216,1302
 2020-04-29,Marion,224,1353
-2020-04-30,Marion,234,1374
+2020-04-30,Marion,233,1374
 2020-05-01,Marion,228,1130
 2020-05-02,Marion,191,1115
 2020-05-03,Marion,150,597
@@ -10787,12 +10835,12 @@ date,county,positives,num_tests
 2020-05-18,Marion,140,2003
 2020-05-19,Marion,116,1698
 2020-05-20,Marion,158,1375
-2020-05-21,Marion,114,1488
+2020-05-21,Marion,114,1487
 2020-05-22,Marion,112,1541
 2020-05-23,Marion,92,509
 2020-05-24,Marion,61,457
 2020-05-25,Marion,81,483
-2020-05-26,Marion,104,1748
+2020-05-26,Marion,104,1747
 2020-05-27,Marion,137,1486
 2020-05-28,Marion,95,1260
 2020-05-29,Marion,116,1520
@@ -10802,7 +10850,7 @@ date,county,positives,num_tests
 2020-06-02,Marion,66,1038
 2020-06-03,Marion,61,1176
 2020-06-04,Marion,92,1186
-2020-06-05,Marion,92,1324
+2020-06-05,Marion,92,1322
 2020-06-06,Marion,49,971
 2020-06-07,Marion,35,456
 2020-06-08,Marion,79,1691
@@ -10863,7 +10911,7 @@ date,county,positives,num_tests
 2020-08-02,Marion,151,748
 2020-08-03,Marion,169,2718
 2020-08-04,Marion,115,2693
-2020-08-05,Marion,160,2552
+2020-08-05,Marion,160,2551
 2020-08-06,Marion,191,2681
 2020-08-07,Marion,205,2438
 2020-08-08,Marion,161,1321
@@ -10872,9 +10920,9 @@ date,county,positives,num_tests
 2020-08-11,Marion,111,2661
 2020-08-12,Marion,118,2684
 2020-08-13,Marion,129,3025
-2020-08-14,Marion,117,3223
+2020-08-14,Marion,117,3224
 2020-08-15,Marion,110,1424
-2020-08-16,Marion,66,967
+2020-08-16,Marion,65,967
 2020-08-17,Marion,160,3416
 2020-08-18,Marion,83,3832
 2020-08-19,Marion,123,3758
@@ -10895,15 +10943,15 @@ date,county,positives,num_tests
 2020-09-03,Marion,118,3000
 2020-09-04,Marion,109,2817
 2020-09-05,Marion,118,994
-2020-09-06,Marion,67,755
+2020-09-06,Marion,67,756
 2020-09-07,Marion,36,792
-2020-09-08,Marion,70,3494
+2020-09-08,Marion,70,3499
 2020-09-09,Marion,85,3405
-2020-09-10,Marion,96,3295
-2020-09-11,Marion,107,2936
+2020-09-10,Marion,96,3296
+2020-09-11,Marion,107,2939
 2020-09-12,Marion,100,1204
 2020-09-13,Marion,81,670
-2020-09-14,Marion,60,3051
+2020-09-14,Marion,60,3052
 2020-09-15,Marion,69,3146
 2020-09-16,Marion,96,2813
 2020-09-17,Marion,469,2995
@@ -10913,19 +10961,20 @@ date,county,positives,num_tests
 2020-09-21,Marion,102,3189
 2020-09-22,Marion,109,3136
 2020-09-23,Marion,135,3048
-2020-09-24,Marion,131,3309
-2020-09-25,Marion,121,2633
-2020-09-26,Marion,84,1061
+2020-09-24,Marion,131,3310
+2020-09-25,Marion,121,2634
+2020-09-26,Marion,83,1061
 2020-09-27,Marion,96,681
-2020-09-28,Marion,67,3035
-2020-09-29,Marion,109,3189
-2020-09-30,Marion,112,3005
-2020-10-01,Marion,171,3288
-2020-10-02,Marion,167,2815
-2020-10-03,Marion,169,1062
-2020-10-04,Marion,59,725
-2020-10-05,Marion,102,950
-2020-10-06,Marion,119,64
+2020-09-28,Marion,67,3052
+2020-09-29,Marion,109,3195
+2020-09-30,Marion,112,3134
+2020-10-01,Marion,171,3369
+2020-10-02,Marion,167,3059
+2020-10-03,Marion,169,1270
+2020-10-04,Marion,59,890
+2020-10-05,Marion,102,2173
+2020-10-06,Marion,115,722
+2020-10-07,Marion,136,36
 2020-02-26,Marshall,0,0
 2020-02-27,Marshall,0,0
 2020-02-28,Marshall,0,0
@@ -11122,12 +11171,12 @@ date,county,positives,num_tests
 2020-09-07,Marshall,3,275
 2020-09-08,Marshall,4,439
 2020-09-09,Marshall,4,340
-2020-09-10,Marshall,6,338
+2020-09-10,Marshall,6,339
 2020-09-11,Marshall,4,409
 2020-09-12,Marshall,7,32
 2020-09-13,Marshall,5,58
 2020-09-14,Marshall,3,443
-2020-09-15,Marshall,6,399
+2020-09-15,Marshall,6,400
 2020-09-16,Marshall,2,362
 2020-09-17,Marshall,1,325
 2020-09-18,Marshall,5,389
@@ -11143,12 +11192,13 @@ date,county,positives,num_tests
 2020-09-28,Marshall,6,412
 2020-09-29,Marshall,8,476
 2020-09-30,Marshall,2,331
-2020-10-01,Marshall,15,335
-2020-10-02,Marshall,8,401
-2020-10-03,Marshall,14,50
-2020-10-04,Marshall,4,35
-2020-10-05,Marshall,6,355
-2020-10-06,Marshall,15,9
+2020-10-01,Marshall,15,336
+2020-10-02,Marshall,8,409
+2020-10-03,Marshall,14,53
+2020-10-04,Marshall,4,62
+2020-10-05,Marshall,6,391
+2020-10-06,Marshall,15,314
+2020-10-07,Marshall,14,7
 2020-02-26,Martin,0,0
 2020-02-27,Martin,0,0
 2020-02-28,Martin,0,0
@@ -11366,12 +11416,13 @@ date,county,positives,num_tests
 2020-09-28,Martin,0,31
 2020-09-29,Martin,0,28
 2020-09-30,Martin,2,21
-2020-10-01,Martin,1,26
-2020-10-02,Martin,0,17
+2020-10-01,Martin,1,27
+2020-10-02,Martin,0,21
 2020-10-03,Martin,1,7
-2020-10-04,Martin,1,0
-2020-10-05,Martin,0,3
-2020-10-06,Martin,0,0
+2020-10-04,Martin,1,2
+2020-10-05,Martin,0,19
+2020-10-06,Martin,0,11
+2020-10-07,Martin,3,0
 2020-02-26,Miami,0,0
 2020-02-27,Miami,0,0
 2020-02-28,Miami,0,0
@@ -11568,7 +11619,7 @@ date,county,positives,num_tests
 2020-09-07,Miami,8,17
 2020-09-08,Miami,45,143
 2020-09-09,Miami,4,230
-2020-09-10,Miami,7,100
+2020-09-10,Miami,7,101
 2020-09-11,Miami,2,93
 2020-09-12,Miami,5,38
 2020-09-13,Miami,1,13
@@ -11587,14 +11638,15 @@ date,county,positives,num_tests
 2020-09-26,Miami,1,20
 2020-09-27,Miami,1,20
 2020-09-28,Miami,1,110
-2020-09-29,Miami,0,89
+2020-09-29,Miami,0,94
 2020-09-30,Miami,4,193
 2020-10-01,Miami,1,86
-2020-10-02,Miami,4,159
-2020-10-03,Miami,0,8
-2020-10-04,Miami,1,22
-2020-10-05,Miami,3,34
-2020-10-06,Miami,3,1
+2020-10-02,Miami,4,194
+2020-10-03,Miami,0,9
+2020-10-04,Miami,1,26
+2020-10-05,Miami,3,76
+2020-10-06,Miami,3,23
+2020-10-07,Miami,4,0
 2020-02-26,Monroe,0,0
 2020-02-27,Monroe,0,0
 2020-02-28,Monroe,0,0
@@ -11792,10 +11844,10 @@ date,county,positives,num_tests
 2020-09-08,Monroe,38,2478
 2020-09-09,Monroe,39,2014
 2020-09-10,Monroe,239,1421
-2020-09-11,Monroe,112,1506
+2020-09-11,Monroe,112,1507
 2020-09-12,Monroe,38,97
 2020-09-13,Monroe,43,87
-2020-09-14,Monroe,153,1959
+2020-09-14,Monroe,153,1991
 2020-09-15,Monroe,25,1720
 2020-09-16,Monroe,34,1500
 2020-09-17,Monroe,55,1676
@@ -11809,15 +11861,16 @@ date,county,positives,num_tests
 2020-09-25,Monroe,38,1937
 2020-09-26,Monroe,31,247
 2020-09-27,Monroe,29,136
-2020-09-28,Monroe,13,2106
-2020-09-29,Monroe,38,1855
-2020-09-30,Monroe,17,1376
-2020-10-01,Monroe,13,1503
-2020-10-02,Monroe,33,1636
+2020-09-28,Monroe,13,2107
+2020-09-29,Monroe,38,1856
+2020-09-30,Monroe,18,1378
+2020-10-01,Monroe,13,1504
+2020-10-02,Monroe,33,1724
 2020-10-03,Monroe,22,159
-2020-10-04,Monroe,24,81
-2020-10-05,Monroe,25,172
-2020-10-06,Monroe,22,11
+2020-10-04,Monroe,24,85
+2020-10-05,Monroe,25,511
+2020-10-06,Monroe,22,57
+2020-10-07,Monroe,21,3
 2020-02-26,Montgomery,0,0
 2020-02-27,Montgomery,0,0
 2020-02-28,Montgomery,0,0
@@ -12021,7 +12074,7 @@ date,county,positives,num_tests
 2020-09-14,Montgomery,0,115
 2020-09-15,Montgomery,0,121
 2020-09-16,Montgomery,1,110
-2020-09-17,Montgomery,1,76
+2020-09-17,Montgomery,1,77
 2020-09-18,Montgomery,7,91
 2020-09-19,Montgomery,3,13
 2020-09-20,Montgomery,0,26
@@ -12035,12 +12088,13 @@ date,county,positives,num_tests
 2020-09-28,Montgomery,2,213
 2020-09-29,Montgomery,0,64
 2020-09-30,Montgomery,1,70
-2020-10-01,Montgomery,0,64
-2020-10-02,Montgomery,0,73
+2020-10-01,Montgomery,0,65
+2020-10-02,Montgomery,0,76
 2020-10-03,Montgomery,0,17
-2020-10-04,Montgomery,0,15
-2020-10-05,Montgomery,0,6
-2020-10-06,Montgomery,0,0
+2020-10-04,Montgomery,0,16
+2020-10-05,Montgomery,0,63
+2020-10-06,Montgomery,0,12
+2020-10-07,Montgomery,2,0
 2020-02-26,Morgan,0,0
 2020-02-27,Morgan,0,0
 2020-02-28,Morgan,0,0
@@ -12228,14 +12282,14 @@ date,county,positives,num_tests
 2020-08-29,Morgan,5,40
 2020-08-30,Morgan,9,34
 2020-08-31,Morgan,2,144
-2020-09-01,Morgan,2,150
+2020-09-01,Morgan,2,151
 2020-09-02,Morgan,3,156
 2020-09-03,Morgan,7,209
 2020-09-04,Morgan,6,165
 2020-09-05,Morgan,5,48
 2020-09-06,Morgan,3,26
 2020-09-07,Morgan,1,44
-2020-09-08,Morgan,6,170
+2020-09-08,Morgan,6,172
 2020-09-09,Morgan,2,237
 2020-09-10,Morgan,3,196
 2020-09-11,Morgan,10,162
@@ -12257,13 +12311,14 @@ date,county,positives,num_tests
 2020-09-27,Morgan,5,26
 2020-09-28,Morgan,5,200
 2020-09-29,Morgan,1,216
-2020-09-30,Morgan,8,127
-2020-10-01,Morgan,8,145
-2020-10-02,Morgan,7,168
-2020-10-03,Morgan,8,59
-2020-10-04,Morgan,2,31
-2020-10-05,Morgan,7,40
-2020-10-06,Morgan,8,3
+2020-09-30,Morgan,8,128
+2020-10-01,Morgan,8,146
+2020-10-02,Morgan,7,177
+2020-10-03,Morgan,8,60
+2020-10-04,Morgan,2,33
+2020-10-05,Morgan,7,161
+2020-10-06,Morgan,6,29
+2020-10-07,Morgan,14,2
 2020-02-26,Newton,0,0
 2020-02-27,Newton,0,0
 2020-02-28,Newton,0,2
@@ -12479,14 +12534,15 @@ date,county,positives,num_tests
 2020-09-26,Newton,0,14
 2020-09-27,Newton,1,7
 2020-09-28,Newton,0,67
-2020-09-29,Newton,1,36
+2020-09-29,Newton,1,38
 2020-09-30,Newton,0,37
 2020-10-01,Newton,2,29
-2020-10-02,Newton,0,23
+2020-10-02,Newton,0,24
 2020-10-03,Newton,1,16
 2020-10-04,Newton,0,6
-2020-10-05,Newton,1,4
-2020-10-06,Newton,1,0
+2020-10-05,Newton,1,68
+2020-10-06,Newton,1,3
+2020-10-07,Newton,2,1
 2020-02-26,Noble,0,0
 2020-02-27,Noble,0,0
 2020-02-28,Noble,0,0
@@ -12657,7 +12713,7 @@ date,county,positives,num_tests
 2020-08-12,Noble,19,155
 2020-08-13,Noble,12,104
 2020-08-14,Noble,6,127
-2020-08-15,Noble,13,26
+2020-08-15,Noble,13,27
 2020-08-16,Noble,5,21
 2020-08-17,Noble,3,182
 2020-08-18,Noble,1,130
@@ -12685,7 +12741,7 @@ date,county,positives,num_tests
 2020-09-09,Noble,3,320
 2020-09-10,Noble,4,144
 2020-09-11,Noble,2,64
-2020-09-12,Noble,1,25
+2020-09-12,Noble,1,26
 2020-09-13,Noble,3,19
 2020-09-14,Noble,5,168
 2020-09-15,Noble,1,121
@@ -12702,14 +12758,15 @@ date,county,positives,num_tests
 2020-09-26,Noble,8,25
 2020-09-27,Noble,4,19
 2020-09-28,Noble,2,130
-2020-09-29,Noble,3,233
+2020-09-29,Noble,3,235
 2020-09-30,Noble,4,218
-2020-10-01,Noble,8,77
-2020-10-02,Noble,5,153
-2020-10-03,Noble,1,27
+2020-10-01,Noble,8,78
+2020-10-02,Noble,5,156
+2020-10-03,Noble,1,28
 2020-10-04,Noble,3,21
-2020-10-05,Noble,3,69
-2020-10-06,Noble,10,2
+2020-10-05,Noble,3,93
+2020-10-06,Noble,9,48
+2020-10-07,Noble,6,29
 2020-02-26,Ohio,0,0
 2020-02-27,Ohio,0,0
 2020-02-28,Ohio,0,0
@@ -12927,12 +12984,13 @@ date,county,positives,num_tests
 2020-09-28,Ohio,0,10
 2020-09-29,Ohio,0,21
 2020-09-30,Ohio,0,15
-2020-10-01,Ohio,1,23
+2020-10-01,Ohio,1,22
 2020-10-02,Ohio,0,10
-2020-10-03,Ohio,1,5
+2020-10-03,Ohio,1,6
 2020-10-04,Ohio,1,3
-2020-10-05,Ohio,0,0
-2020-10-06,Ohio,0,0
+2020-10-05,Ohio,0,4
+2020-10-06,Ohio,0,3
+2020-10-07,Ohio,2,0
 2020-02-26,Orange,0,0
 2020-02-27,Orange,0,0
 2020-02-28,Orange,0,0
@@ -13148,14 +13206,15 @@ date,county,positives,num_tests
 2020-09-26,Orange,0,11
 2020-09-27,Orange,0,1
 2020-09-28,Orange,0,170
-2020-09-29,Orange,2,35
+2020-09-29,Orange,2,36
 2020-09-30,Orange,1,43
-2020-10-01,Orange,3,30
-2020-10-02,Orange,1,41
+2020-10-01,Orange,3,31
+2020-10-02,Orange,1,140
 2020-10-03,Orange,4,13
-2020-10-04,Orange,0,3
-2020-10-05,Orange,1,4
-2020-10-06,Orange,4,1
+2020-10-04,Orange,0,4
+2020-10-05,Orange,1,35
+2020-10-06,Orange,4,23
+2020-10-07,Orange,3,1
 2020-02-26,Owen,0,0
 2020-02-27,Owen,0,0
 2020-02-28,Owen,0,0
@@ -13374,11 +13433,12 @@ date,county,positives,num_tests
 2020-09-29,Owen,1,64
 2020-09-30,Owen,2,138
 2020-10-01,Owen,0,64
-2020-10-02,Owen,0,55
+2020-10-02,Owen,0,58
 2020-10-03,Owen,2,15
-2020-10-04,Owen,0,6
-2020-10-05,Owen,1,26
-2020-10-06,Owen,0,1
+2020-10-04,Owen,0,9
+2020-10-05,Owen,1,138
+2020-10-06,Owen,0,22
+2020-10-07,Owen,0,0
 2020-02-26,Parke,0,0
 2020-02-27,Parke,0,0
 2020-02-28,Parke,0,0
@@ -13597,11 +13657,12 @@ date,county,positives,num_tests
 2020-09-29,Parke,4,78
 2020-09-30,Parke,3,67
 2020-10-01,Parke,1,28
-2020-10-02,Parke,7,25
+2020-10-02,Parke,7,46
 2020-10-03,Parke,3,24
-2020-10-04,Parke,1,6
-2020-10-05,Parke,7,27
-2020-10-06,Parke,9,4
+2020-10-04,Parke,1,7
+2020-10-05,Parke,7,48
+2020-10-06,Parke,9,25
+2020-10-07,Parke,3,1
 2020-02-26,Perry,0,0
 2020-02-27,Perry,0,0
 2020-02-28,Perry,0,0
@@ -13821,10 +13882,11 @@ date,county,positives,num_tests
 2020-09-30,Perry,3,195
 2020-10-01,Perry,4,56
 2020-10-02,Perry,5,54
-2020-10-03,Perry,0,6
-2020-10-04,Perry,2,3
-2020-10-05,Perry,1,5
-2020-10-06,Perry,0,0
+2020-10-03,Perry,0,10
+2020-10-04,Perry,2,4
+2020-10-05,Perry,1,43
+2020-10-06,Perry,0,7
+2020-10-07,Perry,5,0
 2020-02-26,Pike,0,0
 2020-02-27,Pike,0,0
 2020-02-28,Pike,0,0
@@ -14043,11 +14105,12 @@ date,county,positives,num_tests
 2020-09-29,Pike,5,39
 2020-09-30,Pike,45,66
 2020-10-01,Pike,2,27
-2020-10-02,Pike,10,24
+2020-10-02,Pike,10,31
 2020-10-03,Pike,7,15
-2020-10-04,Pike,4,5
-2020-10-05,Pike,2,5
-2020-10-06,Pike,2,0
+2020-10-04,Pike,4,9
+2020-10-05,Pike,2,83
+2020-10-06,Pike,2,9
+2020-10-07,Pike,9,0
 2020-02-26,Porter,0,0
 2020-02-27,Porter,0,0
 2020-02-28,Porter,0,0
@@ -14251,7 +14314,7 @@ date,county,positives,num_tests
 2020-09-14,Porter,12,539
 2020-09-15,Porter,8,426
 2020-09-16,Porter,26,401
-2020-09-17,Porter,33,690
+2020-09-17,Porter,33,691
 2020-09-18,Porter,19,394
 2020-09-19,Porter,19,93
 2020-09-20,Porter,18,102
@@ -14261,16 +14324,17 @@ date,county,positives,num_tests
 2020-09-24,Porter,32,531
 2020-09-25,Porter,20,368
 2020-09-26,Porter,20,191
-2020-09-27,Porter,24,120
+2020-09-27,Porter,24,121
 2020-09-28,Porter,25,718
-2020-09-29,Porter,10,454
-2020-09-30,Porter,31,491
-2020-10-01,Porter,33,581
-2020-10-02,Porter,20,571
-2020-10-03,Porter,23,128
-2020-10-04,Porter,36,98
-2020-10-05,Porter,20,83
-2020-10-06,Porter,25,0
+2020-09-29,Porter,10,457
+2020-09-30,Porter,31,493
+2020-10-01,Porter,33,589
+2020-10-02,Porter,20,673
+2020-10-03,Porter,23,139
+2020-10-04,Porter,36,109
+2020-10-05,Porter,20,296
+2020-10-06,Porter,25,62
+2020-10-07,Porter,38,1
 2020-02-26,Posey,0,0
 2020-02-27,Posey,0,0
 2020-02-28,Posey,0,0
@@ -14489,11 +14553,12 @@ date,county,positives,num_tests
 2020-09-29,Posey,17,150
 2020-09-30,Posey,10,101
 2020-10-01,Posey,9,91
-2020-10-02,Posey,33,97
+2020-10-02,Posey,33,98
 2020-10-03,Posey,11,44
-2020-10-04,Posey,6,24
-2020-10-05,Posey,11,87
-2020-10-06,Posey,18,1
+2020-10-04,Posey,6,25
+2020-10-05,Posey,11,91
+2020-10-06,Posey,18,81
+2020-10-07,Posey,16,4
 2020-02-26,Pulaski,0,0
 2020-02-27,Pulaski,0,0
 2020-02-28,Pulaski,0,0
@@ -14688,14 +14753,14 @@ date,county,positives,num_tests
 2020-09-05,Pulaski,0,3
 2020-09-06,Pulaski,0,12
 2020-09-07,Pulaski,0,7
-2020-09-08,Pulaski,1,56
+2020-09-08,Pulaski,1,57
 2020-09-09,Pulaski,0,27
-2020-09-10,Pulaski,1,21
+2020-09-10,Pulaski,1,22
 2020-09-11,Pulaski,1,39
 2020-09-12,Pulaski,3,14
 2020-09-13,Pulaski,0,5
 2020-09-14,Pulaski,0,48
-2020-09-15,Pulaski,0,30
+2020-09-15,Pulaski,0,31
 2020-09-16,Pulaski,0,29
 2020-09-17,Pulaski,1,26
 2020-09-18,Pulaski,0,41
@@ -14712,11 +14777,12 @@ date,county,positives,num_tests
 2020-09-29,Pulaski,0,19
 2020-09-30,Pulaski,0,31
 2020-10-01,Pulaski,0,32
-2020-10-02,Pulaski,2,37
+2020-10-02,Pulaski,2,39
 2020-10-03,Pulaski,0,7
-2020-10-04,Pulaski,0,7
-2020-10-05,Pulaski,1,16
-2020-10-06,Pulaski,0,0
+2020-10-04,Pulaski,0,8
+2020-10-05,Pulaski,1,32
+2020-10-06,Pulaski,0,6
+2020-10-07,Pulaski,0,1
 2020-02-26,Putnam,0,0
 2020-02-27,Putnam,0,0
 2020-02-28,Putnam,0,0
@@ -14932,14 +14998,15 @@ date,county,positives,num_tests
 2020-09-26,Putnam,2,29
 2020-09-27,Putnam,4,24
 2020-09-28,Putnam,6,185
-2020-09-29,Putnam,2,88
+2020-09-29,Putnam,2,89
 2020-09-30,Putnam,8,116
-2020-10-01,Putnam,10,85
-2020-10-02,Putnam,4,83
-2020-10-03,Putnam,1,21
-2020-10-04,Putnam,1,12
-2020-10-05,Putnam,17,20
-2020-10-06,Putnam,1,0
+2020-10-01,Putnam,10,86
+2020-10-02,Putnam,4,93
+2020-10-03,Putnam,1,30
+2020-10-04,Putnam,1,13
+2020-10-05,Putnam,17,90
+2020-10-06,Putnam,1,13
+2020-10-07,Putnam,2,25
 2020-02-26,Randolph,0,0
 2020-02-27,Randolph,0,0
 2020-02-28,Randolph,0,0
@@ -15157,12 +15224,13 @@ date,county,positives,num_tests
 2020-09-28,Randolph,2,84
 2020-09-29,Randolph,6,156
 2020-09-30,Randolph,1,162
-2020-10-01,Randolph,7,99
-2020-10-02,Randolph,6,66
-2020-10-03,Randolph,3,21
-2020-10-04,Randolph,0,10
-2020-10-05,Randolph,8,12
-2020-10-06,Randolph,7,7
+2020-10-01,Randolph,7,102
+2020-10-02,Randolph,6,73
+2020-10-03,Randolph,3,23
+2020-10-04,Randolph,0,11
+2020-10-05,Randolph,8,31
+2020-10-06,Randolph,6,24
+2020-10-07,Randolph,2,1
 2020-02-26,Ripley,0,0
 2020-02-27,Ripley,0,0
 2020-02-28,Ripley,0,0
@@ -15377,15 +15445,16 @@ date,county,positives,num_tests
 2020-09-25,Ripley,2,109
 2020-09-26,Ripley,5,14
 2020-09-27,Ripley,4,56
-2020-09-28,Ripley,4,153
-2020-09-29,Ripley,0,170
-2020-09-30,Ripley,4,68
-2020-10-01,Ripley,5,72
-2020-10-02,Ripley,3,86
-2020-10-03,Ripley,4,11
-2020-10-04,Ripley,5,9
-2020-10-05,Ripley,1,13
-2020-10-06,Ripley,6,2
+2020-09-28,Ripley,4,154
+2020-09-29,Ripley,0,171
+2020-09-30,Ripley,4,69
+2020-10-01,Ripley,5,74
+2020-10-02,Ripley,3,112
+2020-10-03,Ripley,4,18
+2020-10-04,Ripley,5,10
+2020-10-05,Ripley,1,125
+2020-10-06,Ripley,6,51
+2020-10-07,Ripley,1,2
 2020-02-26,Rush,0,0
 2020-02-27,Rush,0,0
 2020-02-28,Rush,0,0
@@ -15575,12 +15644,12 @@ date,county,positives,num_tests
 2020-08-31,Rush,0,42
 2020-09-01,Rush,0,53
 2020-09-02,Rush,0,57
-2020-09-03,Rush,1,38
+2020-09-03,Rush,0,38
 2020-09-04,Rush,2,49
 2020-09-05,Rush,0,10
 2020-09-06,Rush,2,6
-2020-09-07,Rush,0,12
-2020-09-08,Rush,2,68
+2020-09-07,Rush,0,11
+2020-09-08,Rush,1,70
 2020-09-09,Rush,1,38
 2020-09-10,Rush,1,52
 2020-09-11,Rush,1,54
@@ -15602,13 +15671,14 @@ date,county,positives,num_tests
 2020-09-27,Rush,0,5
 2020-09-28,Rush,1,31
 2020-09-29,Rush,0,44
-2020-09-30,Rush,2,28
+2020-09-30,Rush,2,27
 2020-10-01,Rush,2,70
-2020-10-02,Rush,0,36
+2020-10-02,Rush,0,40
 2020-10-03,Rush,0,12
 2020-10-04,Rush,0,4
-2020-10-05,Rush,1,9
-2020-10-06,Rush,2,2
+2020-10-05,Rush,0,21
+2020-10-06,Rush,2,8
+2020-10-07,Rush,2,0
 2020-02-26,St. Joseph,0,0
 2020-02-27,St. Joseph,0,0
 2020-02-28,St. Joseph,0,0
@@ -15778,9 +15848,9 @@ date,county,positives,num_tests
 2020-08-11,St. Joseph,33,1099
 2020-08-12,St. Joseph,70,1093
 2020-08-13,St. Joseph,87,1203
-2020-08-14,St. Joseph,44,1177
-2020-08-15,St. Joseph,36,286
-2020-08-16,St. Joseph,41,307
+2020-08-14,St. Joseph,44,1178
+2020-08-15,St. Joseph,36,289
+2020-08-16,St. Joseph,41,309
 2020-08-17,St. Joseph,50,1338
 2020-08-18,St. Joseph,38,1304
 2020-08-19,St. Joseph,109,1387
@@ -15796,42 +15866,43 @@ date,county,positives,num_tests
 2020-08-29,St. Joseph,73,540
 2020-08-30,St. Joseph,49,492
 2020-08-31,St. Joseph,33,1476
-2020-09-01,St. Joseph,37,1569
+2020-09-01,St. Joseph,37,1572
 2020-09-02,St. Joseph,76,1225
 2020-09-03,St. Joseph,41,1418
 2020-09-04,St. Joseph,53,1155
 2020-09-05,St. Joseph,42,401
 2020-09-06,St. Joseph,23,331
 2020-09-07,St. Joseph,16,269
-2020-09-08,St. Joseph,72,1760
-2020-09-09,St. Joseph,17,1594
-2020-09-10,St. Joseph,44,1660
+2020-09-08,St. Joseph,72,1814
+2020-09-09,St. Joseph,17,1599
+2020-09-10,St. Joseph,44,1716
 2020-09-11,St. Joseph,36,1876
-2020-09-12,St. Joseph,61,245
+2020-09-12,St. Joseph,61,246
 2020-09-13,St. Joseph,48,501
-2020-09-14,St. Joseph,33,1512
-2020-09-15,St. Joseph,25,1905
-2020-09-16,St. Joseph,41,2286
+2020-09-14,St. Joseph,33,1514
+2020-09-15,St. Joseph,25,1960
+2020-09-16,St. Joseph,41,2289
 2020-09-17,St. Joseph,68,1846
-2020-09-18,St. Joseph,72,1515
+2020-09-18,St. Joseph,72,1516
 2020-09-19,St. Joseph,39,290
 2020-09-20,St. Joseph,64,674
 2020-09-21,St. Joseph,49,1517
 2020-09-22,St. Joseph,68,2067
 2020-09-23,St. Joseph,87,2088
-2020-09-24,St. Joseph,78,1779
+2020-09-24,St. Joseph,77,1779
 2020-09-25,St. Joseph,95,1694
 2020-09-26,St. Joseph,88,598
 2020-09-27,St. Joseph,43,620
-2020-09-28,St. Joseph,59,2340
-2020-09-29,St. Joseph,87,2033
-2020-09-30,St. Joseph,93,2173
-2020-10-01,St. Joseph,110,1912
-2020-10-02,St. Joseph,133,1775
-2020-10-03,St. Joseph,82,355
-2020-10-04,St. Joseph,53,543
-2020-10-05,St. Joseph,84,828
-2020-10-06,St. Joseph,103,6
+2020-09-28,St. Joseph,59,2349
+2020-09-29,St. Joseph,87,2038
+2020-09-30,St. Joseph,93,2185
+2020-10-01,St. Joseph,110,1925
+2020-10-02,St. Joseph,133,1872
+2020-10-03,St. Joseph,82,402
+2020-10-04,St. Joseph,53,603
+2020-10-05,St. Joseph,83,1635
+2020-10-06,St. Joseph,101,723
+2020-10-07,St. Joseph,85,13
 2020-02-26,Scott,0,0
 2020-02-27,Scott,0,0
 2020-02-28,Scott,0,0
@@ -15988,7 +16059,7 @@ date,county,positives,num_tests
 2020-07-29,Scott,3,34
 2020-07-30,Scott,7,52
 2020-07-31,Scott,2,127
-2020-08-01,Scott,3,11
+2020-08-01,Scott,3,12
 2020-08-02,Scott,3,8
 2020-08-03,Scott,2,71
 2020-08-04,Scott,1,71
@@ -16049,12 +16120,13 @@ date,county,positives,num_tests
 2020-09-28,Scott,3,231
 2020-09-29,Scott,3,106
 2020-09-30,Scott,6,114
-2020-10-01,Scott,9,131
-2020-10-02,Scott,6,126
-2020-10-03,Scott,9,20
-2020-10-04,Scott,9,9
-2020-10-05,Scott,3,16
-2020-10-06,Scott,3,0
+2020-10-01,Scott,9,135
+2020-10-02,Scott,6,144
+2020-10-03,Scott,9,24
+2020-10-04,Scott,9,12
+2020-10-05,Scott,3,92
+2020-10-06,Scott,3,5
+2020-10-07,Scott,2,1
 2020-02-26,Shelby,0,0
 2020-02-27,Shelby,0,0
 2020-02-28,Shelby,0,0
@@ -16243,13 +16315,13 @@ date,county,positives,num_tests
 2020-08-30,Shelby,1,19
 2020-08-31,Shelby,3,102
 2020-09-01,Shelby,2,102
-2020-09-02,Shelby,4,81
+2020-09-02,Shelby,4,82
 2020-09-03,Shelby,1,111
 2020-09-04,Shelby,4,53
 2020-09-05,Shelby,3,25
 2020-09-06,Shelby,1,14
 2020-09-07,Shelby,0,37
-2020-09-08,Shelby,1,113
+2020-09-08,Shelby,1,116
 2020-09-09,Shelby,0,87
 2020-09-10,Shelby,3,106
 2020-09-11,Shelby,0,87
@@ -16273,11 +16345,12 @@ date,county,positives,num_tests
 2020-09-29,Shelby,6,74
 2020-09-30,Shelby,3,72
 2020-10-01,Shelby,0,111
-2020-10-02,Shelby,2,82
+2020-10-02,Shelby,2,87
 2020-10-03,Shelby,5,23
-2020-10-04,Shelby,1,19
-2020-10-05,Shelby,2,43
-2020-10-06,Shelby,1,0
+2020-10-04,Shelby,1,21
+2020-10-05,Shelby,2,103
+2020-10-06,Shelby,1,17
+2020-10-07,Shelby,3,1
 2020-02-26,Spencer,0,0
 2020-02-27,Spencer,0,0
 2020-02-28,Spencer,0,0
@@ -16486,7 +16559,7 @@ date,county,positives,num_tests
 2020-09-19,Spencer,3,14
 2020-09-20,Spencer,2,12
 2020-09-21,Spencer,1,76
-2020-09-22,Spencer,6,104
+2020-09-22,Spencer,6,105
 2020-09-23,Spencer,6,66
 2020-09-24,Spencer,13,93
 2020-09-25,Spencer,5,47
@@ -16495,12 +16568,13 @@ date,county,positives,num_tests
 2020-09-28,Spencer,3,77
 2020-09-29,Spencer,1,71
 2020-09-30,Spencer,18,68
-2020-10-01,Spencer,6,59
-2020-10-02,Spencer,1,38
-2020-10-03,Spencer,4,23
-2020-10-04,Spencer,7,5
-2020-10-05,Spencer,0,34
-2020-10-06,Spencer,9,1
+2020-10-01,Spencer,6,57
+2020-10-02,Spencer,1,42
+2020-10-03,Spencer,2,23
+2020-10-04,Spencer,6,8
+2020-10-05,Spencer,0,57
+2020-10-06,Spencer,8,14
+2020-10-07,Spencer,5,2
 2020-02-26,Starke,0,0
 2020-02-27,Starke,0,0
 2020-02-28,Starke,0,0
@@ -16701,7 +16775,7 @@ date,county,positives,num_tests
 2020-09-11,Starke,1,76
 2020-09-12,Starke,4,16
 2020-09-13,Starke,0,11
-2020-09-14,Starke,2,102
+2020-09-14,Starke,2,104
 2020-09-15,Starke,1,51
 2020-09-16,Starke,9,72
 2020-09-17,Starke,6,64
@@ -16719,11 +16793,12 @@ date,county,positives,num_tests
 2020-09-29,Starke,2,59
 2020-09-30,Starke,4,72
 2020-10-01,Starke,1,54
-2020-10-02,Starke,3,54
-2020-10-03,Starke,5,28
-2020-10-04,Starke,2,10
-2020-10-05,Starke,2,18
-2020-10-06,Starke,6,3
+2020-10-02,Starke,3,63
+2020-10-03,Starke,5,32
+2020-10-04,Starke,2,20
+2020-10-05,Starke,2,38
+2020-10-06,Starke,6,26
+2020-10-07,Starke,9,4
 2020-02-26,Steuben,0,0
 2020-02-27,Steuben,0,0
 2020-02-28,Steuben,0,0
@@ -16871,19 +16946,19 @@ date,county,positives,num_tests
 2020-07-20,Steuben,8,58
 2020-07-21,Steuben,3,67
 2020-07-22,Steuben,3,58
-2020-07-23,Steuben,7,44
+2020-07-23,Steuben,7,43
 2020-07-24,Steuben,6,39
-2020-07-25,Steuben,3,9
+2020-07-25,Steuben,2,8
 2020-07-26,Steuben,1,8
 2020-07-27,Steuben,3,53
-2020-07-28,Steuben,0,42
-2020-07-29,Steuben,2,42
+2020-07-28,Steuben,0,41
+2020-07-29,Steuben,1,42
 2020-07-30,Steuben,2,45
 2020-07-31,Steuben,2,38
 2020-08-01,Steuben,4,13
 2020-08-02,Steuben,1,12
 2020-08-03,Steuben,1,48
-2020-08-04,Steuben,3,47
+2020-08-04,Steuben,2,47
 2020-08-05,Steuben,1,61
 2020-08-06,Steuben,2,90
 2020-08-07,Steuben,1,95
@@ -16921,8 +16996,8 @@ date,county,positives,num_tests
 2020-09-08,Steuben,3,91
 2020-09-09,Steuben,2,85
 2020-09-10,Steuben,2,122
-2020-09-11,Steuben,2,66
-2020-09-12,Steuben,8,11
+2020-09-11,Steuben,2,67
+2020-09-12,Steuben,8,12
 2020-09-13,Steuben,3,12
 2020-09-14,Steuben,1,89
 2020-09-15,Steuben,4,96
@@ -16934,19 +17009,20 @@ date,county,positives,num_tests
 2020-09-21,Steuben,1,66
 2020-09-22,Steuben,5,92
 2020-09-23,Steuben,2,106
-2020-09-24,Steuben,3,93
+2020-09-24,Steuben,4,94
 2020-09-25,Steuben,5,59
 2020-09-26,Steuben,8,13
 2020-09-27,Steuben,3,20
 2020-09-28,Steuben,6,86
-2020-09-29,Steuben,4,96
+2020-09-29,Steuben,4,109
 2020-09-30,Steuben,4,60
-2020-10-01,Steuben,14,57
-2020-10-02,Steuben,2,36
-2020-10-03,Steuben,0,13
-2020-10-04,Steuben,3,5
-2020-10-05,Steuben,2,15
-2020-10-06,Steuben,9,2
+2020-10-01,Steuben,14,58
+2020-10-02,Steuben,2,37
+2020-10-03,Steuben,0,20
+2020-10-04,Steuben,3,12
+2020-10-05,Steuben,2,27
+2020-10-06,Steuben,9,15
+2020-10-07,Steuben,12,0
 2020-02-26,Sullivan,0,0
 2020-02-27,Sullivan,0,0
 2020-02-28,Sullivan,0,0
@@ -17147,7 +17223,7 @@ date,county,positives,num_tests
 2020-09-11,Sullivan,3,94
 2020-09-12,Sullivan,0,18
 2020-09-13,Sullivan,1,5
-2020-09-14,Sullivan,3,59
+2020-09-14,Sullivan,3,60
 2020-09-15,Sullivan,1,96
 2020-09-16,Sullivan,2,61
 2020-09-17,Sullivan,0,143
@@ -17165,11 +17241,12 @@ date,county,positives,num_tests
 2020-09-29,Sullivan,1,129
 2020-09-30,Sullivan,4,28
 2020-10-01,Sullivan,2,60
-2020-10-02,Sullivan,0,123
+2020-10-02,Sullivan,0,136
 2020-10-03,Sullivan,2,6
 2020-10-04,Sullivan,4,3
-2020-10-05,Sullivan,1,12
-2020-10-06,Sullivan,2,5
+2020-10-05,Sullivan,1,34
+2020-10-06,Sullivan,2,22
+2020-10-07,Sullivan,6,0
 2020-02-26,Switzerland,0,0
 2020-02-27,Switzerland,0,0
 2020-02-28,Switzerland,0,0
@@ -17388,11 +17465,12 @@ date,county,positives,num_tests
 2020-09-29,Switzerland,0,26
 2020-09-30,Switzerland,1,23
 2020-10-01,Switzerland,0,24
-2020-10-02,Switzerland,2,25
-2020-10-03,Switzerland,0,10
-2020-10-04,Switzerland,0,1
-2020-10-05,Switzerland,0,2
+2020-10-02,Switzerland,2,26
+2020-10-03,Switzerland,0,11
+2020-10-04,Switzerland,0,2
+2020-10-05,Switzerland,0,13
 2020-10-06,Switzerland,0,0
+2020-10-07,Switzerland,0,0
 2020-02-26,Tippecanoe,0,0
 2020-02-27,Tippecanoe,0,0
 2020-02-28,Tippecanoe,0,0
@@ -17495,14 +17573,14 @@ date,county,positives,num_tests
 2020-06-05,Tippecanoe,7,226
 2020-06-06,Tippecanoe,12,109
 2020-06-07,Tippecanoe,3,66
-2020-06-08,Tippecanoe,5,259
+2020-06-08,Tippecanoe,5,299
 2020-06-09,Tippecanoe,3,161
 2020-06-10,Tippecanoe,2,443
 2020-06-11,Tippecanoe,6,326
 2020-06-12,Tippecanoe,7,381
 2020-06-13,Tippecanoe,6,205
 2020-06-14,Tippecanoe,4,40
-2020-06-15,Tippecanoe,3,450
+2020-06-15,Tippecanoe,3,471
 2020-06-16,Tippecanoe,4,480
 2020-06-17,Tippecanoe,9,428
 2020-06-18,Tippecanoe,6,389
@@ -17596,7 +17674,7 @@ date,county,positives,num_tests
 2020-09-14,Tippecanoe,19,1706
 2020-09-15,Tippecanoe,49,1498
 2020-09-16,Tippecanoe,31,2199
-2020-09-17,Tippecanoe,31,1231
+2020-09-17,Tippecanoe,31,1235
 2020-09-18,Tippecanoe,41,1053
 2020-09-19,Tippecanoe,30,396
 2020-09-20,Tippecanoe,24,244
@@ -17607,15 +17685,16 @@ date,county,positives,num_tests
 2020-09-25,Tippecanoe,105,1259
 2020-09-26,Tippecanoe,42,508
 2020-09-27,Tippecanoe,49,313
-2020-09-28,Tippecanoe,25,1663
+2020-09-28,Tippecanoe,25,1664
 2020-09-29,Tippecanoe,36,1489
-2020-09-30,Tippecanoe,40,1763
-2020-10-01,Tippecanoe,46,1458
-2020-10-02,Tippecanoe,49,1244
-2020-10-03,Tippecanoe,36,543
-2020-10-04,Tippecanoe,31,455
-2020-10-05,Tippecanoe,13,767
-2020-10-06,Tippecanoe,45,125
+2020-09-30,Tippecanoe,40,1764
+2020-10-01,Tippecanoe,46,1459
+2020-10-02,Tippecanoe,50,1334
+2020-10-03,Tippecanoe,36,546
+2020-10-04,Tippecanoe,31,458
+2020-10-05,Tippecanoe,13,1161
+2020-10-06,Tippecanoe,45,812
+2020-10-07,Tippecanoe,45,589
 2020-02-26,Tipton,0,0
 2020-02-27,Tipton,0,0
 2020-02-28,Tipton,0,0
@@ -17812,7 +17891,7 @@ date,county,positives,num_tests
 2020-09-07,Tipton,0,9
 2020-09-08,Tipton,4,73
 2020-09-09,Tipton,2,61
-2020-09-10,Tipton,5,47
+2020-09-10,Tipton,5,48
 2020-09-11,Tipton,1,55
 2020-09-12,Tipton,0,13
 2020-09-13,Tipton,1,4
@@ -17834,11 +17913,12 @@ date,county,positives,num_tests
 2020-09-29,Tipton,4,61
 2020-09-30,Tipton,2,32
 2020-10-01,Tipton,3,40
-2020-10-02,Tipton,2,36
-2020-10-03,Tipton,1,6
-2020-10-04,Tipton,2,47
-2020-10-05,Tipton,0,10
-2020-10-06,Tipton,4,0
+2020-10-02,Tipton,2,45
+2020-10-03,Tipton,1,7
+2020-10-04,Tipton,2,48
+2020-10-05,Tipton,0,31
+2020-10-06,Tipton,3,5
+2020-10-07,Tipton,1,20
 2020-02-26,Union,0,0
 2020-02-27,Union,0,0
 2020-02-28,Union,0,0
@@ -18057,11 +18137,12 @@ date,county,positives,num_tests
 2020-09-29,Union,0,33
 2020-09-30,Union,0,6
 2020-10-01,Union,1,19
-2020-10-02,Union,0,16
-2020-10-03,Union,0,6
-2020-10-04,Union,1,0
-2020-10-05,Union,1,2
-2020-10-06,Union,0,0
+2020-10-02,Union,0,21
+2020-10-03,Union,0,9
+2020-10-04,Union,1,1
+2020-10-05,Union,1,8
+2020-10-06,Union,0,5
+2020-10-07,Union,1,0
 2020-02-26,Vanderburgh,0,0
 2020-02-27,Vanderburgh,0,0
 2020-02-28,Vanderburgh,0,0
@@ -18247,11 +18328,11 @@ date,county,positives,num_tests
 2020-08-27,Vanderburgh,43,526
 2020-08-28,Vanderburgh,35,694
 2020-08-29,Vanderburgh,32,271
-2020-08-30,Vanderburgh,27,191
+2020-08-30,Vanderburgh,27,193
 2020-08-31,Vanderburgh,18,612
-2020-09-01,Vanderburgh,15,728
+2020-09-01,Vanderburgh,15,730
 2020-09-02,Vanderburgh,27,629
-2020-09-03,Vanderburgh,39,704
+2020-09-03,Vanderburgh,39,707
 2020-09-04,Vanderburgh,31,684
 2020-09-05,Vanderburgh,32,280
 2020-09-06,Vanderburgh,25,233
@@ -18259,7 +18340,7 @@ date,county,positives,num_tests
 2020-09-08,Vanderburgh,7,1004
 2020-09-09,Vanderburgh,62,901
 2020-09-10,Vanderburgh,56,914
-2020-09-11,Vanderburgh,53,1161
+2020-09-11,Vanderburgh,53,1162
 2020-09-12,Vanderburgh,46,427
 2020-09-13,Vanderburgh,27,306
 2020-09-14,Vanderburgh,32,977
@@ -18273,18 +18354,19 @@ date,county,positives,num_tests
 2020-09-22,Vanderburgh,50,1430
 2020-09-23,Vanderburgh,43,787
 2020-09-24,Vanderburgh,74,847
-2020-09-25,Vanderburgh,42,953
-2020-09-26,Vanderburgh,68,501
+2020-09-25,Vanderburgh,42,952
+2020-09-26,Vanderburgh,67,501
 2020-09-27,Vanderburgh,62,243
 2020-09-28,Vanderburgh,59,898
 2020-09-29,Vanderburgh,65,1520
 2020-09-30,Vanderburgh,60,1053
-2020-10-01,Vanderburgh,86,949
-2020-10-02,Vanderburgh,97,709
-2020-10-03,Vanderburgh,69,407
-2020-10-04,Vanderburgh,78,304
-2020-10-05,Vanderburgh,64,587
-2020-10-06,Vanderburgh,90,24
+2020-10-01,Vanderburgh,86,950
+2020-10-02,Vanderburgh,97,751
+2020-10-03,Vanderburgh,69,413
+2020-10-04,Vanderburgh,78,337
+2020-10-05,Vanderburgh,64,876
+2020-10-06,Vanderburgh,86,567
+2020-10-07,Vanderburgh,82,26
 2020-02-26,Vermillion,0,0
 2020-02-27,Vermillion,0,0
 2020-02-28,Vermillion,0,0
@@ -18482,13 +18564,13 @@ date,county,positives,num_tests
 2020-09-08,Vermillion,2,62
 2020-09-09,Vermillion,1,61
 2020-09-10,Vermillion,2,146
-2020-09-11,Vermillion,0,55
-2020-09-12,Vermillion,1,19
+2020-09-11,Vermillion,0,73
+2020-09-12,Vermillion,1,21
 2020-09-13,Vermillion,2,4
 2020-09-14,Vermillion,0,40
 2020-09-15,Vermillion,1,117
 2020-09-16,Vermillion,1,47
-2020-09-17,Vermillion,3,43
+2020-09-17,Vermillion,3,45
 2020-09-18,Vermillion,1,29
 2020-09-19,Vermillion,1,12
 2020-09-20,Vermillion,0,6
@@ -18502,12 +18584,13 @@ date,county,positives,num_tests
 2020-09-28,Vermillion,1,36
 2020-09-29,Vermillion,1,229
 2020-09-30,Vermillion,3,25
-2020-10-01,Vermillion,1,33
-2020-10-02,Vermillion,3,35
+2020-10-01,Vermillion,1,34
+2020-10-02,Vermillion,3,41
 2020-10-03,Vermillion,0,17
-2020-10-04,Vermillion,1,3
-2020-10-05,Vermillion,2,16
-2020-10-06,Vermillion,1,10
+2020-10-04,Vermillion,1,5
+2020-10-05,Vermillion,2,36
+2020-10-06,Vermillion,1,38
+2020-10-07,Vermillion,3,0
 2020-02-26,Vigo,0,0
 2020-02-27,Vigo,0,0
 2020-02-28,Vigo,0,0
@@ -18716,21 +18799,22 @@ date,county,positives,num_tests
 2020-09-19,Vigo,8,130
 2020-09-20,Vigo,4,34
 2020-09-21,Vigo,13,604
-2020-09-22,Vigo,6,524
+2020-09-22,Vigo,6,528
 2020-09-23,Vigo,18,365
 2020-09-24,Vigo,21,641
 2020-09-25,Vigo,10,483
 2020-09-26,Vigo,7,94
 2020-09-27,Vigo,25,62
 2020-09-28,Vigo,12,538
-2020-09-29,Vigo,27,670
+2020-09-29,Vigo,27,674
 2020-09-30,Vigo,25,364
-2020-10-01,Vigo,26,496
-2020-10-02,Vigo,34,229
+2020-10-01,Vigo,26,513
+2020-10-02,Vigo,34,293
 2020-10-03,Vigo,10,149
-2020-10-04,Vigo,15,60
-2020-10-05,Vigo,16,129
-2020-10-06,Vigo,19,24
+2020-10-04,Vigo,15,69
+2020-10-05,Vigo,16,273
+2020-10-06,Vigo,18,161
+2020-10-07,Vigo,41,7
 2020-02-26,Wabash,0,0
 2020-02-27,Wabash,0,0
 2020-02-28,Wabash,0,0
@@ -18788,7 +18872,7 @@ date,county,positives,num_tests
 2020-04-21,Wabash,0,16
 2020-04-22,Wabash,2,15
 2020-04-23,Wabash,0,61
-2020-04-24,Wabash,0,26
+2020-04-24,Wabash,0,25
 2020-04-25,Wabash,8,8
 2020-04-26,Wabash,3,2
 2020-04-27,Wabash,6,20
@@ -18901,8 +18985,8 @@ date,county,positives,num_tests
 2020-08-12,Wabash,8,48
 2020-08-13,Wabash,1,64
 2020-08-14,Wabash,2,139
-2020-08-15,Wabash,1,12
-2020-08-16,Wabash,1,11
+2020-08-15,Wabash,1,13
+2020-08-16,Wabash,1,12
 2020-08-17,Wabash,1,61
 2020-08-18,Wabash,1,163
 2020-08-19,Wabash,4,110
@@ -18946,14 +19030,15 @@ date,county,positives,num_tests
 2020-09-26,Wabash,3,39
 2020-09-27,Wabash,1,17
 2020-09-28,Wabash,3,173
-2020-09-29,Wabash,1,61
+2020-09-29,Wabash,1,62
 2020-09-30,Wabash,1,247
 2020-10-01,Wabash,3,90
-2020-10-02,Wabash,3,72
+2020-10-02,Wabash,3,80
 2020-10-03,Wabash,5,11
 2020-10-04,Wabash,2,10
-2020-10-05,Wabash,1,30
-2020-10-06,Wabash,3,1
+2020-10-05,Wabash,1,140
+2020-10-06,Wabash,3,39
+2020-10-07,Wabash,3,0
 2020-02-26,Warren,0,0
 2020-02-27,Warren,0,0
 2020-02-28,Warren,0,0
@@ -19157,7 +19242,7 @@ date,county,positives,num_tests
 2020-09-14,Warren,0,11
 2020-09-15,Warren,0,15
 2020-09-16,Warren,0,8
-2020-09-17,Warren,0,3
+2020-09-17,Warren,0,30
 2020-09-18,Warren,1,10
 2020-09-19,Warren,0,0
 2020-09-20,Warren,0,0
@@ -19170,13 +19255,14 @@ date,county,positives,num_tests
 2020-09-27,Warren,1,2
 2020-09-28,Warren,0,16
 2020-09-29,Warren,0,19
-2020-09-30,Warren,1,7
+2020-09-30,Warren,1,8
 2020-10-01,Warren,1,6
 2020-10-02,Warren,0,10
 2020-10-03,Warren,0,5
 2020-10-04,Warren,0,2
-2020-10-05,Warren,2,5
-2020-10-06,Warren,2,0
+2020-10-05,Warren,2,12
+2020-10-06,Warren,2,3
+2020-10-07,Warren,1,0
 2020-02-26,Warrick,0,0
 2020-02-27,Warrick,0,0
 2020-02-28,Warrick,0,0
@@ -19394,12 +19480,13 @@ date,county,positives,num_tests
 2020-09-28,Warrick,27,263
 2020-09-29,Warrick,21,337
 2020-09-30,Warrick,17,262
-2020-10-01,Warrick,21,238
-2020-10-02,Warrick,33,262
-2020-10-03,Warrick,27,132
-2020-10-04,Warrick,19,73
-2020-10-05,Warrick,17,190
-2020-10-06,Warrick,31,4
+2020-10-01,Warrick,21,241
+2020-10-02,Warrick,33,284
+2020-10-03,Warrick,29,133
+2020-10-04,Warrick,20,83
+2020-10-05,Warrick,17,231
+2020-10-06,Warrick,29,178
+2020-10-07,Warrick,12,8
 2020-02-26,Washington,0,0
 2020-02-27,Washington,0,0
 2020-02-28,Washington,0,0
@@ -19595,7 +19682,7 @@ date,county,positives,num_tests
 2020-09-06,Washington,1,5
 2020-09-07,Washington,0,6
 2020-09-08,Washington,3,55
-2020-09-09,Washington,0,72
+2020-09-09,Washington,0,73
 2020-09-10,Washington,1,66
 2020-09-11,Washington,0,55
 2020-09-12,Washington,0,16
@@ -19609,20 +19696,21 @@ date,county,positives,num_tests
 2020-09-20,Washington,1,3
 2020-09-21,Washington,2,59
 2020-09-22,Washington,0,61
-2020-09-23,Washington,2,47
-2020-09-24,Washington,2,56
+2020-09-23,Washington,2,48
+2020-09-24,Washington,2,57
 2020-09-25,Washington,1,85
 2020-09-26,Washington,3,12
 2020-09-27,Washington,1,6
 2020-09-28,Washington,0,69
 2020-09-29,Washington,0,58
 2020-09-30,Washington,3,38
-2020-10-01,Washington,5,50
-2020-10-02,Washington,6,47
-2020-10-03,Washington,3,14
-2020-10-04,Washington,1,6
-2020-10-05,Washington,2,10
-2020-10-06,Washington,2,0
+2020-10-01,Washington,5,52
+2020-10-02,Washington,6,58
+2020-10-03,Washington,3,16
+2020-10-04,Washington,1,7
+2020-10-05,Washington,2,44
+2020-10-06,Washington,2,14
+2020-10-07,Washington,6,0
 2020-02-26,Wayne,0,0
 2020-02-27,Wayne,0,0
 2020-02-28,Wayne,0,0
@@ -19837,15 +19925,16 @@ date,county,positives,num_tests
 2020-09-25,Wayne,7,219
 2020-09-26,Wayne,7,75
 2020-09-27,Wayne,2,25
-2020-09-28,Wayne,4,151
-2020-09-29,Wayne,8,328
-2020-09-30,Wayne,5,145
-2020-10-01,Wayne,29,462
-2020-10-02,Wayne,11,426
-2020-10-03,Wayne,4,86
-2020-10-04,Wayne,12,16
-2020-10-05,Wayne,3,107
-2020-10-06,Wayne,11,23
+2020-09-28,Wayne,4,152
+2020-09-29,Wayne,8,329
+2020-09-30,Wayne,5,146
+2020-10-01,Wayne,29,500
+2020-10-02,Wayne,11,493
+2020-10-03,Wayne,4,117
+2020-10-04,Wayne,12,61
+2020-10-05,Wayne,3,253
+2020-10-06,Wayne,11,151
+2020-10-07,Wayne,24,6
 2020-02-26,Wells,0,0
 2020-02-27,Wells,0,0
 2020-02-28,Wells,0,0
@@ -20049,8 +20138,8 @@ date,county,positives,num_tests
 2020-09-14,Wells,1,44
 2020-09-15,Wells,2,192
 2020-09-16,Wells,5,187
-2020-09-17,Wells,3,161
-2020-09-18,Wells,3,55
+2020-09-17,Wells,3,163
+2020-09-18,Wells,3,56
 2020-09-19,Wells,0,27
 2020-09-20,Wells,0,9
 2020-09-21,Wells,0,48
@@ -20062,13 +20151,14 @@ date,county,positives,num_tests
 2020-09-27,Wells,2,9
 2020-09-28,Wells,1,125
 2020-09-29,Wells,5,108
-2020-09-30,Wells,4,137
-2020-10-01,Wells,1,87
-2020-10-02,Wells,2,67
+2020-09-30,Wells,4,146
+2020-10-01,Wells,1,88
+2020-10-02,Wells,2,68
 2020-10-03,Wells,4,32
 2020-10-04,Wells,0,11
-2020-10-05,Wells,8,67
-2020-10-06,Wells,3,0
+2020-10-05,Wells,7,120
+2020-10-06,Wells,3,68
+2020-10-07,Wells,12,2
 2020-02-26,White,0,0
 2020-02-27,White,0,0
 2020-02-28,White,0,0
@@ -20287,11 +20377,12 @@ date,county,positives,num_tests
 2020-09-29,White,4,78
 2020-09-30,White,2,143
 2020-10-01,White,3,113
-2020-10-02,White,6,102
+2020-10-02,White,6,120
 2020-10-03,White,1,23
 2020-10-04,White,2,7
-2020-10-05,White,1,5
-2020-10-06,White,0,0
+2020-10-05,White,1,52
+2020-10-06,White,0,6
+2020-10-07,White,2,1
 2020-02-26,Whitley,0,0
 2020-02-27,Whitley,0,0
 2020-02-28,Whitley,0,0
@@ -20462,8 +20553,8 @@ date,county,positives,num_tests
 2020-08-12,Whitley,5,46
 2020-08-13,Whitley,3,73
 2020-08-14,Whitley,2,59
-2020-08-15,Whitley,3,20
-2020-08-16,Whitley,3,14
+2020-08-15,Whitley,3,23
+2020-08-16,Whitley,3,15
 2020-08-17,Whitley,2,88
 2020-08-18,Whitley,1,66
 2020-08-19,Whitley,4,73
@@ -20507,11 +20598,12 @@ date,county,positives,num_tests
 2020-09-26,Whitley,3,36
 2020-09-27,Whitley,7,21
 2020-09-28,Whitley,5,96
-2020-09-29,Whitley,7,164
+2020-09-29,Whitley,7,165
 2020-09-30,Whitley,3,94
 2020-10-01,Whitley,3,94
-2020-10-02,Whitley,6,80
+2020-10-02,Whitley,6,82
 2020-10-03,Whitley,8,34
 2020-10-04,Whitley,6,29
-2020-10-05,Whitley,2,71
-2020-10-06,Whitley,9,1
+2020-10-05,Whitley,2,157
+2020-10-06,Whitley,9,64
+2020-10-07,Whitley,4,0
