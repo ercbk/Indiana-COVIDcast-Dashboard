@@ -137,7 +137,7 @@ mich_dat_files %>%
 ######################
 
 
-wisc_tests_new <- readr::read_csv("https://data.dhsgis.wi.gov/datasets/covid-19-historical-data-by-county/data?orderBy=GEOID")
+wisc_tests_new <- readr::read_csv("https://opendata.arcgis.com/datasets/5374188992374b318d3e2305216ee413_12.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D")
 
 wisc_tests_clean <- wisc_tests_new %>% 
       janitor::clean_names() %>% 
