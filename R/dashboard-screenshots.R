@@ -62,9 +62,6 @@ png_files %>%
    fs::file_delete(.)
 
 
-fs::file_delete(glue::glue("{rprojroot::find_rstudio_root_file()}/README.html"))
-
-
 # create path to artifacts
 dumbbell_files <- stringr::str_replace(dumbbell_path, ".html", "_files")
 reacttab_files <- stringr::str_replace(reacttab_path, ".html", "_files")
