@@ -2777,18 +2777,33 @@ Michigan City-La Porte,2020-10-29,1.445581411639,0.27163593132249,NA,1,NA,NA
 Muncie,2020-10-29,0.91166474452131,0.16676367671198,NA,1,NA,NA
 South Bend-Mishawaka,2020-10-29,2.0724738748847,0.13612964436045,NA,1,NA,NA
 Terre Haute,2020-10-29,1.2550671282624,0.19468749958744,NA,1,NA,NA
-Bloomington,2020-10-30,1.2610887396525,0.16685500063068,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Cincinnati,2020-10-30,0.94855330245757,0.05260257048829,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Columbus,2020-10-30,0.77995366657962,0.053080289251364,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Fort Wayne,2020-10-30,1.0572443093039,0.13906522292802,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Elkhart-Goshen,2020-10-30,1.3481946907339,0.18847337948626,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Evansville,2020-10-30,1.6098009889773,0.14183114219354,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Chicago-Naperville-Elgin,2020-10-30,1.2531245222794,0.034440517232636,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Indianapolis-Carmel-Anderson,2020-10-30,0.99920083757341,0.06157026507127,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Kokomo,2020-10-30,0.84990025980348,0.072652967386373,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Lafayette-West Lafayette,2020-10-30,0.75459698894984,0.10440879269406,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Louisville/Jefferson County,2020-10-30,0.802460921815,0.062269539420937,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Michigan City-La Porte,2020-10-30,1.2308959699651,0.20992817243176,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Muncie,2020-10-30,0.95969203717098,0.1646132761521,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-South Bend-Mishawaka,2020-10-30,1.2006147751209,0.14225267615144,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
-Terre Haute,2020-10-30,1.2034586490768,0.21312450329261,2020-10-31,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Bloomington,2020-10-30,1.2610887396525,0.16685500063068,NA,1,NA,NA
+Cincinnati,2020-10-30,0.94855330245757,0.05260257048829,NA,1,NA,NA
+Columbus,2020-10-30,0.77995366657962,0.053080289251364,NA,1,NA,NA
+Fort Wayne,2020-10-30,1.0572443093039,0.13906522292802,NA,1,NA,NA
+Elkhart-Goshen,2020-10-30,1.3481946907339,0.18847337948626,NA,1,NA,NA
+Evansville,2020-10-30,1.6098009889773,0.14183114219354,NA,1,NA,NA
+Chicago-Naperville-Elgin,2020-10-30,1.2531245222794,0.034440517232636,NA,1,NA,NA
+Indianapolis-Carmel-Anderson,2020-10-30,0.99920083757341,0.06157026507127,NA,1,NA,NA
+Kokomo,2020-10-30,0.84990025980348,0.072652967386373,NA,1,NA,NA
+Lafayette-West Lafayette,2020-10-30,0.75459698894984,0.10440879269406,NA,1,NA,NA
+Louisville/Jefferson County,2020-10-30,0.802460921815,0.062269539420937,NA,1,NA,NA
+Michigan City-La Porte,2020-10-30,1.2308959699651,0.20992817243176,NA,1,NA,NA
+Muncie,2020-10-30,0.95969203717098,0.1646132761521,NA,1,NA,NA
+South Bend-Mishawaka,2020-10-30,1.2006147751209,0.14225267615144,NA,1,NA,NA
+Terre Haute,2020-10-30,1.2034586490768,0.21312450329261,NA,1,NA,NA
+Bloomington,2020-11-02,1.2788937855757,0.13881946678159,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Cincinnati,2020-11-02,1.2290805687925,0.061169226342611,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Columbus,2020-11-02,0.88615596979749,0.060770312917778,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Fort Wayne,2020-11-02,1.506312483242,0.12827767593279,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Elkhart-Goshen,2020-11-02,1.46822934983,0.18533476955911,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Evansville,2020-11-02,1.0650142269351,0.098294038042635,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Chicago-Naperville-Elgin,2020-11-02,1.2199711691265,0.031378927470847,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Indianapolis-Carmel-Anderson,2020-11-02,1.131240420695,0.064717041736916,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Kokomo,2020-11-02,0.96104873826228,0.072219364178521,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Lafayette-West Lafayette,2020-11-02,1.030919351305,0.16515773109822,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Louisville/Jefferson County,2020-11-02,0.83132882792768,0.074963802052849,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Michigan City-La Porte,2020-11-02,1.1008661091281,0.26161690960738,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Muncie,2020-11-02,0.976977892781,0.13348345629352,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+South Bend-Mishawaka,2020-11-02,1.2577994936721,0.15117436393505,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
+Terre Haute,2020-11-02,0.7909075337551,0.12058623936845,2020-11-03,1,nmf_day_doc_fbc_fbs_ght,indicator-combination
