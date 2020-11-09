@@ -63,7 +63,7 @@ while (TRUE) {
          ))) %>% 
          tidyr::unnest(cols = "data") %>% 
          ungroup() %>%
-         select(-geo_value, -direction, -sample_size)
+         select(-geo_value, -sample_size)
       
    }, silent = TRUE)
    # stay in loop until I get some new data or ci_comp date reached
@@ -143,11 +143,7 @@ ci_clean_line <- ci_clean %>%
    select(name, time_value, value) %>% 
    mutate(value = round(value, 2))
 
-# ci_clean_db <- ci_db %>% 
-#    select(name, time_value, value, text_col, lower, upper, lower_col, upper_col) %>% 
-#    filter(time_value == max(time_value)) %>%
-#    mutate(name = forcats::as_factor(name) %>%
-#              forcats::fct_reorder(value))
+
 ci_clean_db <- ci_db %>% 
    select(name, time_value, value, text_col, lower, upper, lower_col, upper_col) %>% 
    slice_max(time_value) %>%
@@ -158,11 +154,7 @@ ci_clean_leaf <- ci_leaf %>%
    slice_max(time_value) %>%
    left_join(ind_msa_tiles, by = "name") %>% 
    sf::st_as_sf()
-# ci_clean_leaf <- ci_leaf %>% 
-#    select(name, time_value, color, popup) %>% 
-#    filter(time_value == max(time_value)) %>%
-#    left_join(ind_msa_tiles, by = "name") %>% 
-#    sf::st_as_sf()
+
 
 readr::write_rds(ci_clean_line, glue("{rprojroot::find_rstudio_root_file()}/data/dash-ci-line.rds"))
 readr::write_rds(ci_clean_leaf, glue("{rprojroot::find_rstudio_root_file()}/data/dash-ci-leaf.rds"))
