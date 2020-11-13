@@ -3707,3 +3707,209 @@ week,start_date,end_date,County,"New Cases per 100,000",Test Positivity %,"(%) C
  New Tests: 11,141warning",5.3%,51,7,38.4%
 44,2020-10-25,2020-10-31,Woodford,424 per 100kwarning,"10.4%
  New Tests: 1,607warning",10.0%,6,3,37.9%
+45,2020-11-01,2020-11-07,Adams,837 per 100kwarning,"16.3%
+ New Tests: 3,024warning",10.5%,27,4,32.3%
+45,2020-11-01,2020-11-07,Alexander,462 per 100kwarning,"17.6%
+ New Tests: 136warning",0.0%,0,0,51.2%
+45,2020-11-01,2020-11-07,Bond,655 per 100kwarning,"17.1%
+ New Tests: 701warning",4.4%,<5,0,37.7%
+45,2020-11-01,2020-11-07,Boone,735 per 100kwarning,"21.6%
+ New Tests: 2,234warning",10.7%,16,0,37.4%
+45,2020-11-01,2020-11-07,Brown,717 per 100kwarning,"19.5%
+ New Tests: 246warning",*,<5,0,32.3%
+45,2020-11-01,2020-11-07,Bureau,709 per 100kwarning,"20.1%
+ New Tests: 1,425warning",5.7%,5,0,37.2%
+45,2020-11-01,2020-11-07,Calhoun,500 per 100kwarning,"20.8%
+ New Tests: 130warning",*,0,0,32.3%
+45,2020-11-01,2020-11-07,Carroll,1188 per 100kwarning,"19.6%
+ New Tests: 801warning",10.2%,0,3,37.4%
+45,2020-11-01,2020-11-07,Cass,677 per 100kwarning,"16.5%
+ New Tests: 407warning",*,<5,0,32.3%
+45,2020-11-01,2020-11-07,Champaign,471 per 100kwarning,"1.7%
+ New Tests: 70,211",5.0%,28,5,39.8%
+45,2020-11-01,2020-11-07,Chicago,450 per 100kwarning,"12.9%
+ New Tests: 107,123warning",7.6%warning,646warning,59,28.0%
+45,2020-11-01,2020-11-07,Christian,814 per 100kwarning,"26.5%
+ New Tests: 920warning",10.1%warning,<5,0,32.3%
+45,2020-11-01,2020-11-07,Clark,430 per 100kwarning,"13.1%
+ New Tests: 221warning",*,<5,1,39.8%
+45,2020-11-01,2020-11-07,Clay,513 per 100kwarning,"16.9%
+ New Tests: 249warning",6.7%,<5,2,39.8%
+45,2020-11-01,2020-11-07,Clinton,577 per 100kwarning,"17.6%
+ New Tests: 1,560warning",10.6%,8,4,37.7%
+45,2020-11-01,2020-11-07,Coles,552 per 100kwarning,"12.1%
+ New Tests: 974warning",8.4%warning,22warning,7,39.8%
+45,2020-11-01,2020-11-07,Cook,465 per 100kwarning,"12.9%
+ New Tests: 101,528warning",9.1%,701warning,80,27.8%
+45,2020-11-01,2020-11-07,Crawford,202 per 100kwarning,"8.5%
+ New Tests: 378warning",*,0,0,39.8%
+45,2020-11-01,2020-11-07,Cumberland,463 per 100kwarning,"11.4%
+ New Tests: 245warning",9.1%,<5,0,39.8%
+45,2020-11-01,2020-11-07,De Witt,374 per 100kwarning,"11.7%
+ New Tests: 436warning",6.5%,<5,1,39.8%
+45,2020-11-01,2020-11-07,DeKalb,512 per 100kwarning,"13.4%
+ New Tests: 4,396warning",12.1%,22,0,37.4%
+45,2020-11-01,2020-11-07,Douglas,801 per 100kwarning,"12.0%
+ New Tests: 710warning",15.0%,12,1,39.8%
+45,2020-11-01,2020-11-07,DuPage,429 per 100kwarning,"12.8%
+ New Tests: 32,836warning",12.5%,297warning,19,37.4%
+45,2020-11-01,2020-11-07,Edgar,323 per 100kwarning,"9.7%
+ New Tests: 329warning",*,0,1,39.8%
+45,2020-11-01,2020-11-07,Edwards,235 per 100kwarning,"14.6%
+ New Tests: 82warning",*,<5,0,51.2%
+45,2020-11-01,2020-11-07,Effingham,848 per 100kwarning,"22.5%
+ New Tests: 1,005warning",14.6%warning,16,1,39.8%
+45,2020-11-01,2020-11-07,Fayette,696 per 100kwarning,"22.8%
+ New Tests: 404warning",18.5%warning,6,2,39.8%
+45,2020-11-01,2020-11-07,Ford,467 per 100kwarning,"10.7%
+ New Tests: 960warning",*,<5,1,39.8%
+45,2020-11-01,2020-11-07,Franklin,439 per 100kwarning,"13.1%
+ New Tests: 1,322warning",8.5%,5,3,51.2%
+45,2020-11-01,2020-11-07,Fulton,517 per 100kwarning,"10.4%
+ New Tests: 2,017warning",5.4%,<5,2,37.2%
+45,2020-11-01,2020-11-07,Gallatin,297 per 100kwarning,"14.0%
+ New Tests: 100warning",*,<5,0,51.2%
+45,2020-11-01,2020-11-07,Greene,590 per 100kwarning,"24.8%
+ New Tests: 395warning",*,<5,1,32.3%
+45,2020-11-01,2020-11-07,Grundy,732 per 100kwarning,"19.6%
+ New Tests: 1,898warning",9.5%warning,<5,1,37.2%
+45,2020-11-01,2020-11-07,Hamilton,429 per 100kwarning,"18.0%
+ New Tests: 200warning",8.8%,<5,0,51.2%
+45,2020-11-01,2020-11-07,Hancock,919 per 100kwarning,"24.8%
+ New Tests: 682warning",31.6%,15,1,32.3%
+45,2020-11-01,2020-11-07,Hardin,281 per 100kwarning,"8.6%
+ New Tests: 105warning",*,<5,0,51.2%
+45,2020-11-01,2020-11-07,Henderson,507 per 100kwarning,"11.4%
+ New Tests: 271warning",*,0,0,37.2%
+45,2020-11-01,2020-11-07,Henry,438 per 100kwarning,"14.5%
+ New Tests: 2,151warning",5.2%,<5,0,37.2%
+45,2020-11-01,2020-11-07,Iroquois,750 per 100kwarning,"18.4%
+ New Tests: 1,334warning",6.4%,5,1,39.8%
+45,2020-11-01,2020-11-07,Jackson,338 per 100kwarning,"11.3%
+ New Tests: 1,653warning",5.0%,11,1,51.2%
+45,2020-11-01,2020-11-07,Jasper,385 per 100kwarning,"8.9%
+ New Tests: 202warning",13.0%,5,0,39.8%
+45,2020-11-01,2020-11-07,Jefferson,524 per 100kwarning,"9.7%
+ New Tests: 1,529warning",4.9%,6,3,51.2%
+45,2020-11-01,2020-11-07,Jersey,476 per 100kwarning,"18.2%
+ New Tests: 866warning",6.2%warning,<5,0,32.3%
+45,2020-11-01,2020-11-07,Jo Daviess,468 per 100kwarning,"18.4%
+ New Tests: 544warning",14.7%warning,<5,2,37.4%
+45,2020-11-01,2020-11-07,Johnson,602 per 100kwarning,"13.3%
+ New Tests: 458warning",18.2%,6,0,51.2%
+45,2020-11-01,2020-11-07,Kane,563 per 100kwarning,"16.7%
+ New Tests: 19,269warning",14.2%,115,7,37.4%
+45,2020-11-01,2020-11-07,Kankakee,923 per 100kwarning,"17.5%
+ New Tests: 7,151warning",7.6%warning,17,5,28.7%
+45,2020-11-01,2020-11-07,Kendall,604 per 100kwarning,"19.2%
+ New Tests: 4,562warning",12.7%warning,14,1,37.2%
+45,2020-11-01,2020-11-07,Knox,513 per 100kwarning,"13.3%
+ New Tests: 1,995warning",10.2%,18,8,37.2%
+45,2020-11-01,2020-11-07,Lake,423 per 100kwarning,"12.1%
+ New Tests: 26,426warning",11.8%warning,177warning,9,43.4%
+45,2020-11-01,2020-11-07,LaSalle,705 per 100kwarning,"19.0%
+ New Tests: 4,083warning",8.0%warning,17,6,37.2%
+45,2020-11-01,2020-11-07,Lawrence,450 per 100kwarning,"8.7%
+ New Tests: 762warning",*,0,0,39.8%
+45,2020-11-01,2020-11-07,Lee,643 per 100kwarning,"14.9%
+ New Tests: 1,265warning",14.6%warning,12,2,37.4%
+45,2020-11-01,2020-11-07,Livingston,744 per 100kwarning,"14.4%
+ New Tests: 2,147warning",7.0%,7,0,37.2%
+45,2020-11-01,2020-11-07,Logan,660 per 100kwarning,"13.7%
+ New Tests: 1,589warning",*,<5,1,32.3%
+45,2020-11-01,2020-11-07,Macon,695 per 100kwarning,"14.6%
+ New Tests: 5,216warning",8.8%,45,14,39.8%
+45,2020-11-01,2020-11-07,Macoupin,457 per 100kwarning,"12.6%
+ New Tests: 1,594warning",2.2%,<5,1,32.3%
+45,2020-11-01,2020-11-07,Madison,416 per 100kwarning,"13.5%
+ New Tests: 7,451warning",4.0%,22,9,37.7%
+45,2020-11-01,2020-11-07,Marion,484 per 100kwarning,"10.0%
+ New Tests: 2,023warning",7.3%,15,4,51.2%
+45,2020-11-01,2020-11-07,Marshall,303 per 100kwarning,"9.8%
+ New Tests: 410warning",*,<5,1,37.2%
+45,2020-11-01,2020-11-07,Mason,310 per 100kwarning,"10.5%
+ New Tests: 533warning",*,<5,6,32.3%
+45,2020-11-01,2020-11-07,Massac,384 per 100kwarning,"13.8%
+ New Tests: 276warning",0.0%,0,0,51.2%
+45,2020-11-01,2020-11-07,McDonough,624 per 100kwarning,"14.0%
+ New Tests: 1,570warning",9.9%,<5,3,37.2%
+45,2020-11-01,2020-11-07,McHenry,521 per 100kwarning,"19.5%
+ New Tests: 9,933warning",12.7%warning,96warning,0,43.4%
+45,2020-11-01,2020-11-07,McLean,434 per 100kwarning,"8.7%
+ New Tests: 8,197warning",4.5%,16,2,37.2%
+45,2020-11-01,2020-11-07,Menard,326 per 100kwarning,"7.6%
+ New Tests: 474",*,<5,0,32.3%
+45,2020-11-01,2020-11-07,Mercer,667 per 100kwarning,"18.5%
+ New Tests: 585warning",8.7%,<5,1,37.2%
+45,2020-11-01,2020-11-07,Monroe,553 per 100kwarning,"15.3%
+ New Tests: 1,179warning",6.6%,<5,7,37.7%
+45,2020-11-01,2020-11-07,Montgomery,325 per 100kwarning,"7.6%
+ New Tests: 1,036",5.2%,8,0,32.3%
+45,2020-11-01,2020-11-07,Morgan,497 per 100kwarning,"16.7%
+ New Tests: 992warning",2.7%,5,1,32.3%
+45,2020-11-01,2020-11-07,Moultrie,639 per 100kwarning,"9.2%
+ New Tests: 662warning",10.2%,8,2,39.8%
+45,2020-11-01,2020-11-07,Ogle,660 per 100kwarning,"19.6%
+ New Tests: 2,104warning",11.1%,12,0,37.4%
+45,2020-11-01,2020-11-07,Peoria,416 per 100kwarning,"10.4%
+ New Tests: 7,830warning",7.4%warning,53warning,12,37.2%
+45,2020-11-01,2020-11-07,Perry,557 per 100kwarning,"22.9%
+ New Tests: 468warning",7.6%,<5,0,51.2%
+45,2020-11-01,2020-11-07,Piatt,640 per 100kwarning,"10.8%
+ New Tests: 918warning",6.6%,0,2,39.8%
+45,2020-11-01,2020-11-07,Pike,961 per 100kwarning,"17.4%
+ New Tests: 834warning",10.4%,8,3,32.3%
+45,2020-11-01,2020-11-07,Pope,7 Cases,"6.1%
+ New Tests: 82",0.0%,0,0,51.2%
+45,2020-11-01,2020-11-07,Pulaski,567 per 100kwarning,"15.8%
+ New Tests: 183warning",0.0%,0,0,51.2%
+45,2020-11-01,2020-11-07,Putnam,488 per 100kwarning,"16.2%
+ New Tests: 154warning",*,<5,0,37.2%
+45,2020-11-01,2020-11-07,Randolph,470 per 100kwarning,"11.2%
+ New Tests: 1,225warning",4.6%,0,4,37.7%
+45,2020-11-01,2020-11-07,Richland,254 per 100kwarning,"8.8%
+ New Tests: 400warning",*,<5,0,39.8%
+45,2020-11-01,2020-11-07,Rock Island,601 per 100kwarning,"18.8%
+ New Tests: 5,096warning",9.1%,38,6,37.2%
+45,2020-11-01,2020-11-07,Saline,351 per 100kwarning,"11.7%
+ New Tests: 737warning",7.5%,9,3,51.2%
+45,2020-11-01,2020-11-07,Sangamon,647 per 100kwarning,"14.3%
+ New Tests: 10,873warning",8.1%,71warning,1,32.3%
+45,2020-11-01,2020-11-07,Schuyler,362 per 100kwarning,"9.0%
+ New Tests: 133warning",*,<5,0,32.3%
+45,2020-11-01,2020-11-07,Scott,609 per 100kwarning,"9.7%
+ New Tests: 226warning",0.0%,<5,0,32.3%
+45,2020-11-01,2020-11-07,Shelby,497 per 100kwarning,"11.4%
+ New Tests: 552warning",9.3%,10,7,39.8%
+45,2020-11-01,2020-11-07,St. Clair,295 per 100kwarning,"10.1%
+ New Tests: 7,092warning",4.3%warning,17,6,37.7%
+45,2020-11-01,2020-11-07,Stark,203 per 100kwarning,"7.1%
+ New Tests: 337",*,<5,0,37.2%
+45,2020-11-01,2020-11-07,Stephenson,800 per 100kwarning,"19.8%
+ New Tests: 1,609warning",4.3%,<5,4,37.4%
+45,2020-11-01,2020-11-07,Tazewell,507 per 100kwarning,"13.1%
+ New Tests: 5,532warning",7.6%,26,4,37.2%
+45,2020-11-01,2020-11-07,Union,327 per 100kwarning,"6.3%
+ New Tests: 788",7.5%,<5,0,51.2%
+45,2020-11-01,2020-11-07,Vermilion,465 per 100kwarning,"11.9%
+ New Tests: 3,068warning",6.7%,18,8,39.8%
+45,2020-11-01,2020-11-07,Wabash,338 per 100kwarning,"18.1%
+ New Tests: 116warning",*,<5,0,51.2%
+45,2020-11-01,2020-11-07,Warren,652 per 100kwarning,"19.7%
+ New Tests: 575warning",16.4%warning,5,2,37.2%
+45,2020-11-01,2020-11-07,Washington,379 per 100kwarning,"15.1%
+ New Tests: 345warning",*,<5,0,37.7%
+45,2020-11-01,2020-11-07,Wayne,355 per 100kwarning,"8.2%
+ New Tests: 343warning",10.8%,8,2,51.2%
+45,2020-11-01,2020-11-07,White,322 per 100kwarning,"8.4%
+ New Tests: 592warning",*,<5,0,51.2%
+45,2020-11-01,2020-11-07,Whiteside,904 per 100kwarning,"21.6%
+ New Tests: 2,615warning",17.2%warning,31,17,37.4%
+45,2020-11-01,2020-11-07,Will,508 per 100kwarning,"17.5%
+ New Tests: 22,404warning",13.6%,228warning,12,28.7%
+45,2020-11-01,2020-11-07,Williamson,465 per 100kwarning,"14.0%
+ New Tests: 2,069warning",9.3%,21,4,51.2%
+45,2020-11-01,2020-11-07,Winnebago,678 per 100kwarning,"18.5%
+ New Tests: 12,970warning",8.2%,75,13,37.4%
+45,2020-11-01,2020-11-07,Woodford,512 per 100kwarning,"10.6%
+ New Tests: 1,975warning",9.0%,<5,0,37.2%
