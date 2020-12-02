@@ -178,15 +178,15 @@
     "covidcast": {
       "Package": "covidcast",
       "Version": "0.3.1",
-      "Source": "Local",
-      "RemoteType": "local",
-      "RemoteUsername": "cmu-delphi",
-      "RemoteRepo": "covidcast",
-      "RemoteSubdir": "R-packages/covidcast",
-      "RemoteRef": "main",
-      "RemoteSha": "3fba23845798275ca1c3964e28f788d53b44c18a",
+      "Source": "GitHub",
+      "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "Hash": "61ce7a8f2cbb696ea112e697aa04bc54"
+      "RemoteRepo": "covidcast",
+      "RemoteUsername": "cmu-delphi",
+      "RemoteRef": "main",
+      "RemoteSha": "00c22d8946bb7797738bb5b0fbc4b25e70119684",
+      "RemoteSubdir": "R-packages/covidcast",
+      "Hash": "81458e3db5c7658b728b70ee0c8d76a1"
     },
     "cpp11": {
       "Package": "cpp11",
@@ -440,10 +440,10 @@
     },
     "isoband": {
       "Package": "isoband",
-      "Version": "0.2.2",
+      "Version": "0.2.3",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "6e58bd3d6b3dd82a944cd6f05ade228f"
+      "Hash": "53647fb507373700028b2ce6cd30751a"
     },
     "janitor": {
       "Package": "janitor",
