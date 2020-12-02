@@ -124,14 +124,14 @@
     "chromote": {
       "Package": "chromote",
       "Version": "0.0.0.9002",
-      "Source": "Local",
-      "RemoteType": "local",
-      "RemoteUsername": "rstudio",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
       "RemoteRepo": "chromote",
+      "RemoteUsername": "rstudio",
       "RemoteRef": "HEAD",
       "RemoteSha": "3a5329220d84de5f3a442cf05057d1f4ed7d3a7a",
-      "RemoteHost": "api.github.com",
-      "Hash": "ca2f0b4722eb698f0ad0834598eaafc3"
+      "Hash": "3abc85c9862a7e80a82de17b763d84c0"
     },
     "class": {
       "Package": "class",
