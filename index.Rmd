@@ -564,48 +564,53 @@ posrate_spark <- function(...){
 
 
 react_tab <- reactable(
-   data = react_shared,
-   borderless = TRUE,
-   style = list(fontSize = "18px"),
-   # compact = TRUE,
-   onClick = "select",
-   defaultPageSize = 5,
-   defaultSortOrder = "desc",
-   defaultSorted = "cases_100k",
-   defaultColDef = colDef(
-      align = "center",
-      headerStyle = "align-self: flex-end; font-weight:normal;"
-   ),
-   rowStyle = list(
-      alignItems = "center",
-      # add back border here
-      borderBottom = "1px solid lightgray"
-   ),
-   highlight = TRUE,
-   columns = list(
-      cases_color = colDef(show = FALSE),
-      pos_color = colDef(show = FALSE),
-      cases_color_light = colDef(show = FALSE),
-      pos_color_light = colDef(show = FALSE),
-      msa = colDef(
-         name = "Metropolitan Statistical Area",
-         maxWidth = 300
+      data = react_shared,
+      # Remove inner borders from table
+      borderless = TRUE,
+      style = list(fontSize = "18px"),
+      # compact = TRUE,
+      # select the row
+      onClick = "select",
+      # num rows on each page, default 10
+      defaultPageSize = 5,
+      defaultSortOrder = "desc",
+      # col that table is sorted by
+      defaultSorted = "cases_100k",
+      defaultColDef = colDef(
+            align = "center",
+            headerStyle = "align-self: flex-end; font-weight:normal;"
       ),
-      cases_100k = colDef(
-         header = with_tooltip("Cases per 100K", cases_100k_tooltip),
-         maxWidth = 200
+      rowStyle = list(
+            alignItems = "center",
+            # add back border here
+            borderBottom = "1px solid lightgray"
       ),
-      pos_rate = colDef(
-         header = with_tooltip("Positive Test Rate", posrate_tooltip),
-         maxWidth = 200,
-         na = "–",
-         format = colFormat(percent = TRUE, digits = 1)
-      ),
-      casesList = cases_spark(),
-      posList = posrate_spark()
-   )
+      # highlight rows on hover
+      highlight = TRUE,
+      columns = list(
+            cases_color = colDef(show = FALSE),
+            pos_color = colDef(show = FALSE),
+            cases_color_light = colDef(show = FALSE),
+            pos_color_light = colDef(show = FALSE),
+            msa = colDef(
+                  name = "Metropolitan Statistical Area",
+                  maxWidth = 300
+            ),
+            cases_100k = colDef(
+                  header = with_tooltip("Cases per 100K", cases_100k_tooltip),
+                  maxWidth = 200
+            ),
+            pos_rate = colDef(
+                  header = with_tooltip("Positive Test Rate", posrate_tooltip),
+                  maxWidth = 200,
+                  na = "–",
+                  format = colFormat(percent = TRUE, digits = 1)
+            ),
+            casesList = cases_spark(),
+            posList = posrate_spark()
+      )
 ) %>% 
-   dui_add_reactable_dep()
+      dui_add_reactable_dep()
 
 htmlwidgets::saveWidget(react_tab, file = glue("{rprojroot::find_rstudio_root_file()}/images/dashboard/covidcast-msa-reacttab-{react_dates$cases_date[[1]]}.html"))
 
