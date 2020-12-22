@@ -13,9 +13,9 @@
 pacman::p_load(swatches, covidcast, extrafont, dplyr, glue)
 
 
-###############################
-# Get Combined Indiator data
-###############################
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# 1 Get Combined Indiator data ----
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
 # census bureau's tiger-line msa shapefiles
@@ -94,9 +94,9 @@ if (ci_yday != ci_comp) {
 
 
 
-###########################################
-# Clean line, leaflet, and dumbbell data
-###########################################
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# 2 Clean line, leaflet, and dumbbell data ----
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
 # colorNumeric creates a color function where input is a vector with values in the domain and outputs hex colors. 30 hex values.
@@ -162,9 +162,9 @@ readr::write_rds(ci_clean_db, glue("{rprojroot::find_rstudio_root_file()}/data/d
 
 
 
-##########################################################
-# Load and clean cases per 100k and positivity rate data
-##########################################################
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# 3 Load and clean cases per 100k and positivity rate data ----
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
 # Cases per 100K population and MSA positivity rates (current and hisoric)
@@ -200,7 +200,7 @@ cases_col <- case_pos_current %>%
 
 # cases per 100k and positivity rate trend data
 # pos_list is a list column of pos_list = list(list(endDate=dateval1, posRate = posval1), list(endDate=dateval2, posRate=posval2), ...) for each MSA
-# It's nuts, but required format for sparkline tooltip.
+# required format for arrays in javascript
 pos_hist <- case_pos_hist %>%
    filter(!is.na(pos_rate)) %>%
    select(end_date = date, msa, pos_rate) %>%

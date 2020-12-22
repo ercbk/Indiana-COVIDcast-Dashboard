@@ -22,7 +22,7 @@ pacman::p_load(RSelenium, glue, dplyr, rvest)
 ##########################
 
 
-driver <- rsDriver(browser = c("chrome"), chromever = "85.0.4183.83")
+driver <- rsDriver(browser = c("chrome"), chromever = "87.0.4280.88")
 
 # chrome browser
 chrome <- driver$client
@@ -173,6 +173,6 @@ chrome$close()
 driver$server$stop()
 
 # kill the server manually
-installr::kill_process(process = "java.exe")
-installr::kill_process(process = "chromedriver.exe")
+# installr::kill_process(process = "java.exe")
+# installr::kill_process(process = "chromedriver.exe")
 

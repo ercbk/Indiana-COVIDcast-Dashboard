@@ -18,9 +18,9 @@
 
 
 
-##################
-# Set-up
-##################
+#@@@@@@@@@@@@@@
+# Set-up ----
+#@@@@@@@@@@@@@@
 
 
 
@@ -57,9 +57,9 @@ ind_msa_tiles <- msa_tiles %>%
 
 
 
-############################################
-# Get cases per 100k data for each MSA
-############################################
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# 1 Get cases per 100k data for each MSA ----
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
 old_prop_date <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/msa-cases100-posrate-current.csv")) %>%
@@ -112,9 +112,9 @@ while (TRUE) {
 
 
 
-######################################
-# Clean MSA counties and tests
-######################################
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# 2 Clean MSA counties and tests ----
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
 covidcast_msa_counties <- dict_cbsa %>% 
@@ -197,9 +197,9 @@ mich_county_tests <- mich_tests %>%
 
 
 
-#################################################
-# Find week with latest data for IN, MI, and WI
-#################################################
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# 3 Find week with latest data for IN, MI, and WI ----
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
 # There are some Wisc and Ind counties in the Chicago MSA, so the Chicago MSA pos-rate will have data from different weeks.
@@ -243,9 +243,9 @@ states_end_date <- purrr::map_dfr(state_tests, ~determine_end_date(.x)) %>%
 
 
 
-###################################################
-# Make everything look like the clean Illinois df
-###################################################
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# 4 Make everything look like the clean Illinois df ----
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
 # Indiana
@@ -330,9 +330,9 @@ mich_tests_clean <- mich_county_tests %>%
 
 
 
-##########################################
-# Calc positive test rates
-##########################################
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# 5 Calc positive test rates ----
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
 # Bring all the data together
@@ -363,9 +363,9 @@ region_msa_posrates <- voltron %>%
 
 
 
-######################
-# Save Results
-######################
+#@@@@@@@@@@@@@@@@@@@@@@@
+# 6 Save Results ----
+#@@@@@@@@@@@@@@@@@@@@@@@
 
 
 # want latest for map2 hover label
