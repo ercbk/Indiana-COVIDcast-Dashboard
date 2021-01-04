@@ -59,8 +59,8 @@ jobs:
       - name: Process current regional test data
         run: Rscript "R/process-regional-dat.R"
       
-      - name: Build dashboard data
-        run: Rscript "R/build-dashboard-data.R"
+      - name: Process dashboard data
+        run: Rscript "R/process-dashboard-data.R"
       
       - name: Rebuild website
         run: Rscript -e "rmarkdown::render_site()"
@@ -75,10 +75,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add .
           git commit -m "dashboard update" || echo "No changes to commit"
-      
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        # GITHUB_TOKEN automatically created
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          git push
       
