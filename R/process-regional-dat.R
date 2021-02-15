@@ -24,7 +24,7 @@
 
 
 
-pacman::p_load(dplyr, glue)
+pacman::p_load(dplyr, glue, slider)
 
 
 # the beautiful author of totalcensus has the counties that make-up each msa. Hard to find in the wild.
@@ -158,7 +158,7 @@ ill_tests_clean <- ill_tests %>%
    left_join(ill_county_pop, by = c("county" = "name")) %>% 
    mutate(weekly_positives = round((cases_100k * `2019`)/100000),
           state = "Illinois") %>% 
-   select(week, start_date, end_date, county, state, weekly_positives, weekly_tests)
+   select(start_date, end_date, county, weekly_positives, weekly_tests, state)
 
 
 # needed for function below and partially filtering other states' data
@@ -250,83 +250,159 @@ states_end_date <- purrr::map_dfr(state_tests, ~determine_end_date(.x)) %>%
 
 # Indiana
 # filters tests using illinois start_date and states_end_date
+# ind_tests_clean <- ind_county_tests %>% 
+#    filter(between(date,
+#                   ill_date_range$first_date[[1]],
+#                   states_end_date)) %>% 
+#    group_by(county) %>% 
+#    arrange(date) %>%
+#    # illinois's "week" variable is off by 3 days
+#    mutate(week = lubridate::week(date),
+#           # default changes NAs to the final week
+#           week = lead(week, n = 3, default = max(week))) %>% 
+#    group_by(week) %>% 
+#    # start_date = 1 date of that week, end_date = last date of that week
+#    mutate(start_date = min(date),
+#           end_date = max(date)) %>%
+#    ungroup() %>% 
+#    select(week, start_date, end_date, county,
+#           daily_positives = positives,
+#           daily_tests = num_tests) %>% 
+#    # grouping by all vars keeps them in final df; some not necessary for calc
+#    group_by(week, start_date, end_date, county) %>% 
+#    summarize(weekly_positives = sum(daily_positives),
+#              weekly_tests = sum(daily_tests),
+#              state = "Indiana") %>% 
+#    arrange(start_date) %>% 
+#    ungroup()
+
+# Indiana
 ind_tests_clean <- ind_county_tests %>% 
    filter(between(date,
                   ill_date_range$first_date[[1]],
                   states_end_date)) %>% 
    group_by(county) %>% 
    arrange(date) %>%
-   # illinois's "week" variable is off by 3 days
-   mutate(week = lubridate::week(date),
-          # default changes NAs to the final week
-          week = lead(week, n = 3, default = max(week))) %>% 
-   group_by(week) %>% 
-   # start_date = 1 date of that week, end_date = last date of that week
-   mutate(start_date = min(date),
-          end_date = max(date)) %>%
+   mutate(weekly_positives = slider::slide_int(positives,
+                                               .f = sum,
+                                               .before = 6,
+                                               .step = 7,
+                                               .complete = T),
+          weekly_tests = slider::slide_int(num_tests,
+                                           .f = sum,
+                                           .before = 6,
+                                           .step = 7,
+                                           .complete = T),
+          start_date = date - 6,
+          state = "Indiana") %>% 
+   tidyr::drop_na() %>% 
+   rename(end_date = date) %>% 
    ungroup() %>% 
-   select(week, start_date, end_date, county,
-          daily_positives = positives,
-          daily_tests = num_tests) %>% 
-   # grouping by all vars keeps them in final df; some not necessary for calc
-   group_by(week, start_date, end_date, county) %>% 
-   summarize(weekly_positives = sum(daily_positives),
-             weekly_tests = sum(daily_tests),
-             state = "Indiana") %>% 
-   ungroup()
+   select(-positives, -num_tests) %>% 
+   relocate(start_date, .before = end_date)
 
 
 # Wisconsin
+# wisc_tests_clean <- wisc_county_tests %>% 
+#    filter(between(date,
+#                   ill_date_range$first_date[[1]],
+#                   states_end_date)) %>% 
+#    group_by(county) %>% 
+#    arrange(date) %>%
+#    # illinois's "week" variable is off by 3 days
+#    mutate(week = lubridate::week(date),
+#           # default changes NAs to the final week
+#           week = lead(week, n = 3, default = max(week))) %>% 
+#    group_by(week) %>% 
+#    # start_date = 1 date of that week, end_date = last date of that week
+#    mutate(start_date = min(date),
+#           end_date = max(date)) %>%
+#    ungroup() %>% 
+#    select(week, start_date, end_date, county,
+#           daily_positives,daily_tests) %>% 
+#    # grouping by all vars keeps them in final df; some not necessary for calc
+#    group_by(week, start_date, end_date, county) %>% 
+#    summarize(weekly_positives = sum(daily_positives),
+#              weekly_tests = sum(daily_tests),
+#              state = "Wisconsin") %>% 
+#    ungroup()
+
 wisc_tests_clean <- wisc_county_tests %>% 
    filter(between(date,
                   ill_date_range$first_date[[1]],
                   states_end_date)) %>% 
    group_by(county) %>% 
    arrange(date) %>%
-   # illinois's "week" variable is off by 3 days
-   mutate(week = lubridate::week(date),
-          # default changes NAs to the final week
-          week = lead(week, n = 3, default = max(week))) %>% 
-   group_by(week) %>% 
-   # start_date = 1 date of that week, end_date = last date of that week
-   mutate(start_date = min(date),
-          end_date = max(date)) %>%
+   mutate(weekly_positives = slider::slide_int(daily_positives,
+                                               .f = sum,
+                                               .before = 6,
+                                               .step = 7,
+                                               .complete = T),
+          weekly_tests = slider::slide_int(daily_tests,
+                                           .f = sum,
+                                           .before = 6,
+                                           .step = 7,
+                                           .complete = T),
+          start_date = date - 6,
+          state = "Wisconsin") %>% 
+   tidyr::drop_na() %>% 
+   rename(end_date = date) %>% 
    ungroup() %>% 
-   select(week, start_date, end_date, county,
-          daily_positives,daily_tests) %>% 
-   # grouping by all vars keeps them in final df; some not necessary for calc
-   group_by(week, start_date, end_date, county) %>% 
-   summarize(weekly_positives = sum(daily_positives),
-             weekly_tests = sum(daily_tests),
-             state = "Wisconsin") %>% 
-   ungroup()
+   select(-positive, -negative,
+          -daily_positives, -daily_negatives,
+          -daily_tests) %>% 
+   relocate(start_date, .before = end_date)
 
 
 # Michigan
+# mich_tests_clean <- mich_county_tests %>% 
+#    filter(between(date,
+#                   ill_date_range$first_date[[1]],
+#                   states_end_date)) %>% 
+#    group_by(county) %>% 
+#    arrange(date) %>%
+#    # illinois's "week" variable is off by 3 days
+#    mutate(week = lubridate::week(date),
+#           # default changes NAs to the final week
+#           week = lead(week, n = 3, default = max(week))) %>% 
+#    group_by(week) %>% 
+#    # start_date = 1 date of that week, end_date = last date of that week
+#    mutate(start_date = min(date),
+#           end_date = max(date)) %>%
+#    ungroup() %>% 
+#    select(week, start_date, end_date, county,
+#           daily_positives = positive,
+#           daily_tests = total) %>% 
+#    # grouping by all vars keeps them in final df; some not necessary for calc
+#    group_by(week, start_date, end_date, county) %>% 
+#    summarize(weekly_positives = sum(daily_positives),
+#              weekly_tests = sum(daily_tests),
+#              state = "Michigan") %>% 
+#    ungroup()
+
 mich_tests_clean <- mich_county_tests %>% 
    filter(between(date,
                   ill_date_range$first_date[[1]],
                   states_end_date)) %>% 
    group_by(county) %>% 
    arrange(date) %>%
-   # illinois's "week" variable is off by 3 days
-   mutate(week = lubridate::week(date),
-          # default changes NAs to the final week
-          week = lead(week, n = 3, default = max(week))) %>% 
-   group_by(week) %>% 
-   # start_date = 1 date of that week, end_date = last date of that week
-   mutate(start_date = min(date),
-          end_date = max(date)) %>%
+   mutate(weekly_positives = slider::slide_int(positive,
+                                               .f = sum,
+                                               .before = 6,
+                                               .step = 7,
+                                               .complete = T),
+          weekly_tests = slider::slide_int(total,
+                                           .f = sum,
+                                           .before = 6,
+                                           .step = 7,
+                                           .complete = T),
+          start_date = date - 6,
+          state = "Michigan") %>% 
+   tidyr::drop_na() %>% 
+   rename(end_date = date) %>% 
    ungroup() %>% 
-   select(week, start_date, end_date, county,
-          daily_positives = positive,
-          daily_tests = total) %>% 
-   # grouping by all vars keeps them in final df; some not necessary for calc
-   group_by(week, start_date, end_date, county) %>% 
-   summarize(weekly_positives = sum(daily_positives),
-             weekly_tests = sum(daily_tests),
-             state = "Michigan") %>% 
-   ungroup()
+   select(-positive, -negative, -total) %>% 
+   relocate(start_date, .before = end_date)
 
 
 
@@ -345,7 +421,7 @@ voltron <- purrr::reduce(list(ill_tests_clean, ind_tests_clean,
 chicago_msa_posrates <- voltron %>% 
    filter(stringr::str_detect(msa, "Chicago"),
           end_date <= ill_date_range$last_date[[1]]) %>% 
-   group_by(week, start_date, end_date, msa) %>%
+   group_by(start_date, end_date, msa) %>%
    summarize(pos_rate = sum(weekly_positives) / sum(weekly_tests)) %>% 
    ungroup()
 
@@ -355,7 +431,7 @@ region_msa_posrates <- voltron %>%
    filter(!msa %in% c("Cincinnati", "Evansville"),
           !stringr::str_detect(msa, "Chicago"),
           !stringr::str_detect(msa, "Louisville")) %>% 
-   group_by(week, start_date, end_date, msa) %>%
+   group_by(start_date, end_date, msa) %>%
    # calc indiana/Michigan msa pos_rates
    summarize(pos_rate = sum(weekly_positives) / sum(weekly_tests)) %>% 
    bind_rows(chicago_msa_posrates) %>% 
@@ -371,7 +447,7 @@ region_msa_posrates <- voltron %>%
 # want latest for map2 hover label
 latest_msa_pos_rates <- region_msa_posrates %>% 
    group_by(msa) %>% 
-   filter(week == max(week)) %>% 
+   slice_max(end_date) %>% 
    ungroup()
 
 

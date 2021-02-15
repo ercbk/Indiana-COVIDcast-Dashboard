@@ -802,6 +802,13 @@
       "Repository": "CRAN",
       "Hash": "732b2dcfa8608f2569f4c08dd4cf4f10"
     },
+    "slider": {
+      "Package": "slider",
+      "Version": "0.1.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "ac1eb08941cacd8ff16f0041ca60a3de"
+    },
     "snakecase": {
       "Package": "snakecase",
       "Version": "0.11.0",
@@ -948,6 +955,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "181d1a31b1ba2009ef20926f2ee0570c"
+    },
+    "warp": {
+      "Package": "warp",
+      "Version": "0.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "2982481615756e24e79fee95bdc95daa"
     },
     "webshot2": {
       "Package": "webshot2",
