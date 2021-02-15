@@ -64,8 +64,8 @@ ind_msa_tiles <- msa_tiles %>%
 
 old_prop_date <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/msa-cases100-posrate-current.csv")) %>%
    # should only have 1 date, but I may want to do a ts or something in the future
-   filter(date == max(date)) %>% 
-   slice(n()) %>% 
+   filter(date == max(date)) %>%
+   slice(n()) %>%
    pull(date)
 
 # Number of new confirmed COVID-19 cases per 100,000 population, 7-day avg
