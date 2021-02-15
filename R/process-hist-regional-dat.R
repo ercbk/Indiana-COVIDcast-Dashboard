@@ -441,6 +441,10 @@ region_msa_posrates_hist <- voltron_hist %>%
 
 map2_hist <- prop_cases_hist %>% 
    full_join(region_msa_posrates_hist, by = c("date" = "end_date", "msa")) %>% 
-   mutate(data_date = lubridate::today())
+   mutate(data_date = lubridate::today(),
+          # replacing a couple obvious typos
+          cases_100k = case_when(msa == "Michigan City-La Porte" & date == as.Date("2020-08-01") |
+                                 msa == "Michigan City-La Porte" & date == as.Date("2020-08-08") ~ 10,
+                                 TRUE ~ cases_100k))
 
 readr::write_csv(map2_hist, glue("{rprojroot::find_rstudio_root_file()}/data/msa-cases100-posrate-historic.csv"))
