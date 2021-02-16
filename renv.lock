@@ -447,10 +447,10 @@
     },
     "insight": {
       "Package": "insight",
-      "Version": "0.13.0",
+      "Version": "0.12.0",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "8abc2f0ebdf5fa67b46e1f6fa73fe980"
+      "Repository": "RSPM",
+      "Hash": "289744a551d87fb383e23c823aaf88c6"
     },
     "isoband": {
       "Package": "isoband",
@@ -692,10 +692,15 @@
     },
     "promises": {
       "Package": "promises",
-      "Version": "1.1.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "efbbe62da4709f7040a380c702bc7103"
+      "Version": "1.1.1.9001",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "rstudio",
+      "RemoteRepo": "promises",
+      "RemoteRef": "master",
+      "RemoteSha": "192e92755086f4e59adc3257bd827458c7b49c71",
+      "Hash": "b55bea4b2ff00e5b941c8fb9f41bf981"
     },
     "ps": {
       "Package": "ps",
