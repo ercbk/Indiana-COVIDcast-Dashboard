@@ -586,9 +586,14 @@
     "mime": {
       "Package": "mime",
       "Version": "0.10",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "26fa77e707223e1ce042b2b5d09993dc"
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "yihui",
+      "RemoteRepo": "mime",
+      "RemoteRef": "master",
+      "RemoteSha": "4e7d7725e320812deb0c7ade748f61a887cdc092",
+      "Hash": "cb38ca56a535b481a2474a968f1f0797"
     },
     "munsell": {
       "Package": "munsell",
