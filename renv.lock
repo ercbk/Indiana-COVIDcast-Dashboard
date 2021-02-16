@@ -201,12 +201,12 @@
       "Version": "0.4.1",
       "Source": "GitHub",
       "RemoteType": "github",
-      "RemoteUsername": "cmu-delphi",
+      "RemoteHost": "api.github.com",
       "RemoteRepo": "covidcast",
-      "RemoteSubdir": "R-packages/covidcast",
+      "RemoteUsername": "cmu-delphi",
       "RemoteRef": "main",
       "RemoteSha": "df6ace6a070d743a216ab62c0e2bda1011f7eab2",
-      "RemoteHost": "api.github.com",
+      "RemoteSubdir": "R-packages/covidcast",
       "Hash": "5dff20edbc6b0ad3237cf77667b75f29"
     },
     "cpp11": {
@@ -538,10 +538,15 @@
     },
     "lifecycle": {
       "Package": "lifecycle",
-      "Version": "1.0.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "3471fb65971f1a7b2d4ae7848cf2db8d"
+      "Version": "1.0.0.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "r-lib",
+      "RemoteRepo": "lifecycle",
+      "RemoteRef": "master",
+      "RemoteSha": "6c98892fbefe240127b43b44d45b8bedacb2b5fc",
+      "Hash": "9c68bf8a69d0ae8f0fc42b9269d3e14c"
     },
     "lubridate": {
       "Package": "lubridate",
