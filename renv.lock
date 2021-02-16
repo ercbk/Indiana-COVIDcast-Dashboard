@@ -984,10 +984,15 @@
     },
     "waldo": {
       "Package": "waldo",
-      "Version": "0.2.4",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "29df52c781e572c967f90de9713423c4"
+      "Version": "0.2.4.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "r-lib",
+      "RemoteRepo": "waldo",
+      "RemoteRef": "master",
+      "RemoteSha": "a083b8380a33f00748f0ac1666158c609f52ab85",
+      "Hash": "f682cc290aedc9ce6ffdf331a59a81e7"
     },
     "warp": {
       "Package": "warp",
