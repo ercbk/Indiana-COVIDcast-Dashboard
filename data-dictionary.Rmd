@@ -23,6 +23,68 @@ library(gtsummary)
 ```
 
 
+Data files described in this dictionary are located in the [data directory](https://github.com/ercbk/Indiana-COVIDcast-Dashboard/tree/master/data) of this repository.  
+
+The midwest metropolitan statistical areas tracked by this repository include: Bloomington, Cincinnati,  Columbus,  Fort Wayne,  Elkhart-Goshen,  Evansville,  Chicago-Naperville-Elgin,  Indianapolis-Carmel-Anderson,  Kokomo,  Lafayette-West Lafayette,  Louisville/Jefferson County,  Michigan City-La Porte,  Muncie,  South Bend-Mishawaka,  and Terre Haute.
+\
+\
+
+## Historical Weekly Positivity Rates and Daily Cases per 100,000 residents  
+
+#### Description  
+Processed data for the [Indiana COVIDcast Dashboard](https://ercbk.github.io/Indiana-COVIDcast-Dashboard/#dashboard) that shows Weekly Positivity Rate and Daily Cases per 100,000 residents per metropolitan statistical area.    
+
+#### File name
+msa-cases100-posrate-historic.csv  
+
+#### Scripts  
+Collection: [build-regional-dat.R](https://github.com/ercbk/Indiana-COVIDcast-Dashboard/blob/master/R/build-regional-dat.R)  
+Processing: [process-hist-regional-dat.R](https://github.com/ercbk/Indiana-COVIDcast-Dashboard/blob/master/R/process-hist-regional-dat.R)  
+Chart: [index.Rmd](https://github.com/ercbk/Indiana-COVIDcast-Dashboard/blob/master/index.Rmd)  
+
+#### Raw Sources
+covidcast R package: [website](https://cmu-delphi.github.io/covidcast/covidcastR/)  
+
+#### Notes  
+The missing values for `pos_rate` are partly because this dataset has a row for every day and the positivity rate is calculated every week. The other missing values are for Cincinnati, Louisville, and Evansville. At the time this dashboard was created, those states with counties included in those areas didn't publicly release the necessary data to calcuate the positivity rates for those areas.
+
+Other variables:  
+- `date`: yyyy-mm-dd format; date for daily `cases_100k`  
+- `geo_value`: FIPS codes for `msa`  
+- `start_date`: Start date of the weekly interval for `pos_rate`  
+- `data_date`: Date when data was last updated
+\
+
+```{r, asis=TRUE}
+
+msa_hist <- read_csv("data/msa-cases100-posrate-historic.csv")
+msa_var_defs1 <- c("Metropolitan Statistical Area")
+msa_hist_var_defs <- purrr::reduce(list("Metropolitan Statistical Area",
+                                        rep("", 15),
+                                        "Daily cases per 100,000 residents per MSA",
+                                        "Weekly positivity rate per MSA",
+                                        ""), append)
+
+# table width responsive to length of var_defs text, so may not appear full.width
+# use show_header_names to get col names being used by tbl_summary
+tbl_summary(msa_hist,
+            missing = "ifany",
+            missing_text = "Missing",
+            include = c(msa, cases_100k, pos_rate)) %>% 
+      modify_header(update = list(
+            label ~ 'Variable')) %>% 
+      modify_table_body(dplyr::mutate, defs = msa_hist_var_defs) %>%
+      modify_header(defs = "Definition") %>%
+      # show_header_names()
+      as_gt() %>%
+      tab_options(table.align = "left") %>% 
+      cols_align("left", vars(stat_0, defs)) %>%
+      as_raw_html()
+
+```
+\
+\
+\
 
 
 

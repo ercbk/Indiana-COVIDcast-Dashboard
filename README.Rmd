@@ -1,0 +1,55 @@
+---
+output: github_document
+---
+
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE,
+                      out.width = "100%",
+                      collapse = TRUE)
+
+library(readr)
+library(glue)
+library(dplyr)
+library(gt)
+library(gtsummary)
+```
+
+# Indiana-COVIDcast-Dashboard
+![covidcast-update](https://github.com/ercbk/Indiana-COVIDcast-Dashboard/workflows/covidcast-update/badge.svg)  
+
+Dashboard that uses Carnegie Mellon's [COVIDcast](https://covidcast.cmu.edu/index.html?sensor=doctor-visits-smoothed_adj_cli&level=county&region=42003&date=20200701&signalType=value) combined indicator and cases per 100,000 people for Indiana and calculates positivity rates for metropolitan statistical areas  
+
+
+The data files described in this dictionary are in the [data](https://github.com/ercbk/Indiana-COVIDcast-Dashboard/tree/master/data) directory of this repository.  
+\
+\
+
+## Datasets  
+
+```{r}
+data_dict_tbl <- tibble(
+      file_name = c(
+            "msa-cases100-posrate-historic.csv"
+      ),
+      data_url = c(
+            "https://raw.githack.com/ercbk/Indiana-COVID-19-Tracker/master/data-dictionary.html#Historical_Weekly_Positivity_Rates_and_Daily Cases_per_100,000_residents"
+      )
+) %>% 
+      mutate(dict_html = purrr::map(data_url, ~htmltools::a(href = .x, "link")),
+             dict_link = purrr::map(dict_html, ~gt::html(as.character(.x)))) %>%
+      select(file_name, dict_link) %>% 
+      gt() %>% 
+      cols_label(file_name = "File Name",
+                 dict_link = "Data Dictionary") %>% 
+      # doesn't work for github_document
+      cols_width(vars(file_name) ~ px(500)) %>%
+      cols_align("left") %>% 
+      tab_options(table.align = "left") %>% 
+      as_raw_html()
+
+data_dict_tbl
+
+
+```
