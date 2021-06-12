@@ -436,6 +436,9 @@ date,county,negative,positive,total
 2021-06-05,Alcona,13,0,13
 2021-06-06,Alcona,9,0,9
 2021-06-07,Alcona,16,1,17
+2021-06-08,Alcona,10,0,10
+2021-06-09,Alcona,30,0,30
+2021-06-10,Alcona,11,0,11
 2020-03-20,Alger,1,0,1
 2020-03-25,Alger,1,0,1
 2020-03-26,Alger,1,0,1
@@ -857,6 +860,9 @@ date,county,negative,positive,total
 2021-06-05,Alger,5,0,5
 2021-06-06,Alger,5,0,5
 2021-06-07,Alger,6,0,6
+2021-06-08,Alger,6,0,6
+2021-06-09,Alger,9,0,9
+2021-06-10,Alger,8,0,8
 2020-03-16,Allegan,2,0,2
 2020-03-17,Allegan,1,0,1
 2020-03-18,Allegan,2,0,2
@@ -1291,11 +1297,11 @@ date,county,negative,positive,total
 2021-05-24,Allegan,147,12,159
 2021-05-25,Allegan,157,16,173
 2021-05-26,Allegan,171,9,180
-2021-05-27,Allegan,143,9,152
+2021-05-27,Allegan,144,9,153
 2021-05-28,Allegan,140,5,145
 2021-05-29,Allegan,112,1,113
 2021-05-30,Allegan,164,7,171
-2021-05-31,Allegan,94,3,97
+2021-05-31,Allegan,95,3,98
 2021-06-01,Allegan,95,2,97
 2021-06-02,Allegan,161,2,163
 2021-06-03,Allegan,155,9,164
@@ -1303,6 +1309,9 @@ date,county,negative,positive,total
 2021-06-05,Allegan,129,2,131
 2021-06-06,Allegan,128,5,133
 2021-06-07,Allegan,151,5,156
+2021-06-08,Allegan,151,2,153
+2021-06-09,Allegan,169,7,176
+2021-06-10,Allegan,138,4,142
 2020-03-18,Alpena,1,0,1
 2020-03-19,Alpena,1,0,1
 2020-03-20,Alpena,10,0,10
@@ -1749,6 +1758,9 @@ date,county,negative,positive,total
 2021-06-05,Alpena,56,0,56
 2021-06-06,Alpena,47,0,47
 2021-06-07,Alpena,56,0,56
+2021-06-08,Alpena,54,1,55
+2021-06-09,Alpena,28,2,30
+2021-06-10,Alpena,31,1,32
 2020-03-17,Antrim,2,0,2
 2020-03-18,Antrim,3,0,3
 2020-03-19,Antrim,1,0,1
@@ -2193,6 +2205,9 @@ date,county,negative,positive,total
 2021-06-05,Antrim,25,0,25
 2021-06-06,Antrim,9,0,9
 2021-06-07,Antrim,15,0,15
+2021-06-08,Antrim,28,0,28
+2021-06-09,Antrim,30,0,30
+2021-06-10,Antrim,43,1,44
 2020-03-19,Arenac,1,0,1
 2020-03-20,Arenac,1,0,1
 2020-03-21,Arenac,1,0,1
@@ -2637,6 +2652,9 @@ date,county,negative,positive,total
 2021-06-05,Arenac,31,0,31
 2021-06-06,Arenac,26,0,26
 2021-06-07,Arenac,21,0,21
+2021-06-08,Arenac,19,0,19
+2021-06-09,Arenac,43,2,45
+2021-06-10,Arenac,16,3,19
 2020-03-26,Baraga,3,0,3
 2020-03-27,Baraga,1,0,1
 2020-03-31,Baraga,1,0,1
@@ -3049,6 +3067,9 @@ date,county,negative,positive,total
 2021-06-05,Baraga,13,1,14
 2021-06-06,Baraga,8,0,8
 2021-06-07,Baraga,39,0,39
+2021-06-08,Baraga,9,0,9
+2021-06-09,Baraga,2,0,2
+2021-06-10,Baraga,54,0,54
 2020-03-18,Barry,2,0,2
 2020-03-20,Barry,1,2,3
 2020-03-21,Barry,5,1,6
@@ -3495,6 +3516,9 @@ date,county,negative,positive,total
 2021-06-05,Barry,53,1,54
 2021-06-06,Barry,102,0,102
 2021-06-07,Barry,45,1,46
+2021-06-08,Barry,95,2,97
+2021-06-09,Barry,87,5,92
+2021-06-10,Barry,65,5,70
 2020-03-13,Bay,0,1,1
 2020-03-17,Bay,2,0,2
 2020-03-18,Bay,8,0,8
@@ -3943,7 +3967,10 @@ date,county,negative,positive,total
 2021-06-04,Bay,142,4,146
 2021-06-05,Bay,100,3,103
 2021-06-06,Bay,95,0,95
-2021-06-07,Bay,120,5,125
+2021-06-07,Bay,121,5,126
+2021-06-08,Bay,108,2,110
+2021-06-09,Bay,173,3,176
+2021-06-10,Bay,156,2,158
 2020-03-17,Benzie,1,0,1
 2020-03-18,Benzie,5,0,5
 2020-03-19,Benzie,3,0,3
@@ -4377,6 +4404,9 @@ date,county,negative,positive,total
 2021-06-05,Benzie,18,2,20
 2021-06-06,Benzie,9,0,9
 2021-06-07,Benzie,14,1,15
+2021-06-08,Benzie,25,0,25
+2021-06-09,Benzie,13,0,13
+2021-06-10,Benzie,27,1,28
 2020-03-17,Berrien,1,0,1
 2020-03-18,Berrien,1,0,1
 2020-03-19,Berrien,3,0,3
@@ -4825,6 +4855,9 @@ date,county,negative,positive,total
 2021-06-05,Berrien,244,10,254
 2021-06-06,Berrien,232,16,248
 2021-06-07,Berrien,198,4,202
+2021-06-08,Berrien,376,5,381
+2021-06-09,Berrien,336,4,340
+2021-06-10,Berrien,249,3,252
 2020-03-16,Branch,1,0,1
 2020-03-17,Branch,1,0,1
 2020-03-19,Branch,1,0,1
@@ -5267,6 +5300,9 @@ date,county,negative,positive,total
 2021-06-05,Branch,40,1,41
 2021-06-06,Branch,40,5,45
 2021-06-07,Branch,83,2,85
+2021-06-08,Branch,94,3,97
+2021-06-09,Branch,71,7,78
+2021-06-10,Branch,68,6,74
 2020-03-13,Calhoun,1,0,1
 2020-03-16,Calhoun,2,0,2
 2020-03-18,Calhoun,3,0,3
@@ -5715,7 +5751,10 @@ date,county,negative,positive,total
 2021-06-04,Calhoun,215,12,227
 2021-06-05,Calhoun,224,9,233
 2021-06-06,Calhoun,189,8,197
-2021-06-07,Calhoun,211,5,216
+2021-06-07,Calhoun,212,5,217
+2021-06-08,Calhoun,388,6,394
+2021-06-09,Calhoun,293,6,299
+2021-06-10,Calhoun,168,4,172
 2020-03-14,Cass,1,0,1
 2020-03-15,Cass,1,0,1
 2020-03-16,Cass,1,0,1
@@ -6163,6 +6202,9 @@ date,county,negative,positive,total
 2021-06-05,Cass,54,0,54
 2021-06-06,Cass,55,0,55
 2021-06-07,Cass,58,1,59
+2021-06-08,Cass,60,0,60
+2021-06-09,Cass,75,4,79
+2021-06-10,Cass,51,1,52
 2020-03-16,Charlevoix,1,0,1
 2020-03-18,Charlevoix,1,0,1
 2020-03-19,Charlevoix,3,0,3
@@ -6610,6 +6652,9 @@ date,county,negative,positive,total
 2021-06-05,Charlevoix,17,0,17
 2021-06-06,Charlevoix,29,0,29
 2021-06-07,Charlevoix,25,0,25
+2021-06-08,Charlevoix,20,2,22
+2021-06-09,Charlevoix,23,0,23
+2021-06-10,Charlevoix,18,0,18
 2020-03-18,Cheboygan,1,0,1
 2020-03-20,Cheboygan,2,0,2
 2020-03-21,Cheboygan,2,0,2
@@ -7055,6 +7100,9 @@ date,county,negative,positive,total
 2021-06-05,Cheboygan,15,0,15
 2021-06-06,Cheboygan,21,1,22
 2021-06-07,Cheboygan,30,2,32
+2021-06-08,Cheboygan,27,1,28
+2021-06-09,Cheboygan,28,0,28
+2021-06-10,Cheboygan,26,0,26
 2020-03-19,Chippewa,3,0,3
 2020-03-20,Chippewa,2,0,2
 2020-03-21,Chippewa,1,0,1
@@ -7496,7 +7544,10 @@ date,county,negative,positive,total
 2021-06-04,Chippewa,124,0,124
 2021-06-05,Chippewa,96,0,96
 2021-06-06,Chippewa,26,0,26
-2021-06-07,Chippewa,29,0,29
+2021-06-07,Chippewa,30,0,30
+2021-06-08,Chippewa,168,2,170
+2021-06-09,Chippewa,135,5,140
+2021-06-10,Chippewa,203,0,203
 2020-03-19,Clare,2,0,2
 2020-03-20,Clare,3,0,3
 2020-03-21,Clare,7,0,7
@@ -7943,6 +7994,9 @@ date,county,negative,positive,total
 2021-06-05,Clare,28,1,29
 2021-06-06,Clare,58,0,58
 2021-06-07,Clare,47,0,47
+2021-06-08,Clare,62,0,62
+2021-06-09,Clare,28,0,28
+2021-06-10,Clare,38,0,38
 2020-03-13,Clinton,1,0,1
 2020-03-15,Clinton,1,0,1
 2020-03-16,Clinton,2,0,2
@@ -8393,6 +8447,9 @@ date,county,negative,positive,total
 2021-06-05,Clinton,89,2,91
 2021-06-06,Clinton,41,0,41
 2021-06-07,Clinton,81,2,83
+2021-06-08,Clinton,102,5,107
+2021-06-09,Clinton,67,2,69
+2021-06-10,Clinton,61,1,62
 2020-03-23,Correctional,1,0,1
 2020-03-27,Correctional,1,1,2
 2020-03-28,Correctional,1,0,1
@@ -8831,6 +8888,9 @@ date,county,negative,positive,total
 2021-06-05,Correctional,2470,0,2470
 2021-06-06,Correctional,4245,0,4245
 2021-06-07,Correctional,1335,0,1335
+2021-06-08,Correctional,2125,26,2151
+2021-06-09,Correctional,2177,5,2182
+2021-06-10,Correctional,3739,2,3741
 2020-03-18,Crawford,1,0,1
 2020-03-19,Crawford,2,0,2
 2020-03-20,Crawford,4,0,4
@@ -9266,6 +9326,9 @@ date,county,negative,positive,total
 2021-06-05,Crawford,12,2,14
 2021-06-06,Crawford,10,0,10
 2021-06-07,Crawford,26,0,26
+2021-06-08,Crawford,13,0,13
+2021-06-09,Crawford,20,0,20
+2021-06-10,Crawford,12,0,12
 2020-03-16,Delta,1,0,1
 2020-03-18,Delta,2,0,2
 2020-03-19,Delta,1,0,1
@@ -9713,6 +9776,9 @@ date,county,negative,positive,total
 2021-06-05,Delta,25,0,25
 2021-06-06,Delta,39,1,40
 2021-06-07,Delta,23,0,23
+2021-06-08,Delta,43,2,45
+2021-06-09,Delta,42,0,42
+2021-06-10,Delta,40,0,40
 2020-03-13,Detroit City,0,1,1
 2020-03-14,Detroit City,1,2,3
 2020-03-15,Detroit City,0,3,3
@@ -10137,7 +10203,7 @@ date,county,negative,positive,total
 2021-05-08,Detroit City,1587,167,1754
 2021-05-09,Detroit City,1428,174,1602
 2021-05-10,Detroit City,1165,187,1352
-2021-05-11,Detroit City,1578,126,1704
+2021-05-11,Detroit City,1578,127,1705
 2021-05-12,Detroit City,1924,197,2121
 2021-05-13,Detroit City,2021,198,2219
 2021-05-14,Detroit City,1748,154,1902
@@ -10160,11 +10226,14 @@ date,county,negative,positive,total
 2021-05-31,Detroit City,689,33,722
 2021-06-01,Detroit City,1000,54,1054
 2021-06-02,Detroit City,1503,48,1551
-2021-06-03,Detroit City,1874,42,1916
+2021-06-03,Detroit City,1877,42,1919
 2021-06-04,Detroit City,1405,42,1447
 2021-06-05,Detroit City,778,29,807
 2021-06-06,Detroit City,1272,28,1300
-2021-06-07,Detroit City,907,23,930
+2021-06-07,Detroit City,912,23,935
+2021-06-08,Detroit City,1789,38,1827
+2021-06-09,Detroit City,1669,31,1700
+2021-06-10,Detroit City,1609,28,1637
 2020-03-12,Dickinson,1,0,1
 2020-03-13,Dickinson,1,0,1
 2020-03-14,Dickinson,1,0,1
@@ -10612,6 +10681,9 @@ date,county,negative,positive,total
 2021-06-05,Dickinson,6,0,6
 2021-06-06,Dickinson,8,0,8
 2021-06-07,Dickinson,21,1,22
+2021-06-08,Dickinson,23,1,24
+2021-06-09,Dickinson,25,0,25
+2021-06-10,Dickinson,14,1,15
 2020-03-16,Eaton,2,1,3
 2020-03-17,Eaton,1,0,1
 2020-03-18,Eaton,1,0,1
@@ -11061,6 +11133,9 @@ date,county,negative,positive,total
 2021-06-05,Eaton,136,2,138
 2021-06-06,Eaton,116,3,119
 2021-06-07,Eaton,133,2,135
+2021-06-08,Eaton,224,5,229
+2021-06-09,Eaton,203,2,205
+2021-06-10,Eaton,143,2,145
 2020-03-16,Emmet,3,0,3
 2020-03-18,Emmet,5,0,5
 2020-03-19,Emmet,2,0,2
@@ -11506,6 +11581,9 @@ date,county,negative,positive,total
 2021-06-05,Emmet,30,0,30
 2021-06-06,Emmet,25,1,26
 2021-06-07,Emmet,21,1,22
+2021-06-08,Emmet,39,2,41
+2021-06-09,Emmet,45,1,46
+2021-06-10,Emmet,43,0,43
 2020-03-16,Genesee,11,0,11
 2020-03-17,Genesee,16,0,16
 2020-03-18,Genesee,20,0,20
@@ -11954,7 +12032,10 @@ date,county,negative,positive,total
 2021-06-04,Genesee,539,10,549
 2021-06-05,Genesee,275,7,282
 2021-06-06,Genesee,421,14,435
-2021-06-07,Genesee,302,11,313
+2021-06-07,Genesee,303,11,314
+2021-06-08,Genesee,406,9,415
+2021-06-09,Genesee,545,7,552
+2021-06-10,Genesee,510,8,518
 2020-03-18,Gladwin,4,0,4
 2020-03-19,Gladwin,4,1,5
 2020-03-20,Gladwin,2,0,2
@@ -12399,6 +12480,9 @@ date,county,negative,positive,total
 2021-06-05,Gladwin,30,0,30
 2021-06-06,Gladwin,26,0,26
 2021-06-07,Gladwin,73,3,76
+2021-06-08,Gladwin,52,0,52
+2021-06-09,Gladwin,23,0,23
+2021-06-10,Gladwin,21,2,23
 2020-03-22,Gogebic,2,0,2
 2020-03-24,Gogebic,3,0,3
 2020-03-25,Gogebic,3,0,3
@@ -12831,9 +12915,12 @@ date,county,negative,positive,total
 2021-06-02,Gogebic,45,0,45
 2021-06-03,Gogebic,18,2,20
 2021-06-04,Gogebic,16,0,16
-2021-06-05,Gogebic,16,0,16
+2021-06-05,Gogebic,18,0,18
 2021-06-06,Gogebic,10,0,10
 2021-06-07,Gogebic,13,0,13
+2021-06-08,Gogebic,35,0,35
+2021-06-09,Gogebic,24,0,24
+2021-06-10,Gogebic,30,0,30
 2020-03-16,Grand Traverse,0,1,1
 2020-03-18,Grand Traverse,6,0,6
 2020-03-19,Grand Traverse,4,0,4
@@ -13282,6 +13369,9 @@ date,county,negative,positive,total
 2021-06-05,Grand Traverse,72,2,74
 2021-06-06,Grand Traverse,121,0,121
 2021-06-07,Grand Traverse,139,3,142
+2021-06-08,Grand Traverse,59,0,59
+2021-06-09,Grand Traverse,107,3,110
+2021-06-10,Grand Traverse,142,1,143
 2020-03-18,Gratiot,1,0,1
 2020-03-20,Gratiot,3,0,3
 2020-03-21,Gratiot,2,0,2
@@ -13728,6 +13818,9 @@ date,county,negative,positive,total
 2021-06-05,Gratiot,34,0,34
 2021-06-06,Gratiot,50,0,50
 2021-06-07,Gratiot,68,1,69
+2021-06-08,Gratiot,73,3,76
+2021-06-09,Gratiot,78,2,80
+2021-06-10,Gratiot,44,0,44
 2020-03-18,Hillsdale,2,0,2
 2020-03-20,Hillsdale,4,0,4
 2020-03-22,Hillsdale,2,0,2
@@ -14173,6 +14266,9 @@ date,county,negative,positive,total
 2021-06-05,Hillsdale,34,2,36
 2021-06-06,Hillsdale,56,3,59
 2021-06-07,Hillsdale,39,4,43
+2021-06-08,Hillsdale,61,1,62
+2021-06-09,Hillsdale,64,3,67
+2021-06-10,Hillsdale,33,3,36
 2020-03-17,Houghton,1,0,1
 2020-03-18,Houghton,1,0,1
 2020-03-19,Houghton,1,0,1
@@ -14619,6 +14715,9 @@ date,county,negative,positive,total
 2021-06-05,Houghton,37,0,37
 2021-06-06,Houghton,28,0,28
 2021-06-07,Houghton,37,0,37
+2021-06-08,Houghton,48,0,48
+2021-06-09,Houghton,36,0,36
+2021-06-10,Houghton,109,0,109
 2020-03-16,Huron,1,0,1
 2020-03-19,Huron,3,0,3
 2020-03-21,Huron,2,0,2
@@ -15065,6 +15164,9 @@ date,county,negative,positive,total
 2021-06-05,Huron,12,1,13
 2021-06-06,Huron,14,0,14
 2021-06-07,Huron,32,0,32
+2021-06-08,Huron,19,2,21
+2021-06-09,Huron,19,1,20
+2021-06-10,Huron,21,0,21
 2020-03-12,Ingham,0,1,1
 2020-03-13,Ingham,1,0,1
 2020-03-15,Ingham,3,0,3
@@ -15516,7 +15618,10 @@ date,county,negative,positive,total
 2021-06-04,Ingham,375,6,381
 2021-06-05,Ingham,360,11,371
 2021-06-06,Ingham,281,5,286
-2021-06-07,Ingham,393,6,399
+2021-06-07,Ingham,394,6,400
+2021-06-08,Ingham,504,12,516
+2021-06-09,Ingham,545,13,558
+2021-06-10,Ingham,433,9,442
 2020-03-19,Ionia,1,0,1
 2020-03-20,Ionia,5,0,5
 2020-03-21,Ionia,7,0,7
@@ -15963,6 +16068,9 @@ date,county,negative,positive,total
 2021-06-05,Ionia,95,1,96
 2021-06-06,Ionia,78,1,79
 2021-06-07,Ionia,84,1,85
+2021-06-08,Ionia,110,2,112
+2021-06-09,Ionia,104,4,108
+2021-06-10,Ionia,68,2,70
 2020-03-17,Iosco,1,0,1
 2020-03-18,Iosco,1,0,1
 2020-03-19,Iosco,2,0,2
@@ -16409,6 +16517,9 @@ date,county,negative,positive,total
 2021-06-05,Iosco,33,2,35
 2021-06-06,Iosco,78,4,82
 2021-06-07,Iosco,28,1,29
+2021-06-08,Iosco,29,1,30
+2021-06-09,Iosco,42,3,45
+2021-06-10,Iosco,30,1,31
 2020-03-12,Iron,1,0,1
 2020-03-16,Iron,2,0,2
 2020-03-20,Iron,1,0,1
@@ -16850,6 +16961,9 @@ date,county,negative,positive,total
 2021-06-05,Iron,9,0,9
 2021-06-06,Iron,6,0,6
 2021-06-07,Iron,9,0,9
+2021-06-08,Iron,24,0,24
+2021-06-09,Iron,16,0,16
+2021-06-10,Iron,25,0,25
 2020-03-13,Isabella,1,0,1
 2020-03-18,Isabella,1,0,1
 2020-03-19,Isabella,1,0,1
@@ -17297,6 +17411,9 @@ date,county,negative,positive,total
 2021-06-05,Isabella,62,0,62
 2021-06-06,Isabella,66,0,66
 2021-06-07,Isabella,74,3,77
+2021-06-08,Isabella,156,3,159
+2021-06-09,Isabella,65,0,65
+2021-06-10,Isabella,78,1,79
 2020-03-17,Jackson,5,1,6
 2020-03-18,Jackson,2,1,3
 2020-03-20,Jackson,2,0,2
@@ -17744,6 +17861,9 @@ date,county,negative,positive,total
 2021-06-05,Jackson,199,1,200
 2021-06-06,Jackson,347,10,357
 2021-06-07,Jackson,319,4,323
+2021-06-08,Jackson,362,4,366
+2021-06-09,Jackson,551,6,557
+2021-06-10,Jackson,224,4,228
 2020-03-16,Kalamazoo,7,0,7
 2020-03-18,Kalamazoo,3,0,3
 2020-03-19,Kalamazoo,2,0,2
@@ -18192,6 +18312,9 @@ date,county,negative,positive,total
 2021-06-05,Kalamazoo,367,10,377
 2021-06-06,Kalamazoo,253,8,261
 2021-06-07,Kalamazoo,416,11,427
+2021-06-08,Kalamazoo,476,15,491
+2021-06-09,Kalamazoo,475,7,482
+2021-06-10,Kalamazoo,401,9,410
 2020-03-19,Kalkaska,3,0,3
 2020-03-20,Kalkaska,2,0,2
 2020-03-22,Kalkaska,3,0,3
@@ -18633,6 +18756,9 @@ date,county,negative,positive,total
 2021-06-05,Kalkaska,12,1,13
 2021-06-06,Kalkaska,11,0,11
 2021-06-07,Kalkaska,24,0,24
+2021-06-08,Kalkaska,12,2,14
+2021-06-09,Kalkaska,27,2,29
+2021-06-10,Kalkaska,29,3,32
 2020-03-12,Kent,0,3,3
 2020-03-15,Kent,0,2,2
 2020-03-17,Kent,13,0,13
@@ -19082,7 +19208,10 @@ date,county,negative,positive,total
 2021-06-04,Kent,1364,45,1409
 2021-06-05,Kent,929,31,960
 2021-06-06,Kent,1155,39,1194
-2021-06-07,Kent,1137,39,1176
+2021-06-07,Kent,1140,39,1179
+2021-06-08,Kent,1325,22,1347
+2021-06-09,Kent,1467,52,1519
+2021-06-10,Kent,1069,35,1104
 2020-03-29,Keweenaw,2,0,2
 2020-03-30,Keweenaw,2,0,2
 2020-04-04,Keweenaw,4,0,4
@@ -19458,6 +19587,9 @@ date,county,negative,positive,total
 2021-06-04,Keweenaw,5,0,5
 2021-06-05,Keweenaw,2,0,2
 2021-06-07,Keweenaw,2,0,2
+2021-06-08,Keweenaw,4,0,4
+2021-06-09,Keweenaw,2,0,2
+2021-06-10,Keweenaw,3,0,3
 2020-03-21,Lake,1,0,1
 2020-03-24,Lake,1,0,1
 2020-03-25,Lake,1,0,1
@@ -19894,6 +20026,9 @@ date,county,negative,positive,total
 2021-06-05,Lake,15,0,15
 2021-06-06,Lake,14,0,14
 2021-06-07,Lake,22,0,22
+2021-06-08,Lake,18,1,19
+2021-06-09,Lake,19,0,19
+2021-06-10,Lake,15,0,15
 2020-03-16,Lapeer,1,0,1
 2020-03-18,Lapeer,6,0,6
 2020-03-19,Lapeer,2,0,2
@@ -20339,9 +20474,12 @@ date,county,negative,positive,total
 2021-06-02,Lapeer,102,1,103
 2021-06-03,Lapeer,111,7,118
 2021-06-04,Lapeer,83,5,88
-2021-06-05,Lapeer,50,0,50
+2021-06-05,Lapeer,51,0,51
 2021-06-06,Lapeer,84,4,88
 2021-06-07,Lapeer,67,0,67
+2021-06-08,Lapeer,73,4,77
+2021-06-09,Lapeer,85,2,87
+2021-06-10,Lapeer,92,2,94
 2020-03-16,Leelanau,0,1,1
 2020-03-19,Leelanau,2,0,2
 2020-03-20,Leelanau,1,0,1
@@ -20777,7 +20915,10 @@ date,county,negative,positive,total
 2021-06-04,Leelanau,10,0,10
 2021-06-05,Leelanau,15,0,15
 2021-06-06,Leelanau,14,0,14
-2021-06-07,Leelanau,23,1,24
+2021-06-07,Leelanau,24,1,25
+2021-06-08,Leelanau,11,0,11
+2021-06-09,Leelanau,21,0,21
+2021-06-10,Leelanau,25,0,25
 2020-03-17,Lenawee,2,0,2
 2020-03-18,Lenawee,2,0,2
 2020-03-19,Lenawee,1,0,1
@@ -21226,6 +21367,9 @@ date,county,negative,positive,total
 2021-06-05,Lenawee,77,3,80
 2021-06-06,Lenawee,123,3,126
 2021-06-07,Lenawee,126,1,127
+2021-06-08,Lenawee,166,5,171
+2021-06-09,Lenawee,250,4,254
+2021-06-10,Lenawee,93,4,97
 2020-03-16,Livingston,3,0,3
 2020-03-17,Livingston,10,1,11
 2020-03-18,Livingston,7,0,7
@@ -21674,7 +21818,10 @@ date,county,negative,positive,total
 2021-06-04,Livingston,242,5,247
 2021-06-05,Livingston,224,7,231
 2021-06-06,Livingston,361,4,365
-2021-06-07,Livingston,260,2,262
+2021-06-07,Livingston,263,2,265
+2021-06-08,Livingston,362,2,364
+2021-06-09,Livingston,340,1,341
+2021-06-10,Livingston,238,16,254
 2020-03-20,Luce,1,0,1
 2020-03-22,Luce,1,0,1
 2020-03-24,Luce,4,1,5
@@ -22083,7 +22230,10 @@ date,county,negative,positive,total
 2021-06-04,Luce,13,0,13
 2021-06-05,Luce,47,0,47
 2021-06-06,Luce,31,0,31
-2021-06-07,Luce,2,0,2
+2021-06-07,Luce,11,1,12
+2021-06-08,Luce,19,0,19
+2021-06-09,Luce,11,0,11
+2021-06-10,Luce,19,0,19
 2020-03-18,Mackinac,1,0,1
 2020-03-24,Mackinac,2,0,2
 2020-03-28,Mackinac,1,0,1
@@ -22517,6 +22667,9 @@ date,county,negative,positive,total
 2021-06-05,Mackinac,24,0,24
 2021-06-06,Mackinac,7,0,7
 2021-06-07,Mackinac,15,0,15
+2021-06-08,Mackinac,16,1,17
+2021-06-09,Mackinac,30,0,30
+2021-06-10,Mackinac,43,0,43
 2020-03-13,Macomb,0,1,1
 2020-03-14,Macomb,5,1,6
 2020-03-15,Macomb,1,1,2
@@ -22964,11 +23117,14 @@ date,county,negative,positive,total
 2021-05-31,Macomb,783,25,808
 2021-06-01,Macomb,996,33,1029
 2021-06-02,Macomb,1407,41,1448
-2021-06-03,Macomb,1591,41,1632
+2021-06-03,Macomb,1593,41,1634
 2021-06-04,Macomb,1298,49,1347
-2021-06-05,Macomb,888,21,909
-2021-06-06,Macomb,1258,37,1295
-2021-06-07,Macomb,801,22,823
+2021-06-05,Macomb,889,21,910
+2021-06-06,Macomb,1259,37,1296
+2021-06-07,Macomb,819,23,842
+2021-06-08,Macomb,1304,30,1334
+2021-06-09,Macomb,1369,31,1400
+2021-06-10,Macomb,1383,25,1408
 2020-03-19,Manistee,1,0,1
 2020-03-20,Manistee,3,0,3
 2020-03-21,Manistee,2,0,2
@@ -23409,11 +23565,14 @@ date,county,negative,positive,total
 2021-05-31,Manistee,14,1,15
 2021-06-01,Manistee,43,0,43
 2021-06-02,Manistee,36,1,37
-2021-06-03,Manistee,40,0,40
+2021-06-03,Manistee,41,0,41
 2021-06-04,Manistee,21,1,22
 2021-06-05,Manistee,29,0,29
 2021-06-06,Manistee,28,1,29
-2021-06-07,Manistee,47,1,48
+2021-06-07,Manistee,48,1,49
+2021-06-08,Manistee,20,0,20
+2021-06-09,Manistee,44,0,44
+2021-06-10,Manistee,19,0,19
 2020-03-17,Marquette,1,0,1
 2020-03-18,Marquette,1,0,1
 2020-03-19,Marquette,13,0,13
@@ -23862,6 +24021,9 @@ date,county,negative,positive,total
 2021-06-05,Marquette,105,0,105
 2021-06-06,Marquette,64,1,65
 2021-06-07,Marquette,105,2,107
+2021-06-08,Marquette,217,0,217
+2021-06-09,Marquette,148,0,148
+2021-06-10,Marquette,182,0,182
 2020-03-18,Mason,1,0,1
 2020-03-19,Mason,1,0,1
 2020-03-21,Mason,1,0,1
@@ -24306,6 +24468,9 @@ date,county,negative,positive,total
 2021-06-05,Mason,42,1,43
 2021-06-06,Mason,42,3,45
 2021-06-07,Mason,26,2,28
+2021-06-08,Mason,60,0,60
+2021-06-09,Mason,30,0,30
+2021-06-10,Mason,25,2,27
 2020-03-18,Mecosta,1,0,1
 2020-03-19,Mecosta,3,0,3
 2020-03-20,Mecosta,1,0,1
@@ -24752,6 +24917,9 @@ date,county,negative,positive,total
 2021-06-05,Mecosta,46,0,46
 2021-06-06,Mecosta,52,1,53
 2021-06-07,Mecosta,63,0,63
+2021-06-08,Mecosta,69,1,70
+2021-06-09,Mecosta,39,1,40
+2021-06-10,Mecosta,44,0,44
 2020-03-11,Menominee,1,0,1
 2020-03-14,Menominee,1,0,1
 2020-03-17,Menominee,2,0,2
@@ -25194,7 +25362,10 @@ date,county,negative,positive,total
 2021-06-04,Menominee,28,0,28
 2021-06-05,Menominee,14,0,14
 2021-06-06,Menominee,25,0,25
-2021-06-07,Menominee,27,1,28
+2021-06-07,Menominee,28,1,29
+2021-06-08,Menominee,44,0,44
+2021-06-09,Menominee,32,2,34
+2021-06-10,Menominee,15,0,15
 2020-03-13,Midland,1,0,1
 2020-03-18,Midland,11,1,12
 2020-03-19,Midland,16,0,16
@@ -25643,6 +25814,9 @@ date,county,negative,positive,total
 2021-06-05,Midland,90,5,95
 2021-06-06,Midland,61,3,64
 2021-06-07,Midland,155,3,158
+2021-06-08,Midland,138,1,139
+2021-06-09,Midland,99,5,104
+2021-06-10,Midland,90,1,91
 2020-03-16,Missaukee,1,0,1
 2020-03-19,Missaukee,3,0,3
 2020-03-20,Missaukee,7,0,7
@@ -26081,6 +26255,9 @@ date,county,negative,positive,total
 2021-06-05,Missaukee,17,0,17
 2021-06-06,Missaukee,7,0,7
 2021-06-07,Missaukee,28,1,29
+2021-06-08,Missaukee,16,2,18
+2021-06-09,Missaukee,28,1,29
+2021-06-10,Missaukee,11,2,13
 2020-03-14,Monroe,0,1,1
 2020-03-16,Monroe,7,0,7
 2020-03-17,Monroe,5,0,5
@@ -26530,7 +26707,10 @@ date,county,negative,positive,total
 2021-06-04,Monroe,288,8,296
 2021-06-05,Monroe,139,4,143
 2021-06-06,Monroe,201,4,205
-2021-06-07,Monroe,179,2,181
+2021-06-07,Monroe,180,2,182
+2021-06-08,Monroe,209,5,214
+2021-06-09,Monroe,190,3,193
+2021-06-10,Monroe,181,4,185
 2020-03-12,Montcalm,0,2,2
 2020-03-20,Montcalm,1,0,1
 2020-03-21,Montcalm,1,0,1
@@ -26975,7 +27155,10 @@ date,county,negative,positive,total
 2021-06-04,Montcalm,126,4,130
 2021-06-05,Montcalm,121,2,123
 2021-06-06,Montcalm,106,3,109
-2021-06-07,Montcalm,142,2,144
+2021-06-07,Montcalm,143,2,145
+2021-06-08,Montcalm,132,5,137
+2021-06-09,Montcalm,122,4,126
+2021-06-10,Montcalm,119,0,119
 2020-03-19,Montmorency,1,0,1
 2020-03-21,Montmorency,1,0,1
 2020-03-24,Montmorency,2,0,2
@@ -27412,6 +27595,9 @@ date,county,negative,positive,total
 2021-06-05,Montmorency,13,0,13
 2021-06-06,Montmorency,13,0,13
 2021-06-07,Montmorency,19,0,19
+2021-06-08,Montmorency,18,0,18
+2021-06-09,Montmorency,18,0,18
+2021-06-10,Montmorency,20,1,21
 2020-03-16,Muskegon,2,0,2
 2020-03-17,Muskegon,3,0,3
 2020-03-18,Muskegon,2,0,2
@@ -27845,20 +28031,23 @@ date,county,negative,positive,total
 2021-05-22,Muskegon,284,25,309
 2021-05-23,Muskegon,241,37,278
 2021-05-24,Muskegon,353,36,389
-2021-05-25,Muskegon,451,50,501
+2021-05-25,Muskegon,452,50,502
 2021-05-26,Muskegon,300,38,338
 2021-05-27,Muskegon,304,32,336
-2021-05-28,Muskegon,205,21,226
+2021-05-28,Muskegon,206,21,227
 2021-05-29,Muskegon,196,12,208
 2021-05-30,Muskegon,284,22,306
 2021-05-31,Muskegon,271,12,283
-2021-06-01,Muskegon,333,15,348
+2021-06-01,Muskegon,333,16,349
 2021-06-02,Muskegon,266,11,277
-2021-06-03,Muskegon,276,15,291
+2021-06-03,Muskegon,278,15,293
 2021-06-04,Muskegon,313,16,329
 2021-06-05,Muskegon,277,5,282
 2021-06-06,Muskegon,278,8,286
-2021-06-07,Muskegon,319,8,327
+2021-06-07,Muskegon,320,8,328
+2021-06-08,Muskegon,310,8,318
+2021-06-09,Muskegon,308,14,322
+2021-06-10,Muskegon,198,8,206
 2020-03-20,Newaygo,1,0,1
 2020-03-21,Newaygo,2,0,2
 2020-03-22,Newaygo,0,2,2
@@ -28304,6 +28493,9 @@ date,county,negative,positive,total
 2021-06-05,Newaygo,57,5,62
 2021-06-06,Newaygo,64,1,65
 2021-06-07,Newaygo,55,0,55
+2021-06-08,Newaygo,87,6,93
+2021-06-09,Newaygo,76,2,78
+2021-06-10,Newaygo,60,1,61
 2020-03-13,Oakland,0,3,3
 2020-03-14,Oakland,8,0,8
 2020-03-15,Oakland,3,3,6
@@ -28751,11 +28943,14 @@ date,county,negative,positive,total
 2021-05-31,Oakland,1213,37,1250
 2021-06-01,Oakland,1706,39,1745
 2021-06-02,Oakland,2407,48,2455
-2021-06-03,Oakland,2986,55,3041
+2021-06-03,Oakland,2987,55,3042
 2021-06-04,Oakland,2257,37,2294
 2021-06-05,Oakland,1376,27,1403
 2021-06-06,Oakland,1943,43,1986
-2021-06-07,Oakland,1417,23,1440
+2021-06-07,Oakland,1435,23,1458
+2021-06-08,Oakland,2034,35,2069
+2021-06-09,Oakland,2474,23,2497
+2021-06-10,Oakland,1736,29,1765
 2020-03-20,Oceana,1,0,1
 2020-03-25,Oceana,5,0,5
 2020-03-26,Oceana,2,0,2
@@ -29193,6 +29388,9 @@ date,county,negative,positive,total
 2021-06-05,Oceana,39,1,40
 2021-06-06,Oceana,40,1,41
 2021-06-07,Oceana,41,1,42
+2021-06-08,Oceana,44,1,45
+2021-06-09,Oceana,37,1,38
+2021-06-10,Oceana,25,0,25
 2020-03-19,Ogemaw,1,0,1
 2020-03-20,Ogemaw,2,0,2
 2020-03-21,Ogemaw,1,0,1
@@ -29636,6 +29834,9 @@ date,county,negative,positive,total
 2021-06-05,Ogemaw,16,1,17
 2021-06-06,Ogemaw,34,1,35
 2021-06-07,Ogemaw,20,1,21
+2021-06-08,Ogemaw,34,0,34
+2021-06-09,Ogemaw,28,0,28
+2021-06-10,Ogemaw,27,0,27
 2020-03-24,Ontonagon,2,0,2
 2020-03-25,Ontonagon,1,0,1
 2020-04-01,Ontonagon,1,0,1
@@ -30058,6 +30259,9 @@ date,county,negative,positive,total
 2021-06-05,Ontonagon,3,0,3
 2021-06-06,Ontonagon,5,1,6
 2021-06-07,Ontonagon,6,1,7
+2021-06-08,Ontonagon,8,0,8
+2021-06-09,Ontonagon,11,2,13
+2021-06-10,Ontonagon,32,0,32
 2020-03-19,Osceola,3,0,3
 2020-03-20,Osceola,10,0,10
 2020-03-22,Osceola,1,0,1
@@ -30502,6 +30706,9 @@ date,county,negative,positive,total
 2021-06-05,Osceola,29,1,30
 2021-06-06,Osceola,26,1,27
 2021-06-07,Osceola,49,1,50
+2021-06-08,Osceola,53,1,54
+2021-06-09,Osceola,33,0,33
+2021-06-10,Osceola,29,3,32
 2020-03-19,Oscoda,2,0,2
 2020-03-20,Oscoda,2,0,2
 2020-03-21,Oscoda,1,0,1
@@ -30936,6 +31143,9 @@ date,county,negative,positive,total
 2021-06-05,Oscoda,9,0,9
 2021-06-06,Oscoda,14,8,22
 2021-06-07,Oscoda,12,2,14
+2021-06-08,Oscoda,9,0,9
+2021-06-09,Oscoda,13,0,13
+2021-06-10,Oscoda,11,0,11
 2020-03-18,Otsego,1,0,1
 2020-03-20,Otsego,5,0,5
 2020-03-21,Otsego,1,0,1
@@ -31382,6 +31592,9 @@ date,county,negative,positive,total
 2021-06-05,Otsego,30,0,30
 2021-06-06,Otsego,33,3,36
 2021-06-07,Otsego,40,0,40
+2021-06-08,Otsego,43,0,43
+2021-06-09,Otsego,42,0,42
+2021-06-10,Otsego,20,2,22
 2020-03-15,Ottawa,0,1,1
 2020-03-16,Ottawa,2,0,2
 2020-03-17,Ottawa,12,0,12
@@ -31804,7 +32017,7 @@ date,county,negative,positive,total
 2021-05-08,Ottawa,800,89,889
 2021-05-09,Ottawa,441,47,488
 2021-05-10,Ottawa,483,79,562
-2021-05-11,Ottawa,821,118,939
+2021-05-11,Ottawa,821,119,940
 2021-05-12,Ottawa,830,97,927
 2021-05-13,Ottawa,762,107,869
 2021-05-14,Ottawa,648,87,735
@@ -31812,26 +32025,29 @@ date,county,negative,positive,total
 2021-05-16,Ottawa,507,60,567
 2021-05-17,Ottawa,445,36,481
 2021-05-18,Ottawa,738,58,796
-2021-05-19,Ottawa,641,62,703
-2021-05-20,Ottawa,523,64,587
-2021-05-21,Ottawa,723,66,789
-2021-05-22,Ottawa,526,37,563
-2021-05-23,Ottawa,429,26,455
+2021-05-19,Ottawa,646,63,709
+2021-05-20,Ottawa,524,64,588
+2021-05-21,Ottawa,724,66,790
+2021-05-22,Ottawa,527,37,564
+2021-05-23,Ottawa,429,27,456
 2021-05-24,Ottawa,354,19,373
-2021-05-25,Ottawa,606,43,649
-2021-05-26,Ottawa,560,29,589
-2021-05-27,Ottawa,596,31,627
-2021-05-28,Ottawa,448,19,467
+2021-05-25,Ottawa,614,43,657
+2021-05-26,Ottawa,566,29,595
+2021-05-27,Ottawa,597,31,628
+2021-05-28,Ottawa,452,19,471
 2021-05-29,Ottawa,325,9,334
-2021-05-30,Ottawa,426,23,449
-2021-05-31,Ottawa,246,10,256
-2021-06-01,Ottawa,294,10,304
-2021-06-02,Ottawa,537,25,562
-2021-06-03,Ottawa,539,20,559
-2021-06-04,Ottawa,481,19,500
+2021-05-30,Ottawa,427,23,450
+2021-05-31,Ottawa,247,10,257
+2021-06-01,Ottawa,295,10,305
+2021-06-02,Ottawa,542,26,568
+2021-06-03,Ottawa,546,20,566
+2021-06-04,Ottawa,483,19,502
 2021-06-05,Ottawa,405,20,425
-2021-06-06,Ottawa,408,20,428
-2021-06-07,Ottawa,450,14,464
+2021-06-06,Ottawa,410,20,430
+2021-06-07,Ottawa,451,14,465
+2021-06-08,Ottawa,508,16,524
+2021-06-09,Ottawa,486,19,505
+2021-06-10,Ottawa,368,13,381
 2020-03-20,Presque Isle,5,0,5
 2020-03-21,Presque Isle,1,0,1
 2020-03-24,Presque Isle,2,0,2
@@ -32268,6 +32484,9 @@ date,county,negative,positive,total
 2021-06-05,Presque Isle,15,1,16
 2021-06-06,Presque Isle,13,0,13
 2021-06-07,Presque Isle,21,0,21
+2021-06-08,Presque Isle,16,1,17
+2021-06-09,Presque Isle,10,1,11
+2021-06-10,Presque Isle,14,0,14
 2020-03-18,Roscommon,1,0,1
 2020-03-19,Roscommon,4,0,4
 2020-03-20,Roscommon,3,0,3
@@ -32713,6 +32932,9 @@ date,county,negative,positive,total
 2021-06-05,Roscommon,26,0,26
 2021-06-06,Roscommon,20,0,20
 2021-06-07,Roscommon,47,0,47
+2021-06-08,Roscommon,27,0,27
+2021-06-09,Roscommon,41,1,42
+2021-06-10,Roscommon,38,0,38
 2020-03-17,Saginaw,2,0,2
 2020-03-18,Saginaw,7,0,7
 2020-03-19,Saginaw,6,1,7
@@ -33160,7 +33382,10 @@ date,county,negative,positive,total
 2021-06-04,Saginaw,343,11,354
 2021-06-05,Saginaw,212,11,223
 2021-06-06,Saginaw,208,5,213
-2021-06-07,Saginaw,230,8,238
+2021-06-07,Saginaw,242,8,250
+2021-06-08,Saginaw,354,8,362
+2021-06-09,Saginaw,299,8,307
+2021-06-10,Saginaw,297,5,302
 2020-03-13,Sanilac,1,0,1
 2020-03-18,Sanilac,3,0,3
 2020-03-20,Sanilac,2,0,2
@@ -33605,9 +33830,12 @@ date,county,negative,positive,total
 2021-06-02,Sanilac,34,6,40
 2021-06-03,Sanilac,47,2,49
 2021-06-04,Sanilac,40,5,45
-2021-06-05,Sanilac,21,0,21
-2021-06-06,Sanilac,54,1,55
-2021-06-07,Sanilac,38,1,39
+2021-06-05,Sanilac,23,0,23
+2021-06-06,Sanilac,57,1,58
+2021-06-07,Sanilac,44,1,45
+2021-06-08,Sanilac,28,1,29
+2021-06-09,Sanilac,27,1,28
+2021-06-10,Sanilac,59,1,60
 2020-03-19,Schoolcraft,1,0,1
 2020-03-21,Schoolcraft,1,0,1
 2020-03-22,Schoolcraft,1,0,1
@@ -34037,6 +34265,9 @@ date,county,negative,positive,total
 2021-06-05,Schoolcraft,7,0,7
 2021-06-06,Schoolcraft,3,0,3
 2021-06-07,Schoolcraft,3,0,3
+2021-06-08,Schoolcraft,3,0,3
+2021-06-09,Schoolcraft,5,0,5
+2021-06-10,Schoolcraft,5,0,5
 2020-03-15,Shiawassee,2,0,2
 2020-03-17,Shiawassee,1,0,1
 2020-03-18,Shiawassee,4,0,4
@@ -34486,6 +34717,9 @@ date,county,negative,positive,total
 2021-06-05,Shiawassee,82,4,86
 2021-06-06,Shiawassee,64,1,65
 2021-06-07,Shiawassee,69,1,70
+2021-06-08,Shiawassee,92,0,92
+2021-06-09,Shiawassee,81,2,83
+2021-06-10,Shiawassee,112,1,113
 2020-03-14,St Clair,1,0,1
 2020-03-15,St Clair,0,1,1
 2020-03-16,St Clair,5,0,5
@@ -34932,11 +35166,14 @@ date,county,negative,positive,total
 2021-05-31,St Clair,121,3,124
 2021-06-01,St Clair,146,5,151
 2021-06-02,St Clair,365,1,366
-2021-06-03,St Clair,252,11,263
+2021-06-03,St Clair,253,11,264
 2021-06-04,St Clair,194,11,205
-2021-06-05,St Clair,79,2,81
-2021-06-06,St Clair,174,10,184
-2021-06-07,St Clair,80,2,82
+2021-06-05,St Clair,93,2,95
+2021-06-06,St Clair,205,10,215
+2021-06-07,St Clair,127,2,129
+2021-06-08,St Clair,179,2,181
+2021-06-09,St Clair,178,6,184
+2021-06-10,St Clair,181,2,183
 2020-03-18,St Joseph,3,0,3
 2020-03-19,St Joseph,2,0,2
 2020-03-20,St Joseph,3,0,3
@@ -35383,6 +35620,9 @@ date,county,negative,positive,total
 2021-06-05,St Joseph,47,8,55
 2021-06-06,St Joseph,66,5,71
 2021-06-07,St Joseph,48,5,53
+2021-06-08,St Joseph,95,4,99
+2021-06-09,St Joseph,81,1,82
+2021-06-10,St Joseph,71,5,76
 2020-03-18,Tuscola,3,0,3
 2020-03-19,Tuscola,1,0,1
 2020-03-20,Tuscola,2,0,2
@@ -35828,7 +36068,10 @@ date,county,negative,positive,total
 2021-06-04,Tuscola,58,1,59
 2021-06-05,Tuscola,36,3,39
 2021-06-06,Tuscola,60,3,63
-2021-06-07,Tuscola,91,3,94
+2021-06-07,Tuscola,92,3,95
+2021-06-08,Tuscola,67,1,68
+2021-06-09,Tuscola,55,0,55
+2021-06-10,Tuscola,70,2,72
 2020-03-10,Unknown,1,1,2
 2020-03-12,Unknown,11,2,13
 2020-03-13,Unknown,0,3,3
@@ -36281,8 +36524,11 @@ date,county,negative,positive,total
 2021-06-03,Unknown,593,6,599
 2021-06-04,Unknown,401,13,414
 2021-06-05,Unknown,451,12,463
-2021-06-06,Unknown,302,9,311
-2021-06-07,Unknown,265,8,273
+2021-06-06,Unknown,303,9,312
+2021-06-07,Unknown,271,8,279
+2021-06-08,Unknown,420,8,428
+2021-06-09,Unknown,457,4,461
+2021-06-10,Unknown,388,6,394
 2020-03-16,Van Buren,1,0,1
 2020-03-18,Van Buren,1,0,1
 2020-03-20,Van Buren,5,0,5
@@ -36730,6 +36976,9 @@ date,county,negative,positive,total
 2021-06-05,Van Buren,113,4,117
 2021-06-06,Van Buren,119,4,123
 2021-06-07,Van Buren,103,6,109
+2021-06-08,Van Buren,106,2,108
+2021-06-09,Van Buren,222,1,223
+2021-06-10,Van Buren,128,1,129
 2020-03-12,Washtenaw,0,2,2
 2020-03-13,Washtenaw,0,1,1
 2020-03-14,Washtenaw,0,1,1
@@ -37182,7 +37431,10 @@ date,county,negative,positive,total
 2021-06-04,Washtenaw,1165,3,1168
 2021-06-05,Washtenaw,454,4,458
 2021-06-06,Washtenaw,1014,8,1022
-2021-06-07,Washtenaw,636,7,643
+2021-06-07,Washtenaw,640,7,647
+2021-06-08,Washtenaw,964,7,971
+2021-06-09,Washtenaw,1267,10,1277
+2021-06-10,Washtenaw,1065,7,1072
 2020-03-10,Wayne,0,1,1
 2020-03-12,Wayne,0,1,1
 2020-03-13,Wayne,1,3,4
@@ -37632,11 +37884,14 @@ date,county,negative,positive,total
 2021-05-31,Wayne,1373,37,1410
 2021-06-01,Wayne,1612,68,1680
 2021-06-02,Wayne,2834,57,2891
-2021-06-03,Wayne,2328,67,2395
+2021-06-03,Wayne,2341,67,2408
 2021-06-04,Wayne,2174,54,2228
 2021-06-05,Wayne,1472,31,1503
-2021-06-06,Wayne,1862,34,1896
-2021-06-07,Wayne,1516,48,1564
+2021-06-06,Wayne,1864,34,1898
+2021-06-07,Wayne,1529,48,1577
+2021-06-08,Wayne,2419,49,2468
+2021-06-09,Wayne,2372,33,2405
+2021-06-10,Wayne,1804,38,1842
 2020-03-18,Wexford,5,0,5
 2020-03-20,Wexford,22,1,23
 2020-03-21,Wexford,3,0,3
@@ -38082,3 +38337,6 @@ date,county,negative,positive,total
 2021-06-05,Wexford,51,1,52
 2021-06-06,Wexford,16,1,17
 2021-06-07,Wexford,62,0,62
+2021-06-08,Wexford,27,0,27
+2021-06-09,Wexford,62,4,66
+2021-06-10,Wexford,34,0,34
