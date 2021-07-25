@@ -10711,3 +10711,209 @@ week,start_date,end_date,County,"New Cases per 100,000",Test Positivity %,"(%) C
  New Tests: 3,606",0.6%,<5,2,19.3%warning
 27,2021-07-04,2021-07-10,Woodford,8 Cases,"2.0%
  New Tests: 599",3.6%,<5,0,31.1%
+28,2021-07-11,2021-07-17,Adams,330 per 100kwarning,"6.5%
+ New Tests: 3,636",6.6%warning,15,0,31.4%
+28,2021-07-11,2021-07-17,Alexander,3 Cases,"6.3%
+ New Tests: 64",*,0,0,17.7%warning
+28,2021-07-11,2021-07-17,Bond,60 per 100k,"5.5%
+ New Tests: 218",4.6%,<5,0,31.8%
+28,2021-07-11,2021-07-17,Boone,34 per 100k,"4.4%
+ New Tests: 431",1.6%,<5,0,20.3%
+28,2021-07-11,2021-07-17,Brown,519 per 100kwarning,"14.3%
+ New Tests: 251warning",*,<5,0,31.4%
+28,2021-07-11,2021-07-17,Bureau,52 per 100kwarning,"2.7%
+ New Tests: 514",*,0,1,31.0%
+28,2021-07-11,2021-07-17,Calhoun,0 Cases,"0.0%
+ New Tests: 37",*,0,0,31.4%
+28,2021-07-11,2021-07-17,Carroll,1754 per 100kwarning,"0.0%
+ New Tests: 168",*,0,0,20.3%
+28,2021-07-11,2021-07-17,Cass,98 per 100kwarning,"5.2%
+ New Tests: 232",*,<5,0,31.4%
+28,2021-07-11,2021-07-17,Champaign,44 per 100k,"1.4%
+ New Tests: 7,467",1.8%warning,15,1,35.8%
+28,2021-07-11,2021-07-17,Chicago,27 per 100k,"1.4%
+ New Tests: 56,419",1.1%,80,9,19.4%warning
+28,2021-07-11,2021-07-17,Christian,104 per 100kwarning,"6.2%
+ New Tests: 420",3.4%,<5,0,31.4%
+28,2021-07-11,2021-07-17,Clark,77 per 100kwarning,"5.1%
+ New Tests: 175",0.0%,0,0,35.8%
+28,2021-07-11,2021-07-17,Clay,8 Cases,"5.3%
+ New Tests: 169",*,<5,0,35.8%
+28,2021-07-11,2021-07-17,Clinton,64 per 100kwarning,"4.8%
+ New Tests: 651",2.8%,<5,1,31.8%
+28,2021-07-11,2021-07-17,Coles,45 per 100k,"2.7%
+ New Tests: 884",1.1%,<5,0,35.8%
+28,2021-07-11,2021-07-17,Cook,27 per 100k,"1.9%
+ New Tests: 41,410",1.3%,80,10,18.8%warning
+28,2021-07-11,2021-07-17,Crawford,6 Cases,"3.5%
+ New Tests: 226",*,0,1,35.8%
+28,2021-07-11,2021-07-17,Cumberland,3 Cases,"1.8%
+ New Tests: 110",0.0%,0,0,35.8%
+28,2021-07-11,2021-07-17,De Witt,8 Cases,"3.7%
+ New Tests: 246",0.0%,0,0,35.8%
+28,2021-07-11,2021-07-17,DeKalb,14 per 100k,"1.4%
+ New Tests: 1,055",0.7%,<5,1,20.3%
+28,2021-07-11,2021-07-17,Douglas,4 Cases,"2.2%
+ New Tests: 224",*,0,0,35.8%
+28,2021-07-11,2021-07-17,DuPage,28 per 100k,"2.4%
+ New Tests: 12,839",1.5%warning,36warning,0,27.6%
+28,2021-07-11,2021-07-17,Edgar,3 Cases,"0.0%
+ New Tests: 96",*,0,0,35.8%
+28,2021-07-11,2021-07-17,Edwards,8 Cases,"12.1%
+ New Tests: 66warning",*,0,0,17.7%warning
+28,2021-07-11,2021-07-17,Effingham,5 Cases,"3.2%
+ New Tests: 249",*,<5,0,35.8%
+28,2021-07-11,2021-07-17,Fayette,7 Cases,"3.1%
+ New Tests: 288",*,<5,0,35.8%
+28,2021-07-11,2021-07-17,Ford,106 per 100kwarning,"4.9%
+ New Tests: 308",0.0%,0,0,35.8%
+28,2021-07-11,2021-07-17,Franklin,227 per 100kwarning,"12.2%
+ New Tests: 827warning",6.8%,8,0,17.7%warning
+28,2021-07-11,2021-07-17,Fulton,55 per 100kwarning,"4.5%
+ New Tests: 554",0.0%,0,0,31.0%
+28,2021-07-11,2021-07-17,Gallatin,0 Cases,"3.5%
+ New Tests: 57",*,0,0,17.7%warning
+28,2021-07-11,2021-07-17,Greene,184 per 100kwarning,"9.2%
+ New Tests: 195warning",*,<5,0,31.4%
+28,2021-07-11,2021-07-17,Grundy,27 per 100k,"3.2%
+ New Tests: 563",*,0,0,31.0%
+28,2021-07-11,2021-07-17,Hamilton,147 per 100kwarning,"17.5%
+ New Tests: 103warning",*,0,0,17.7%warning
+28,2021-07-11,2021-07-17,Hancock,129 per 100kwarning,"7.5%
+ New Tests: 255",5.6%,<5,0,31.4%
+28,2021-07-11,2021-07-17,Hardin,0 Cases,"2.0%
+ New Tests: 49",*,0,0,17.7%warning
+28,2021-07-11,2021-07-17,Henderson,4 Cases,"3.4%
+ New Tests: 58",0.0%,0,0,31.0%
+28,2021-07-11,2021-07-17,Henry,37 per 100k,"5.5%
+ New Tests: 381",1.4%,<5,0,31.0%
+28,2021-07-11,2021-07-17,Iroquois,145 per 100kwarning,"5.0%
+ New Tests: 873",3.5%,<5,0,35.8%
+28,2021-07-11,2021-07-17,Jackson,174 per 100kwarning,"9.1%
+ New Tests: 1,279warning",4.0%warning,5,0,17.7%warning
+28,2021-07-11,2021-07-17,Jasper,1 Cases,"0.7%
+ New Tests: 150",*,0,0,35.8%
+28,2021-07-11,2021-07-17,Jefferson,122 per 100kwarning,"6.1%
+ New Tests: 671",4.0%,<5,1,17.7%warning
+28,2021-07-11,2021-07-17,Jersey,82 per 100kwarning,"4.9%
+ New Tests: 326",*,0,0,31.4%
+28,2021-07-11,2021-07-17,Jo Daviess,0 Cases,"0.0%
+ New Tests: 127",0.0%,0,0,20.3%
+28,2021-07-11,2021-07-17,Johnson,128 per 100kwarning,"4.0%
+ New Tests: 325",*,0,0,17.7%warning
+28,2021-07-11,2021-07-17,Kane,22 per 100k,"1.9%
+ New Tests: 6,472",1.4%,14,0,27.6%
+28,2021-07-11,2021-07-17,Kankakee,40 per 100k,"1.6%
+ New Tests: 2,197",0.9%,<5,2,24.1%
+28,2021-07-11,2021-07-17,Kendall,29 per 100k,"3.3%
+ New Tests: 1,468",1.0%,<5,0,31.0%
+28,2021-07-11,2021-07-17,Knox,40 per 100k,"4.2%
+ New Tests: 571",*,0,0,31.0%
+28,2021-07-11,2021-07-17,Lake,20 per 100k,"1.5%
+ New Tests: 10,751",1.4%warning,20,1,26.9%
+28,2021-07-11,2021-07-17,LaSalle,26 per 100k,"1.6%
+ New Tests: 2,135",0.7%,<5,1,31.0%
+28,2021-07-11,2021-07-17,Lawrence,63 per 100k,"1.8%
+ New Tests: 602",0.0%,0,0,35.8%
+28,2021-07-11,2021-07-17,Lee,8 Cases,"1.2%
+ New Tests: 495",*,<5,0,20.3%
+28,2021-07-11,2021-07-17,Livingston,6 Cases,"1.5%
+ New Tests: 612",*,<5,0,31.0%
+28,2021-07-11,2021-07-17,Logan,69 per 100kwarning,"2.5%
+ New Tests: 768",*,<5,1,31.4%
+28,2021-07-11,2021-07-17,Macon,18 per 100k,"1.8%
+ New Tests: 1,518",1.7%,5,0,35.8%
+28,2021-07-11,2021-07-17,Macoupin,108 per 100kwarning,"8.6%
+ New Tests: 584warning",4.6%warning,6,0,31.4%
+28,2021-07-11,2021-07-17,Madison,123 per 100kwarning,"8.9%
+ New Tests: 4,109warning",2.6%warning,17warning,1,31.8%
+28,2021-07-11,2021-07-17,Marion,136 per 100kwarning,"6.0%
+ New Tests: 922",5.2%warning,5,0,17.7%warning
+28,2021-07-11,2021-07-17,Marshall,5 Cases,"5.0%
+ New Tests: 120",*,<5,0,31.0%
+28,2021-07-11,2021-07-17,Mason,170 per 100kwarning,"11.0%
+ New Tests: 182warning",*,0,1,31.4%
+28,2021-07-11,2021-07-17,Massac,78 per 100kwarning,"6.2%
+ New Tests: 129",*,0,0,17.7%warning
+28,2021-07-11,2021-07-17,McDonough,73 per 100kwarning,"5.7%
+ New Tests: 454",3.2%,<5,0,31.0%
+28,2021-07-11,2021-07-17,McHenry,31 per 100k,"3.7%
+ New Tests: 3,315",1.2%,9,0,26.9%
+28,2021-07-11,2021-07-17,McLean,50 per 100kwarning,"2.5%
+ New Tests: 3,730",2.1%warning,6,1,31.0%
+28,2021-07-11,2021-07-17,Menard,6 Cases,"2.9%
+ New Tests: 137",0.0%,0,0,31.4%
+28,2021-07-11,2021-07-17,Mercer,9 Cases,"5.8%
+ New Tests: 155",0.0%,0,0,31.0%
+28,2021-07-11,2021-07-17,Monroe,61 per 100kwarning,"6.9%
+ New Tests: 377",*,<5,0,31.8%
+28,2021-07-11,2021-07-17,Montgomery,66 per 100kwarning,"2.8%
+ New Tests: 507",*,0,0,31.4%
+28,2021-07-11,2021-07-17,Morgan,85 per 100kwarning,"4.8%
+ New Tests: 496",2.5%,<5,3,31.4%
+28,2021-07-11,2021-07-17,Moultrie,6 Cases,"1.2%
+ New Tests: 411",*,<5,0,35.8%
+28,2021-07-11,2021-07-17,Ogle,33 per 100k,"2.9%
+ New Tests: 373",1.6%,<5,0,20.3%
+28,2021-07-11,2021-07-17,Peoria,25 per 100k,"2.3%
+ New Tests: 2,335",0.7%,6,2,31.0%
+28,2021-07-11,2021-07-17,Perry,104 per 100kwarning,"4.2%
+ New Tests: 476",*,0,0,17.7%warning
+28,2021-07-11,2021-07-17,Piatt,104 per 100kwarning,"9.6%
+ New Tests: 187warning",0.0%,0,0,35.8%
+28,2021-07-11,2021-07-17,Pike,307 per 100kwarning,"10.5%
+ New Tests: 342warning",4.2%,<5,0,31.4%
+28,2021-07-11,2021-07-17,Pope,1 Cases,"0.0%
+ New Tests: 48",0.0%,0,0,17.7%warning
+28,2021-07-11,2021-07-17,Pulaski,201 per 100kwarning,"9.8%
+ New Tests: 132warning",0.0%,0,0,17.7%warning
+28,2021-07-11,2021-07-17,Putnam,1 Cases,"0.0%
+ New Tests: 119",0.0%,0,0,31.0%
+28,2021-07-11,2021-07-17,Randolph,78 per 100kwarning,"4.0%
+ New Tests: 854",5.9%,<5,0,31.8%
+28,2021-07-11,2021-07-17,Richland,6 Cases,"1.6%
+ New Tests: 641",5.7%,<5,0,35.8%
+28,2021-07-11,2021-07-17,Rock Island,17 per 100k,"2.6%
+ New Tests: 1,136",1.0%,5,0,31.0%
+28,2021-07-11,2021-07-17,Saline,109 per 100kwarning,"6.7%
+ New Tests: 419",*,0,0,17.7%warning
+28,2021-07-11,2021-07-17,Sangamon,39 per 100k,"3.8%
+ New Tests: 2,850",1.0%,<5,1,31.4%
+28,2021-07-11,2021-07-17,Schuyler,159 per 100kwarning,"7.4%
+ New Tests: 162",*,<5,0,31.4%
+28,2021-07-11,2021-07-17,Scott,4 Cases,"2.9%
+ New Tests: 137",*,<5,0,31.4%
+28,2021-07-11,2021-07-17,Shelby,46 per 100k,"3.1%
+ New Tests: 393",*,0,0,35.8%
+28,2021-07-11,2021-07-17,St. Clair,141 per 100kwarning,"7.5%
+ New Tests: 5,518",2.8%,11,5,31.8%
+28,2021-07-11,2021-07-17,Stark,2 Cases,"4.9%
+ New Tests: 41",*,<5,0,31.0%
+28,2021-07-11,2021-07-17,Stephenson,29 per 100k,"0.9%
+ New Tests: 644",*,0,0,20.3%
+28,2021-07-11,2021-07-17,Tazewell,36 per 100k,"2.6%
+ New Tests: 2,026",0.7%,<5,0,31.0%
+28,2021-07-11,2021-07-17,Union,273 per 100kwarning,"5.3%
+ New Tests: 850",7.6%,<5,0,17.7%warning
+28,2021-07-11,2021-07-17,Vermilion,57 per 100kwarning,"2.8%
+ New Tests: 1,612",1.0%,<5,1,35.8%
+28,2021-07-11,2021-07-17,Wabash,216 per 100kwarning,"11.6%
+ New Tests: 268warning",*,<5,0,17.7%warning
+28,2021-07-11,2021-07-17,Warren,3 Cases,"2.5%
+ New Tests: 159",*,0,0,31.0%
+28,2021-07-11,2021-07-17,Washington,100 per 100kwarning,"8.5%
+ New Tests: 188warning",*,0,0,31.8%
+28,2021-07-11,2021-07-17,Wayne,9 Cases,"3.5%
+ New Tests: 229",*,<5,0,17.7%warning
+28,2021-07-11,2021-07-17,White,102 per 100kwarning,"9.3%
+ New Tests: 161warning",*,<5,0,17.7%warning
+28,2021-07-11,2021-07-17,Whiteside,8 Cases,"0.8%
+ New Tests: 763",1.2%,0,0,20.3%
+28,2021-07-11,2021-07-17,Will,30 per 100k,"2.5%
+ New Tests: 10,990",1.9%,21,0,24.1%
+28,2021-07-11,2021-07-17,Williamson,131 per 100kwarning,"6.1%
+ New Tests: 1,508",1.7%,<5,2,17.7%warning
+28,2021-07-11,2021-07-17,Winnebago,31 per 100k,"3.3%
+ New Tests: 3,344",1.2%warning,12,5,20.3%
+28,2021-07-11,2021-07-17,Woodford,49 per 100k,"3.8%
+ New Tests: 525",3.8%,5,0,31.0%
