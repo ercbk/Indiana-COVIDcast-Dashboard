@@ -22,7 +22,7 @@ pacman::p_load(RSelenium, glue, dplyr, rvest)
 ##########################
 
 
-driver <- rsDriver(browser = c("chrome"), chromever = "87.0.4280.88")
+driver <- rsDriver(browser = c("chrome"), chromever = "90.0.4430.24")
 
 # chrome browser
 chrome <- driver$client
@@ -137,7 +137,7 @@ mich_dat_files %>%
 ######################
 
 
-wisc_tests_new <- readr::read_csv("https://opendata.arcgis.com/datasets/5374188992374b318d3e2305216ee413_12.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D")
+wisc_tests_new <- readr::read_csv("https://opendata.arcgis.com/datasets/0b7bac0afc464e7783474cb62272d9b8_12.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D")
 
 wisc_tests_clean <- wisc_tests_new %>% 
       janitor::clean_names() %>% 
