@@ -178,6 +178,21 @@ The data date for Cases per 100K and Positive Test Rate displays by hovering ove
 Dashboard {data-icon="glyphicon-stats"}
 =====================================
 
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GNVB4LJFPH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GNVB4LJFPH');
+</script>
+
+</head>
+
+
 
 Row {data-height=360}
 -------------------------------------
