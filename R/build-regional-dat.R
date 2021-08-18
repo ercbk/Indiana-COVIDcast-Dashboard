@@ -17,19 +17,34 @@ options(error = function() {
 pacman::p_load(RSelenium, glue, dplyr, rvest)
 
 
-##########################
-# Illinois
-##########################
+windows_tasks <- installr::get_tasklist()
+java_pid <- windows_tasks %>% 
+      filter(stringr::str_detect(`Image Name`, "java.exe")) %>% 
+      pull(PID)
+
+chrome_pid <- windows_tasks %>% 
+      filter(stringr::str_detect(`Image Name`, "chromedriver.exe")) %>% 
+      pull(PID)
+
+tools::pskill(pid = java_pid)
+tools::pskill(pid = chrome_pid)
 
 
-driver <- rsDriver(browser = c("chrome"), chromever = "90.0.4430.24")
+
+
+#@@@@@@@@@@@@@@@@@
+# Illinois ----
+#@@@@@@@@@@@@@@@@@
+
+
+driver <- rsDriver(browser = c("chrome"), chromever = "92.0.4515.107")
 
 # chrome browser
 chrome <- driver$client
 ill_url <- "http://www.dph.illinois.gov/countymetrics"
 # go to illinois county website
 chrome$navigate(url = ill_url)
-Sys.sleep(5)
+Sys.sleep(10)
 
 # element with table data
 tbl_elt <- chrome$findElement(using = "id", "detailedData")
@@ -83,16 +98,16 @@ if (ill_test_wk != ill_comp_wk) {
 
 
 
-############################
-# Michigan
-############################
+#@@@@@@@@@@@@@@@@
+# Michigan ----
+#@@@@@@@@@@@@@@@@
 
 
 mich_url <- "https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html"
 
 # extract the link for the data off the webpage
 chrome$navigate(url = mich_url)
-Sys.sleep(5)
+Sys.sleep(10)
 mich_tests_elt <- chrome$findElement(using = "css selector", "#comp_115341 > ul > li > span > span > span.shortdesc > p:nth-child(7) > a")
 mich_tests_link <- mich_tests_elt$getElementAttribute(attrName = "href")[[1]]
 
@@ -132,26 +147,30 @@ mich_dat_files %>%
 
 
 
-######################
-# Wisconsin
-######################
+#@@@@@@@@@@@@@@@@@
+# Wisconsin ----
+#@@@@@@@@@@@@@@@@@
 
 
-wisc_tests_new <- readr::read_csv("https://opendata.arcgis.com/datasets/0b7bac0afc464e7783474cb62272d9b8_12.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D")
-
-wisc_tests_clean <- wisc_tests_new %>% 
-      janitor::clean_names() %>% 
-      select(date, geo, county = name, negative, positive) %>% 
-      filter(geo == "County") %>% 
-      mutate(date = lubridate::as_date(date)) %>% 
-      select(-geo)
-
-readr::write_csv(wisc_tests_clean, glue("{rprojroot::find_rstudio_root_file()}/data/states/wisc-tests-complete.csv"))
 
 
-######################
-# Indiana
-######################
+# wisc_csv_file <- "COVID-19_Historical_Data_by_County.csv"
+# download_location <- file.path(Sys.getenv("USERPROFILE"), "Downloads")
+# wisc_tests_new <- readr::read_csv(file.path(download_location, wisc_csv_file))
+# 
+# wisc_tests_clean <- wisc_tests_new %>% 
+#       janitor::clean_names() %>% 
+#       select(date, geo, county = name, negative, positive) %>% 
+#       filter(geo == "County") %>% 
+#       mutate(date = lubridate::as_date(date)) %>% 
+#       select(-geo)
+# 
+# readr::write_csv(wisc_tests_clean, glue("{rprojroot::find_rstudio_root_file()}/data/states/wisc-tests-complete.csv"))
+
+
+#@@@@@@@@@@@@@@@
+# Indiana ----
+#@@@@@@@@@@@@@@@
 
 
 ind_test_dat <- readr::read_csv("https://hub.mph.in.gov/datastore/dump/afaa225d-ac4e-4e80-9190-f6800c366b58?bom=True")
@@ -172,13 +191,14 @@ chrome$close()
 # think this may be for another method of using RSelenium
 driver$server$stop()
 
-# kill the server manually
-# installr::kill_process(process = "java.exe")
-# installr::kill_process(process = "chromedriver.exe")
-
 windows_tasks <- installr::get_tasklist()
 java_pid <- windows_tasks %>% 
       filter(stringr::str_detect(`Image Name`, "java.exe")) %>% 
       pull(PID)
 
+chrome_pid <- windows_tasks %>% 
+      filter(stringr::str_detect(`Image Name`, "chromedriver.exe")) %>% 
+      pull(PID)
+
 tools::pskill(pid = java_pid)
+tools::pskill(pid = chrome_pid)
