@@ -152,20 +152,37 @@ mich_dat_files %>%
 #@@@@@@@@@@@@@@@@@
 
 
+wisc_url <- "https://data.dhsgis.wi.gov/datasets/covid-19-historical-data-by-county-1/explore"
+
+chrome$navigate(url = wisc_url)
+Sys.sleep(10)
+
+# opens file down menu in the side panel
+wisc_dl_panel_button <- chrome$findElement("css selector", "#ember189 > div > button:nth-child(3)")
+wisc_dl_panel_button$clickElement()
+Sys.sleep(5)
+
+# Have to run a JS script to access elements in a shadow dom (#shadow-root)
+# clicks button to dl file into downloads folder
+chrome$executeScript("document.querySelector('hub-download-card').shadowRoot.querySelector('calcite-card').querySelector('calcite-dropdown').querySelector('calcite-dropdown-group').querySelector('calcite-dropdown-item:nth-child(2)').click()")
+Sys.sleep(20)
+
+wisc_csv_filename <- "COVID-19_Historical_Data_by_County.csv"
+download_location <- file.path(Sys.getenv("USERPROFILE"), "Downloads")
+wisc_tests_new <- readr::read_csv(file.path(download_location, wisc_csv_filename))
+# clean-up
+fs::file_delete(file.path(download_location, wisc_csv_filename))
+
+wisc_tests_clean <- wisc_tests_new %>%
+      janitor::clean_names() %>%
+      select(date, geo, county = name, negative, positive) %>%
+      filter(geo == "County") %>%
+      mutate(date = lubridate::as_date(date)) %>%
+      select(-geo)
+
+readr::write_csv(wisc_tests_clean, glue("{rprojroot::find_rstudio_root_file()}/data/states/wisc-tests-complete.csv"))
 
 
-# wisc_csv_file <- "COVID-19_Historical_Data_by_County.csv"
-# download_location <- file.path(Sys.getenv("USERPROFILE"), "Downloads")
-# wisc_tests_new <- readr::read_csv(file.path(download_location, wisc_csv_file))
-# 
-# wisc_tests_clean <- wisc_tests_new %>% 
-#       janitor::clean_names() %>% 
-#       select(date, geo, county = name, negative, positive) %>% 
-#       filter(geo == "County") %>% 
-#       mutate(date = lubridate::as_date(date)) %>% 
-#       select(-geo)
-# 
-# readr::write_csv(wisc_tests_clean, glue("{rprojroot::find_rstudio_root_file()}/data/states/wisc-tests-complete.csv"))
 
 
 #@@@@@@@@@@@@@@@
