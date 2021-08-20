@@ -37,6 +37,9 @@ ill_county_pop <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/da
                         "De Kalb" = "Dekalb",
                         "De Witt" = "Dewitt"))
 
+# missing data for couple weeks in July 2021 when I failed to collect it
+ill_tests_miss_dat <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-missing-data.rds"))
+
 # Has a spec_tbl class (for some reason). I'd rather not have it b/c some pkgs can be finicky.
 ill_tests <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-complete.csv")) %>% 
    as_tibble()
@@ -144,7 +147,7 @@ ill_msa_counties <- covidcast_msa_counties %>%
 # only counties with a covidcast msa
 # extract cases per 100K population, weekly tests
 # calculate weekly cases using 2019 county population data
-ill_tests_clean <- ill_tests %>% 
+ill_tests_pretty_clean <- ill_tests %>% 
    janitor::clean_names() %>% 
    mutate(county = stringr::str_to_title(county)) %>% 
    filter(county %in% ill_msa_counties$county) %>% 
@@ -159,6 +162,11 @@ ill_tests_clean <- ill_tests %>%
    mutate(weekly_positives = round((cases_100k * `2019`)/100000),
           state = "Illinois") %>% 
    select(start_date, end_date, county, weekly_positives, weekly_tests, state)
+
+# I didnt't collect data for a couple weeks. Adding it back.
+ill_tests_clean <- ill_tests_pretty_clean %>% 
+      bind_rows(ill_tests_miss_dat) %>% 
+      arrange(start_date)
 
 
 # needed for function below and partially filtering other states' data
@@ -243,38 +251,11 @@ states_end_date <- purrr::map_dfr(state_tests, ~determine_end_date(.x)) %>%
 
 
 
+
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # 4 Make everything look like the clean Illinois df ----
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-
-# Indiana
-# filters tests using illinois start_date and states_end_date
-# ind_tests_clean <- ind_county_tests %>% 
-#    filter(between(date,
-#                   ill_date_range$first_date[[1]],
-#                   states_end_date)) %>% 
-#    group_by(county) %>% 
-#    arrange(date) %>%
-#    # illinois's "week" variable is off by 3 days
-#    mutate(week = lubridate::week(date),
-#           # default changes NAs to the final week
-#           week = lead(week, n = 3, default = max(week))) %>% 
-#    group_by(week) %>% 
-#    # start_date = 1 date of that week, end_date = last date of that week
-#    mutate(start_date = min(date),
-#           end_date = max(date)) %>%
-#    ungroup() %>% 
-#    select(week, start_date, end_date, county,
-#           daily_positives = positives,
-#           daily_tests = num_tests) %>% 
-#    # grouping by all vars keeps them in final df; some not necessary for calc
-#    group_by(week, start_date, end_date, county) %>% 
-#    summarize(weekly_positives = sum(daily_positives),
-#              weekly_tests = sum(daily_tests),
-#              state = "Indiana") %>% 
-#    arrange(start_date) %>% 
-#    ungroup()
 
 # Indiana
 ind_tests_clean <- ind_county_tests %>% 
@@ -302,31 +283,6 @@ ind_tests_clean <- ind_county_tests %>%
    relocate(start_date, .before = end_date)
 
 
-# Wisconsin
-# wisc_tests_clean <- wisc_county_tests %>% 
-#    filter(between(date,
-#                   ill_date_range$first_date[[1]],
-#                   states_end_date)) %>% 
-#    group_by(county) %>% 
-#    arrange(date) %>%
-#    # illinois's "week" variable is off by 3 days
-#    mutate(week = lubridate::week(date),
-#           # default changes NAs to the final week
-#           week = lead(week, n = 3, default = max(week))) %>% 
-#    group_by(week) %>% 
-#    # start_date = 1 date of that week, end_date = last date of that week
-#    mutate(start_date = min(date),
-#           end_date = max(date)) %>%
-#    ungroup() %>% 
-#    select(week, start_date, end_date, county,
-#           daily_positives,daily_tests) %>% 
-#    # grouping by all vars keeps them in final df; some not necessary for calc
-#    group_by(week, start_date, end_date, county) %>% 
-#    summarize(weekly_positives = sum(daily_positives),
-#              weekly_tests = sum(daily_tests),
-#              state = "Wisconsin") %>% 
-#    ungroup()
-
 wisc_tests_clean <- wisc_county_tests %>% 
    filter(between(date,
                   ill_date_range$first_date[[1]],
@@ -353,32 +309,6 @@ wisc_tests_clean <- wisc_county_tests %>%
           -daily_tests) %>% 
    relocate(start_date, .before = end_date)
 
-
-# Michigan
-# mich_tests_clean <- mich_county_tests %>% 
-#    filter(between(date,
-#                   ill_date_range$first_date[[1]],
-#                   states_end_date)) %>% 
-#    group_by(county) %>% 
-#    arrange(date) %>%
-#    # illinois's "week" variable is off by 3 days
-#    mutate(week = lubridate::week(date),
-#           # default changes NAs to the final week
-#           week = lead(week, n = 3, default = max(week))) %>% 
-#    group_by(week) %>% 
-#    # start_date = 1 date of that week, end_date = last date of that week
-#    mutate(start_date = min(date),
-#           end_date = max(date)) %>%
-#    ungroup() %>% 
-#    select(week, start_date, end_date, county,
-#           daily_positives = positive,
-#           daily_tests = total) %>% 
-#    # grouping by all vars keeps them in final df; some not necessary for calc
-#    group_by(week, start_date, end_date, county) %>% 
-#    summarize(weekly_positives = sum(daily_positives),
-#              weekly_tests = sum(daily_tests),
-#              state = "Michigan") %>% 
-#    ungroup()
 
 mich_tests_clean <- mich_county_tests %>% 
    filter(between(date,

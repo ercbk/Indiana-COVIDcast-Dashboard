@@ -35,6 +35,9 @@ ill_county_pop <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/da
                         "De Kalb" = "Dekalb",
                         "De Witt" = "Dewitt"))
 
+# missing data for couple weeks in July 2021 when I failed to collect it
+ill_tests_miss_dat <- readr::read_rds(glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-missing-data.rds"))
+
 # Has a spec_tbl class (for some reason). I'd rather not have it b/c some pkgs can be finicky.
 ill_tests <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-complete.csv")) %>% 
    as_tibble()
@@ -140,7 +143,7 @@ ill_msa_counties <- covidcast_msa_counties %>%
 # only counties with a covidcast msa
 # extract cases per 100K population, weekly tests
 # calculate weekly cases using 2019 county population data
-ill_tests_clean <- ill_tests %>% 
+ill_tests_pretty_clean <- ill_tests %>% 
    janitor::clean_names() %>% 
    mutate(county = stringr::str_to_title(county)) %>% 
    filter(county %in% ill_msa_counties$county) %>% 
@@ -156,6 +159,11 @@ ill_tests_clean <- ill_tests %>%
           state = "Illinois") %>% 
    select(start_date, end_date, county, weekly_positives, weekly_tests, state)
 
+
+# I didnt't collect data for a couple weeks. Adding it back.
+ill_tests_clean <- ill_tests_pretty_clean %>% 
+      bind_rows(ill_tests_miss_dat) %>% 
+      arrange(start_date)
 
 # needed for function below and partially filtering other states' data
 ill_date_range <- ill_tests_clean %>% 
