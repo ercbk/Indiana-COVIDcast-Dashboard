@@ -3510,7 +3510,7 @@ date,msa,geo_value,cases_100k,start_date,pos_rate,data_date
 2021-08-11,Chicago-Naperville-Elgin,16980,16.9325456,NA,NA,2021-08-22
 2021-08-12,Chicago-Naperville-Elgin,16980,16.6772963,NA,NA,2021-08-22
 2021-08-13,Chicago-Naperville-Elgin,16980,16.8691108,NA,NA,2021-08-22
-2021-08-14,Chicago-Naperville-Elgin,16980,16.8691108,NA,NA,2021-08-22
+2021-08-14,Chicago-Naperville-Elgin,16980,16.8691108,2021-08-08,0.07423878561475289,2021-08-22
 2021-08-15,Chicago-Naperville-Elgin,16980,16.8691108,NA,NA,2021-08-22
 2021-08-16,Chicago-Naperville-Elgin,16980,18.4277931,NA,NA,2021-08-22
 2020-04-02,Indianapolis-Carmel-Anderson,26900,9.069149267661,NA,NA,2021-08-22
