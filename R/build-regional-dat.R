@@ -92,7 +92,7 @@ if (ill_test_wk != ill_comp_wk) {
       
       ill_test_comp <- ill_test_comp %>% 
             bind_rows(ill_test)
-      
+      Sys.sleep(5)
       readr::write_csv(ill_test_comp, glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-complete.csv"))
 }
 
@@ -160,18 +160,16 @@ Sys.sleep(10)
 # opens file download menu in the side panel
 wisc_dl_panel_button <- chrome$findElement("css selector", "#ember189 > div > button:nth-child(3)")
 wisc_dl_panel_button$clickElement()
-Sys.sleep(5)
+Sys.sleep(10)
 
 # Have to run a JS script to access elements in a shadow dom (#shadow-root)
 # clicks button to dl file into downloads folder
 chrome$executeScript("document.querySelector('hub-download-card').shadowRoot.querySelector('calcite-card').querySelector('calcite-dropdown').querySelector('calcite-dropdown-group').querySelector('calcite-dropdown-item:nth-child(2)').click()")
-Sys.sleep(20)
+Sys.sleep(60)
 
 wisc_csv_filename <- "COVID-19_Historical_Data_by_County.csv"
 download_location <- file.path(Sys.getenv("USERPROFILE"), "Downloads")
 wisc_tests_new <- readr::read_csv(file.path(download_location, wisc_csv_filename))
-# clean-up
-fs::file_delete(file.path(download_location, wisc_csv_filename))
 
 wisc_tests_clean <- wisc_tests_new %>%
       janitor::clean_names() %>%
@@ -179,6 +177,12 @@ wisc_tests_clean <- wisc_tests_new %>%
       filter(geo == "County") %>%
       mutate(date = lubridate::as_date(date)) %>%
       select(-geo)
+
+# clean-up
+rm(wisc_tests_new)
+# have to bob and weave around some permission/filename bs that won't let me delete the file in the current session
+file.rename(file.path(download_location, wisc_csv_filename),file.path(download_location, "fu.csv"))
+fs::file_delete(file.path(download_location, "fu.csv"))
 
 readr::write_csv(wisc_tests_clean, glue("{rprojroot::find_rstudio_root_file()}/data/states/wisc-tests-complete.csv"))
 
