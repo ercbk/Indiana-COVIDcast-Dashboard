@@ -180,8 +180,9 @@ wisc_tests_clean <- wisc_tests_new %>%
 
 # clean-up
 rm(wisc_tests_new)
-# have to bob and weave around some permission/filename bs that won't let me delete the file in the current session
+# have to bob and weave around some permission/filename bs that won't let me delete the file in the current session (unlink didn't work)
 file.rename(file.path(download_location, wisc_csv_filename),file.path(download_location, "fu.csv"))
+Sys.sleep(10)
 fs::file_delete(file.path(download_location, "fu.csv"))
 
 readr::write_csv(wisc_tests_clean, glue("{rprojroot::find_rstudio_root_file()}/data/states/wisc-tests-complete.csv"))
