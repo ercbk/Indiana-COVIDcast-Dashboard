@@ -5,6 +5,13 @@
 
 
 
+
+
+#@@@@@@@@@@@@@@
+# Set-Up ----
+#@@@@@@@@@@@@@@
+
+
 setwd("~/R/Projects/Indiana-COVIDcast-Dashboard")
 
 # text me if there's an error
@@ -31,16 +38,19 @@ tools::pskill(pid = chrome_pid)
 
 
 
+driver <- rsDriver(browser = c("chrome"), chromever = "92.0.4515.107")
+
+# chrome browser
+chrome <- driver$client
+
+
+
 
 #@@@@@@@@@@@@@@@@@
 # Illinois ----
 #@@@@@@@@@@@@@@@@@
 
 
-driver <- rsDriver(browser = c("chrome"), chromever = "92.0.4515.107")
-
-# chrome browser
-chrome <- driver$client
 ill_url <- "http://www.dph.illinois.gov/countymetrics"
 # go to illinois county website
 chrome$navigate(url = ill_url)
@@ -165,11 +175,15 @@ Sys.sleep(10)
 # Have to run a JS script to access elements in a shadow dom (#shadow-root)
 # clicks button to dl file into downloads folder
 chrome$executeScript("document.querySelector('hub-download-card').shadowRoot.querySelector('calcite-card').querySelector('calcite-dropdown').querySelector('calcite-dropdown-group').querySelector('calcite-dropdown-item:nth-child(2)').click()")
-Sys.sleep(60)
+Sys.sleep(30)
 
 wisc_csv_filename <- "COVID-19_Historical_Data_by_County.csv"
 download_location <- file.path(Sys.getenv("USERPROFILE"), "Downloads")
-wisc_tests_new <- readr::read_csv(file.path(download_location, wisc_csv_filename))
+wisc_file_path <- file.path(download_location, wisc_csv_filename)
+
+wisc_tests_new <- readr::read_csv(wisc_file_path)
+safe_unlink <- purrr::safely(unlink)
+safe_unlink(wisc_tests_new)
 
 wisc_tests_clean <- wisc_tests_new %>%
       janitor::clean_names() %>%
@@ -179,15 +193,9 @@ wisc_tests_clean <- wisc_tests_new %>%
       select(-geo)
 
 # clean-up
-rm(wisc_tests_new)
-# have to bob and weave around some permission/filename bs that won't let me delete the file in the current session (unlink didn't work)
-file.rename(file.path(download_location, wisc_csv_filename),file.path(download_location, "fu.csv"))
-Sys.sleep(10)
-fs::file_delete(file.path(download_location, "fu.csv"))
+fs::file_delete(wisc_file_path)
 
 readr::write_csv(wisc_tests_clean, glue("{rprojroot::find_rstudio_root_file()}/data/states/wisc-tests-complete.csv"))
-
-
 
 
 #@@@@@@@@@@@@@@@
