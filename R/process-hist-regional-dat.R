@@ -151,7 +151,7 @@ ill_tests_pretty_clean <- ill_tests %>%
                                             pattern = "^[0-9]*") %>% as.numeric(),
           test_positivity_percent = stringr::str_remove_all(test_positivity_percent, "warning"),
           weekly_tests = stringr::str_extract(test_positivity_percent,
-                                              pattern = "([0-9]*,[0-9]*$)|([0-9][0-9][0-9]$)"),
+                                              pattern = "([0-9]*$)|([0-9]*,[0-9]*$)|([0-9][0-9][0-9]$)"),
           weekly_tests = stringr::str_remove_all(weekly_tests, ",") %>% 
              as.numeric(.)) %>%
    left_join(ill_county_pop, by = c("county" = "name")) %>% 

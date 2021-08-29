@@ -83,7 +83,8 @@ ill_test <- ill_table %>%
              start_date = start_date,
              end_date = end_date,
              `Number of Deaths` = stringr::str_extract(`Number of Deaths`, "^[0-9]*"),
-             `Number of Deaths` = as.integer(`Number of Deaths`)) %>% 
+             `Number of Deaths` = as.integer(`Number of Deaths`),
+             `Test Positivity %` = stringr::str_remove_all(`Test Positivity %`, "\r|\r\n|\n")) %>% 
       select(week, start_date, end_date, everything())
 
 
