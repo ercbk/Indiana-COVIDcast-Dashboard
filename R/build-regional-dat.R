@@ -84,7 +84,8 @@ ill_test <- ill_table %>%
              end_date = end_date,
              `Number of Deaths` = stringr::str_extract(`Number of Deaths`, "^[0-9]*"),
              `Number of Deaths` = as.integer(`Number of Deaths`),
-             `Test Positivity %` = stringr::str_remove_all(`Test Positivity %`, "\r|\r\n|\n")) %>% 
+             `Test Positivity %` = stringr::str_remove_all(`Test Positivity %`, "\r|\r\n|\n"),
+             `(%) CLI ED Visits, Adults` = stringr::str_replace_all(`(%) CLI ED Visits, Adults`, "\\*", "<5%")) %>% 
       select(week, start_date, end_date, everything())
 
 
@@ -101,10 +102,10 @@ ill_comp_wk <- ill_test_comp %>%
 # make sure data is new before adding it complete dataset
 if (ill_test_wk != ill_comp_wk) {
       
-      ill_test_comp <- ill_test_comp %>% 
+      ill_test_comp_fin <- ill_test_comp %>% 
             bind_rows(ill_test)
       Sys.sleep(5)
-      readr::write_csv(ill_test_comp, glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-complete.csv"))
+      write.csv(ill_test_comp_fin, glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-complete.csv"), row.names = FALSE)
 }
 
 
