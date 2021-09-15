@@ -170,7 +170,7 @@ chrome$navigate(url = wisc_url)
 Sys.sleep(10)
 
 # opens file download menu in the side panel
-wisc_dl_panel_button <- chrome$findElement("css selector", "#ember189 > div > button:nth-child(3)")
+wisc_dl_panel_button <- chrome$findElement("css selector", "#ember190 > div > button:nth-child(3)")
 wisc_dl_panel_button$clickElement()
 Sys.sleep(10)
 
@@ -234,3 +234,4 @@ chrome_pid <- windows_tasks %>%
 
 tools::pskill(pid = java_pid)
 tools::pskill(pid = chrome_pid)
+
