@@ -38,7 +38,7 @@ tools::pskill(pid = chrome_pid)
 
 
 
-driver <- rsDriver(browser = c("chrome"), chromever = "92.0.4515.107")
+driver <- rsDriver(browser = c("chrome"), chromever = "94.0.4606.61")
 
 # chrome browser
 chrome <- driver$client
@@ -91,6 +91,8 @@ ill_test <- ill_table %>%
 
 ill_test_comp <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-complete.csv"),
                                  col_types = "nDDcccccic")
+Sys.sleep(5)
+
 
 ill_test_wk <- ill_test %>% 
       slice(n()) %>% 
