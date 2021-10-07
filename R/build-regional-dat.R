@@ -2,6 +2,7 @@
 
 # Notes
 # 1. Haven't solved the RSelenium-on-github-runner problem yet, but I'll go ahead and make this script publicly available since it's vital to running the project
+# 2. {readr} should be at >= version 2.0.2; there was a complication when they implemented {vroom} that prevented certain characters being written
 
 
 
@@ -38,7 +39,47 @@ tools::pskill(pid = chrome_pid)
 
 
 
-driver <- rsDriver(browser = c("chrome"), chromever = "94.0.4606.61")
+
+# Get installed stable Google Chrome version ...
+if (xfun::is_unix()) {
+      
+      chrome_driver_version <-
+            system2(command = ifelse(xfun::is_macos(),
+                                     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+                                     "google-chrome-stable"),
+                    args = "--version",
+                    stdout = TRUE,
+                    stderr = TRUE) %>%
+            stringr::str_extract(pattern = "(?<=Chrome )(\\d+\\.){3}")
+      
+      ## on Windows a plattform-specific bug prevents us from calling the Google Chrome binary directly to get its version number
+      ## cf. https://bugs.chromium.org/p/chromium/issues/detail?id=158372
+} else if (xfun::is_windows()) {
+      
+      chrome_driver_version <-
+            system2(command = "wmic",
+                    args = 'datafile where name="C:\\\\Program Files (x86)\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe" get Version /value',
+                    stdout = TRUE,
+                    stderr = TRUE) %>%
+            stringr::str_extract(pattern = "(?<=Version=)(\\d+\\.){3}")
+      
+} else rlang::abort(message = "Your OS couldn't be determined (Linux, macOS, Windows) or is not supported.")
+
+# ... and determine most recent ChromeDriver version matching it
+chrome_driver_version %<>%
+      magrittr::extract(!is.na(.)) %>%
+      stringr::str_replace_all(pattern = "\\.",
+                               replacement = "\\\\.") %>%
+      paste0("^",  .) %>%
+      stringr::str_subset(string =
+                                binman::list_versions(appname = "chromedriver") %>%
+                                dplyr::last()) %>%
+      as.numeric_version() %>%
+      max() %>%
+      as.character()
+
+
+driver <- rsDriver(browser = c("chrome"), chromever = chrome_driver_version)
 
 # chrome browser
 chrome <- driver$client
@@ -107,7 +148,7 @@ if (ill_test_wk != ill_comp_wk) {
       ill_test_comp_fin <- ill_test_comp %>% 
             bind_rows(ill_test)
       Sys.sleep(5)
-      write.csv(ill_test_comp_fin, glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-complete.csv"), row.names = FALSE)
+      readr::write_csv(ill_test_comp_fin, glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-complete.csv"))
 }
 
 

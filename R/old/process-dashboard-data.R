@@ -1,5 +1,7 @@
 # Build dashboard datasets
 
+# Notes
+# 1. Deactivated since a large chunk of this script deals with the "combined indicator" metric which was deprecated by Carnegie.
 
 
 
