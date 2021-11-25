@@ -97,16 +97,77 @@ ill_url <- "http://www.dph.illinois.gov/countymetrics"
 chrome$navigate(url = ill_url)
 Sys.sleep(10)
 
+## (old) scrape html table ----
+# # element with table data
+# tbl_elt <- chrome$findElement(using = "id", "detailedData")
+# # get html code
+# tbl_html <- tbl_elt$getPageSource()[[1]]
+# 
+# # use rvest to process the table
+# page <- read_html(tbl_html)
+# tbl_node <- html_node(page, "table") 
+# # cols: CLI = covid like illness, ED = emergency department
+# ill_table <- html_table(tbl_node, header = T)
+
+## (old) html table d/l ----
+# ill_dl_button <- chrome$findElement(using = "css", "#data-table-detailedData > div > div.data-table__search > button")
+# ill_dl_button$clickElement()
+# Sys.sleep(5)
+# 
+# ill_csv_filename <- "County Level Risk Metrics.csv"
+# ill_download_location <- file.path(Sys.getenv("USERPROFILE"), "Downloads")
+# ill_file_path <- file.path(ill_download_location, ill_csv_filename)
+# ill_tests <- readr::read_csv(ill_file_path)
+# 
+# # file needs to be unlinked from environment in order to delete it
+# ill_safe_unlink <- purrr::safely(unlink)
+# ill_safe_unlink(ill_tests)
+
+
+## scrape paginated html table ----
 # element with table data
 tbl_elt <- chrome$findElement(using = "id", "detailedData")
-# get html code
-tbl_html <- tbl_elt$getPageSource()[[1]]
+# element for the the "Next" page button of the table
+ill_next_button <- chrome$findElement(using = "css", "#detailedData_next")
 
-# use rvest to process the table
-page <- read_html(tbl_html)
-tbl_node <- html_node(page, "table") 
-# cols: CLI = covid like illness, ED = emergency department
-ill_table <- html_table(tbl_node, header = T)
+ill_table_full <- tibble(
+      County = character(),
+      `New Cases per 100,000` = character(),
+      `Test Positivity %` = character(),
+      `(%) CLI ED Visits, Adults` = character(),
+      `Number of CLI Admissions` = character(),
+      `Number of Deaths` = character(),
+      `ICU (%) Available` = character()
+)
+
+# Scrape paginated html table until "Next" button throws error
+while(TRUE) {
+      
+      # get html code
+      tbl_html <- tbl_elt$getPageSource()[[1]]
+      # use rvest to process the table
+      page <- read_html(tbl_html)
+      tbl_node <- html_node(page, "table")
+      # cols: CLI = covid like illness, ED = emergency department
+      ill_table <- html_table(tbl_node, header = T, convert = FALSE)
+      ill_table_full <- ill_table_full %>% 
+            bind_rows(ill_table)
+      
+      # Test if "Next" button is still there. If not, exit loop. If so, go to next page of table
+      ill_next_butt_class <- try(unlist(chrome$findElement(using = "css", "#detailedData_next")$getElementAttribute("class")), silent = TRUE)
+      
+      if (ill_next_butt_class != "paginate_button next"){
+            break
+      } else {
+            # Have to re-instantiate it again for some reason
+            ill_next_button <- chrome$findElement(using = "css", "#detailedData_next")
+            # Go to the next page of the table
+            ill_next_button$clickElement()
+            Sys.sleep(5)
+      }
+      
+}
+
 
 # pull the text that says which week this data is for
 wkelt <- chrome$findElement(using = "id", "mmwrWeekNumber")
@@ -119,7 +180,7 @@ endelt <- chrome$findElement(using = "id", "lastupdateDate")
 end_date <- lubridate::mdy(endelt$getElementText()[[1]])
 
 # add dates to scraped table
-ill_test <- ill_table %>% 
+ill_tests_new <- ill_table_full %>% 
       mutate(week = week_number,
              start_date = start_date,
              end_date = end_date,
@@ -131,11 +192,11 @@ ill_test <- ill_table %>%
 
 
 ill_test_comp <- readr::read_csv(glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-complete.csv"),
-                                 col_types = "nDDcccccic")
+                                 col_types = "nDDcccccic", lazy = FALSE)
 Sys.sleep(5)
 
 
-ill_test_wk <- ill_test %>% 
+ill_test_wk <- ill_tests_new %>% 
       slice(n()) %>% 
       pull(week)
 ill_comp_wk <- ill_test_comp %>% 
@@ -146,10 +207,13 @@ ill_comp_wk <- ill_test_comp %>%
 if (ill_test_wk != ill_comp_wk) {
       
       ill_test_comp_fin <- ill_test_comp %>% 
-            bind_rows(ill_test)
+            bind_rows(ill_tests_new)
       Sys.sleep(5)
       readr::write_csv(ill_test_comp_fin, glue("{rprojroot::find_rstudio_root_file()}/data/states/illinois-tests-complete.csv"))
 }
+
+# clean-up
+# fs::file_delete(ill_file_path)
 
 
 
@@ -206,14 +270,16 @@ mich_dat_files %>%
 # Wisconsin ----
 #@@@@@@@@@@@@@@@@@
 
+"COVID19-Historical-V2-CNTY.csv"
+"https://dhsgis.page.link/j5nk"
 
-wisc_url <- "https://data.dhsgis.wi.gov/datasets/covid-19-historical-data-by-county-1/explore"
+wisc_url <- "https://data.dhsgis.wi.gov/datasets/covid-19-historical-data-by-county-v2/explore"
 
 chrome$navigate(url = wisc_url)
 Sys.sleep(10)
 
 # opens file download menu in the side panel
-wisc_dl_panel_button <- chrome$findElement("css selector", "#ember190 > div > button:nth-child(3)")
+wisc_dl_panel_button <- chrome$findElement("css selector", "#ember234 > div > button:nth-child(3)")
 wisc_dl_panel_button$clickElement()
 Sys.sleep(10)
 
@@ -222,25 +288,26 @@ Sys.sleep(10)
 chrome$executeScript("document.querySelector('hub-download-card').shadowRoot.querySelector('calcite-card').querySelector('calcite-dropdown').querySelector('calcite-dropdown-group').querySelector('calcite-dropdown-item:nth-child(2)').click()")
 Sys.sleep(30)
 
-wisc_csv_filename <- "COVID-19_Historical_Data_by_County.csv"
+wisc_csv_filename <- "COVID-19_Historical_Data_by_County_V2.csv"
 download_location <- file.path(Sys.getenv("USERPROFILE"), "Downloads")
 wisc_file_path <- file.path(download_location, wisc_csv_filename)
+wisc_tests_new <- readr::read_csv(wisc_file_path, lazy = FALSE)
 
-wisc_tests_new <- readr::read_csv(wisc_file_path)
+# file needs to be unlinked from environment in order to delete it
 safe_unlink <- purrr::safely(unlink)
 safe_unlink(wisc_tests_new)
 
 wisc_tests_clean <- wisc_tests_new %>%
       janitor::clean_names() %>%
-      select(date, geo, county = name, negative, positive) %>%
-      filter(geo == "County") %>%
-      mutate(date = lubridate::as_date(date)) %>%
-      select(-geo)
+      select(date = rpt_dt, county = geo_name, negative = neg_cum, positive = pos_cum_conf) %>%
+      mutate(date = lubridate::as_date(date)) %>% 
+      arrange(county, date)
 
 # clean-up
 fs::file_delete(wisc_file_path)
 
 readr::write_csv(wisc_tests_clean, glue("{rprojroot::find_rstudio_root_file()}/data/states/wisc-tests-complete.csv"))
+
 
 
 #@@@@@@@@@@@@@@@
