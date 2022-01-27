@@ -733,6 +733,7 @@ date,county,negative,positive
 2022-01-23,Adams,12034,3781
 2022-01-24,Adams,12047,3797
 2022-01-25,Adams,12066,3818
+2022-01-26,Adams,12101,3859
 2020-01-23,Ashland,0,0
 2020-01-24,Ashland,0,0
 2020-01-25,Ashland,0,0
@@ -1467,6 +1468,7 @@ date,county,negative,positive
 2022-01-23,Ashland,10096,2163
 2022-01-24,Ashland,10124,2193
 2022-01-25,Ashland,10130,2204
+2022-01-26,Ashland,10137,2222
 2020-01-23,Barron,0,0
 2020-01-24,Barron,0,0
 2020-01-25,Barron,0,0
@@ -2201,6 +2203,7 @@ date,county,negative,positive
 2022-01-23,Barron,27340,11840
 2022-01-24,Barron,27394,11887
 2022-01-25,Barron,27425,11938
+2022-01-26,Barron,27494,12018
 2020-01-23,Bayfield,0,0
 2020-01-24,Bayfield,0,0
 2020-01-25,Bayfield,0,0
@@ -2935,6 +2938,7 @@ date,county,negative,positive
 2022-01-23,Bayfield,10174,2055
 2022-01-24,Bayfield,10185,2073
 2022-01-25,Bayfield,10206,2091
+2022-01-26,Bayfield,10222,2106
 2020-01-23,Brown,0,0
 2020-01-24,Brown,0,0
 2020-01-25,Brown,0,0
@@ -3669,6 +3673,7 @@ date,county,negative,positive
 2022-01-23,Brown,191126,65129
 2022-01-24,Brown,191426,65438
 2022-01-25,Brown,191673,65803
+2022-01-26,Brown,192109,66197
 2020-01-23,Buffalo,0,0
 2020-01-24,Buffalo,0,0
 2020-01-25,Buffalo,0,0
@@ -4403,6 +4408,7 @@ date,county,negative,positive
 2022-01-23,Buffalo,7540,2936
 2022-01-24,Buffalo,7544,2945
 2022-01-25,Buffalo,7553,2959
+2022-01-26,Buffalo,7577,2981
 2020-01-23,Burnett,0,0
 2020-01-24,Burnett,0,0
 2020-01-25,Burnett,0,0
@@ -5137,6 +5143,7 @@ date,county,negative,positive
 2022-01-23,Burnett,9197,3216
 2022-01-24,Burnett,9206,3226
 2022-01-25,Burnett,9226,3245
+2022-01-26,Burnett,9240,3257
 2020-01-23,Calumet,0,0
 2020-01-24,Calumet,0,0
 2020-01-25,Calumet,0,0
@@ -5871,6 +5878,7 @@ date,county,negative,positive
 2022-01-23,Calumet,30480,10769
 2022-01-24,Calumet,30523,10812
 2022-01-25,Calumet,30573,10844
+2022-01-26,Calumet,30628,10898
 2020-01-23,Chippewa,0,0
 2020-01-24,Chippewa,0,0
 2020-01-25,Chippewa,0,0
@@ -6605,6 +6613,7 @@ date,county,negative,positive
 2022-01-23,Chippewa,41120,16124
 2022-01-24,Chippewa,41177,16225
 2022-01-25,Chippewa,41295,16401
+2022-01-26,Chippewa,41377,16481
 2020-01-23,Clark,0,0
 2020-01-24,Clark,0,0
 2020-01-25,Clark,0,0
@@ -7339,6 +7348,7 @@ date,county,negative,positive
 2022-01-23,Clark,15632,6500
 2022-01-24,Clark,15651,6513
 2022-01-25,Clark,15677,6547
+2022-01-26,Clark,15700,6581
 2020-01-23,Columbia,0,0
 2020-01-24,Columbia,0,0
 2020-01-25,Columbia,0,0
@@ -8073,6 +8083,7 @@ date,county,negative,positive
 2022-01-23,Columbia,39825,12675
 2022-01-24,Columbia,39886,12738
 2022-01-25,Columbia,39931,12801
+2022-01-26,Columbia,40032,12947
 2020-01-23,Crawford,0,0
 2020-01-24,Crawford,0,0
 2020-01-25,Crawford,0,0
@@ -8807,6 +8818,7 @@ date,county,negative,positive
 2022-01-23,Crawford,10324,3503
 2022-01-24,Crawford,10340,3512
 2022-01-25,Crawford,10456,3600
+2022-01-26,Crawford,10475,3650
 2020-01-23,Dane,2,0
 2020-01-24,Dane,2,0
 2020-01-25,Dane,2,0
@@ -9541,6 +9553,7 @@ date,county,negative,positive
 2022-01-23,Dane,478637,103668
 2022-01-24,Dane,479399,104344
 2022-01-25,Dane,480073,105025
+2022-01-26,Dane,481018,105943
 2020-01-23,Dodge,0,0
 2020-01-24,Dodge,0,0
 2020-01-25,Dodge,0,0
@@ -10275,6 +10288,7 @@ date,county,negative,positive
 2022-01-23,Dodge,56034,22533
 2022-01-24,Dodge,56105,22620
 2022-01-25,Dodge,56163,22691
+2022-01-26,Dodge,56291,22802
 2020-01-23,Door,0,0
 2020-01-24,Door,0,0
 2020-01-25,Door,0,0
@@ -11009,6 +11023,7 @@ date,county,negative,positive
 2022-01-23,Door,20567,6171
 2022-01-24,Door,20577,6184
 2022-01-25,Door,20602,6218
+2022-01-26,Door,20639,6262
 2020-01-23,Douglas,0,0
 2020-01-24,Douglas,0,0
 2020-01-25,Douglas,0,0
@@ -11743,6 +11758,7 @@ date,county,negative,positive
 2022-01-23,Douglas,28043,7053
 2022-01-24,Douglas,28109,7149
 2022-01-25,Douglas,28140,7188
+2022-01-26,Douglas,28190,7223
 2020-01-23,Dunn,0,0
 2020-01-24,Dunn,0,0
 2020-01-25,Dunn,0,0
@@ -12477,6 +12493,7 @@ date,county,negative,positive
 2022-01-23,Dunn,27938,10311
 2022-01-24,Dunn,27962,10338
 2022-01-25,Dunn,27992,10374
+2022-01-26,Dunn,28062,10453
 2020-01-23,Eau Claire,0,0
 2020-01-24,Eau Claire,0,0
 2020-01-25,Eau Claire,0,0
@@ -13211,6 +13228,7 @@ date,county,negative,positive
 2022-01-23,Eau Claire,71494,24968
 2022-01-24,Eau Claire,71576,25107
 2022-01-25,Eau Claire,71669,25278
+2022-01-26,Eau Claire,71820,25388
 2020-01-23,Florence,0,0
 2020-01-24,Florence,0,0
 2020-01-25,Florence,0,0
@@ -13945,6 +13963,7 @@ date,county,negative,positive
 2022-01-23,Florence,2134,726
 2022-01-24,Florence,2134,726
 2022-01-25,Florence,2134,731
+2022-01-26,Florence,2141,741
 2020-01-23,Fond du Lac,0,0
 2020-01-24,Fond du Lac,0,0
 2020-01-25,Fond du Lac,0,0
@@ -14679,6 +14698,7 @@ date,county,negative,positive
 2022-01-23,Fond du Lac,67639,27195
 2022-01-24,Fond du Lac,67709,27279
 2022-01-25,Fond du Lac,67772,27333
+2022-01-26,Fond du Lac,67976,27615
 2020-01-23,Forest,0,0
 2020-01-24,Forest,0,0
 2020-01-25,Forest,0,0
@@ -15413,6 +15433,7 @@ date,county,negative,positive
 2022-01-23,Forest,6858,2192
 2022-01-24,Forest,6865,2203
 2022-01-25,Forest,6870,2225
+2022-01-26,Forest,6878,2232
 2020-01-23,Grant,0,0
 2020-01-24,Grant,0,0
 2020-01-25,Grant,0,0
@@ -16147,6 +16168,7 @@ date,county,negative,positive
 2022-01-23,Grant,30981,9996
 2022-01-24,Grant,31012,10036
 2022-01-25,Grant,31050,10105
+2022-01-26,Grant,31116,10180
 2020-01-23,Green,0,0
 2020-01-24,Green,0,0
 2020-01-25,Green,0,0
@@ -16881,6 +16903,7 @@ date,county,negative,positive
 2022-01-23,Green,23985,7666
 2022-01-24,Green,24036,7703
 2022-01-25,Green,24071,7740
+2022-01-26,Green,24109,7802
 2020-01-23,Green Lake,0,0
 2020-01-24,Green Lake,0,0
 2020-01-25,Green Lake,0,0
@@ -17615,6 +17638,7 @@ date,county,negative,positive
 2022-01-23,Green Lake,11443,3754
 2022-01-24,Green Lake,11454,3770
 2022-01-25,Green Lake,11476,3786
+2022-01-26,Green Lake,11511,3817
 2020-01-23,Iowa,0,0
 2020-01-24,Iowa,0,0
 2020-01-25,Iowa,0,0
@@ -18349,6 +18373,7 @@ date,county,negative,positive
 2022-01-23,Iowa,15674,4287
 2022-01-24,Iowa,15705,4326
 2022-01-25,Iowa,15727,4362
+2022-01-26,Iowa,15763,4411
 2020-01-23,Iron,0,0
 2020-01-24,Iron,0,0
 2020-01-25,Iron,0,0
@@ -19083,6 +19108,7 @@ date,county,negative,positive
 2022-01-23,Iron,3680,1127
 2022-01-24,Iron,3682,1129
 2022-01-25,Iron,3688,1130
+2022-01-26,Iron,3692,1140
 2020-01-23,Jackson,0,0
 2020-01-24,Jackson,0,0
 2020-01-25,Jackson,0,0
@@ -19817,6 +19843,7 @@ date,county,negative,positive
 2022-01-23,Jackson,12257,4960
 2022-01-24,Jackson,12261,4961
 2022-01-25,Jackson,12296,4992
+2022-01-26,Jackson,12320,4998
 2020-01-23,Jefferson,0,0
 2020-01-24,Jefferson,0,0
 2020-01-25,Jefferson,0,0
@@ -20551,6 +20578,7 @@ date,county,negative,positive
 2022-01-23,Jefferson,51800,16559
 2022-01-24,Jefferson,51876,16650
 2022-01-25,Jefferson,51934,16710
+2022-01-26,Jefferson,52010,16822
 2020-01-23,Juneau,0,0
 2020-01-24,Juneau,0,0
 2020-01-25,Juneau,0,0
@@ -21285,6 +21313,7 @@ date,county,negative,positive
 2022-01-23,Juneau,18334,6901
 2022-01-24,Juneau,18346,6915
 2022-01-25,Juneau,18367,6943
+2022-01-26,Juneau,18384,6980
 2020-01-23,Kenosha,0,0
 2020-01-24,Kenosha,0,0
 2020-01-25,Kenosha,0,0
@@ -22019,6 +22048,7 @@ date,county,negative,positive
 2022-01-23,Kenosha,109415,32828
 2022-01-24,Kenosha,109594,32975
 2022-01-25,Kenosha,109704,33082
+2022-01-26,Kenosha,109875,33241
 2020-01-23,Kewaunee,0,0
 2020-01-24,Kewaunee,0,0
 2020-01-25,Kewaunee,0,0
@@ -22753,6 +22783,7 @@ date,county,negative,positive
 2022-01-23,Kewaunee,10875,4321
 2022-01-24,Kewaunee,10885,4331
 2022-01-25,Kewaunee,10900,4350
+2022-01-26,Kewaunee,10917,4370
 2020-01-23,La Crosse,0,0
 2020-01-24,La Crosse,0,0
 2020-01-25,La Crosse,0,0
@@ -23487,6 +23518,7 @@ date,county,negative,positive
 2022-01-23,La Crosse,86679,28315
 2022-01-24,La Crosse,86813,28444
 2022-01-25,La Crosse,86965,28772
+2022-01-26,La Crosse,87339,29017
 2020-01-23,Lafayette,0,0
 2020-01-24,Lafayette,0,0
 2020-01-25,Lafayette,0,0
@@ -24221,6 +24253,7 @@ date,county,negative,positive
 2022-01-23,Lafayette,9179,3008
 2022-01-24,Lafayette,9187,3022
 2022-01-25,Lafayette,9212,3043
+2022-01-26,Lafayette,9232,3073
 2020-01-23,Langlade,0,0
 2020-01-24,Langlade,0,0
 2020-01-25,Langlade,0,0
@@ -24955,6 +24988,7 @@ date,county,negative,positive
 2022-01-23,Langlade,11189,4521
 2022-01-24,Langlade,11209,4536
 2022-01-25,Langlade,11228,4561
+2022-01-26,Langlade,11249,4590
 2020-01-23,Lincoln,0,0
 2020-01-24,Lincoln,0,0
 2020-01-25,Lincoln,0,0
@@ -25689,6 +25723,7 @@ date,county,negative,positive
 2022-01-23,Lincoln,15557,5924
 2022-01-24,Lincoln,15568,5939
 2022-01-25,Lincoln,15609,5963
+2022-01-26,Lincoln,15632,6003
 2020-01-23,Manitowoc,0,0
 2020-01-24,Manitowoc,0,0
 2020-01-25,Manitowoc,0,0
@@ -26423,6 +26458,7 @@ date,county,negative,positive
 2022-01-23,Manitowoc,45135,16009
 2022-01-24,Manitowoc,45175,16071
 2022-01-25,Manitowoc,45244,16140
+2022-01-26,Manitowoc,45328,16232
 2020-01-23,Marathon,0,0
 2020-01-24,Marathon,0,0
 2020-01-25,Marathon,0,0
@@ -27157,6 +27193,7 @@ date,county,negative,positive
 2022-01-23,Marathon,80573,33378
 2022-01-24,Marathon,80676,33535
 2022-01-25,Marathon,80826,33740
+2022-01-26,Marathon,80999,34005
 2020-01-23,Marinette,0,0
 2020-01-24,Marinette,0,0
 2020-01-25,Marinette,0,0
@@ -27891,6 +27928,7 @@ date,county,negative,positive
 2022-01-23,Marinette,28408,8874
 2022-01-24,Marinette,28430,8907
 2022-01-25,Marinette,28459,8931
+2022-01-26,Marinette,28509,8966
 2020-01-23,Marquette,0,0
 2020-01-24,Marquette,0,0
 2020-01-25,Marquette,0,0
@@ -28625,6 +28663,7 @@ date,county,negative,positive
 2022-01-23,Marquette,9114,3086
 2022-01-24,Marquette,9120,3098
 2022-01-25,Marquette,9132,3109
+2022-01-26,Marquette,9159,3130
 2020-01-23,Menominee,0,0
 2020-01-24,Menominee,0,0
 2020-01-25,Menominee,0,0
@@ -29359,6 +29398,7 @@ date,county,negative,positive
 2022-01-23,Menominee,4706,1681
 2022-01-24,Menominee,4706,1686
 2022-01-25,Menominee,4730,1712
+2022-01-26,Menominee,4742,1732
 2020-01-23,Milwaukee,0,0
 2020-01-24,Milwaukee,0,0
 2020-01-25,Milwaukee,0,0
@@ -30093,6 +30133,7 @@ date,county,negative,positive
 2022-01-23,Milwaukee,735927,231312
 2022-01-24,Milwaukee,736924,231842
 2022-01-25,Milwaukee,737790,232375
+2022-01-26,Milwaukee,739170,233067
 2020-01-23,Monroe,0,0
 2020-01-24,Monroe,0,0
 2020-01-25,Monroe,0,0
@@ -30827,6 +30868,7 @@ date,county,negative,positive
 2022-01-23,Monroe,27862,10465
 2022-01-24,Monroe,27878,10489
 2022-01-25,Monroe,27936,10557
+2022-01-26,Monroe,28032,10671
 2020-01-23,Oconto,0,0
 2020-01-24,Oconto,0,0
 2020-01-25,Oconto,0,0
@@ -31561,6 +31603,7 @@ date,county,negative,positive
 2022-01-23,Oconto,24252,8771
 2022-01-24,Oconto,24277,8797
 2022-01-25,Oconto,24303,8822
+2022-01-26,Oconto,24376,8877
 2020-01-23,Oneida,0,0
 2020-01-24,Oneida,0,0
 2020-01-25,Oneida,0,0
@@ -32295,6 +32338,7 @@ date,county,negative,positive
 2022-01-23,Oneida,24168,7416
 2022-01-24,Oneida,24193,7448
 2022-01-25,Oneida,24240,7502
+2022-01-26,Oneida,24275,7552
 2020-01-23,Outagamie,0,0
 2020-01-24,Outagamie,0,0
 2020-01-25,Outagamie,0,0
@@ -33029,6 +33073,7 @@ date,county,negative,positive
 2022-01-23,Outagamie,128365,39386
 2022-01-24,Outagamie,128538,39545
 2022-01-25,Outagamie,128740,39710
+2022-01-26,Outagamie,129021,39937
 2020-01-23,Ozaukee,0,0
 2020-01-24,Ozaukee,0,0
 2020-01-25,Ozaukee,0,0
@@ -33763,6 +33808,7 @@ date,county,negative,positive
 2022-01-23,Ozaukee,64450,18355
 2022-01-24,Ozaukee,64519,18420
 2022-01-25,Ozaukee,64578,18461
+2022-01-26,Ozaukee,64692,18558
 2020-01-23,Pepin,0,0
 2020-01-24,Pepin,0,0
 2020-01-25,Pepin,0,0
@@ -34497,6 +34543,7 @@ date,county,negative,positive
 2022-01-23,Pepin,4956,1701
 2022-01-24,Pepin,4959,1701
 2022-01-25,Pepin,4964,1720
+2022-01-26,Pepin,4978,1734
 2020-01-23,Pierce,0,0
 2020-01-24,Pierce,0,0
 2020-01-25,Pierce,0,0
@@ -35231,6 +35278,7 @@ date,county,negative,positive
 2022-01-23,Pierce,25041,8551
 2022-01-24,Pierce,25057,8580
 2022-01-25,Pierce,25088,8631
+2022-01-26,Pierce,25138,8662
 2020-01-23,Polk,0,0
 2020-01-24,Polk,0,0
 2020-01-25,Polk,0,0
@@ -35965,6 +36013,7 @@ date,county,negative,positive
 2022-01-23,Polk,29022,10822
 2022-01-24,Polk,29057,10870
 2022-01-25,Polk,29094,10918
+2022-01-26,Polk,29125,10972
 2020-01-23,Portage,0,0
 2020-01-24,Portage,0,0
 2020-01-25,Portage,0,0
@@ -36699,6 +36748,7 @@ date,county,negative,positive
 2022-01-23,Portage,39339,13614
 2022-01-24,Portage,39384,13669
 2022-01-25,Portage,39435,13712
+2022-01-26,Portage,39501,13812
 2020-01-23,Price,0,0
 2020-01-24,Price,0,0
 2020-01-25,Price,0,0
@@ -37433,6 +37483,7 @@ date,county,negative,positive
 2022-01-23,Price,7860,2741
 2022-01-24,Price,7865,2745
 2022-01-25,Price,7870,2756
+2022-01-26,Price,7886,2772
 2020-01-23,Racine,0,0
 2020-01-24,Racine,0,0
 2020-01-25,Racine,0,0
@@ -38167,6 +38218,7 @@ date,county,negative,positive
 2022-01-23,Racine,130162,42424
 2022-01-24,Racine,130381,42592
 2022-01-25,Racine,130525,42726
+2022-01-26,Racine,130714,42889
 2020-01-23,Richland,0,0
 2020-01-24,Richland,0,0
 2020-01-25,Richland,0,0
@@ -38901,6 +38953,7 @@ date,county,negative,positive
 2022-01-23,Richland,10668,3174
 2022-01-24,Richland,10682,3181
 2022-01-25,Richland,10691,3202
+2022-01-26,Richland,10723,3244
 2020-01-23,Rock,0,0
 2020-01-24,Rock,0,0
 2020-01-25,Rock,0,0
@@ -39635,6 +39688,7 @@ date,county,negative,positive
 2022-01-23,Rock,108692,33038
 2022-01-24,Rock,108860,33220
 2022-01-25,Rock,108983,33357
+2022-01-26,Rock,109241,33663
 2020-01-23,Rusk,0,0
 2020-01-24,Rusk,0,0
 2020-01-25,Rusk,0,0
@@ -40369,6 +40423,7 @@ date,county,negative,positive
 2022-01-23,Rusk,7263,3027
 2022-01-24,Rusk,7270,3039
 2022-01-25,Rusk,7274,3046
+2022-01-26,Rusk,7283,3056
 2020-01-23,Sauk,0,0
 2020-01-24,Sauk,0,0
 2020-01-25,Sauk,0,0
@@ -41103,6 +41158,7 @@ date,county,negative,positive
 2022-01-23,Sauk,46834,13827
 2022-01-24,Sauk,46888,13887
 2022-01-25,Sauk,46930,13935
+2022-01-26,Sauk,47027,14074
 2020-01-23,Sawyer,0,0
 2020-01-24,Sawyer,0,0
 2020-01-25,Sawyer,0,0
@@ -41837,6 +41893,7 @@ date,county,negative,positive
 2022-01-23,Sawyer,11919,3707
 2022-01-24,Sawyer,11949,3735
 2022-01-25,Sawyer,11963,3749
+2022-01-26,Sawyer,11975,3773
 2020-01-23,Shawano,0,0
 2020-01-24,Shawano,0,0
 2020-01-25,Shawano,0,0
@@ -42571,6 +42628,7 @@ date,county,negative,positive
 2022-01-23,Shawano,24863,9071
 2022-01-24,Shawano,24908,9097
 2022-01-25,Shawano,24956,9159
+2022-01-26,Shawano,25020,9207
 2020-01-23,Sheboygan,0,0
 2020-01-24,Sheboygan,0,0
 2020-01-25,Sheboygan,0,0
@@ -43305,6 +43363,7 @@ date,county,negative,positive
 2022-01-23,Sheboygan,71422,27151
 2022-01-24,Sheboygan,71522,27262
 2022-01-25,Sheboygan,71593,27336
+2022-01-26,Sheboygan,71779,27507
 2020-01-23,St. Croix,0,0
 2020-01-24,St. Croix,0,0
 2020-01-25,St. Croix,0,0
@@ -44039,6 +44098,7 @@ date,county,negative,positive
 2022-01-23,St. Croix,58355,19322
 2022-01-24,St. Croix,58400,19395
 2022-01-25,St. Croix,58474,19497
+2022-01-26,St. Croix,58558,19562
 2020-01-23,Taylor,0,0
 2020-01-24,Taylor,0,0
 2020-01-25,Taylor,0,0
@@ -44773,6 +44833,7 @@ date,county,negative,positive
 2022-01-23,Taylor,9093,4072
 2022-01-24,Taylor,9100,4076
 2022-01-25,Taylor,9106,4085
+2022-01-26,Taylor,9128,4112
 2020-01-23,Trempealeau,0,0
 2020-01-24,Trempealeau,0,0
 2020-01-25,Trempealeau,0,0
@@ -45507,6 +45568,7 @@ date,county,negative,positive
 2022-01-23,Trempealeau,17933,7366
 2022-01-24,Trempealeau,17955,7381
 2022-01-25,Trempealeau,17981,7433
+2022-01-26,Trempealeau,18025,7477
 2020-01-23,Vernon,0,0
 2020-01-24,Vernon,0,0
 2020-01-25,Vernon,0,0
@@ -46241,6 +46303,7 @@ date,county,negative,positive
 2022-01-23,Vernon,17763,5017
 2022-01-24,Vernon,17786,5037
 2022-01-25,Vernon,17806,5060
+2022-01-26,Vernon,17860,5098
 2020-01-23,Vilas,0,0
 2020-01-24,Vilas,0,0
 2020-01-25,Vilas,0,0
@@ -46975,6 +47038,7 @@ date,county,negative,positive
 2022-01-23,Vilas,13876,4521
 2022-01-24,Vilas,13894,4545
 2022-01-25,Vilas,13900,4566
+2022-01-26,Vilas,13921,4582
 2020-01-23,Walworth,0,0
 2020-01-24,Walworth,0,0
 2020-01-25,Walworth,0,0
@@ -47709,6 +47773,7 @@ date,county,negative,positive
 2022-01-23,Walworth,60856,17393
 2022-01-24,Walworth,60927,17473
 2022-01-25,Walworth,60992,17544
+2022-01-26,Walworth,61098,17646
 2020-01-23,Washburn,0,0
 2020-01-24,Washburn,0,0
 2020-01-25,Washburn,0,0
@@ -48443,6 +48508,7 @@ date,county,negative,positive
 2022-01-23,Washburn,10019,3361
 2022-01-24,Washburn,10038,3377
 2022-01-25,Washburn,10044,3390
+2022-01-26,Washburn,10061,3408
 2020-01-23,Washington,0,0
 2020-01-24,Washington,0,0
 2020-01-25,Washington,1,0
@@ -49177,6 +49243,7 @@ date,county,negative,positive
 2022-01-23,Washington,81938,32100
 2022-01-24,Washington,82055,32186
 2022-01-25,Washington,82143,32269
+2022-01-26,Washington,82347,32437
 2020-01-23,Waukesha,0,0
 2020-01-24,Waukesha,0,0
 2020-01-25,Waukesha,0,0
@@ -49911,6 +49978,7 @@ date,county,negative,positive
 2022-01-23,Waukesha,278475,90759
 2022-01-24,Waukesha,278748,90986
 2022-01-25,Waukesha,279075,91270
+2022-01-26,Waukesha,279604,91657
 2020-01-23,Waupaca,0,0
 2020-01-24,Waupaca,0,0
 2020-01-25,Waupaca,0,0
@@ -50645,6 +50713,7 @@ date,county,negative,positive
 2022-01-23,Waupaca,30098,10472
 2022-01-24,Waupaca,30136,10507
 2022-01-25,Waupaca,30192,10583
+2022-01-26,Waupaca,30239,10631
 2020-01-23,Waushara,0,0
 2020-01-24,Waushara,0,0
 2020-01-25,Waushara,0,0
@@ -51379,6 +51448,7 @@ date,county,negative,positive
 2022-01-23,Waushara,14912,4554
 2022-01-24,Waushara,14929,4587
 2022-01-25,Waushara,14943,4622
+2022-01-26,Waushara,14964,4644
 2020-01-23,Winnebago,0,0
 2020-01-24,Winnebago,0,0
 2020-01-25,Winnebago,0,0
@@ -52113,6 +52183,7 @@ date,county,negative,positive
 2022-01-23,Winnebago,118852,39521
 2022-01-24,Winnebago,119032,39681
 2022-01-25,Winnebago,119172,39872
+2022-01-26,Winnebago,119524,40217
 2020-01-23,Wood,0,0
 2020-01-24,Wood,0,0
 2020-01-25,Wood,0,0
@@ -52847,3 +52918,4 @@ date,county,negative,positive
 2022-01-23,Wood,47641,17752
 2022-01-24,Wood,47698,17835
 2022-01-25,Wood,47771,17946
+2022-01-26,Wood,47906,18114
