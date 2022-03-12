@@ -710,6 +710,8 @@ date,county,negative,positive,total
 2022-03-06,Alcona,16,2,18
 2022-03-07,Alcona,11,0,11
 2022-03-08,Alcona,17,1,18
+2022-03-09,Alcona,24,1,25
+2022-03-10,Alcona,16,2,18
 2020-03-20,Alger,1,0,1
 2020-03-25,Alger,1,0,1
 2020-03-26,Alger,1,0,1
@@ -1402,6 +1404,8 @@ date,county,negative,positive,total
 2022-03-06,Alger,6,0,6
 2022-03-07,Alger,2,1,3
 2022-03-08,Alger,8,1,9
+2022-03-09,Alger,4,0,4
+2022-03-10,Alger,3,0,3
 2020-03-16,Allegan,2,0,2
 2020-03-17,Allegan,1,0,1
 2020-03-18,Allegan,2,0,2
@@ -2122,6 +2126,8 @@ date,county,negative,positive,total
 2022-03-06,Allegan,138,8,146
 2022-03-07,Allegan,83,1,84
 2022-03-08,Allegan,140,7,147
+2022-03-09,Allegan,111,6,117
+2022-03-10,Allegan,110,3,113
 2020-03-18,Alpena,1,0,1
 2020-03-19,Alpena,1,0,1
 2020-03-20,Alpena,10,0,10
@@ -2842,6 +2848,8 @@ date,county,negative,positive,total
 2022-03-06,Alpena,49,7,56
 2022-03-07,Alpena,32,5,37
 2022-03-08,Alpena,62,6,68
+2022-03-09,Alpena,50,5,55
+2022-03-10,Alpena,27,2,29
 2020-03-17,Antrim,2,0,2
 2020-03-18,Antrim,3,0,3
 2020-03-19,Antrim,1,0,1
@@ -3560,6 +3568,8 @@ date,county,negative,positive,total
 2022-03-06,Antrim,17,2,19
 2022-03-07,Antrim,17,3,20
 2022-03-08,Antrim,33,1,34
+2022-03-09,Antrim,31,2,33
+2022-03-10,Antrim,29,0,29
 2020-03-19,Arenac,1,0,1
 2020-03-20,Arenac,1,0,1
 2020-03-21,Arenac,1,0,1
@@ -4278,6 +4288,8 @@ date,county,negative,positive,total
 2022-03-06,Arenac,64,4,68
 2022-03-07,Arenac,28,2,30
 2022-03-08,Arenac,30,1,31
+2022-03-09,Arenac,37,5,42
+2022-03-10,Arenac,20,1,21
 2020-03-26,Baraga,3,0,3
 2020-03-27,Baraga,1,0,1
 2020-03-31,Baraga,1,0,1
@@ -4955,6 +4967,8 @@ date,county,negative,positive,total
 2022-03-06,Baraga,2,0,2
 2022-03-07,Baraga,19,0,19
 2022-03-08,Baraga,4,1,5
+2022-03-09,Baraga,6,0,6
+2022-03-10,Baraga,19,1,20
 2020-03-18,Barry,2,0,2
 2020-03-20,Barry,1,2,3
 2020-03-21,Barry,5,1,6
@@ -5675,6 +5689,8 @@ date,county,negative,positive,total
 2022-03-06,Barry,61,5,66
 2022-03-07,Barry,50,0,50
 2022-03-08,Barry,65,3,68
+2022-03-09,Barry,38,4,42
+2022-03-10,Barry,49,2,51
 2020-03-13,Bay,0,1,1
 2020-03-17,Bay,2,0,2
 2020-03-18,Bay,8,0,8
@@ -6398,6 +6414,8 @@ date,county,negative,positive,total
 2022-03-06,Bay,139,5,144
 2022-03-07,Bay,174,10,184
 2022-03-08,Bay,176,14,190
+2022-03-09,Bay,157,9,166
+2022-03-10,Bay,153,9,162
 2020-03-17,Benzie,1,0,1
 2020-03-18,Benzie,5,0,5
 2020-03-19,Benzie,3,0,3
@@ -7105,6 +7123,8 @@ date,county,negative,positive,total
 2022-03-06,Benzie,9,0,9
 2022-03-07,Benzie,16,2,18
 2022-03-08,Benzie,23,0,23
+2022-03-09,Benzie,13,2,15
+2022-03-10,Benzie,20,2,22
 2020-03-17,Berrien,1,0,1
 2020-03-18,Berrien,1,0,1
 2020-03-19,Berrien,3,0,3
@@ -7826,7 +7846,9 @@ date,county,negative,positive,total
 2022-03-05,Berrien,188,8,196
 2022-03-06,Berrien,174,12,186
 2022-03-07,Berrien,191,8,199
-2022-03-08,Berrien,257,12,269
+2022-03-08,Berrien,260,12,272
+2022-03-09,Berrien,260,8,268
+2022-03-10,Berrien,208,8,216
 2020-03-16,Branch,1,0,1
 2020-03-17,Branch,1,0,1
 2020-03-19,Branch,1,0,1
@@ -8543,6 +8565,8 @@ date,county,negative,positive,total
 2022-03-06,Branch,34,3,37
 2022-03-07,Branch,65,4,69
 2022-03-08,Branch,76,2,78
+2022-03-09,Branch,80,4,84
+2022-03-10,Branch,113,8,121
 2020-03-13,Calhoun,1,0,1
 2020-03-16,Calhoun,2,0,2
 2020-03-18,Calhoun,3,0,3
@@ -9265,7 +9289,9 @@ date,county,negative,positive,total
 2022-03-05,Calhoun,160,11,171
 2022-03-06,Calhoun,165,5,170
 2022-03-07,Calhoun,309,24,333
-2022-03-08,Calhoun,308,13,321
+2022-03-08,Calhoun,309,13,322
+2022-03-09,Calhoun,158,9,167
+2022-03-10,Calhoun,484,49,533
 2020-03-14,Cass,1,0,1
 2020-03-15,Cass,1,0,1
 2020-03-16,Cass,1,0,1
@@ -9987,6 +10013,8 @@ date,county,negative,positive,total
 2022-03-06,Cass,41,2,43
 2022-03-07,Cass,35,0,35
 2022-03-08,Cass,46,1,47
+2022-03-09,Cass,39,2,41
+2022-03-10,Cass,36,3,39
 2020-03-16,Charlevoix,1,0,1
 2020-03-18,Charlevoix,1,0,1
 2020-03-19,Charlevoix,3,0,3
@@ -10708,6 +10736,8 @@ date,county,negative,positive,total
 2022-03-06,Charlevoix,23,2,25
 2022-03-07,Charlevoix,12,0,12
 2022-03-08,Charlevoix,20,0,20
+2022-03-09,Charlevoix,37,0,37
+2022-03-10,Charlevoix,24,0,24
 2020-03-18,Cheboygan,1,0,1
 2020-03-20,Cheboygan,2,0,2
 2020-03-21,Cheboygan,2,0,2
@@ -11427,6 +11457,8 @@ date,county,negative,positive,total
 2022-03-06,Cheboygan,28,1,29
 2022-03-07,Cheboygan,27,3,30
 2022-03-08,Cheboygan,28,0,28
+2022-03-09,Cheboygan,45,3,48
+2022-03-10,Cheboygan,31,0,31
 2020-03-19,Chippewa,3,0,3
 2020-03-20,Chippewa,2,0,2
 2020-03-21,Chippewa,1,0,1
@@ -12143,6 +12175,8 @@ date,county,negative,positive,total
 2022-03-06,Chippewa,60,2,62
 2022-03-07,Chippewa,100,1,101
 2022-03-08,Chippewa,74,1,75
+2022-03-09,Chippewa,96,3,99
+2022-03-10,Chippewa,72,1,73
 2020-03-19,Clare,2,0,2
 2020-03-20,Clare,3,0,3
 2020-03-21,Clare,7,0,7
@@ -12863,6 +12897,8 @@ date,county,negative,positive,total
 2022-03-06,Clare,51,2,53
 2022-03-07,Clare,67,4,71
 2022-03-08,Clare,56,4,60
+2022-03-09,Clare,34,0,34
+2022-03-10,Clare,25,1,26
 2020-03-13,Clinton,1,0,1
 2020-03-15,Clinton,1,0,1
 2020-03-16,Clinton,2,0,2
@@ -13587,6 +13623,8 @@ date,county,negative,positive,total
 2022-03-06,Clinton,63,2,65
 2022-03-07,Clinton,71,7,78
 2022-03-08,Clinton,63,4,67
+2022-03-09,Clinton,63,2,65
+2022-03-10,Clinton,53,6,59
 2020-03-23,Correctional,1,0,1
 2020-03-27,Correctional,1,1,2
 2020-03-28,Correctional,1,0,1
@@ -14299,6 +14337,8 @@ date,county,negative,positive,total
 2022-03-06,Correctional,41,1,42
 2022-03-07,Correctional,34,0,34
 2022-03-08,Correctional,76,1,77
+2022-03-09,Correctional,92,3,95
+2022-03-10,Correctional,70,0,70
 2020-03-18,Crawford,1,0,1
 2020-03-19,Crawford,2,0,2
 2020-03-20,Crawford,4,0,4
@@ -15008,6 +15048,8 @@ date,county,negative,positive,total
 2022-03-06,Crawford,16,0,16
 2022-03-07,Crawford,12,1,13
 2022-03-08,Crawford,21,1,22
+2022-03-09,Crawford,13,2,15
+2022-03-10,Crawford,14,2,16
 2020-03-16,Delta,1,0,1
 2020-03-18,Delta,2,0,2
 2020-03-19,Delta,1,0,1
@@ -15729,6 +15771,8 @@ date,county,negative,positive,total
 2022-03-06,Delta,18,2,20
 2022-03-07,Delta,41,1,42
 2022-03-08,Delta,59,1,60
+2022-03-09,Delta,46,1,47
+2022-03-10,Delta,37,3,40
 2020-03-13,Detroit City,0,1,1
 2020-03-14,Detroit City,1,2,3
 2020-03-15,Detroit City,0,3,3
@@ -16454,7 +16498,9 @@ date,county,negative,positive,total
 2022-03-05,Detroit City,1027,19,1046
 2022-03-06,Detroit City,981,30,1011
 2022-03-07,Detroit City,4423,25,4448
-2022-03-08,Detroit City,6573,51,6624
+2022-03-08,Detroit City,6591,52,6643
+2022-03-09,Detroit City,13069,54,13123
+2022-03-10,Detroit City,8916,67,8983
 2020-03-12,Dickinson,1,0,1
 2020-03-13,Dickinson,1,0,1
 2020-03-14,Dickinson,1,0,1
@@ -17176,6 +17222,8 @@ date,county,negative,positive,total
 2022-03-06,Dickinson,9,0,9
 2022-03-07,Dickinson,35,1,36
 2022-03-08,Dickinson,42,1,43
+2022-03-09,Dickinson,45,0,45
+2022-03-10,Dickinson,33,0,33
 2020-03-16,Eaton,2,1,3
 2020-03-17,Eaton,1,0,1
 2020-03-18,Eaton,1,0,1
@@ -17898,7 +17946,9 @@ date,county,negative,positive,total
 2022-03-05,Eaton,151,2,153
 2022-03-06,Eaton,214,13,227
 2022-03-07,Eaton,206,14,220
-2022-03-08,Eaton,164,11,175
+2022-03-08,Eaton,166,11,177
+2022-03-09,Eaton,156,15,171
+2022-03-10,Eaton,231,18,249
 2020-03-16,Emmet,3,0,3
 2020-03-18,Emmet,5,0,5
 2020-03-19,Emmet,2,0,2
@@ -18618,6 +18668,8 @@ date,county,negative,positive,total
 2022-03-06,Emmet,36,2,38
 2022-03-07,Emmet,58,6,64
 2022-03-08,Emmet,24,1,25
+2022-03-09,Emmet,139,1,140
+2022-03-10,Emmet,65,1,66
 2020-03-16,Genesee,11,0,11
 2020-03-17,Genesee,16,0,16
 2020-03-18,Genesee,20,0,20
@@ -19340,7 +19392,9 @@ date,county,negative,positive,total
 2022-03-05,Genesee,350,21,371
 2022-03-06,Genesee,422,28,450
 2022-03-07,Genesee,406,17,423
-2022-03-08,Genesee,473,24,497
+2022-03-08,Genesee,475,24,499
+2022-03-09,Genesee,480,18,498
+2022-03-10,Genesee,484,25,509
 2020-03-18,Gladwin,4,0,4
 2020-03-19,Gladwin,4,1,5
 2020-03-20,Gladwin,2,0,2
@@ -20059,6 +20113,8 @@ date,county,negative,positive,total
 2022-03-06,Gladwin,39,0,39
 2022-03-07,Gladwin,41,1,42
 2022-03-08,Gladwin,60,0,60
+2022-03-09,Gladwin,39,5,44
+2022-03-10,Gladwin,39,1,40
 2020-03-22,Gogebic,2,0,2
 2020-03-24,Gogebic,3,0,3
 2020-03-25,Gogebic,3,0,3
@@ -20768,6 +20824,8 @@ date,county,negative,positive,total
 2022-03-06,Gogebic,8,2,10
 2022-03-07,Gogebic,14,0,14
 2022-03-08,Gogebic,30,1,31
+2022-03-09,Gogebic,26,1,27
+2022-03-10,Gogebic,16,0,16
 2020-03-16,Grand Traverse,0,1,1
 2020-03-18,Grand Traverse,6,0,6
 2020-03-19,Grand Traverse,4,0,4
@@ -21490,6 +21548,8 @@ date,county,negative,positive,total
 2022-03-06,Grand Traverse,84,11,95
 2022-03-07,Grand Traverse,102,12,114
 2022-03-08,Grand Traverse,99,4,103
+2022-03-09,Grand Traverse,126,17,143
+2022-03-10,Grand Traverse,174,18,192
 2020-03-18,Gratiot,1,0,1
 2020-03-20,Gratiot,3,0,3
 2020-03-21,Gratiot,2,0,2
@@ -22210,6 +22270,8 @@ date,county,negative,positive,total
 2022-03-06,Gratiot,48,2,50
 2022-03-07,Gratiot,75,4,79
 2022-03-08,Gratiot,182,4,186
+2022-03-09,Gratiot,64,5,69
+2022-03-10,Gratiot,59,4,63
 2020-03-18,Hillsdale,2,0,2
 2020-03-20,Hillsdale,4,0,4
 2020-03-22,Hillsdale,2,0,2
@@ -22929,6 +22991,8 @@ date,county,negative,positive,total
 2022-03-06,Hillsdale,64,3,67
 2022-03-07,Hillsdale,44,1,45
 2022-03-08,Hillsdale,68,1,69
+2022-03-09,Hillsdale,49,1,50
+2022-03-10,Hillsdale,70,4,74
 2020-03-17,Houghton,1,0,1
 2020-03-18,Houghton,1,0,1
 2020-03-19,Houghton,1,0,1
@@ -23649,6 +23713,8 @@ date,county,negative,positive,total
 2022-03-06,Houghton,21,0,21
 2022-03-07,Houghton,36,6,42
 2022-03-08,Houghton,69,2,71
+2022-03-09,Houghton,34,8,42
+2022-03-10,Houghton,42,12,54
 2020-03-16,Huron,1,0,1
 2020-03-19,Huron,3,0,3
 2020-03-21,Huron,2,0,2
@@ -24369,6 +24435,8 @@ date,county,negative,positive,total
 2022-03-06,Huron,19,1,20
 2022-03-07,Huron,35,0,35
 2022-03-08,Huron,40,1,41
+2022-03-09,Huron,38,0,38
+2022-03-10,Huron,25,0,25
 2020-03-12,Ingham,0,1,1
 2020-03-13,Ingham,1,0,1
 2020-03-15,Ingham,3,0,3
@@ -25094,7 +25162,9 @@ date,county,negative,positive,total
 2022-03-05,Ingham,625,22,647
 2022-03-06,Ingham,412,28,440
 2022-03-07,Ingham,404,28,432
-2022-03-08,Ingham,393,17,410
+2022-03-08,Ingham,394,17,411
+2022-03-09,Ingham,372,15,387
+2022-03-10,Ingham,977,18,995
 2020-03-19,Ionia,1,0,1
 2020-03-20,Ionia,5,0,5
 2020-03-21,Ionia,7,0,7
@@ -25815,6 +25885,8 @@ date,county,negative,positive,total
 2022-03-06,Ionia,56,6,62
 2022-03-07,Ionia,82,3,85
 2022-03-08,Ionia,97,7,104
+2022-03-09,Ionia,84,4,88
+2022-03-10,Ionia,73,6,79
 2020-03-17,Iosco,1,0,1
 2020-03-18,Iosco,1,0,1
 2020-03-19,Iosco,2,0,2
@@ -26535,6 +26607,8 @@ date,county,negative,positive,total
 2022-03-06,Iosco,41,2,43
 2022-03-07,Iosco,33,1,34
 2022-03-08,Iosco,29,3,32
+2022-03-09,Iosco,25,3,28
+2022-03-10,Iosco,21,3,24
 2020-03-12,Iron,1,0,1
 2020-03-16,Iron,2,0,2
 2020-03-20,Iron,1,0,1
@@ -27250,6 +27324,8 @@ date,county,negative,positive,total
 2022-03-06,Iron,9,0,9
 2022-03-07,Iron,11,1,12
 2022-03-08,Iron,32,0,32
+2022-03-09,Iron,22,0,22
+2022-03-10,Iron,16,0,16
 2020-03-13,Isabella,1,0,1
 2020-03-18,Isabella,1,0,1
 2020-03-19,Isabella,1,0,1
@@ -27971,6 +28047,8 @@ date,county,negative,positive,total
 2022-03-06,Isabella,73,2,75
 2022-03-07,Isabella,96,4,100
 2022-03-08,Isabella,107,4,111
+2022-03-09,Isabella,128,9,137
+2022-03-10,Isabella,80,5,85
 2020-03-17,Jackson,5,1,6
 2020-03-18,Jackson,2,1,3
 2020-03-20,Jackson,2,0,2
@@ -28692,6 +28770,8 @@ date,county,negative,positive,total
 2022-03-06,Jackson,216,11,227
 2022-03-07,Jackson,223,7,230
 2022-03-08,Jackson,279,15,294
+2022-03-09,Jackson,283,13,296
+2022-03-10,Jackson,280,18,298
 2020-03-16,Kalamazoo,7,0,7
 2020-03-18,Kalamazoo,3,0,3
 2020-03-19,Kalamazoo,2,0,2
@@ -29413,7 +29493,9 @@ date,county,negative,positive,total
 2022-03-05,Kalamazoo,355,23,378
 2022-03-06,Kalamazoo,312,19,331
 2022-03-07,Kalamazoo,442,22,464
-2022-03-08,Kalamazoo,428,34,462
+2022-03-08,Kalamazoo,430,34,464
+2022-03-09,Kalamazoo,467,19,486
+2022-03-10,Kalamazoo,427,26,453
 2020-03-19,Kalkaska,3,0,3
 2020-03-20,Kalkaska,2,0,2
 2020-03-22,Kalkaska,3,0,3
@@ -30129,6 +30211,8 @@ date,county,negative,positive,total
 2022-03-06,Kalkaska,29,2,31
 2022-03-07,Kalkaska,25,1,26
 2022-03-08,Kalkaska,13,0,13
+2022-03-09,Kalkaska,23,6,29
+2022-03-10,Kalkaska,30,4,34
 2020-03-12,Kent,0,3,3
 2020-03-15,Kent,0,2,2
 2020-03-17,Kent,13,0,13
@@ -30852,7 +30936,9 @@ date,county,negative,positive,total
 2022-03-05,Kent,596,29,625
 2022-03-06,Kent,877,41,918
 2022-03-07,Kent,735,44,779
-2022-03-08,Kent,913,58,971
+2022-03-08,Kent,920,58,978
+2022-03-09,Kent,733,44,777
+2022-03-10,Kent,877,48,925
 2020-03-29,Keweenaw,2,0,2
 2020-03-30,Keweenaw,2,0,2
 2020-04-04,Keweenaw,4,0,4
@@ -31484,6 +31570,8 @@ date,county,negative,positive,total
 2022-03-06,Keweenaw,4,0,4
 2022-03-07,Keweenaw,3,0,3
 2022-03-08,Keweenaw,3,0,3
+2022-03-09,Keweenaw,1,0,1
+2022-03-10,Keweenaw,4,0,4
 2020-03-21,Lake,1,0,1
 2020-03-24,Lake,1,0,1
 2020-03-25,Lake,1,0,1
@@ -32194,6 +32282,8 @@ date,county,negative,positive,total
 2022-03-06,Lake,13,0,13
 2022-03-07,Lake,7,0,7
 2022-03-08,Lake,17,1,18
+2022-03-09,Lake,10,0,10
+2022-03-10,Lake,9,0,9
 2020-03-16,Lapeer,1,0,1
 2020-03-18,Lapeer,6,0,6
 2020-03-19,Lapeer,2,0,2
@@ -32916,6 +33006,8 @@ date,county,negative,positive,total
 2022-03-06,Lapeer,72,4,76
 2022-03-07,Lapeer,117,8,125
 2022-03-08,Lapeer,113,5,118
+2022-03-09,Lapeer,101,5,106
+2022-03-10,Lapeer,87,5,92
 2020-03-16,Leelanau,0,1,1
 2020-03-19,Leelanau,2,0,2
 2020-03-20,Leelanau,1,0,1
@@ -33626,6 +33718,8 @@ date,county,negative,positive,total
 2022-03-06,Leelanau,15,4,19
 2022-03-07,Leelanau,13,0,13
 2022-03-08,Leelanau,12,0,12
+2022-03-09,Leelanau,18,3,21
+2022-03-10,Leelanau,15,1,16
 2020-03-17,Lenawee,2,0,2
 2020-03-18,Lenawee,2,0,2
 2020-03-19,Lenawee,1,0,1
@@ -34347,7 +34441,9 @@ date,county,negative,positive,total
 2022-03-05,Lenawee,168,7,175
 2022-03-06,Lenawee,155,5,160
 2022-03-07,Lenawee,274,7,281
-2022-03-08,Lenawee,141,9,150
+2022-03-08,Lenawee,143,9,152
+2022-03-09,Lenawee,420,5,425
+2022-03-10,Lenawee,140,4,144
 2020-03-16,Livingston,3,0,3
 2020-03-17,Livingston,10,1,11
 2020-03-18,Livingston,7,0,7
@@ -35071,6 +35167,8 @@ date,county,negative,positive,total
 2022-03-06,Livingston,289,13,302
 2022-03-07,Livingston,259,9,268
 2022-03-08,Livingston,288,16,304
+2022-03-09,Livingston,345,14,359
+2022-03-10,Livingston,266,21,287
 2020-03-20,Luce,1,0,1
 2020-03-22,Luce,1,0,1
 2020-03-24,Luce,4,1,5
@@ -35742,6 +35840,8 @@ date,county,negative,positive,total
 2022-03-06,Luce,2,0,2
 2022-03-07,Luce,1,1,2
 2022-03-08,Luce,4,3,7
+2022-03-09,Luce,4,0,4
+2022-03-10,Luce,1,1,2
 2020-03-18,Mackinac,1,0,1
 2020-03-24,Mackinac,2,0,2
 2020-03-28,Mackinac,1,0,1
@@ -36449,6 +36549,8 @@ date,county,negative,positive,total
 2022-03-06,Mackinac,10,3,13
 2022-03-07,Mackinac,9,1,10
 2022-03-08,Mackinac,22,0,22
+2022-03-09,Mackinac,8,0,8
+2022-03-10,Mackinac,11,0,11
 2020-03-13,Macomb,0,1,1
 2020-03-14,Macomb,5,1,6
 2020-03-15,Macomb,1,1,2
@@ -37174,7 +37276,9 @@ date,county,negative,positive,total
 2022-03-05,Macomb,1080,46,1126
 2022-03-06,Macomb,1492,61,1553
 2022-03-07,Macomb,1202,57,1259
-2022-03-08,Macomb,1409,65,1474
+2022-03-08,Macomb,1446,67,1513
+2022-03-09,Macomb,1745,62,1807
+2022-03-10,Macomb,1675,64,1739
 2020-03-19,Manistee,1,0,1
 2020-03-20,Manistee,3,0,3
 2020-03-21,Manistee,2,0,2
@@ -37894,6 +37998,8 @@ date,county,negative,positive,total
 2022-03-06,Manistee,27,4,31
 2022-03-07,Manistee,25,2,27
 2022-03-08,Manistee,23,1,24
+2022-03-09,Manistee,31,3,34
+2022-03-10,Manistee,34,1,35
 2020-03-17,Marquette,1,0,1
 2020-03-18,Marquette,1,0,1
 2020-03-19,Marquette,13,0,13
@@ -38615,7 +38721,9 @@ date,county,negative,positive,total
 2022-03-05,Marquette,73,6,79
 2022-03-06,Marquette,46,6,52
 2022-03-07,Marquette,64,4,68
-2022-03-08,Marquette,110,12,122
+2022-03-08,Marquette,111,12,123
+2022-03-09,Marquette,68,2,70
+2022-03-10,Marquette,97,4,101
 2020-03-18,Mason,1,0,1
 2020-03-19,Mason,1,0,1
 2020-03-21,Mason,1,0,1
@@ -39334,6 +39442,8 @@ date,county,negative,positive,total
 2022-03-06,Mason,62,9,71
 2022-03-07,Mason,32,3,35
 2022-03-08,Mason,91,6,97
+2022-03-09,Mason,91,2,93
+2022-03-10,Mason,42,5,47
 2020-03-18,Mecosta,1,0,1
 2020-03-19,Mecosta,3,0,3
 2020-03-20,Mecosta,1,0,1
@@ -40054,6 +40164,8 @@ date,county,negative,positive,total
 2022-03-06,Mecosta,50,1,51
 2022-03-07,Mecosta,40,1,41
 2022-03-08,Mecosta,67,6,73
+2022-03-09,Mecosta,42,3,45
+2022-03-10,Mecosta,50,0,50
 2020-03-11,Menominee,1,0,1
 2020-03-14,Menominee,1,0,1
 2020-03-17,Menominee,2,0,2
@@ -40771,6 +40883,8 @@ date,county,negative,positive,total
 2022-03-06,Menominee,25,2,27
 2022-03-07,Menominee,28,0,28
 2022-03-08,Menominee,58,3,61
+2022-03-09,Menominee,55,2,57
+2022-03-10,Menominee,40,2,42
 2020-03-13,Midland,1,0,1
 2020-03-18,Midland,11,1,12
 2020-03-19,Midland,16,0,16
@@ -41493,6 +41607,8 @@ date,county,negative,positive,total
 2022-03-06,Midland,91,8,99
 2022-03-07,Midland,128,2,130
 2022-03-08,Midland,159,6,165
+2022-03-09,Midland,107,4,111
+2022-03-10,Midland,104,8,112
 2020-03-16,Missaukee,1,0,1
 2020-03-19,Missaukee,3,0,3
 2020-03-20,Missaukee,7,0,7
@@ -42205,6 +42321,8 @@ date,county,negative,positive,total
 2022-03-06,Missaukee,7,0,7
 2022-03-07,Missaukee,3,0,3
 2022-03-08,Missaukee,12,1,13
+2022-03-09,Missaukee,14,2,16
+2022-03-10,Missaukee,10,0,10
 2020-03-14,Monroe,0,1,1
 2020-03-16,Monroe,7,0,7
 2020-03-17,Monroe,5,0,5
@@ -42928,7 +43046,9 @@ date,county,negative,positive,total
 2022-03-05,Monroe,256,10,266
 2022-03-06,Monroe,225,13,238
 2022-03-07,Monroe,252,16,268
-2022-03-08,Monroe,270,8,278
+2022-03-08,Monroe,273,8,281
+2022-03-09,Monroe,261,7,268
+2022-03-10,Monroe,222,15,237
 2020-03-12,Montcalm,0,2,2
 2020-03-20,Montcalm,1,0,1
 2020-03-21,Montcalm,1,0,1
@@ -43648,6 +43768,8 @@ date,county,negative,positive,total
 2022-03-06,Montcalm,86,4,90
 2022-03-07,Montcalm,85,2,87
 2022-03-08,Montcalm,95,7,102
+2022-03-09,Montcalm,79,5,84
+2022-03-10,Montcalm,70,1,71
 2020-03-19,Montmorency,1,0,1
 2020-03-21,Montmorency,1,0,1
 2020-03-24,Montmorency,2,0,2
@@ -44358,6 +44480,8 @@ date,county,negative,positive,total
 2022-03-06,Montmorency,26,1,27
 2022-03-07,Montmorency,16,0,16
 2022-03-08,Montmorency,23,2,25
+2022-03-09,Montmorency,11,3,14
+2022-03-10,Montmorency,10,3,13
 2020-03-16,Muskegon,2,0,2
 2020-03-17,Muskegon,3,0,3
 2020-03-18,Muskegon,2,0,2
@@ -45079,6 +45203,8 @@ date,county,negative,positive,total
 2022-03-06,Muskegon,280,13,293
 2022-03-07,Muskegon,304,21,325
 2022-03-08,Muskegon,296,21,317
+2022-03-09,Muskegon,259,12,271
+2022-03-10,Muskegon,276,11,287
 2020-03-20,Newaygo,1,0,1
 2020-03-21,Newaygo,2,0,2
 2020-03-22,Newaygo,0,2,2
@@ -45798,6 +45924,8 @@ date,county,negative,positive,total
 2022-03-06,Newaygo,44,1,45
 2022-03-07,Newaygo,37,5,42
 2022-03-08,Newaygo,85,5,90
+2022-03-09,Newaygo,58,1,59
+2022-03-10,Newaygo,47,6,53
 2020-03-13,Oakland,0,3,3
 2020-03-14,Oakland,8,0,8
 2020-03-15,Oakland,3,3,6
@@ -46523,7 +46651,9 @@ date,county,negative,positive,total
 2022-03-05,Oakland,1788,75,1863
 2022-03-06,Oakland,2158,98,2256
 2022-03-07,Oakland,2025,97,2122
-2022-03-08,Oakland,2493,103,2596
+2022-03-08,Oakland,2520,107,2627
+2022-03-09,Oakland,2939,100,3039
+2022-03-10,Oakland,2754,134,2888
 2020-03-20,Oceana,1,0,1
 2020-03-25,Oceana,5,0,5
 2020-03-26,Oceana,2,0,2
@@ -47235,6 +47365,8 @@ date,county,negative,positive,total
 2022-03-06,Oceana,40,6,46
 2022-03-07,Oceana,49,2,51
 2022-03-08,Oceana,60,6,66
+2022-03-09,Oceana,41,5,46
+2022-03-10,Oceana,33,6,39
 2020-03-19,Ogemaw,1,0,1
 2020-03-20,Ogemaw,2,0,2
 2020-03-21,Ogemaw,1,0,1
@@ -47952,6 +48084,8 @@ date,county,negative,positive,total
 2022-03-06,Ogemaw,29,0,29
 2022-03-07,Ogemaw,27,0,27
 2022-03-08,Ogemaw,35,0,35
+2022-03-09,Ogemaw,22,1,23
+2022-03-10,Ogemaw,21,1,22
 2020-03-24,Ontonagon,2,0,2
 2020-03-25,Ontonagon,1,0,1
 2020-04-01,Ontonagon,1,0,1
@@ -48647,6 +48781,8 @@ date,county,negative,positive,total
 2022-03-06,Ontonagon,5,0,5
 2022-03-07,Ontonagon,7,0,7
 2022-03-08,Ontonagon,8,0,8
+2022-03-09,Ontonagon,7,0,7
+2022-03-10,Ontonagon,4,0,4
 2020-03-19,Osceola,3,0,3
 2020-03-20,Osceola,10,0,10
 2020-03-22,Osceola,1,0,1
@@ -49365,6 +49501,8 @@ date,county,negative,positive,total
 2022-03-06,Osceola,26,1,27
 2022-03-07,Osceola,16,2,18
 2022-03-08,Osceola,57,2,59
+2022-03-09,Osceola,22,2,24
+2022-03-10,Osceola,51,2,53
 2020-03-19,Oscoda,2,0,2
 2020-03-20,Oscoda,2,0,2
 2020-03-21,Oscoda,1,0,1
@@ -50071,6 +50209,8 @@ date,county,negative,positive,total
 2022-03-06,Oscoda,9,0,9
 2022-03-07,Oscoda,4,0,4
 2022-03-08,Oscoda,5,1,6
+2022-03-09,Oscoda,7,0,7
+2022-03-10,Oscoda,7,0,7
 2020-03-18,Otsego,1,0,1
 2020-03-20,Otsego,5,0,5
 2020-03-21,Otsego,1,0,1
@@ -50791,6 +50931,8 @@ date,county,negative,positive,total
 2022-03-06,Otsego,38,4,42
 2022-03-07,Otsego,45,4,49
 2022-03-08,Otsego,58,5,63
+2022-03-09,Otsego,40,6,46
+2022-03-10,Otsego,42,1,43
 2020-03-15,Ottawa,0,1,1
 2020-03-16,Ottawa,2,0,2
 2020-03-17,Ottawa,12,0,12
@@ -51514,7 +51656,9 @@ date,county,negative,positive,total
 2022-03-05,Ottawa,352,14,366
 2022-03-06,Ottawa,386,24,410
 2022-03-07,Ottawa,233,12,245
-2022-03-08,Ottawa,563,32,595
+2022-03-08,Ottawa,566,32,598
+2022-03-09,Ottawa,413,17,430
+2022-03-10,Ottawa,399,15,414
 2020-03-20,Presque Isle,5,0,5
 2020-03-21,Presque Isle,1,0,1
 2020-03-24,Presque Isle,2,0,2
@@ -52225,6 +52369,8 @@ date,county,negative,positive,total
 2022-03-06,Presque Isle,27,0,27
 2022-03-07,Presque Isle,16,0,16
 2022-03-08,Presque Isle,25,4,29
+2022-03-09,Presque Isle,15,1,16
+2022-03-10,Presque Isle,8,1,9
 2020-03-18,Roscommon,1,0,1
 2020-03-19,Roscommon,4,0,4
 2020-03-20,Roscommon,3,0,3
@@ -52944,6 +53090,8 @@ date,county,negative,positive,total
 2022-03-06,Roscommon,39,3,42
 2022-03-07,Roscommon,27,1,28
 2022-03-08,Roscommon,33,2,35
+2022-03-09,Roscommon,37,3,40
+2022-03-10,Roscommon,27,2,29
 2020-03-17,Saginaw,2,0,2
 2020-03-18,Saginaw,7,0,7
 2020-03-19,Saginaw,6,1,7
@@ -53666,6 +53814,8 @@ date,county,negative,positive,total
 2022-03-06,Saginaw,175,8,183
 2022-03-07,Saginaw,242,13,255
 2022-03-08,Saginaw,305,10,315
+2022-03-09,Saginaw,241,13,254
+2022-03-10,Saginaw,247,16,263
 2020-03-13,Sanilac,1,0,1
 2020-03-18,Sanilac,3,0,3
 2020-03-20,Sanilac,2,0,2
@@ -54387,6 +54537,8 @@ date,county,negative,positive,total
 2022-03-06,Sanilac,53,1,54
 2022-03-07,Sanilac,31,0,31
 2022-03-08,Sanilac,57,4,61
+2022-03-09,Sanilac,48,2,50
+2022-03-10,Sanilac,47,2,49
 2020-03-19,Schoolcraft,1,0,1
 2020-03-21,Schoolcraft,1,0,1
 2020-03-22,Schoolcraft,1,0,1
@@ -55073,6 +55225,8 @@ date,county,negative,positive,total
 2022-03-06,Schoolcraft,2,0,2
 2022-03-07,Schoolcraft,4,0,4
 2022-03-08,Schoolcraft,7,0,7
+2022-03-09,Schoolcraft,3,0,3
+2022-03-10,Schoolcraft,1,0,1
 2020-03-15,Shiawassee,2,0,2
 2020-03-17,Shiawassee,1,0,1
 2020-03-18,Shiawassee,4,0,4
@@ -55796,6 +55950,8 @@ date,county,negative,positive,total
 2022-03-06,Shiawassee,76,7,83
 2022-03-07,Shiawassee,113,10,123
 2022-03-08,Shiawassee,96,3,99
+2022-03-09,Shiawassee,98,9,107
+2022-03-10,Shiawassee,94,7,101
 2020-03-14,St Clair,1,0,1
 2020-03-15,St Clair,0,1,1
 2020-03-16,St Clair,5,0,5
@@ -56520,7 +56676,9 @@ date,county,negative,positive,total
 2022-03-05,St Clair,194,14,208
 2022-03-06,St Clair,251,12,263
 2022-03-07,St Clair,187,3,190
-2022-03-08,St Clair,250,14,264
+2022-03-08,St Clair,258,14,272
+2022-03-09,St Clair,227,12,239
+2022-03-10,St Clair,213,10,223
 2020-03-18,St Joseph,3,0,3
 2020-03-19,St Joseph,2,0,2
 2020-03-20,St Joseph,3,0,3
@@ -57241,6 +57399,8 @@ date,county,negative,positive,total
 2022-03-06,St Joseph,31,2,33
 2022-03-07,St Joseph,30,2,32
 2022-03-08,St Joseph,78,2,80
+2022-03-09,St Joseph,52,0,52
+2022-03-10,St Joseph,45,2,47
 2020-03-18,Tuscola,3,0,3
 2020-03-19,Tuscola,1,0,1
 2020-03-20,Tuscola,2,0,2
@@ -57961,6 +58121,8 @@ date,county,negative,positive,total
 2022-03-06,Tuscola,45,6,51
 2022-03-07,Tuscola,45,2,47
 2022-03-08,Tuscola,67,7,74
+2022-03-09,Tuscola,56,7,63
+2022-03-10,Tuscola,59,1,60
 2020-03-10,Unknown,1,1,2
 2020-03-12,Unknown,11,2,13
 2020-03-13,Unknown,0,3,3
@@ -58688,7 +58850,9 @@ date,county,negative,positive,total
 2022-03-05,Unknown,330,15,345
 2022-03-06,Unknown,336,11,347
 2022-03-07,Unknown,367,12,379
-2022-03-08,Unknown,467,14,481
+2022-03-08,Unknown,468,15,483
+2022-03-09,Unknown,740,21,761
+2022-03-10,Unknown,635,30,665
 2020-03-16,Van Buren,1,0,1
 2020-03-18,Van Buren,1,0,1
 2020-03-20,Van Buren,5,0,5
@@ -59410,6 +59574,8 @@ date,county,negative,positive,total
 2022-03-06,Van Buren,67,10,77
 2022-03-07,Van Buren,103,7,110
 2022-03-08,Van Buren,116,7,123
+2022-03-09,Van Buren,131,2,133
+2022-03-10,Van Buren,97,6,103
 2020-03-12,Washtenaw,0,2,2
 2020-03-13,Washtenaw,0,1,1
 2020-03-14,Washtenaw,0,1,1
@@ -60136,7 +60302,9 @@ date,county,negative,positive,total
 2022-03-05,Washtenaw,930,36,966
 2022-03-06,Washtenaw,747,36,783
 2022-03-07,Washtenaw,1344,32,1376
-2022-03-08,Washtenaw,1247,48,1295
+2022-03-08,Washtenaw,1252,48,1300
+2022-03-09,Washtenaw,2315,37,2352
+2022-03-10,Washtenaw,1511,54,1565
 2020-03-10,Wayne,0,1,1
 2020-03-12,Wayne,0,1,1
 2020-03-13,Wayne,1,3,4
@@ -60864,7 +61032,9 @@ date,county,negative,positive,total
 2022-03-05,Wayne,1895,88,1983
 2022-03-06,Wayne,2102,108,2210
 2022-03-07,Wayne,2525,97,2622
-2022-03-08,Wayne,2857,131,2988
+2022-03-08,Wayne,2869,135,3004
+2022-03-09,Wayne,3340,130,3470
+2022-03-10,Wayne,3823,165,3988
 2020-03-18,Wexford,5,0,5
 2020-03-20,Wexford,22,1,23
 2020-03-21,Wexford,3,0,3
@@ -61584,3 +61754,5 @@ date,county,negative,positive,total
 2022-03-06,Wexford,27,3,30
 2022-03-07,Wexford,23,4,27
 2022-03-08,Wexford,48,5,53
+2022-03-09,Wexford,64,6,70
+2022-03-10,Wexford,42,7,49
