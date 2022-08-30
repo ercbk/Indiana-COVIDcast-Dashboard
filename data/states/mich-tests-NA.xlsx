@@ -9,8 +9,8 @@
 <html class="no-js" lang="en">
 <!--<![endif]-->
 <head>
-<link href="/coronavirus/-/media/Base-Themes/Core-Libraries/styles/optimized-min.css?rev=7525a8a09ab04d15a1e0a66fb14eae58&hash=F0CD8ED50499F14D580F2181C979626A" rel="stylesheet" /><link href="/coronavirus/-/media/Base-Themes/Main-Theme/styles/optimized-min.css?rev=e34cedcb35564fedae3666d5e8935552&hash=540A2555385F8F9AC407A7C349AB45EC" rel="stylesheet" /><link href="/coronavirus/-/media/Themes/eMiCoreTheme/som-guidelines/styles/pre-optimized-min.css?rev=ce791ccaec1f4c2d9be11fadb1806f22&hash=2A4FF0864179F6CFCFC6B27589037C1E" rel="stylesheet" /><link href="/coronavirus/-/media/Themes/eMiCoreTheme/DataTables/Styles/optimized-min.css?rev=99f96bab3005400ea7c6c4472bdd5f11&hash=F0C368912E7665AB67F41151A9FF09EA" rel="stylesheet" /><link href="/coronavirus/-/media/Base-Themes/Slick-Carousel/styles/optimized-min.css?rev=298286d0a1c04141b61b52cb6533e231&hash=161BD683E7C081AACBD7307A0B5B1229" rel="stylesheet" /><link href="/coronavirus/-/media/Themes/eMiCoreTheme/DateRangePicker/Styles/optimized-min.css?rev=43a538e060e94277b19121e35570fa16&hash=1E4378F4B6E9499C3887201DA1DC5678" rel="stylesheet" /><link href="/coronavirus/-/media/Themes/eMiCoreTheme/eMiCoreTheme/styles/pre-optimized-min.css?rev=46509e51a1e44ea6acd64c8a3dd6264c&hash=3CC8C023797CEEFCFEFFA67B876A2D4B" rel="stylesheet" /><link href="/content/staticfiles/Sites/coronavirus/robinChatbot/Chatbot.css" rel="stylesheet"  />    
-<meta name="VIcurrentDateTime" content="637914430985159028" />
+<link href="/coronavirus/-/media/Base-Themes/Core-Libraries/styles/optimized-min.css?rev=7525a8a09ab04d15a1e0a66fb14eae58&hash=F0CD8ED50499F14D580F2181C979626A" rel="stylesheet" /><link href="/coronavirus/-/media/Base-Themes/Main-Theme/styles/optimized-min.css?rev=e34cedcb35564fedae3666d5e8935552&hash=540A2555385F8F9AC407A7C349AB45EC" rel="stylesheet" /><link href="/coronavirus/-/media/Themes/eMiCoreTheme/som-guidelines/styles/pre-optimized-min.css?rev=ce791ccaec1f4c2d9be11fadb1806f22&hash=2A4FF0864179F6CFCFC6B27589037C1E" rel="stylesheet" /><link href="/coronavirus/-/media/Themes/eMiCoreTheme/DataTables/Styles/optimized-min.css?rev=99f96bab3005400ea7c6c4472bdd5f11&hash=F0C368912E7665AB67F41151A9FF09EA" rel="stylesheet" /><link href="/coronavirus/-/media/Base-Themes/Slick-Carousel/styles/optimized-min.css?rev=298286d0a1c04141b61b52cb6533e231&hash=161BD683E7C081AACBD7307A0B5B1229" rel="stylesheet" /><link href="/coronavirus/-/media/Themes/eMiCoreTheme/DateRangePicker/Styles/optimized-min.css?rev=43a538e060e94277b19121e35570fa16&hash=1E4378F4B6E9499C3887201DA1DC5678" rel="stylesheet" /><link href="/coronavirus/-/media/Themes/eMiCoreTheme/eMiCoreTheme/styles/pre-optimized-min.css?rev=4cff36d44a2b4b699011b648fcbc7031&hash=3668EAB3AA27DDCDAED4C9C0DC91FBC0" rel="stylesheet" /><link href="/content/staticfiles/Sites/coronavirus/robinChatbot/Chatbot.css" rel="stylesheet"  />    
+<meta name="VIcurrentDateTime" content="637974897812819606" />
 <script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
 
     
@@ -57,7 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WTW7M9');</script>
 <!-- End Google Tag Manager -->
 </head>
-<body class="mobile-device bodyclass">
+<body class="default-device bodyclass">
     
 
 
@@ -72,7 +72,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
     
 <!-- #wrapper -->
 
-<meta name="VIcurrentDateTime" content="637914430985615231" />
+<meta name="VIcurrentDateTime" content="637974897812979617" />
 <script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
 
 <div id="wrapper">
@@ -152,13 +152,13 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                         </a>
                                     </div>
                                 </li>
-                                <li class="level1 rel-level1 nav-item" aria-labelledby="arialabel_bcbd63156c6e4366a71bdfb0a4384f25">
-                                    <div class="navigation-title field-navigation-title" data-id="#meganav_bcbd63156c6e4366a71bdfb0a4384f25" aria-labelledby="arialabel_bcbd63156c6e4366a71bdfb0a4384f25">
-                                        <a tabindex="0" data-index="1" target="_self" class="not-link nav-link lv1-item_1" aria-expanded="false" aria-labelledby="arialabel_bcbd63156c6e4366a71bdfb0a4384f25">
-                                            Contain COVID
+                                <li class="level1 rel-level1 nav-item" aria-labelledby="arialabel_3a0dc495ea244f328f5b5259a3359816">
+                                    <div class="navigation-title field-navigation-title" data-id="#meganav_3a0dc495ea244f328f5b5259a3359816" aria-labelledby="arialabel_3a0dc495ea244f328f5b5259a3359816">
+                                        <a tabindex="0" data-index="1" target="_self" class="not-link nav-link lv1-item_1" aria-expanded="false" aria-labelledby="arialabel_3a0dc495ea244f328f5b5259a3359816">
+                                            State Response
                                             <span class="header-caret"></span>
                                             
-                                            <div class="sr-only" id="arialabel_bcbd63156c6e4366a71bdfb0a4384f25">Contain COVID collapsed link</div>
+                                            <div class="sr-only" id="arialabel_3a0dc495ea244f328f5b5259a3359816">State Response collapsed link</div>
                                         </a>
                                     </div>
                                 </li>
@@ -224,23 +224,38 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                 </a>
                                 <ul class="nav flex-column mt-1">
                                         <li class="nav-item">
-                                                    <a href="/coronavirus/mi-safe-start/employers" data-index="0" class="nav-link lv2-0" target="_self">
-                                                        Employer Guidance &amp; Resources
+                                                    <a href="/coronavirus/resources/covid-19-vaccine" data-index="0" class="nav-link lv2-0" target="_self">
+                                                        Vaccines
                                                     </a>
                                         </li>
                                         <li class="nav-item">
-                                                    <a href="/coronavirus/mi-safe-start/public" data-index="1" class="nav-link lv2-1" target="_self">
-                                                        Public Guidance
+                                                    <a href="/coronavirus/resources/covid-19-vaccine/kids-covid-vaccine" data-index="1" class="nav-link lv2-1" target="_self">
+                                                        Kids Vaccines
                                                     </a>
                                         </li>
                                         <li class="nav-item">
-                                                    <a href="/coronavirus/mi-safe-start/employees" data-index="2" class="nav-link lv2-2" target="_self">
-                                                        Employee Guidance &amp; Resources
+                                                    <a href="/coronavirus/contain-covid/test" data-index="2" class="nav-link lv2-2" target="_self">
+                                                        Testing
                                                     </a>
                                         </li>
                                         <li class="nav-item">
-                                                    <a href="/coronavirus/mi-safe-start/complaint" data-index="3" class="nav-link lv2-3 lv2-last" target="_self">
-                                                        Report a Concern
+                                                    <a href="/coronavirus/contain-covid" data-index="3" class="nav-link lv2-3" target="_self">
+                                                        Isolation and Quarantine
+                                                    </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                    <a href="/coronavirus/resources/therapeutics-information-page" data-index="4" class="nav-link lv2-4" target="_self">
+                                                        Therapeutics
+                                                    </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                    <a href="/coronavirus/contain-covid/panel-mask-up-mask-right/maskupmaskright" data-index="5" class="nav-link lv2-5" target="_self">
+                                                        Mask Up
+                                                    </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                    <a href="/coronavirus/contain-covid/trace" data-index="6" class="nav-link lv2-6 lv2-last" target="_self">
+                                                        Contact Tracing
                                                     </a>
                                         </li>
 
@@ -249,50 +264,86 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                         </div>
                     </div>
                     <div class="col-12 col-md-7 main-nav third-level active default"></div>
-                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_51e8945d4aa9435f8108e47592c3e8c3">
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_844034025c654a9e8967c178d3c55a31">
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-8">
-                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/mi-safe-start/employers" target="_self">
-                                        Employer Guidance &amp; Resources
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/resources/covid-19-vaccine" target="_self">
+                                        Vaccines
                                     </a>
                                     <p class="ml-1 nav-text">
-                                        Employer Guidance &amp; Resources
+                                        
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_df94425c59de48a1a63ffe92b13d02cd">
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_b3b60629bb5f4c5f96971e7622724b4b">
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-8">
-                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/mi-safe-start/public" target="_self">
-                                        Public Guidance
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/resources/covid-19-vaccine/kids-covid-vaccine" target="_self">
+                                        Kids Vaccines
                                     </a>
                                     <p class="ml-1 nav-text">
-                                        Public Guidance
+                                        
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_cb59e9763f5f44b9992f9717e07bc4b3">
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_6ec75a4921b04878a412b5798bc24e12">
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-8">
-                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/mi-safe-start/employees" target="_self">
-                                        Employee Guidance &amp; Resources
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/contain-covid/test" target="_self">
+                                        Testing
                                     </a>
                                     <p class="ml-1 nav-text">
-                                        Employee Guidance &amp; Resources
+                                        
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_1423d4e158ee4f5aa8aa8fd93a51a798">
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_48db504621d8450dba5a2523c62d8f8d">
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-8">
-                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/mi-safe-start/complaint" target="_self">
-                                        Report a Concern
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/contain-covid" target="_self">
+                                        Isolation and Quarantine
                                     </a>
                                     <p class="ml-1 nav-text">
-                                        Report a Concern
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_1c5527074c724862b3456e632c06db19">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-md-8">
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/resources/therapeutics-information-page" target="_self">
+                                        Therapeutics
+                                    </a>
+                                    <p class="ml-1 nav-text">
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_abd273a73f8941548bd3c2a69e3c5796">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-md-8">
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/contain-covid/panel-mask-up-mask-right/maskupmaskright" target="_self">
+                                        Mask Up
+                                    </a>
+                                    <p class="ml-1 nav-text">
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_ffe094fbfb6d4bfe8b3baca666829556">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-md-8">
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/contain-covid/trace" target="_self">
+                                        Contact Tracing
+                                    </a>
+                                    <p class="ml-1 nav-text">
+                                        
                                     </p>
                                 </div>
                             </div>
@@ -300,37 +351,45 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                 </div>
             </div>
         </div>
-        <div class="megamenu main-nav" id="meganav_bcbd63156c6e4366a71bdfb0a4384f25">
+        <div class="megamenu main-nav" id="meganav_3a0dc495ea244f328f5b5259a3359816">
             <div class="container-fluid content-width px-0">
                 <div class="row no-gutters">
                     <div class="col-12 col-md-5 second-level">
                         <div class="row no-gutters">
                             <div class="col-12">
-                                <a class="second-level-title h2 ml-1" href="/coronavirus/contain-covid">
-                                    Contain COVID
+                                <a class="second-level-title h2 ml-1" href="/coronavirus/state-response">
+                                    State Response
                                 </a>
                                 <ul class="nav flex-column mt-1">
                                         <li class="nav-item">
-                                                <a tabindex="0" data-index="0" class="not-link nav-link lv2-0" data-subnavid="#subnav_20b6a3843db3422f81ce8da13fb6768d" target="_self" aria-expanded="false">
-                                                    Test
-                                                    <span class="header-caret-next"></span>
-                                                </a>
-                                        </li>
-                                        <li class="nav-item">
-                                                    <a href="/coronavirus/contain-covid/trace" data-index="1" class="nav-link lv2-1" target="_self">
-                                                        Trace
+                                                    <a href="/coronavirus/resources/orders-and-directives/lists/mdhhs-epidemic-orders" data-index="0" class="nav-link lv2-0" target="_self">
+                                                        MDHHS Epidemic Orders
                                                     </a>
                                         </li>
                                         <li class="nav-item">
-                                                    <a href="/coronavirus/contain-covid/protect" data-index="2" class="nav-link lv2-2" target="_self">
-                                                        Protect
+                                                    <a href="https://www.mmdhd.org/wp-content/uploads/2022/03/Readiness-Response-Recovery-Cycle-030222.pdf" data-index="1" class="nav-link lv2-1" target="_self">
+                                                        MDHHS Response Cycle
                                                     </a>
                                         </li>
                                         <li class="nav-item">
-                                                <a tabindex="0" data-index="3" class="not-link nav-link lv2-3 lv2-last" data-subnavid="#subnav_da8f96a8deaa4365ae41260310f85ec6" target="_self" aria-expanded="false">
-                                                    COVIDAlert
-                                                    <span class="header-caret-next"></span>
-                                                </a>
+                                                    <a href="/coronavirus/stats" data-index="2" class="nav-link lv2-2" target="_self">
+                                                        Data and Surveillance
+                                                    </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                    <a href="/coronavirus/state-response/health-equity-and-covid-19" data-index="3" class="nav-link lv2-3" target="_self">
+                                                        Health Equity and COVID-19
+                                                    </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                    <a href="/coronavirus/resources/k-12-school-opening-guidance" data-index="4" class="nav-link lv2-4" target="_self">
+                                                        K to 12 Schools
+                                                    </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                    <a href="/coronavirus/resources/long-term-care-plan" data-index="5" class="nav-link lv2-5 lv2-last" target="_self">
+                                                        Long Term Care COVID-19 Plan
+                                                    </a>
                                         </li>
 
                             </ul>
@@ -338,82 +397,75 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                         </div>
                     </div>
                     <div class="col-12 col-md-7 main-nav third-level active default"></div>
-                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_20b6a3843db3422f81ce8da13fb6768d">
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_84e42fb0afaf4a8b82cea8a2cae94a2a">
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-8">
-                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/contain-covid/test" target="_self">
-                                        Test
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/resources/orders-and-directives/lists/mdhhs-epidemic-orders" target="_self">
+                                        MDHHS Epidemic Orders
                                     </a>
                                     <p class="ml-1 nav-text">
-                                        Test
-                                    </p>
-                                    <ul class="nav flex-column mt-1">
-                                                <li class="nav-item">
-                                                        <a href="/coronavirus/contain-covid/test/antigen-testing" data-index="0" class="nav-link lv3-0" target="_self">
-                                                            Antigen Testing
-                                                        </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a href="/coronavirus/contain-covid/test/library-partnership-for-at-home-test" data-index="1" class="nav-link lv3-1 lv3-last" target="_self">
-                                                            Library Partnership for At-Home Test
-                                                        </a>
-                                                </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_f762023af2524bce97c020a8030893dc">
-                            <div class="row no-gutters">
-                                <div class="col-12 col-md-8">
-                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/contain-covid/trace" target="_self">
-                                        Trace
-                                    </a>
-                                    <p class="ml-1 nav-text">
-                                        Trace
+                                        
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_c55b89462edc4912a3eb73d3ccbbf8b1">
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_0904f4ed53824bb6bf8036b8268588d0">
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-8">
-                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/contain-covid/protect" target="_self">
-                                        Protect
+                                    <a class="third-level-title h3 ml-1 text-primary" href="https://www.mmdhd.org/wp-content/uploads/2022/03/Readiness-Response-Recovery-Cycle-030222.pdf" target="_self">
+                                        MDHHS Response Cycle
                                     </a>
                                     <p class="ml-1 nav-text">
-                                        Protect
+                                        
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_da8f96a8deaa4365ae41260310f85ec6">
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_796e0cc5bab14fc38dc6b47e3a1856e5">
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-8">
-                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/contain-covid/covidalert" target="_self">
-                                        COVIDAlert
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/stats" target="_self">
+                                        Data and Surveillance
                                     </a>
                                     <p class="ml-1 nav-text">
-                                        COVIDAlert
+                                        
                                     </p>
-                                    <ul class="nav flex-column mt-1">
-                                                <li class="nav-item">
-                                                        <a href="/coronavirus/contain-covid/covidalert/why" data-index="0" class="nav-link lv3-0" target="_self">
-                                                            Why use the app
-                                                        </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a href="/coronavirus/contain-covid/covidalert/how" data-index="1" class="nav-link lv3-1" target="_self">
-                                                            How the app works
-                                                        </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a href="/coronavirus/contain-covid/covidalert/privacy" data-index="2" class="nav-link lv3-2 lv3-last" target="_self">
-                                                            Privacy and data
-                                                        </a>
-                                                </li>
-
-                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_e3d94577027e4d2bb9661af26a2b352d">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-md-8">
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/state-response/health-equity-and-covid-19" target="_self">
+                                        Health Equity and COVID-19
+                                    </a>
+                                    <p class="ml-1 nav-text">
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_95abc23faf3a4ed697b818d0ddf8ae10">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-md-8">
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/resources/k-12-school-opening-guidance" target="_self">
+                                        K to 12 Schools
+                                    </a>
+                                    <p class="ml-1 nav-text">
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_63ebd9ae05534a4aa595aa1aaaf92067">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-md-8">
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/resources/long-term-care-plan" target="_self">
+                                        Long Term Care COVID-19 Plan
+                                    </a>
+                                    <p class="ml-1 nav-text">
+                                        
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -431,28 +483,28 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                 </a>
                                 <ul class="nav flex-column mt-1">
                                         <li class="nav-item">
-                                                    <a href="/coronavirus/resources/communications-resources" data-index="0" class="nav-link lv2-0" target="_self">
-                                                        Communications Resources Toolkit
+                                                    <a href="/coronavirus/resources/for-public" data-index="0" class="nav-link lv2-0" target="_self">
+                                                        For Public
                                                     </a>
                                         </li>
                                         <li class="nav-item">
-                                                    <a href="/coronavirus/resources/residents" data-index="1" class="nav-link lv2-1" target="_self">
-                                                        For Residents
+                                                    <a href="/coronavirus/resources/alternate-languages" data-index="1" class="nav-link lv2-1" target="_self">
+                                                        Alternate Languages
                                                     </a>
                                         </li>
                                         <li class="nav-item">
-                                                    <a href="/coronavirus/resources/healthpros" data-index="2" class="nav-link lv2-2" target="_self">
+                                                    <a href="https://www.cdc.gov/ncbddd/humandevelopment/COVID-19-Materials-for-People-with-IDD.html" data-index="2" class="nav-link lv2-2" target="_blank">
+                                                        Materials for People with Intellectual and Developmental Disabilities and Care Providers
+                                                    </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                    <a href="/coronavirus/resources/healthpros" data-index="3" class="nav-link lv2-3" target="_self">
                                                         For Health Professionals
                                                     </a>
                                         </li>
                                         <li class="nav-item">
-                                                    <a href="/coronavirus/resources/agricultural-workers" data-index="3" class="nav-link lv2-3" target="_self">
+                                                    <a href="/coronavirus/resources/agricultural-workers" data-index="4" class="nav-link lv2-4" target="_self">
                                                         Agricultural Workers
-                                                    </a>
-                                        </li>
-                                        <li class="nav-item">
-                                                    <a href="/coronavirus/resources/alternate-languages" data-index="4" class="nav-link lv2-4" target="_self">
-                                                        Alternate Languages
                                                     </a>
                                         </li>
                                         <li class="nav-item">
@@ -536,11 +588,11 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                         </div>
                     </div>
                     <div class="col-12 col-md-7 main-nav third-level active default"></div>
-                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_2e02dab19e5c47c6a413a2726536373c">
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_242cd2c06c9d4420884adb53b93ddd61">
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-8">
-                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/resources/communications-resources" target="_self">
-                                        Communications Resources Toolkit
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/resources/for-public" target="_self">
+                                        For Public
                                     </a>
                                     <p class="ml-1 nav-text">
                                         
@@ -548,11 +600,23 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_5dd5356991a34026b10b29c8c31959cf">
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_e55e97d739c342f8b48c00c7f33ac2a0">
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-8">
-                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/resources/residents" target="_self">
-                                        For Residents
+                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/resources/alternate-languages" target="_self">
+                                        Alternate Languages
+                                    </a>
+                                    <p class="ml-1 nav-text">
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_4a8f8039bcc64d84baeacc646193bc5c">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-md-8">
+                                    <a class="third-level-title h3 ml-1 text-primary" href="https://www.cdc.gov/ncbddd/humandevelopment/COVID-19-Materials-for-People-with-IDD.html" target="_blank">
+                                        Materials for People with Intellectual and Developmental Disabilities and Care Providers
                                     </a>
                                     <p class="ml-1 nav-text">
                                         
@@ -577,18 +641,6 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                 <div class="col-12 col-md-8">
                                     <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/resources/agricultural-workers" target="_self">
                                         Agricultural Workers
-                                    </a>
-                                    <p class="ml-1 nav-text">
-                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-7 main-nav third-level" id="subnav_e55e97d739c342f8b48c00c7f33ac2a0">
-                            <div class="row no-gutters">
-                                <div class="col-12 col-md-8">
-                                    <a class="third-level-title h3 ml-1 text-primary" href="/coronavirus/resources/alternate-languages" target="_self">
-                                        Alternate Languages
                                     </a>
                                     <p class="ml-1 nav-text">
                                         
@@ -640,7 +692,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                         COVID-19 Vaccine
                                     </a>
                                     <p class="ml-1 nav-text">
-                                        
+                                        Vaccine Information
                                     </p>
                                     <ul class="nav flex-column mt-1">
                                                 <li class="nav-item">
@@ -954,9 +1006,9 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                     </div>
                             </li>
                             <li class="level1 rel-level1 nav-item">
-                                    <div class="navigation-title field-navigation-title" data-id="#m_meganav_bcbd63156c6e4366a71bdfb0a4384f25">
-                                            <a tabindex="0" class="nav-link not-active lv1-1" id="m_meganav_bcbd63156c6e4366a71bdfb0a4384f25_link">
-                                                Contain COVID
+                                    <div class="navigation-title field-navigation-title" data-id="#m_meganav_3a0dc495ea244f328f5b5259a3359816">
+                                            <a tabindex="0" class="nav-link not-active lv1-1" id="m_meganav_3a0dc495ea244f328f5b5259a3359816_link">
+                                                State Response
                                                 <span class="header-caret"></span>
                                             </a>
                                     </div>
@@ -1024,23 +1076,38 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                     </a>
                                     <ul class="nav flex-column mt-1">
                                                 <li class="nav-item">
-                                                            <a href="/coronavirus/mi-safe-start/employers" class="nav-link">
-                                                                Employer Guidance &amp; Resources
+                                                            <a href="/coronavirus/resources/covid-19-vaccine" class="nav-link">
+                                                                Vaccines
                                                             </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                            <a href="/coronavirus/mi-safe-start/public" class="nav-link">
-                                                                Public Guidance
+                                                            <a href="/coronavirus/resources/covid-19-vaccine/kids-covid-vaccine" class="nav-link">
+                                                                Kids Vaccines
                                                             </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                            <a href="/coronavirus/mi-safe-start/employees" class="nav-link">
-                                                                Employee Guidance &amp; Resources
+                                                            <a href="/coronavirus/contain-covid/test" class="nav-link">
+                                                                Testing
                                                             </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                            <a href="/coronavirus/mi-safe-start/complaint" class="nav-link mobile-lv2-last">
-                                                                Report a Concern
+                                                            <a href="/coronavirus/contain-covid" class="nav-link">
+                                                                Isolation and Quarantine
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                            <a href="/coronavirus/resources/therapeutics-information-page" class="nav-link">
+                                                                Therapeutics
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                            <a href="/coronavirus/contain-covid/panel-mask-up-mask-right/maskupmaskright" class="nav-link">
+                                                                Mask Up
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                            <a href="/coronavirus/contain-covid/trace" class="nav-link mobile-lv2-last">
+                                                                Contact Tracing
                                                             </a>
                                                 </li>
 
@@ -1048,42 +1115,72 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                 </div>
                             </div>
                         </div>
-                            <div class="col-12 mobile-nav third-level" id="m_subnav_51e8945d4aa9435f8108e47592c3e8c3">
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_844034025c654a9e8967c178d3c55a31">
                                 <div class="row no-gutters">
                                     <div class="col-12">
                                         <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
-                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/mi-safe-start/employers">
-                                            Employer Guidance &amp; Resources
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/resources/covid-19-vaccine">
+                                            Vaccines
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 mobile-nav third-level" id="m_subnav_df94425c59de48a1a63ffe92b13d02cd">
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_b3b60629bb5f4c5f96971e7622724b4b">
                                 <div class="row no-gutters">
                                     <div class="col-12">
                                         <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
-                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/mi-safe-start/public">
-                                            Public Guidance
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/resources/covid-19-vaccine/kids-covid-vaccine">
+                                            Kids Vaccines
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 mobile-nav third-level" id="m_subnav_cb59e9763f5f44b9992f9717e07bc4b3">
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_6ec75a4921b04878a412b5798bc24e12">
                                 <div class="row no-gutters">
                                     <div class="col-12">
                                         <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
-                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/mi-safe-start/employees">
-                                            Employee Guidance &amp; Resources
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/contain-covid/test">
+                                            Testing
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 mobile-nav third-level" id="m_subnav_1423d4e158ee4f5aa8aa8fd93a51a798">
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_48db504621d8450dba5a2523c62d8f8d">
                                 <div class="row no-gutters">
                                     <div class="col-12">
                                         <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
-                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/mi-safe-start/complaint">
-                                            Report a Concern
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/contain-covid">
+                                            Isolation and Quarantine
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_1c5527074c724862b3456e632c06db19">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/resources/therapeutics-information-page">
+                                            Therapeutics
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_abd273a73f8941548bd3c2a69e3c5796">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/contain-covid/panel-mask-up-mask-right/maskupmaskright">
+                                            Mask Up
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_ffe094fbfb6d4bfe8b3baca666829556">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/contain-covid/trace">
+                                            Contact Tracing
                                         </a>
                                     </div>
                                 </div>
@@ -1091,37 +1188,45 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                     </div>
                 </div>
             </div>
-            <div class="megamenu mobile-nav" id="m_meganav_bcbd63156c6e4366a71bdfb0a4384f25">
+            <div class="megamenu mobile-nav" id="m_meganav_3a0dc495ea244f328f5b5259a3359816">
                 <div class="container-fluid px-0">
                     <div class="row no-gutters">
                         <div class="col-12 second-level">
                             <div class="row no-gutters">
                                 <div class="col-12">
                                     <a class="nav-link second-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
-                                    <a href="/coronavirus/contain-covid" class="nav-link second-level-title h3 ml-1 text-primary d-block">
-                                        Contain COVID
+                                    <a href="/coronavirus/state-response" class="nav-link second-level-title h3 ml-1 text-primary d-block">
+                                        State Response
                                     </a>
                                     <ul class="nav flex-column mt-1">
                                                 <li class="nav-item">
-                                                            <a tabindex="0" class="nav-link not-active" id="m_subnav_20b6a3843db3422f81ce8da13fb6768d_link"   data-subnavid="#m_subnav_20b6a3843db3422f81ce8da13fb6768d">
-                                                                Test
-                                                                <span class="header-caret"></span>
+                                                            <a href="/coronavirus/resources/orders-and-directives/lists/mdhhs-epidemic-orders" class="nav-link">
+                                                                MDHHS Epidemic Orders
                                                             </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                            <a href="/coronavirus/contain-covid/trace" class="nav-link">
-                                                                Trace
+                                                            <a href="https://www.mmdhd.org/wp-content/uploads/2022/03/Readiness-Response-Recovery-Cycle-030222.pdf" class="nav-link">
+                                                                MDHHS Response Cycle
                                                             </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                            <a href="/coronavirus/contain-covid/protect" class="nav-link">
-                                                                Protect
+                                                            <a href="/coronavirus/stats" class="nav-link">
+                                                                Data and Surveillance
                                                             </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                            <a tabindex="0" class="nav-link not-active mobile-lv2-last" id="m_subnav_da8f96a8deaa4365ae41260310f85ec6_link" data-subnavid="#m_subnav_da8f96a8deaa4365ae41260310f85ec6">
-                                                                COVIDAlert
-                                                                <span class="header-caret"></span>
+                                                            <a href="/coronavirus/state-response/health-equity-and-covid-19" class="nav-link">
+                                                                Health Equity and COVID-19
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                            <a href="/coronavirus/resources/k-12-school-opening-guidance" class="nav-link">
+                                                                K to 12 Schools
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                            <a href="/coronavirus/resources/long-term-care-plan" class="nav-link mobile-lv2-last">
+                                                                Long Term Care COVID-19 Plan
                                                             </a>
                                                 </li>
 
@@ -1129,74 +1234,63 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                 </div>
                             </div>
                         </div>
-                            <div class="col-12 mobile-nav third-level" id="m_subnav_20b6a3843db3422f81ce8da13fb6768d">
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_84e42fb0afaf4a8b82cea8a2cae94a2a">
                                 <div class="row no-gutters">
                                     <div class="col-12">
                                         <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
-                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/contain-covid/test">
-                                            Test
-                                        </a>
-                                            <ul class="nav flex-column mt-1">
-                                                        <li class="nav-item">
-                                                                <a href="/coronavirus/contain-covid/test/antigen-testing" class="nav-link">
-                                                                    Antigen Testing
-                                                                </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                                <a href="/coronavirus/contain-covid/test/library-partnership-for-at-home-test" class="nav-link mobile-lv3-last">
-                                                                    Library Partnership for At-Home Test
-                                                                </a>
-                                                        </li>
-
-                                            </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mobile-nav third-level" id="m_subnav_f762023af2524bce97c020a8030893dc">
-                                <div class="row no-gutters">
-                                    <div class="col-12">
-                                        <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
-                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/contain-covid/trace">
-                                            Trace
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/resources/orders-and-directives/lists/mdhhs-epidemic-orders">
+                                            MDHHS Epidemic Orders
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 mobile-nav third-level" id="m_subnav_c55b89462edc4912a3eb73d3ccbbf8b1">
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_0904f4ed53824bb6bf8036b8268588d0">
                                 <div class="row no-gutters">
                                     <div class="col-12">
                                         <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
-                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/contain-covid/protect">
-                                            Protect
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="https://www.mmdhd.org/wp-content/uploads/2022/03/Readiness-Response-Recovery-Cycle-030222.pdf">
+                                            MDHHS Response Cycle
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 mobile-nav third-level" id="m_subnav_da8f96a8deaa4365ae41260310f85ec6">
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_796e0cc5bab14fc38dc6b47e3a1856e5">
                                 <div class="row no-gutters">
                                     <div class="col-12">
                                         <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
-                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/contain-covid/covidalert">
-                                            COVIDAlert
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/stats">
+                                            Data and Surveillance
                                         </a>
-                                            <ul class="nav flex-column mt-1">
-                                                        <li class="nav-item">
-                                                                <a href="/coronavirus/contain-covid/covidalert/why" class="nav-link">
-                                                                    Why use the app
-                                                                </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                                <a href="/coronavirus/contain-covid/covidalert/how" class="nav-link">
-                                                                    How the app works
-                                                                </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                                <a href="/coronavirus/contain-covid/covidalert/privacy" class="nav-link mobile-lv3-last">
-                                                                    Privacy and data
-                                                                </a>
-                                                        </li>
-
-                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_e3d94577027e4d2bb9661af26a2b352d">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/state-response/health-equity-and-covid-19">
+                                            Health Equity and COVID-19
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_95abc23faf3a4ed697b818d0ddf8ae10">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/resources/k-12-school-opening-guidance">
+                                            K to 12 Schools
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_63ebd9ae05534a4aa595aa1aaaf92067">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/resources/long-term-care-plan">
+                                            Long Term Care COVID-19 Plan
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1215,13 +1309,18 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                     </a>
                                     <ul class="nav flex-column mt-1">
                                                 <li class="nav-item">
-                                                            <a href="/coronavirus/resources/communications-resources" class="nav-link">
-                                                                Communications Resources Toolkit
+                                                            <a href="/coronavirus/resources/for-public" class="nav-link">
+                                                                For Public
                                                             </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                            <a href="/coronavirus/resources/residents" class="nav-link">
-                                                                For Residents
+                                                            <a href="/coronavirus/resources/alternate-languages" class="nav-link">
+                                                                Alternate Languages
+                                                            </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                            <a href="https://www.cdc.gov/ncbddd/humandevelopment/COVID-19-Materials-for-People-with-IDD.html" class="nav-link">
+                                                                Materials for People with Intellectual and Developmental Disabilities and Care Providers
                                                             </a>
                                                 </li>
                                                 <li class="nav-item">
@@ -1232,11 +1331,6 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                                 <li class="nav-item">
                                                             <a href="/coronavirus/resources/agricultural-workers" class="nav-link">
                                                                 Agricultural Workers
-                                                            </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                            <a href="/coronavirus/resources/alternate-languages" class="nav-link">
-                                                                Alternate Languages
                                                             </a>
                                                 </li>
                                                 <li class="nav-item">
@@ -1319,22 +1413,32 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                 </div>
                             </div>
                         </div>
-                            <div class="col-12 mobile-nav third-level" id="m_subnav_2e02dab19e5c47c6a413a2726536373c">
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_242cd2c06c9d4420884adb53b93ddd61">
                                 <div class="row no-gutters">
                                     <div class="col-12">
                                         <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
-                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/resources/communications-resources">
-                                            Communications Resources Toolkit
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/resources/for-public">
+                                            For Public
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 mobile-nav third-level" id="m_subnav_5dd5356991a34026b10b29c8c31959cf">
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_e55e97d739c342f8b48c00c7f33ac2a0">
                                 <div class="row no-gutters">
                                     <div class="col-12">
                                         <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
-                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/resources/residents">
-                                            For Residents
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/resources/alternate-languages">
+                                            Alternate Languages
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mobile-nav third-level" id="m_subnav_4a8f8039bcc64d84baeacc646193bc5c">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
+                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="https://www.cdc.gov/ncbddd/humandevelopment/COVID-19-Materials-for-People-with-IDD.html">
+                                            Materials for People with Intellectual and Developmental Disabilities and Care Providers
                                         </a>
                                     </div>
                                 </div>
@@ -1355,16 +1459,6 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                                         <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
                                         <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/resources/agricultural-workers">
                                             Agricultural Workers
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mobile-nav third-level" id="m_subnav_e55e97d739c342f8b48c00c7f33ac2a0">
-                                <div class="row no-gutters">
-                                    <div class="col-12">
-                                        <a class="nav-link third-level-back not-active" href="#"><span class="header-caret-back"></span>Back</a>
-                                        <a class="nav-link third-level-title h3 ml-1 text-primary d-block" href="/coronavirus/resources/alternate-languages">
-                                            Alternate Languages
                                         </a>
                                     </div>
                                 </div>
@@ -2091,7 +2185,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
 		<span><a href="https://www.michigan.gov/policies">Policies</a></span>
 		<span><a href="https://www.michigan.gov/adaform">Accessibility</a></span>
 		<span><a href="https://www.michigan.gov/disabilityresources">Disability Resources</a></span>
-		<span><a href="https://www.michigan.gov/foia">FOIA</a></span>
+		<span><a href="https://www.michigan.gov/foia">Statewide FOIA Directory</a></span>
 		<a href="https://www.michigan.gov/som/government/branches-of-government/executive-branch">Departments</a>
     </div>
 </div>
@@ -2124,6 +2218,6 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
 
 
 
-<script src="/coronavirus/-/media/Base-Themes/Core-Libraries/scripts/optimized-min.js?rev=072d155a945b4efdb212299ae37e6906&hash=CFA9A68E06EA5084E34BDF7CC830EE52"></script><script src="/coronavirus/-/media/Base-Themes/XA-API/Scripts/optimized-min.js?rev=1aefcfe8bb9a403a84297b9eab994011&hash=85EF19C03FA4D70FE208B326894F86F4"></script><script src="/coronavirus/-/media/Base-Themes/Main-Theme/scripts/optimized-min.js?rev=4520364d823749b2987c53c9205581f8&hash=E79B7107EF419C0030FAD846FBBC86F2"></script><script src="/coronavirus/-/media/Base-Themes/Resolve-Conflicts/Scripts/optimized-min.js?rev=982d7287a07c403799e712add43eacc9&hash=4FCDB3EC5CC9DEBE48B905981A198F9F"></script><script src="/coronavirus/-/media/Themes/eMiCoreTheme/som-guidelines/scripts/optimized-min.js?rev=4be41d557d6047c6b7ab64cc6077b1bb&hash=7843236A3419EA20E39AB75AA6317FA1"></script><script src="/coronavirus/-/media/Base-Themes/Bing-Maps-JS-Connector/Scripts/optimized-min.js?rev=217efca5277b461b9280aef12d31f1a1&hash=4B1DACE3D69E6DD5CA7E565FE9C92C62"></script><script src="/coronavirus/-/media/Base-Themes/Maps/Scripts/optimized-min.js?rev=11730654d604438da6e5c0ad5ee4257b&hash=C92AC663F02C2608B0903665D46C1903"></script><script src="/coronavirus/-/media/Base-Themes/SearchTheme/Scripts/optimized-min.js?rev=29996af73eff44a984da62a78995925f&hash=1D5D89B8B08C45753471C49DEE1EE28C"></script><script src="/coronavirus/-/media/Base-Themes/Components-Theme/Scripts/optimized-min.js?rev=787b64b2b56449d3ab002371c11ee713&hash=766B9D413A590A5EF59BA93F1F7702AF"></script><script src="/coronavirus/-/media/Themes/eMiCoreTheme/DataTables/Scripts/optimized-min.js?rev=676d063e33214d71877e1424f055d69e&hash=5A06FCD311D1B7F04FB8F3B55A648132"></script><script src="/coronavirus/-/media/Base-Themes/Slick-Carousel/scripts/optimized-min.js?rev=20a0a64181c24fa397f1f0d55cad226d&hash=8A77ED402C688BD56DA2D989C314D566"></script><script src="/coronavirus/-/media/Themes/eMiCoreTheme/DateRangePicker/Scripts/optimized-min.js?rev=46e8d82983c74438a8c3c46c163bbcef&hash=751CD047092724A9028DA875872F3416"></script><script src="/coronavirus/-/media/Themes/eMiCoreTheme/Modernizr/Scripts/optimized-min.js?rev=fd542851360e4a0c8030c05d50a6abd0&hash=CF6E057B26DF403B9D01CE7BA0D15293"></script><script src="/coronavirus/-/media/Themes/eMiCoreTheme/eMiCoreTheme/scripts/pre-optimized-min.js?rev=233c1507432544e2a9fadefce81ff9e5&hash=BF06D82E8693514BD67ADCFEC5CB2939"></script><script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="Anonymous"></script><script src="/content/staticfiles/Sites/coronavirus/robinChatbot/chatbot.js" ></script>    <!-- /#wrapper -->
+<script src="/coronavirus/-/media/Base-Themes/Core-Libraries/scripts/optimized-min.js?rev=421653b5c9534da281d618c0ffebecab&hash=916AF7CB9C519F097D175BCC7C4A9243"></script><script src="/coronavirus/-/media/Base-Themes/XA-API/Scripts/optimized-min.js?rev=1aefcfe8bb9a403a84297b9eab994011&hash=85EF19C03FA4D70FE208B326894F86F4"></script><script src="/coronavirus/-/media/Base-Themes/Main-Theme/scripts/optimized-min.js?rev=4520364d823749b2987c53c9205581f8&hash=E79B7107EF419C0030FAD846FBBC86F2"></script><script src="/coronavirus/-/media/Base-Themes/Resolve-Conflicts/Scripts/optimized-min.js?rev=982d7287a07c403799e712add43eacc9&hash=4FCDB3EC5CC9DEBE48B905981A198F9F"></script><script src="/coronavirus/-/media/Themes/eMiCoreTheme/som-guidelines/scripts/optimized-min.js?rev=4be41d557d6047c6b7ab64cc6077b1bb&hash=7843236A3419EA20E39AB75AA6317FA1"></script><script src="/coronavirus/-/media/Base-Themes/Bing-Maps-JS-Connector/Scripts/optimized-min.js?rev=217efca5277b461b9280aef12d31f1a1&hash=4B1DACE3D69E6DD5CA7E565FE9C92C62"></script><script src="/coronavirus/-/media/Base-Themes/Maps/Scripts/optimized-min.js?rev=11730654d604438da6e5c0ad5ee4257b&hash=C92AC663F02C2608B0903665D46C1903"></script><script src="/coronavirus/-/media/Base-Themes/SearchTheme/Scripts/optimized-min.js?rev=29996af73eff44a984da62a78995925f&hash=1D5D89B8B08C45753471C49DEE1EE28C"></script><script src="/coronavirus/-/media/Base-Themes/Components-Theme/Scripts/optimized-min.js?rev=787b64b2b56449d3ab002371c11ee713&hash=766B9D413A590A5EF59BA93F1F7702AF"></script><script src="/coronavirus/-/media/Themes/eMiCoreTheme/DataTables/Scripts/optimized-min.js?rev=676d063e33214d71877e1424f055d69e&hash=5A06FCD311D1B7F04FB8F3B55A648132"></script><script src="/coronavirus/-/media/Base-Themes/Slick-Carousel/scripts/optimized-min.js?rev=20a0a64181c24fa397f1f0d55cad226d&hash=8A77ED402C688BD56DA2D989C314D566"></script><script src="/coronavirus/-/media/Themes/eMiCoreTheme/DateRangePicker/Scripts/optimized-min.js?rev=46e8d82983c74438a8c3c46c163bbcef&hash=751CD047092724A9028DA875872F3416"></script><script src="/coronavirus/-/media/Themes/eMiCoreTheme/Modernizr/Scripts/optimized-min.js?rev=fd542851360e4a0c8030c05d50a6abd0&hash=CF6E057B26DF403B9D01CE7BA0D15293"></script><script src="/coronavirus/-/media/Themes/eMiCoreTheme/eMiCoreTheme/scripts/pre-optimized-min.js?rev=fa9c82f2066a48cb804e3236520f1b4d&hash=9EBFF24C735274D360C599F47CEF9E8C"></script><script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="Anonymous"></script><script src="/content/staticfiles/Sites/coronavirus/robinChatbot/chatbot.js" ></script>    <!-- /#wrapper -->
 </body>
 </html>
